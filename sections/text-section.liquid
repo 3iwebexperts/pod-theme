@@ -1,0 +1,71 @@
+<style>
+  #heading-media-template--15642962428043__1657980366490614a0 {
+    background-color: #121212;
+  }
+
+
+  #heading-media-template--15642962428043__1657980366490614a0 .heading-media__title,
+  #heading-media-template--15642962428043__1657980366490614a0 .heading-media__content,
+  #heading-media-template--15642962428043__1657980366490614a0 .image-caption__text {
+    color: #ffffff;
+  }
+
+  #heading-media-template--15642962428043__1657980366490614a0 .highlight-text {
+    color: #00ff00;
+  }
+</style>
+<div
+  id="heading-media-template--15642962428043__1657980366490614a0"
+  data-section-id="template--15642962428043__1657980366490614a0"
+  class=" custom-text heading-media"
+  data-section-type="heading-media"
+>
+  <div class="container-fluid-max">
+    <div class="heading-media__columns">
+      {% if section.settings.big_text != blank %}
+        <div class="heading-media__column">
+          <h2 class="heading-media__title h1">{{ section.settings.big_text }}</h2>
+        </div>
+      {% endif %}
+      {% if section.settings.sub_text != blank %}
+        <div class="heading-media__column">
+          <div class="heading-media__content">
+            {{ section.settings.sub_text }}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Text Section",
+  "settings": [
+    {
+      "type": "text",
+         "id":"big_text",
+         "label": "Big Text"
+    },
+    {
+       "type": "richtext",
+         "id":"sub_text",
+         "label": "Paragraph"
+    }
+
+
+  ],
+    "presets": [
+  {
+    "name": "Text Section"
+  }
+]
+
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

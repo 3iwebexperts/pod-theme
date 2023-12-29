@@ -1,0 +1,214 @@
+<facet-filters
+  id="facet-filters"
+  class="product-facet__filters findify__filters col-lg-8 col-xl-6"
+  open=""
+>
+  <header class="drawer__header ">
+    <div class="drawer__header_inner">
+      <div class="findify-header__filter-icon icon-filter"><span class="icon-filter__dots"></span></div>
+      Filters&nbsp;By
+    </div>
+    <a class="drawer__close">
+      <svg
+        enable-background="new 0 0 386.667 386.667"
+        height="512"
+        viewBox="0 0 386.667 386.667"
+        width="512"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentcolor"
+        class="icon icon-close"
+      >
+        <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"></path>
+      </svg>
+      <div class="sr-only">Close<span data-option-name="true"></span>drawer</div>
+    </a>
+  </header>
+  <form id="facet-filters-form" class="filters__form">
+    <div class="drawer__content">
+      {%- if results.terms -%}
+        <input type="hidden" name="q" value="{{ results.terms | escape }}">
+        <input name="options[prefix]" type="hidden" value="last">
+      {%- endif -%}
+      {% if results.current_vendor or results.current_type %}
+        <input type="hidden" name="q" value="{{ results.current_vendor }}{{ results.current_type }}">
+      {% endif %}
+      <div class="product-facet__filter-list">
+        {%- for filter in results.filters -%}
+          {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+          {% case filter.type %}
+            {% when 'list' %}
+              <div class="product-facet__filter-item">
+                <button
+                  type="button"
+                  is="toggle-button"
+                  class="collapsible-toggle text--strong {% if forloop.first %}active{% endif %}"
+                  aria-controls="facet-filter-filter.v.m.custom.sprinklr_color"
+                >
+                  {{ filter.label | escape }}
+                  <svg
+                    focusable="false"
+                    width="12"
+                    height="8"
+                    class="
+                      icon icon--chevron
+                      icon--inline
+                    "
+                    viewBox="0 0 12 8"
+                  >
+                    <path fill="none" d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
+                  </svg>
+                </button>
+
+                <collapsible-content
+                  animate-items=""
+                  id="facet-filter-{{ value.param_name }}"
+                  class="collapsible {% if forloop.first %}active{% endif %}"
+                >
+                  <div class="collapsible__content">
+                    {%- for value in filter.values -%}
+                      <div class="checkbox-container">
+                        <div class="checkbox-lable">
+                          <label
+                            for="Filter-{{ filter.label | escape }}-{{ forloop.index }}"
+                            class="{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+                          >
+                            {{- value.label | escape }}
+                            <span style="opacity:.5;">({{ value.count }})</span></label
+                          >
+                        </div>
+                        <div class="checkbox-input">
+                          <input
+                            class="checkbox"
+                            type="checkbox"
+                            name="{{ value.param_name }}"
+                            id="Filter-{{ filter.label | escape }}-{{ forloop.index }}"
+                            value="{{ value.value }}"
+                            {% if value.active %}
+                              checked
+                            {% endif %}
+                            {% if value.count == 0 and value.active == false %}
+                              disabled
+                            {% endif %}
+                          >
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </collapsible-content>
+              </div>
+            {% when 'price_range' %}
+              {% liquid
+                assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND' | split: ','
+                assign uses_comma_decimals = false
+                if currencies_using_comma_decimals contains cart.currency.iso_code
+                  assign uses_comma_decimals = true
+                endif
+              %}
+              <div class="product-facet__filter-item">
+                <button
+                  type="button"
+                  is="toggle-button"
+                  class="collapsible-toggle text--strong"
+                  aria-controls="facet-filter-filter.v.price"
+                  aria-expanded="false"
+                >
+                  {{ filter.label | escape }}
+                  <svg
+                    focusable="false"
+                    width="12"
+                    height="8"
+                    class="
+                      icon icon--chevron
+                      icon--inline
+                    "
+                    viewBox="0 0 12 8"
+                  >
+                    <path fill="none" d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
+                  </svg>
+                </button>
+
+                <collapsible-content animate-items="" id="facet-filter-filter.v.price" class="collapsible">
+                  <div class="collapsible__content">
+                    <price-range class="price-range">
+                      <div class="price_filter_range">
+                        <div class="field">
+                          <label class="field__label" for="Filter-{{ filter.label | escape }}-GTE"> From </label>
+                            <div class="price__range__box">
+                              <span class="field-currency">{{ cart.currency.symbol }}</span>
+                                <input
+                                  class="field__input"
+                                  name="{{ filter.min_value.param_name }}"
+                                  id="Filter-{{ filter.label | escape }}-GTE"
+                                  {%- if filter.min_value.value -%}
+                                  {%- if uses_comma_decimals -%}
+                                  value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                  {%- else -%}
+                                  value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                                  {%- endif %}
+                                  {%- endif -%}
+                                  type="number"
+                                  placeholder="0"
+                                  min="0"
+                                  {%- if uses_comma_decimals -%}
+                                  max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                  {%- else -%}
+                                  max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                  {% endif %}
+                                >
+                            </div>
+                        </div>
+                    
+
+                        <div class="field">
+                          <label class="field__label" for="Filter-{{ filter.label | escape }}-LTE"> to </label>
+                          <div class="price__range__box">
+                          <span class="field-currency">{{ cart.currency.symbol }}</span>
+                          <input
+                            class="field__input"
+                            name="{{ filter.max_value.param_name }}"
+                            id="Filter-{{ filter.label | escape }}-LTE"
+                            {%- if filter.max_value.value -%}
+                              {%- if uses_comma_decimals -%}
+                                value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                              {%- else -%}
+                                value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
+                              {%- endif %}
+                            {%- endif -%}
+                            type="number"
+                            min="0"
+                            {%- if uses_comma_decimals -%}
+                              placeholder="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                              max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                            {%- else -%}
+                              placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                              max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                            {% endif %}
+                          >
+                        </div>
+                      </div>
+                      </div>
+                    </price-range>
+                  </div>
+                </collapsible-content>
+              </div>
+          {% endcase %}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="drawer__footer drawer__footer--no-top-padding ">
+      <button type="submit" class="button button--tertiary hide">Submit</button>
+      <button
+        type="button"
+        id="apply_filter"
+        class="button button--primary button--full"
+        data-action="close"
+      >
+        Apply Filter
+      </button>
+      <facet-remove class="button-wrapper d-flex justify-content-center w-50">
+        <a data-url="{{ results.url }}" data-action="clear-filters" class="button w-100">Clear All</a>
+      </facet-remove>
+    </div>
+  </form>
+</facet-filters>

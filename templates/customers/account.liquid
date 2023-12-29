@@ -1,0 +1,170 @@
+<div class="layout-main-content">
+  <div id="shopify-section-customers-account" class="shopify-section">
+    <div class="account__bg-image-container" style="background-color: #aab5b9;">
+      <img
+        src="//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867"
+        srcset="//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=48 48w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=85 85w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=90 90w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=112 112w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=256 256w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=320 320w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=480 480w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=640 640w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=750 750w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=828 828w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=1080 1080w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=1200 1200w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=1920 1920w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=2048 2048w,//municipal.com/cdn/shop/files/NEW-ACCOUNT.jpg?v=1677676867&amp;width=3840 3840w"
+        class="account__bg-image"
+        sizes="100vw"
+        loading="eager"
+        alt=""
+      >
+    </div>
+
+    <div class="account__layout" data-section-id="customers-account" data-section-type="customers-account">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="account__info-container account__info-container--thin-padding">
+            <div data-account-section="account">
+              <div id="customer_sidebar">
+                <div id="customer_detail" class="group">
+                  <h5 class="account__header account__customer-name">{{ customer.name }}</h5>
+
+                  <div class="account__info-buttons">
+                    <ul class="account__links">
+                      <li class="account__link-item">
+                        <a href="/account" class="account__link account__link--active" id="ac_active">
+                          Account Details
+                        </a>
+                      </li>
+                      <li class="account__link-item">
+                        <a href="/account?view=orders" class="account__link" id="order_active"> Order History </a>
+                      </li>
+                      <li class="account__link-item">
+                        <a href="/account/addresses" class="account__link "> Shipping Addresses </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="account__info-area" id="Account_details">
+                    <div class="account__info-group">
+                      <span class="account__info-label">Name</span>
+                      <span class="account__info-value"> {{ customer.name }} </span>
+                    </div>
+
+                    <div class="account__info-group">
+                      <span class="account__info-label">Email</span>
+                      <span class="account__info-value"> {{ customer.email }} </span>
+                    </div>
+
+                    <div class="account__info-group">
+                      <span class="account__info-label">Address</span>
+                      <span class="account__info-value">
+                        {{ customer.default_address.city }},
+
+                        {{ customer.default_address.country }}
+                      </span>
+                      <a href="/account/addresses#edit-7908880777355" class="account__info-edit-button">
+                        <div aria-hidden="">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            role="presentation"
+                            class="icon icon-edit"
+                            viewBox="0 0 16 16"
+                          >
+                            <g>
+                                <path id="Rectangle" d="M9.409,3.585L-0,12.994L-0,16.579L3.585,16.579L12.994,7.17L9.409,3.585ZM10.558,2.436L12.994,0L16.579,3.585L14.143,6.021L10.558,2.436Z" style="fill-rule:nonzero;"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="sr-only">Edit Address</div>
+                      </a>
+                    </div>
+
+                    <div class="account__info-group">
+                      <span class="account__info-label">Password</span>
+                      <span class="account__info-value"> {{ customer.password }} </span>
+                      <button class="account__info-edit-button" data-toggle-password="">
+                        <div aria-hidden="">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            role="presentation"
+                            class="icon icon-edit"
+                            viewBox="0 0 16 16"
+                          >
+                            <g>
+                                <path id="Rectangle" d="M9.409,3.585L-0,12.994L-0,16.579L3.585,16.579L12.994,7.17L9.409,3.585ZM10.558,2.436L12.994,0L16.579,3.585L14.143,6.021L10.558,2.436Z" style="fill-rule:nonzero;"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="sr-only">Reset Password</div>
+                      </button>
+                    </div>
+
+                    <div class="account__info-footer">
+                      <a href="/account/logout" class="btn btn-link">
+                        <small> Log Out </small>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="customer_orders" style="display:none">
+                {% if customer.orders.size != 0 %}
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="order_number">Order</th>
+                        <th class="date">Date</th>
+                        <th class="payment_status">Payment Status</th>
+                        <th class="fulfillment_status">Fulfillment Status</th>
+                        <th class="total">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for order in customer.orders %}
+                        <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
+                          <td>{{ order.name | link_to: order.customer_url }}</td>
+                          <td>
+                            <span class="note">{{ order.created_at | date: '%b %d, %Y' }}</span>
+                          </td>
+                          <td>
+                            <span class="status_{{ order.financial_status }}">{{ order.financial_status }}</span>
+                          </td>
+                          <td>
+                            <span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status }}</span>
+                          </td>
+                          <td>
+                            <span class="total money">{{ order.total_price | money }}</span>
+                          </td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+
+                {% else %}
+                  <p>You haven't placed any orders yet.</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentURL = window.location.href;
+      if (currentURL.includes("/account?view=orders")) {
+          document.getElementById('Account_details').style.display='none';
+          document.getElementById('customer_orders').style.display='block';
+
+
+          document.getElementById('ac_active').classList.remove("account__link--active");
+          document.getElementById('order_active').classList.add("account__link--active");
+      } else {
+
+          document.getElementById('Account_details').style.display='block';
+          document.getElementById('customer_orders').style.display='none';
+
+
+         document.getElementById('ac_active').classList.add("account__link--active");
+          document.getElementById('order_active').classList.remove("account__link--active");
+      }
+  });
+</script>

@@ -1,0 +1,75 @@
+<style>
+  #image-caption-template--15673559220363__165877744214a17f39 {
+    background-color: #121212;
+  }
+
+  #image-caption-template--15673559220363__165877744214a17f39 .image-caption__text {
+    color: #ffffff;
+  }
+
+</style>
+
+
+<div id="image-caption-template--15642962428043__165877744214a17f39" data-section-id="template--15642962428043__165877744214a17f39" class="image-caption" data-section-type="image-caption">
+  <div class="container-fluid-max">
+
+    
+
+{% if section.settings.image != blank %}
+<img src="{{ section.settings.image | img_url:"1265x" }}"
+      srcset="{{ section.settings.image | img_url:"1265x" }}"
+      class="image-caption__image"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+      
+        width="1265"
+   >
+    {% else %}
+<img src="{{ 'about-us placeholder.png' | asset_url }}"
+      srcset="{{ 'about-us placeholder.png' | asset_url }}"
+      class="image-caption__image"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+      
+        width="1265"
+   >
+  {% endif %}
+  {% if section.settings.bottom-text != blank %}
+  <p class="image-caption__text"><span style="font-size:14px">{{ section.settings.bottom-text }}</span></p>
+  {% endif %}
+
+
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Big_image",
+    "settings": [
+      {
+        
+           "type": "image_picker",
+           "id":"image",
+           "label": "Image"
+      },
+      {
+           "type": "text",
+           "id":"bottom-text",
+           "label": "Bottom Text"
+      }
+      
+    ],
+     "presets": [
+    {
+      "name": "Big_image"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

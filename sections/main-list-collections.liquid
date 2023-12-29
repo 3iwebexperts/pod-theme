@@ -1,0 +1,257 @@
+<style>
+  #{{ section.id }} .category-capsule--highlighted {
+    border-color: #a3ff00;
+  }
+
+  #{{ section.id }} .category-capsule--highlighted:hover {
+    background-color: #a3ff00;
+    color: #000000;
+  }
+</style>
+
+<div class="sticky_col_list" id="{{ section.id }}" data-section-type="featured-categories" id="product-grid">
+  <div class="featured-categories swiper" data-slideshow>
+    <div class="swiper-wrapper">
+      {% for collection in collections %}
+        {% if collection.products.size > 0 %}
+          <a
+            href="#{{ collection.title | handleize }}"
+            class="swiper-slide category-capsule  {% if collection.metafields.custom.heighlight_collection != blank %}  category-capsule--highlighted {% endif %} "
+            data-slide
+            data-target="{{ collection.title | handleize }}"
+            id="#{{ collection.title | handleize }}"
+          >
+            {{ collection.title }}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="featured-categories__navigation">
+      <span
+        class="featured-categories__navigation-area featured-categories__navigation-area--prev"
+        data-arrow-prev
+        aria-label="Scroll to prev slide"
+      ></span>
+      <span
+        class="featured-categories__navigation-area featured-categories__navigation-area--next"
+        data-arrow-next
+        aria-label="Scroll to next slide"
+      ></span>
+    </div>
+  </div>
+</div>
+
+{% assign visibleSections = 2 %}
+{% assign totalSections = collections.size %}
+<div class="lazy-section" data-section-handle="{{ collection.title | handleize }}">
+  {% for collection in collections %}
+    <section id="{{ collection.title | handleize }}" class="scroll_section">
+      {% if collection.products.size > 0 %}
+        {%- paginate collections by 2 -%}
+          <h2 class="hero__title h1" style="font-size:0px;">
+            {{ collection.title }}
+          </h2>
+          <div
+            class="{% if forloop.first %}collist_first_b{% endif %} hero container-fluid hero--vertical-center hero--horizontal-left hero--horizontal-left-m hero--vertical-bottom-m"
+            data-section-id="{{ section.id }}"
+            data-section-type="hero"
+          >
+            <style>
+                #hero-{{ section.id }} .hero__title {
+                color: #a3ff00;
+              }
+
+                #hero-{{ section.id }}.hero .hero__inner span  {
+                  color: #a3ff00;
+                }
+
+                @media (max-width: 992px) {
+
+
+                  #hero-{{ section.id }} .hero__title {
+                    color:#a3ff00;
+                  }
+
+                  #hero-{{ section.id }} .hero__highlight-text {
+                    color:#a3ff00;
+                  }
+                }
+            </style>
+            {% if collection.image != blank %}
+              <img
+                src="{{ collection.image | img_url:"1920x" }}"
+                srcset="{{ collection.image | img_url:"1920x" }}"
+                class="hero__bg"
+                sizes="100vw"
+                loading="lazy"
+                alt=""
+              >
+            {% else %}
+              <img
+                src="{{ 'banner_placeholder.png' | asset_url }}"
+                srcset="{{ 'banner_placeholder.png' | asset_url }}"
+                class="hero__bg"
+                sizes="100vw"
+                loading="lazy"
+                alt=""
+              >
+            {% endif %}
+
+            <div class="hero__inner col-20 col-lg-11">
+              <h2 class="hero__title h1">
+                {{ collection.title }}
+              </h2>
+
+              {% if collection.description != blank %}
+                <div class="hero__text p2">{{ collection.description }}</div>
+              {% endif %}
+              <div>
+                <a href="{{ collection.url }}" class="btn btn-white btn-white-m hero__btn">
+                  Shop {{ collection.title }}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- products list show -->
+          <div
+            id="{{ collection.id }}"
+            class="card-slider "
+            data-section-type="product-card-slider"
+            data-section-id="165781066364b1fa9f"
+          >
+            <style>
+              #{{ collection.id }} {
+                background-color: #f5f5f6;
+                color: #121212;
+              }
+
+              #{{ collection.id }} .product-card__add-to-cart {
+                color: #121212;
+                border-color: #121212;
+              }
+            </style>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="card-slider__heading">
+                  <div class="card-slider__info-container">
+                    <h2 class="card-slider__title h2">{{ collection.title }}</h2>
+
+                    <p class="card-slider__copy p3">{{ collection.description }}</p>
+                  </div>
+
+                  <div class="card-slider__cta-container">
+                    <a class="btn-link card-slider__button" href="{{ collection.url }}">Shop All</a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="row content-grid content-grid--1-col content-grid--md-2-col content-grid--lg-3-col content-grid--xl-4-col"
+                data-card-slider
+              >
+                {% for product in collection.products limit: 4 %}
+                  <div class="content-grid__item">
+                    {% include 'product_items', product: product %}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endpaginate %}
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>
+
+<div class="collection page-width grid-loader">
+  {%- if paginate.pages > 1 -%}
+    <input type="hidden" value="{{ paginate.next.url }}" data-next-link>
+    <input type="hidden" value="{{ paginate.pages }}" data-all-pages>
+    <input type="hidden" value="{{ paginate.current_page }}" data-this-page>
+    <input type="hidden" value="{{ collection.url }}" data-coll-url>
+    <div class="load-more_wrap">
+      <button class="btn js-load-more btn--primary hero__btn button ">
+        <span load-more-text>Load More</span>
+        <span class="hide" loader>
+          <img src="{{ 'loader.gif' | asset_url }}">
+        </span>
+      </button>
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  $(document).ready(function() {
+    function updateActiveLink() {
+        $('section').each(function() {
+            var sectionTop = $(this).offset().top - 50;
+            var sectionId = $(this).attr('id');
+            if ($(window).scrollTop() >= sectionTop) {
+                $('.sticky_col_list a').removeClass('active_tabs');
+                $('.sticky_col_list a[href="#' + sectionId + '"]').addClass('active_tabs');
+            }
+        });
+    }
+
+
+      $(".sticky_col_list a").on('click', function(event) {
+          if (this.hash !== "") {
+              event.preventDefault();
+
+              var hash = this.hash;
+
+              $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+              }, 800, function() {
+                  window.location.hash = hash;
+              });
+          }
+      });
+
+    updateActiveLink();
+    $(window).on('scroll', function() {
+        updateActiveLink();
+    });
+
+
+  });
+</script>
+{% comment %} on scroll load animation {% endcomment %}
+<script>
+    function reveal(item, wrapper) {
+    var verticalEdge   = wrapper.scrollTop() + wrapper.outerHeight(),
+        horizontalEdge = wrapper.scrollLeft() + wrapper.outerWidth();
+
+    item.each(function() {
+      if ((verticalEdge >= $(this).offset().top) &&
+          (horizontalEdge >= $(this).offset().left)) {
+            $(this).addClass('animate');
+          }
+    });
+  }
+
+  $(window).on("load scroll", function() {
+    reveal($('.scroll_section'), $(this));
+  });
+</script>
+
+{% schema %}
+ {
+   "name": "Main List Collection",
+   "settings": [],
+   "presets": [
+     {
+       "name": "Main List Collection"
+     }
+   ]
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

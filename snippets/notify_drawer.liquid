@@ -1,0 +1,73 @@
+<div id="drawer-container">
+  <div class="drawers-container-child">
+    <div class="drawer mkt-subscription__container notify_add">
+      <div class="drawer__inner mkt-subscription__inner">
+        <div class="drawer__header mkt-subscription__header">
+          <div class="drawer__header-title mkt-subscription__title">Notify</div>
+          <button class="drawer__close mkt-subscription__close notify_close">
+            <svg
+              enable-background="new 0 0 386.667 386.667"
+              height="512"
+              viewBox="0 0 386.667 386.667"
+              width="512"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentcolor"
+              class="icon icon-close"
+            >
+              <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"></path>
+            </svg>
+            <div class="sr-only">Close drawer</div>
+          </button>
+        </div>
+        <div class="drawer__body-contents mkt-subscription__body">
+          <div class="mkt-subscription__image-container frame frame--1x1">
+            <img
+              src=""
+              srcset=""
+              sizes="(max-width: 992px) 100vw, 560px"
+              loading="lazy"
+              alt=""
+              class="mkt-subscription__image frame__inner"
+            >
+          </div>
+          <div class="mkt-subscription__body-info">
+            Get notified when <span class="highlighted">Shoe</span> launches
+          </div>
+          {%- form 'contact', id: 'notify_form', class: 'drawer_notify_form' -%} 
+         <input type="hidden" id="coming_collection" name="contact[coming_collection]" value="Coming Collection">
+
+            <div class="minimal-input-box">
+              <input
+                name="contact[email]"
+                placeholder="What's your email?"
+                type="email"
+                required=""
+                class="mkt-subscription__input minimal-input-box__input"
+
+              ><button type="submit" class="mkt-subscription__submit minimal-input-box__submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="90"
+                  height="90"
+                  viewBox="0 0 90 90"
+                  fill="currentcolor"
+                  class="icon icon-arrow "
+                >
+                  <g fill="none" fill-rule="evenodd"><path d="M64.948 19l24.873 25.813L90 45 65.193 71l-6.682-7.003L71.863 50H0V40h71.866L58.511 26.004 64.948 19z"></path></g>
+                </svg>
+                <span class="icon-fallback-text">Submit</span>
+              </button>
+            </div>
+         {% endform %}
+          <div class="mkt-subscription__response-message"></div>
+          {% if section.settings.drawer_text != blank %}
+          <div class="mkt-subscription__footer-info">
+{{ section.settings.drawer_text }}
+          </div>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="drawer-backdrop notify_over"></div>
+  </div>
+</div>

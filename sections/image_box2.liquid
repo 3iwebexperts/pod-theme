@@ -1,0 +1,107 @@
+<style>
+  
+  #heading-media-template--15642962428043__16587784822d4c01e7 {
+    background-color: #121212;
+  }
+  
+
+  #heading-media-template--15642962428043__16587784822d4c01e7 .heading-media__title,
+  #heading-media-template--15642962428043__16587784822d4c01e7 .image-caption__text {
+    color: #ffffff;
+  }
+</style>
+
+
+<div id="heading-media-template--15642962428043__16587784822d4c01e7" data-section-id="template--15642962428043__16587784822d4c01e7" class="heading-media" data-section-type="heading-media">
+  <div class="container-fluid-max">
+    <div class="heading-media__columns">
+      <div class="heading-media__column">
+
+        
+
+{% if section.settings.image != blank %} 
+<img src="{{ section.settings.image | img_url: "1000x" }}"
+      srcset="{{ section.settings.image | img_url: "1000x" }}"
+      class="image-caption__image"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+      
+        width="1000"
+      
+      
+      >
+  {% endif %}
+  {% if section.settings.bottom_text %}
+  <p class="image-caption__text"><span style="font-size:14px">{{ section.settings.bottom_text }}</span></p>
+  {% endif %}
+
+
+      </div>
+      <div class="heading-media__column">
+
+        
+
+{% if section.settings.image2 != blank %}
+<img src="{{ section.settings.image2 | img_url: "791x" }}"
+      srcset="{{ section.settings.image2 | img_url: "791x" }}"
+      class="image-caption__image"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+      
+        width="791"
+      
+      
+      >
+  {% endif %}
+    {% if section.settings.bottom_text2 != blank %}
+    <p class="image-caption__text"><span style="font-size:14px">{{ section.settings.bottom_text2 }}</span></p>
+    {% endif %}
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image Box2",
+    "settings": [
+      {
+         "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+      },
+       {
+         "type": "text",
+           "id": "bottom_text",
+           "label": "Bottom_Text"
+      },
+      {
+         "type": "image_picker",
+           "id": "image2",
+           "label": "Image2"
+      },
+       {
+         "type": "text",
+           "id": "bottom_text2",
+           "label": "Bottom_Text2"
+      }
+      
+      
+    ],
+     "presets": [
+    {
+      "name": "Image Box2"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

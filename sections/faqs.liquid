@@ -1,0 +1,484 @@
+<main role="main" id="MainContent">
+  <div class="layout-main-content">
+    <div id="shopify-section-faq" class="shopify-section">
+      <style>
+        .minimal-hero__header,
+        .minimal-hero__subheader {
+          color: #ffffff;
+        }
+        .pill-menu__item {
+          color: #ffffff;
+          border-color: #ffffff;
+        }
+        .pill-menu__item:hover {
+          color: #0036eb;
+          background-color: #ffffff;
+        }
+
+
+
+        .minimal-hero {
+          background-color: #0036eb;
+        }
+      </style>
+      <div
+        class="layout-content-wrapper"
+        data-section-id="faq"
+        data-section-type="faq"
+      >
+        <div class="minimal-hero">
+          {% if section.settings.heading != blank %}
+            <h1 class="minimal-hero__header">{{ section.settings.heading }}</h1>
+          {% endif %}
+          {% if section.settings.subheading != blank %}
+            <div class="minimal-hero__subheader">{{ section.settings.subheading }}</div>
+          {% endif %}
+
+          <div class="pill-menu">
+      
+            {% for block in section.blocks %}
+              {% if block.settings.group_title != blank %}
+            <a href="#group-{{ block.settings.group_title | handleize  }}" class="btn pill-menu__item">
+                  {{- block.settings.group_title -}}
+                </a>
+              {% endif %}
+            {% endfor %}
+            {% if section.settings.headingcnt != blank %}
+              <a href="#group-contact" class="btn pill-menu__item">{{ section.settings.headingcnt }}</a>
+            {% endif %}
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="accordions " data-accordions>
+        {% for block in section.blocks %}
+          <dl class="accordion-group" data-accordion-group>
+            {% if block.settings.group_title != blank %}
+              <h2 id="group-{{ block.settings.group_title | handleize  }}" class="h3 accordion-group__header">{{ block.settings.group_title }}</h2>
+            {% endif %}
+            {% if block.settings.que1 != blank and block.settings.ans1 != blank %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-2"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que1 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+
+                <dd class="accordion__body" id="faq-2">
+                  {{ block.settings.ans1 }}
+                </dd>
+              </div>
+            {% endif %}
+            {% if block.settings.que2 != blank and block.settings.ans2 != blank %}
+              <div class="accordion " data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-3"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que2 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+                <dd class="accordion__body" id="faq-3">
+                  {{ block.settings.ans2 }}
+                </dd>
+              </div>
+            {% endif %}
+            {% if block.settings.que3 != blank and block.settings.ans3 != blank %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-4"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que3 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+                <dd class="accordion__body" id="faq-4">
+                  {{ block.settings.ans3 }}
+                </dd>
+              </div>
+            {% endif %}
+            {% if block.settings.que4 != blank and block.settings.ans4 %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-5"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que4 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+                <dd class="accordion__body" id="faq-5">
+                  {{ block.settings.ans4 }}
+                </dd>
+              </div>
+            {% endif %}
+            {% if block.settings.que5 != blank and block.settings.ans5 != blank %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-6"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que5 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+                <dd class="accordion__body" id="faq-6">
+                  {{ block.settings.ans5 }}
+                </dd>
+              </div>
+            {% endif %}
+            {% if block.settings.que6 != blank and block.settings.ans6 != blank %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-7"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que6 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+                <dd class="accordion__body" id="faq-7">
+                  {{ block.settings.ans6 }}
+                </dd>
+              </div>
+            {% endif %}
+            {% if block.settings.que7 != blank and block.settings.ans7 != blank %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-8"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que7 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+
+                <dd class="accordion__body" id="faq-8">
+                  {{ block.settings.ans7 }}
+                </dd>
+              </div>
+            {% endif %}
+
+            {% if block.section.que8 != blank and block.settings.ans8 != blank %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-9"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">Do you offer gift wrapping?</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+
+                <dd class="accordion__body" id="faq-9">
+                  {{ block.settings.ans8 }}
+                </dd>
+              </div>
+            {% endif %}
+            {% if block.settings.que9 and block.settings.ans9 != blank %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-10"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que9 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+
+                <dd class="accordion__body" id="faq-10">
+                  {{ block.settings.ans9 }}
+                </dd>
+              </div>
+            {% endif %}
+            {% if block.settings.que10 != blank and block.settings.ans10 != blank %}
+              <div class="accordion" data-accordion>
+                <dt>
+                  <button
+                    type="button"
+                    class="accordion__toggle"
+                    aria-controls="faq-11"
+                    aria-expanded="false"
+                    data-accordion-toggle
+                  >
+                    <span class="accordion__title">{{ block.settings.que10 }}</span>
+                    <span class="accordion__toggle-icon" aria-hidden="true" role="presentation"></span>
+                  </button>
+                </dt>
+
+                <dd class="accordion__body" id="faq-11">
+                  {{ block.settings.ans10 }}
+                </dd>
+              </div>
+            {% endif %}
+          </dl>
+        {% endfor %}
+
+        <dl class="accordion-group contact-title" data-accordion-group>
+          {% if section.settings.headingcnt != blank %}
+            <h2 id="group-contact" class="h3 accordion-group__header">{{ section.settings.headingcnt }}</h2>
+          {% endif %}
+          {% if section.settings['mail-id'] != blank %}
+            <div class="accordion" data-accordion>
+              <dt>
+                <div class="accordion__toggle">
+                  <span class="accordion__title">{{ section.settings['mail-id'] }}</span>
+                  <svg
+                    class="accordion__toggle-icon-arrow icon icon-arrow"
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 90 90"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                    <path fill="#121212" d="M64.948 19l24.873 25.813L90 45 65.193 71l-6.682-7.003L71.863 50H0V40h71.866L58.511 26.004 64.948 19z"></path>
+                    </g>
+                  </svg>
+                </div>
+              </dt>
+            </div>
+          {% endif %}
+
+          {% if section.settings['mail-id2'] != blank %}
+            <div class="accordion" data-accordion>
+              <dt>
+                <div class="accordion__toggle">
+                  <span class="accordion__title">{{ section.settings['mail-id2'] }}</span>
+                  <svg
+                    class="accordion__toggle-icon-arrow icon icon-arrow"
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 90 90"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                    <path fill="#121212" d="M64.948 19l24.873 25.813L90 45 65.193 71l-6.682-7.003L71.863 50H0V40h71.866L58.511 26.004 64.948 19z"></path>
+                      </g>
+                  </svg>
+                </div>
+              </dt>
+            </div>
+          {% endif %}
+        </dl>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+   $(document).ready(function() {
+  $('.pill-menu a').click(function(e) {
+
+    var targetHref = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(targetHref).offset().top
+    }, 5000);
+
+    e.preventDefault();
+  });
+});
+</script>
+
+{% schema %}
+  {
+    "name": "FAQ",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+      "label": "Heading"
+      },
+      {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub Heading"
+      },
+       {
+        "type": "text",
+        "id": "headingcnt",
+        "label": "Contact Heading"
+      },
+       {
+        "type": "richtext",
+        "id": "mail-id",
+        "label": "Mail 1"
+      },
+       {
+        "type": "richtext",
+        "id": "mail-id2",
+        "label": "Mail 2"
+      }
+
+
+    ],
+     "blocks": [
+     {
+       "name": "Group",
+       "type": "Group",
+       "settings": [
+
+
+
+         {
+           "type": "text",
+          "id": "group_title",
+          "label": "Group Title"
+         },
+         {
+           "type": "text",
+          "id": "que1",
+          "label": "Question 1"
+         },
+          {
+           "type": "richtext",
+          "id": "ans1",
+          "label": "Answer 1"
+         },
+           {
+           "type": "text",
+          "id": "que2",
+          "label": "Question 2"
+         },
+           {
+           "type": "richtext",
+          "id": "ans2",
+          "label": "Answer 2"
+         },
+           {
+           "type": "text",
+          "id": "que3",
+          "label": "Question 3"
+         },
+           {
+           "type": "richtext",
+          "id": "ans3",
+          "label": "Answer 3"
+         },
+           {
+           "type": "text",
+          "id": "que4",
+          "label": "Question 4"
+         },
+          {
+           "type": "richtext",
+          "id": "ans4",
+          "label": "Answer 4"
+         },
+          {
+           "type": "text",
+          "id": "que5",
+          "label": "Question 5"
+         },
+          {
+           "type": "richtext",
+          "id": "ans5",
+          "label": "Answer 5"
+         },
+          {
+           "type": "text",
+          "id": "que6",
+          "label": "Question 6"
+         },
+          {
+           "type": "richtext",
+          "id": "ans6",
+          "label": "Answer 6"
+         },
+            {
+           "type": "text",
+          "id": "que7",
+          "label": "Question 7"
+         },
+          {
+           "type": "richtext",
+          "id": "ans7",
+          "label": "Answer 7"
+         },
+            {
+           "type": "text",
+          "id": "que8",
+          "label": "Question 8"
+         },
+          {
+           "type": "richtext",
+          "id": "ans8",
+          "label": "Answer 8"
+         },
+            {
+           "type": "text",
+          "id": "que9",
+          "label": "Question 9"
+         },
+          {
+           "type": "richtext",
+          "id": "ans9",
+          "label": "Answer 9"
+         },
+            {
+           "type": "text",
+          "id": "que10",
+          "label": "Question 10"
+         },
+          {
+           "type": "richtext",
+          "id": "ans10",
+          "label": "Answer 10"
+         }
+      ]
+     }
+  ],
+     "presets": [
+  {
+    "name": "FAQ"
+  }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

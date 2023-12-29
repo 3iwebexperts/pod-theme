@@ -1,0 +1,66 @@
+<style>
+  #pullquote-template--15642962428043__1657980627a3dc3987 {
+    background-color: #121212; /* returns rgba(0,0,0,0) if set to "None" (i.e. transparent) */
+  }
+  #pullquote-template--15642962428043__1657980627a3dc3987 .pullquote__quote {color: #121212;}
+</style>
+<div id="pullquote-template--15642962428043__1657980627a3dc3987" data-section-id="template--15642962428043__1657980627a3dc3987" class=" pullquote-heading pullquote" data-section-type="pullquote">
+  <div class="pullquote__lining container-fluid-max">
+  
+    <blockquote class="pullquote__quote h1">
+       {% if section.settings.big_heading != blank %} 
+      <p>{{ section.settings.big_heading }}</p>
+         {% endif %}
+    </blockquote>
+     
+   
+      {% if section.settings.image != blank %}
+    <img src="{{ section.settings.image | img_url:"1534x" }}"
+      srcset="{{ section.settings.image | img_url: "1534x"}}"
+      class="pullquote_cite"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+       >
+    {% else %}
+       <img src="{{ 'placeholder2.png'| asset_url }}"
+      srcset="{{ 'placeholder2.png'| asset_url  }}"
+      class="pullquote_cite"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+       >
+      {% endif %}
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Pullaquote",
+    "settings": [
+      {
+            "type": "text",
+           "id":"big_heading",
+           "label": "Big Heading"
+      },
+    {
+       "type": "image_picker",
+           "id":"image",
+           "label": "Image"
+    }
+    ],
+    "presets": [
+    {
+      "name": "Pullaquote"
+    }
+  ]
+  
+    
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

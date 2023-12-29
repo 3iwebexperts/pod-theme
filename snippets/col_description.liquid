@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="col_desc row justify-content-center">
+    <div class="col-xl-22 col-lg-22 col-md-20 col-sm-22 col-22 collection-banner-inner-wrapper">
+      <div class="inner-desc" style="text-align:{{ section.settings.align_cont }} ;">
+        <div class="desctittle que_main_hading">
+          <h4>
+            About <span>{{ collection.title }}</span> Collection
+          </h4>
+        </div>
+        <div class="desccontent">
+          {% if collection.description.size > 360 %}
+            <div class="product-description-short">
+              {{ collection.description | truncate: 350 }} &nbsp;
+              <a class="readmore" href="javascript:void(0)">Read More</a>
+            </div>
+            <div class="product-description-full" style="display:none;">
+              {{ collection.description }}
+              <a class="readless" href="javascript:void(0)">Read Less</a>
+            </div>
+          {% else %}
+            {{ collection.description }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

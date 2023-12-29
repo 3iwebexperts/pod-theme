@@ -1,0 +1,223 @@
+<div id="shopify-section-{{ section.id }}" class="shopify-section">
+  <style>
+    #link-card-slider-{{ section.id }} .card-slider__grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  </style>
+
+  <div
+    id="link-card-slider-{{ section.id }}"
+    class="card-slider"
+    data-section-type="link-card-slider"
+    data-section-id="{{ section.id }}"
+  >
+    <style>
+      #link-card-slider-{{ section.id }} {
+        background-color: #121212;
+      }
+
+      #link-card-slider-{{ section.id }} {
+        color: #ffffff;
+      }
+    </style>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="card-slider__heading">
+          <div class="card-slider__info-container">
+            {% if section.settings.heading != blank %}
+              <h2 class="card-slider__title h2">
+                <span id="coming-soon">{{ section.settings.heading }}</span>
+              </h2>
+            {% endif %}
+            {% if section.settings.content != blank %}
+              <p class="card-slider__copy p3">{{ section.settings.content }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="row coming_soon swiper" data-slider>
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            {% if block.type == 'coming_col' %}
+              {% assign collection = collections[block.settings.collection] %}
+              <div class="swiper-slide" data-slide>
+                <div class="link-card">
+                  <div class="coming_col link-card__image-container frame frame--4x5">
+                    <a
+                      class="link-card__link"
+                      href="javascript:void(0);"
+                      aria-title="Notify Me"
+                      data-toggle-mkt-drawer
+                      data-product-name="Shoe"
+                      data-variable_key=""
+                    ></a>
+                    {% if collection.image != blank %}
+                      <img
+                        src="{{ collection.image | img_url: "600x" }}"
+                        srcset="/{{ collection.image | img_url: "600x" }}"
+                        class="frame__inner link-card__image"
+                        sizes="(max-width: 529px) 90vw, (max-width: 992px) 45vw, (max-width: 1399px) 30vw, 25vw"
+                        loading="lazy"
+                        alt="{{ collection.title }}"
+                      >
+                    {% else %}
+                      <img
+                        src="{{ 'placeholder.png' | asset_url }}"
+                        srcset="{{ 'placeholder.png' | asset_url }}"
+                        class="frame__inner link-card__image"
+                        sizes="(max-width: 529px) 90vw, (max-width: 992px) 45vw, (max-width: 1399px) 30vw, 25vw"
+                        loading="lazy"
+                        alt=""
+                      >
+                    {% endif %}
+              {% if block.settings.notify_text != blank %}
+                    <div class="link-card__bottom-text">
+                      <a
+                        href="javascript:void(0);"
+                        class="btn-link link-card__cta-label notify_drawer"
+                        data-toggle-mkt-drawer
+                        data-product-name="Shoe"
+                        data-variable_key=""
+                      >
+                        {{ block.settings.notify_text }}
+                      </a>
+                    </div>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.text != blank %}
+                    <div class="link-card__outer-text">
+                      <span style="color: #a3ff00">{{ collection.title }}</span> <br>
+                      {{ block.settings.text }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+          
+          {% for block in section.blocks %}
+            {% if block.type == 'product' %}
+              {% assign product = all_products[block.settings.product] %}
+              {% if product != blank %}
+          <div class="swiper-slide" data-slide>
+            <div class="link-card">
+              <div class="link-card__image-container frame frame--4x5">
+                <a class="link-card__link" href="{{ product.url }}" aria-title="Shop Now"></a>
+
+                <img
+                  src="{{ product.featured_image | img_url:'600x' }}"
+                  srcset="{{ product.featured_image | img_url:'600x' }}"
+                  class="frame__inner link-card__image"
+                  sizes="(max-width: 529px) 90vw, (max-width: 992px) 45vw, (max-width: 1399px) 30vw, 25vw"
+                  loading="lazy"
+                  alt=""
+                >
+
+                <div class="link-card__bottom-text">
+                  <a href="{{ product.url }}" class="btn-link link-card__cta-label"> Shop Now </a>
+                </div>
+              </div>
+{% if block.settings.text != blank %}
+              <div class="link-card__outer-text">
+                <span style="color: #a3ff00">{{ product.title }}</span> <br>
+                {{ block.settings.text }}
+              </div>
+  {% endif %}
+            </div>
+          </div>
+                {% endif %}
+          {% endif %}
+            {% endfor %}
+            
+        </div>
+      </div>
+      <div class="coming_soon swiper-pagination" data-scrollbar></div>
+      <div class="card-slider__arrow coming_soon_prev card-slider__arrow--prev" data-arrow-prev></div>
+      <div class="card-slider__arrow coming_soon_next card-slider__arrow--next" data-arrow-next></div>
+      {% render 'notify_drawer' %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Coming Soon Products",
+  "class":"main_coming_soon",
+  "settings": [
+         {
+            "type": "text",
+           "id":"heading",
+           "label": "Heading",
+           "default":"COMING SOON"
+         },
+         {
+            "type": "text",
+           "id":"content",
+           "label": "Content",
+           "default":"Don't miss out! Sign up for alerts on upcoming product drops."
+         },
+         {
+           "type": "richtext",
+           "id":"drawer_text",
+           "label": "Notify Drawer Text",
+           "default":"<p>By submitting your email you are agreeing to our<a href='#'>Terms of Service</a>and our.<br>You may unsubscribe at anytime.</p>"
+         }
+  ],
+     "blocks": [
+     {
+       "name": "Coming Collection",
+       "type": "coming_col",
+       "limit":3,
+       "settings": [
+         {
+            "type": "collection",
+           "id":"collection",
+           "label": "Collection"
+         },
+         {
+           "type": "text",
+           "id":"text",
+           "label": "Text",
+           "default":"COMING THIS FALL"
+         },
+         {
+           "type": "text",
+           "id":"notify_text",
+           "label": "Notify Text",
+           "default":"Notify Me"
+         }
+       ]
+     },
+     {
+       "name": "Product",
+       "type": "product",
+       "limit":1,
+       "settings": [
+         {
+            "type": "product",
+           "id":"product",
+           "label": "Product"
+         },
+         {
+           "type": "text",
+           "id":"text",
+           "label": "Text",
+           "default":"Available Now"
+         }
+       ]
+     }
+   ],
+  "presets": [
+    {
+      "name": "Coming Soon Products"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="{{ shop.locale }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon != blank -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {%- endif -%}
+
+    <!-- Title and description ================================================== -->
+    {% comment %}
+      <title>
+        EXECUTIVE RETAIL LTD.
+      </title>
+    {% endcomment %}
+
+    {%- capture seo_title -%}
+    {%- if request.page_type == 'search' and search.performed == true -%}
+      {{ 'general.search.heading' | t: count: search.results_count }}: {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+    {%- else -%}
+      {{ page_title }}
+    {%- endif -%}
+    {%- if current_tags -%}
+      {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {%- endif -%}
+    {%- if current_page != 1 -%}
+      &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    {%- endif -%}
+    {%- assign escaped_page_title = page_title | escape -%}
+    {%- unless escaped_page_title contains shop.name -%}
+      &ndash; {{ shop.name }}
+    {%- endunless -%}
+  {%- endcapture -%}
+    <title>{{ seo_title | strip }}</title>
+    {% comment %}
+    <meta name="description" content="Condolence Books, Book of Remembrance, Celebration Of Life Books, In Loving Memory Books, In Memory Books, Loose Leaf Books, Open Format Books, All Books, Other Products.">
+    <!-- Social meta ================================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Condolence Books, Book of Remembrance, Celebration Of Life Books, In Loving Memory Books, In Memory Books, Loose Leaf Books, Open Format Books, All Books, Other Products.">
+    <meta property="og:url" content="https://">
+    <meta property="og:description" content="Condolence Books, Book of Remembrance, Celebration Of Life Books, In Loving Memory Books, In Memory Books, Loose Leaf Books, Open Format Books, All Books, Other Products.">
+    <meta property="og:site_name" content="Angel &amp; Dove">
+    <meta name="twitter:card" content="summary">
+    <meta
+      name="twitter:title"
+      content="Condolence Books, Book of Remembrance, Celebration Of Life Books, In Loving Memory Books, In Memory Books, Loose Leaf Books, Open Format Books, All Books, Other Products."
+    >
+
+    <!-- Helpers ================================================== -->
+    <meta name="theme-color" content="#f3cac0">
+    <!-- CSS ================================================== -->
+
+    {% endcomment %}
+    <style>
+      @import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap';
+
+      @font-face {
+              font-family: 'SequelSans Body';
+              src: url(https://cdn.shopify.com/s/files/1/0600/6292/4982/files/sequel-sans-bold-body.woff?v=1694426119);
+              font-weight: 700;
+              font-style: normal;
+              font-display: swap;
+            }
+      @font-face {
+              font-family: 'SequelSans Body';
+              src: url(https://cdn.shopify.com/s/files/1/0600/6292/4982/files/sequel-sans-roman-body.woff?v=1694426118);
+              font-weight: 400;
+              font-style: normal;
+              font-display: swap;
+            }
+      @font-face {
+              font-family: 'SequelSans Body';
+              src: url(https://cdn.shopify.com/s/files/1/0600/6292/4982/files/sequel-sans-semi-bold-body.woff?v=1694426119);
+              font-weight: 600;
+              font-style: normal;
+              font-display: swap;
+            }
+      @font-face {
+              font-family: 'Sequel Sans Title';
+              src: url(https://cdn.shopify.com/s/files/1/0600/6292/4982/files/sequel-sans-bold-disp.woff?v=1694426119);
+              font-weight: 400;
+              font-style: normal;
+              font-display: swap;
+            }
+    </style>
+
+    <link href="{{ 'theme.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ 'custom.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ 'chosen.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ 'swiper-bundle.min.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {{ content_for_header }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" async="async"></script>
+  </head>
+
+  <body class="template-{{ request.page_type | handle }} {{ template.name }}">
+    <div class="layout-wrapper">
+      {% section 'header' %}
+
+      <main class="wrapper main-content" role="main" id="MainContent" tabindex="-1">
+        <div class="layout-main-content">
+          {{ content_for_layout }}
+        </div>
+      </main>
+
+      {% section 'footer' %}
+    </div>
+
+    <script src="{{ 'custom.js' | asset_url }}" type="text/javascript"></script>
+
+    {% section 'ajax-cart' %}
+
+    <!--
+      <div id="drawer-container">
+        <div class="all_drawers drawers-container-child">
+          <div class="drawer-backdrop null"></div>
+        </div>
+      </div>
+    -->
+
+    <div class="custom-overlay"></div>
+    <div class="custom-loader-overlay"><img src="{{ 'loader.gif' | asset_img_url }}" alt="loader" /></div>
+    {%- if template contains 'collection' -%}
+      <script src="{{ 'filter.js' | asset_url  }}"></script>
+    {%- endif -%}
+  
+{% include 'swymSnippet' %}
+
+<!-- PF EDT START -->
+<script type='text/javascript'>
+{%- if content_for_header contains 'shopify-product-customizer' -%}
+    {%- if product -%}
+        {%- if product.first_available_variant -%}
+            var pfSyncProductIdentity = {{ product.id | json}};
+            var pfProductId = {{ product.metafields.printful.is_synced | json }};
+            var pfEdt = {{ shop.metafields.printful.is_edt_enabled | json }};
+            var pfEdtTextColor = {{ shop.metafields.printful.edt_text_color | json }};
+            var pfEdtBackgroundColor = {{ shop.metafields.printful.edt_background_color | json }};
+            var pfEdtBorderColor = {{ shop.metafields.printful.edt_border_color | json }};  
+            var pfEdtUseDefaultStyling = {{ shop.metafields.printful.edt_default_style | json }};
+            var pfEdtTextAlignment = {{ shop.metafields.printful.edt_text_alignment | json }};
+            var pfEdtFlags = {
+                US: "{{ 'US.svg' | asset_url }}",CA: "{{ 'CA.svg' | asset_url }}",ES: "{{ 'ES.svg' | asset_url }}",LV: "{{ 'LV.svg' | asset_url }}",GB: "{{ 'GB.svg' | asset_url }}",DE: "{{ 'DE.svg' | asset_url }}",FR: "{{ 'FR.svg' | asset_url }}",AU: "{{ 'AU.svg' | asset_url }}",JP: "{{ 'JP.svg' | asset_url }}",NZ: "{{ 'NZ.svg' | asset_url }}",IT: "{{ 'IT.svg' | asset_url }}",BR: "{{ 'BR.svg' | asset_url }}",KR: "{{ 'KR.svg' | asset_url }}",NL: "{{ 'NL.svg' | asset_url }}",GB: "{{ 'GB.svg' | asset_url }}",US: "{{ 'US.svg' | asset_url }}",
+            };
+        {%- else -%}
+            var pfEdt = 0;
+        {%- endif -%}
+    {%- endif -%}
+{%- endif -%}
+</script>
+<!-- PF EDT END -->
+</body>
+</html>

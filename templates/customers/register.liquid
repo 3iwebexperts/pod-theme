@@ -1,0 +1,137 @@
+<div id="template">
+  <div id="shopify-section-customers-login" class="shopify-section">
+    <div class="account__bg-image-container" style="background-color: #adbebc;">
+      <img
+        src="//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868"
+        srcset="//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=48 48w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=85 85w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=90 90w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=112 112w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=256 256w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=320 320w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=480 480w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=640 640w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=750 750w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=828 828w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=1080 1080w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=1200 1200w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=1920 1920w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=2048 2048w,//municipal.com/cdn/shop/files/NEW-SIGNIN.jpg?v=1677676868&amp;width=3840 3840w"
+        class="account__bg-image"
+        sizes="100vw"
+        loading="eager"
+        alt=""
+      >
+    </div>
+
+    <div id="account__layout">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="account__info-container account__info-container--thin-padding">
+            <div id="customer">
+              <!-- Create Customer -->
+              <div id="create-customer">
+                <h2 class="account__header">Create Account</h2>
+                <div class="account__description">Sign up for quick checkout, order history and more.</div>
+
+                {% form 'create_customer' %}
+                  {{ form.errors | default_errors }}
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      value=""
+                      placeholder="First Name"
+                      name="customer[first_name]"
+                      id="first_name"
+                      class="form-control account-form__field"
+                      size="30"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      value=""
+                      placeholder="Last Name"
+                      name="customer[last_name]"
+                      id="last_name"
+                      class="form-control account-form__field"
+                      size="30"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      value=""
+                      placeholder="Email"
+                      name="customer[email]"
+                      id="email"
+                      class="form-control account-form__field"
+                      size="30"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      value=""
+                      placeholder="Password"
+                      name="customer[password]"
+                      id="password"
+                      class="form-control account-form__field"
+                      size="30"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      value=""
+                      placeholder="Confrim Password"
+                      name="customer[password]"
+                      id="CustomerPasswordConfirmation"
+                      class="form-control account-form__field"
+                      size="30"
+                    >
+                    <span
+                      data-password-validation-error-message=""
+                      class="form-password__error-message text-center p6 show"
+                    >
+                      Must be at least 6 characters with 1 symbol
+                    </span>
+                  </div>
+
+                  <div class="form-group form-group__checkboxes text-center account__address-checkbox-container">
+                    <div class="mt-1 custom-control custom-checkbox">
+                      <input
+                        class="custom-control-input"
+                        type="checkbox"
+                        name="customer[accepts_marketing]"
+                        value="true"
+                        id="AcceptsMarketing"
+                        checked=""
+                        data-gtm-form-interact-field-id="0"
+                      >
+                      <label class="custom-control-label p4" for="AcceptsMarketing">
+                        Email me with news and offers.
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group form-group__button form-group__button--small text-center">
+                    <div class="mb-2">
+                      <input type="submit" value="Sign Me Up" class="btn btn-primary">
+                    </div>
+                  </div>
+                {% endform %}
+                <div class="form-group mb-0">
+                  <div class="p6 text-center mb-3">
+                    By creating an account you agree with our <br>
+                    <a href="/pages/terms-of-service" class="link_color_black">Terms of Service</a> and
+                    <a href="/pages/privacy-policy" class="link_color_black">Privacy Policy</a>
+                  </div>
+
+                  <div class="text-center mt-1">
+                    <a data-hide-register-form="" href="/account/login" class="btn-link btn-small"
+                      >Already have an account? Sign In</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- /#create-customer -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,313 @@
+<link href="{{ 'product.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
+<script src="{{ 'product.js' | asset_url }}" async="async"></script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+<div id="shopify-section-product-new" class="shopify-section">
+  <div data-section-id="product-new" data-section-type="product">
+    <div class="container-fluid">
+      <div class="row product-container">
+        <div class="sticky-image col-lg-24" data-sticky-image="">
+          <div class="sticky-image__background-container hide-mobile">
+            <div class="sticky-image__background-image">
+              <img
+                src="{{ product.featured_image| img_url: 'large' }}"
+                srcset="{{ product.featured_image| img_url: 'large' }}"
+                class=""
+                loading="eager"
+                alt=""
+              >
+            </div>
+          </div>
+          <div class="sticky-image__info-container">
+            <a
+              href="{{ product.collections.first.url }}"
+              class="badge sticky-image__badge"
+              title="Go to collection T-Shirts"
+            >
+              {{ product.collections.first.title }}
+            </a>
+
+            <h1 class="sticky-image__title">{{ product.title }}</h1>
+
+            <div class="sticky-image__price" data-price="">
+              <div data-price-wrapper="">
+                <span data-product-price=""> {{ product.price | money }} </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail col-lg-24" data-product-detail="">
+          {% render 'product_info', current_variant: current_variant %}
+
+          <div id="vp" class="content-slider__container">
+            <div class="content-slider" data-section-type="content-slider">
+              <div
+                class="swiper cust_swip swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-watch-progress swiper-backface-hidden"
+                data-slideshow=""
+              >
+                <div class="swiper-wrapper">
+                  {% for block in section.blocks %}
+                    {% if block.type == 'text' %}
+                      <div
+                        class="swiper-slide"
+                        data-slide=""
+                      >
+                        <p class="content-slider__body-content">
+                          {{ block.settings.text }}
+                        </p>
+                        <div class="content-slider__button-container">
+                          {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                            <a href="{{ block.settings.button_url }}" class="btn btn-white content-slider__button">
+                              {{ block.settings.button_label }}
+                            </a>
+                          {% endif %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <div class="swiper-pagination cust_pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal ">
+                  <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                </div>
+              </div>
+            </div>
+            <div class="content-slider__bottom-color"></div>
+          </div>
+
+          <div class="value-prop">
+            <h2 class="value-prop__title">WHY WE MADE THE:</h2>
+
+            <div class="value-prop__body-content">
+              <p>
+                {{ product.description | newline_to_br }}
+              </p>
+            </div>
+          </div>
+
+          <div class="pdp-drawer-buttons-container">
+            {% if product.metafields.custom.features_details != blank %}
+              <button
+                class="pdp-drawer-button"
+                data-features-toggler=""
+                id="custom_features_drawer"
+              >
+                <span class="pdp-drawer-button__label"> Features &amp; Details </span>
+                <div class="pdp-drawer-button__icon">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-arrow"
+                    viewBox="0 0 90 90"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#121212" d="M64.948 19l24.873 25.813L90 45 65.193 71l-6.682-7.003L71.863 50H0V40h71.866L58.511 26.004 64.948 19z"></path>
+                    </g>
+                  </svg>
+                </div>
+                {% include 'feature_details_drawer' %}
+              </button>
+            {% endif %}
+            {% if section.settings.size_chart != blank and section.settings.size_chart.content != blank %}
+              <button class="pdp-drawer-button" data-fit-guide-toggler="" id="custom_sizing_drwer">
+                <span class="pdp-drawer-button__label"> Sizing </span>
+                <div class="pdp-drawer-button__icon">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-arrow"
+                    viewBox="0 0 90 90"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#121212" d="M64.948 19l24.873 25.813L90 45 65.193 71l-6.682-7.003L71.863 50H0V40h71.866L58.511 26.004 64.948 19z"></path>
+                    </g>
+                  </svg>
+                </div>
+                {% include 'size_chart' %}
+              </button>
+            {% endif %}
+
+            <button class="pdp-drawer-button" data-reviews-toggler="" id="custom_reviews_drawer">
+              <span class="pdp-drawer-button__label"> Reviews </span>
+
+              <div class="pdp-drawer-button__icon">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  class="icon icon-arrow"
+                  viewBox="0 0 90 90"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                      <path fill="#121212" d="M64.948 19l24.873 25.813L90 45 65.193 71l-6.682-7.003L71.863 50H0V40h71.866L58.511 26.004 64.948 19z"></path>
+                  </g>
+                </svg>
+              </div>
+            </button>
+            {% include 'pro_review' %}
+          </div>
+
+          <div id="qs" class="content-slider__container">
+            <div class="content-slider" data-section-type="content-slider">
+              <div class="swiper" data-slideshow="">
+                <div class="swiper-wrapper">
+                  {% for block in section.blocks %}
+                    {% if block.type == 'image_picker' %}
+                      <div class="swiper-slide" data-slide="">
+                        <div class="content-slider__image-container">
+                          <img
+                            src="{{ block.settings.content_image | img_url :"large" }}"
+                            srcset="{{ block.settings.content_image | img_url :"large" }}"
+                            class="content-slider__img"
+                            sizes="90px"
+                            loading="lazy"
+                            alt=""
+                          >
+                        </div>
+
+                        <span class="content-slider__title">{{ block.settings.content_heading }}</span>
+
+                        <p class="content-slider__body-content">
+                          {{ block.settings.content_text }}
+                        </p>
+
+                        <div class="content-slider__button-container">
+                          {% if block.settings.email_btn_label != blank and block.settings.email_btn_url != blank %}
+                            <a
+                              href="{{ block.settings.email_btn_url }}"
+                              class="btn btn-white content-slider__button"
+                            >
+                              {{ block.settings.email_btn_label }}
+                            </a>
+                          {% endif %}
+                          {% if block.settings.faq_btn_label != blank and block.settings.faq_btn_url != blank %}
+                            <a href=" {{ block.settings.faq_btn_url }}" class="btn btn-white content-slider__button">
+                              {{ block.settings.faq_btn_label }}
+                            </a>
+                          {% endif %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="content-slider__bottom-color"></div>
+          </div>
+
+          {% comment %} related code start {% endcomment %}
+          {% include 'product-recommendation' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Product",
+  "settings": [
+    {
+      "type":"header",
+      "content":"Size Chart"
+    },
+	{
+      "type": "page",
+      "id": "size_chart",
+      "label": "Select Size Chart Page"
+	}
+  ],
+"blocks": [
+			 {
+					"type": "text",
+					"name": "Content Slider",
+					"settings": [
+						         {
+									"id": "text",
+									"type": "text",
+									"label": "Text",
+                                    "default":"<strong>Free Shipping<br></strong>Free standard shipping on all orders over $80"
+								 },
+                                 {
+									"id": "button_label",
+									"type": "text",
+									"label": "Button Label"
+
+								 },
+						         {
+									"id": "button_url",
+									"type": "url",
+									"label": "Button URL"
+
+								 }
+              		]
+		},
+
+        {
+					"type": "image_picker",
+					"name": "Contact Us",
+                    "limit": 1,
+					"settings": [
+						         {
+									"id": "content_image",
+									"type": "image_picker",
+									"label": "Image"
+								 },
+                                 {
+									"id": "content_heading",
+									"type": "text",
+									"label": "Heading",
+                                   "default":"Got Questions?"
+
+								 },
+                                  {
+									"id": "content_text",
+									"type": "text",
+									"label": "Text",
+                                    "default":"Hit up our Customer Experience team! They are <strong>real people</strong> ready to help out."
+
+
+								 },
+                                  {
+									"id": "email_btn_label",
+									"type": "text",
+									"label": "Button Label",
+                                    "default": "Email Us"
+
+								 },
+						         {
+									"id": "email_btn_url",
+									"type": "url",
+									"label": "Button URL"
+
+								 },
+                                {
+									"id": "faq_btn_label",
+									"type": "text",
+									"label": "Button Label",
+                                    "default": "Read FAQ"
+
+								 },
+						         {
+									"id": "faq_btn_url",
+									"type": "url",
+									"label": "Button URL"
+
+								 }
+
+              		]
+		}
+]
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

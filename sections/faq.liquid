@@ -1,0 +1,74 @@
+<div class=" question_section">
+  <div class=" container-fluid que_container">
+    {% if section.settings.heading != blank %}
+      
+    <div class="que_main_hading">
+      <h4>{{ section.settings.heading }}</h4>
+    </div>
+      {% endif %}
+  <div class=" row justify-content-center question_box">
+    {% for block in section.blocks %}
+    <div class=" faq_box  col-xl-22 col-lg-22 col-md-20 col-sm-22 col-22 collection-banner-inner-wrapper questions">
+      <div class=" accordion  group question-and-answer" aria-expanded="false" is="accordion-disclosure">
+        {% if block.settings.question != blank %}
+      <div class="accordion__toggle bold que">
+       <span>{{block.settings.question }}</span> 
+      <span class=" circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+    </div>
+      {% endif %}
+     <div class=" accordion__content answers_content" style="display:none;" >
+      {% if block.settings.ans != blank %}
+       <div class="ansewers">
+         <p>{{ block.settings.ans }}</p>
+       </div>
+        {% endif %}
+  </div>
+      </div>  
+      </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+ 
+
+{% schema %}
+  {
+    "name": "FAQ",
+    "settings": [
+       {
+           "type": "text",
+           "id": "heading",
+           "label": "Heading"
+         }
+    ],
+    "presets": [
+    {
+      "name": "FAQ"
+    }
+  ],
+    "blocks": [
+     {
+       "name": "questions",
+       "type": "questions",
+       "settings": [
+         {
+           "type": "text",
+           "id": "question",
+           "label": "Question"
+         },
+          {
+           "type": "text",
+           "id": "ans",
+           "label": "Ansewer"
+         }
+       ]
+     }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

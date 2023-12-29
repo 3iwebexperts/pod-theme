@@ -1,0 +1,137 @@
+<div class="container-fluid look_p" id="shop-the-look-{{ section.id }}">
+  <div class="row">
+    <div class="card-slider__heading">
+      <div class="card-slider__info-container">
+        {% if section.settings.heading != blank %}
+          <h2 class="card-slider__title h2">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.subtext != blank %}
+          <div class=" look-text card-slider__copy p3">
+            {{ section.settings.subtext }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="shop-the-look-{{ section.id }}" class="card-slider">
+  <div
+    id="shop-the-look-{{ section.id }}"
+    class="shop-the-look"
+    data-section-type="shop-the-look"
+    data-section-id="shop-the-look"
+  >
+    <div class="swiper shop-the-look__looks-container look-{{ section.id }}" data-looks-container>
+      <div class="shop-the-look__slider swiper-wrapper" data-slider>
+        {% for block in section.blocks %}
+          {%- assign collection = collections[block.settings.collection] -%}
+
+          <div
+            class="shop-the-look__slide swiper-slide"
+            data-slide
+            data-collection="{{ collection.url | prepend: shop.url }}"
+          >
+            <div
+              class="look-card"
+              data-open-look-drawer
+            >
+              <div class="look-card__image-container frame frame--4x5">
+                {% if collection.image != blank %}
+                  <img
+                    src="{{ collection.image | img_url: "600x" }}"
+                    srcset="{{ collection.image | img_url: "600x" }}"
+                    class="look-card__image frame__inner"
+                    sizes="(max-width: 529px) 90vw, (max-width: 992px) 45vw, (max-width: 1399px) 30vw, 25vw"
+                    loading="lazy"
+                    alt="{{ collection.title }}"
+                  >
+                {% else %}
+                  <img
+                    src="{{ "placeholder.png" | asset_url }}"
+                    srcset="{{ "placeholder.png" | asset_url }}"
+                    class="look-card__image frame__inner"
+                    sizes="(max-width: 529px) 90vw, (max-width: 992px) 45vw, (max-width: 1399px) 30vw, 25vw"
+                    loading="lazy"
+                    alt="{{ collection.title }}"
+                  >
+                {% endif %}
+              </div>
+              <div class="look-card__text-container">
+                {% if block.settings.text != blank %}
+                  <div class="look-card__text">{{ block.settings.text }}</div>
+                {% endif %}
+
+                <span class="btn-link look-card__btn"> Shop Look </span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% include 'look_drawer' %}
+    <div class="swiper-pagination look_pagination"></div>
+    <div class="shop-the-look__arrow shop-the-look__arrow--prev swiper-button-prev" data-arrow-prev></div>
+    <div class="shop-the-look__arrow shop-the-look__arrow--next swiper-button-next" data-arrow-next></div>
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }}.custom_shop_look {
+    background-color: #393d49;
+  }
+
+  #shop-the-look-{{ section.id }} .card-slider__heading {
+    color: #ffffff;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Look Collection",
+  "class":"custom_shop_look",
+  "settings": [
+    {
+       "type": "text",
+        "id":"heading",
+        "label":"Heading"
+    },
+    {
+       "type": "richtext",
+        "id":"subtext",
+        "label":"Subtext"
+    }
+
+  ],
+ "blocks": [
+			 {
+					"type": "collection",
+					"name": "Collection",
+					"settings": [
+						         {
+									"id": "collection",
+									"type": "collection",
+									"label": "Collection"
+								 },
+						         {
+									"id": "text",
+									"type": "text",
+									"label": "Overlay Text",
+                                   "default": "@twincharlo"
+								 }
+              		]
+		}
+],
+   "presets": [
+      {
+        "name": "Look Collection"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

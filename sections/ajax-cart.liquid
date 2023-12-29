@@ -1,0 +1,212 @@
+<div data-section-id="ajax-cart" id="ajax_cart" data-section-type="ajax-cart">
+  <div class="ajax-cart-container" data-ajax-cart-container="">
+    {% if cart.item_count > 0 %}
+    <form action="/cart" method="post" class="ajax-cart-form" novalidate="" data-count="{{ cart.item_count }}">
+      <input name="section_id" type="hidden" value="ajax-cart">
+      <div class="ajax-cart__header">
+        <span class="ajax-cart__title">Bag</span>
+        <a href="#" class="ajax-cart__close" data-ajax-cart-close="">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon-close"
+            viewBox="0 0 386.667 386.667"
+          >
+            <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"></path>
+          </svg>
+        </a>
+      </div>
+      {% comment %}
+      <div
+        class="ajax-cart__shipping-bar-container"
+        data-threshold-container=""
+        data-threshold-value="8000"
+        data-in-progress-message="[value] away from FREE shipping in the U.S."
+        data-complete-message="You have free shipping on your order"
+      >
+        <div class="ajax-cart__shipping-bar-message" data-threshold-message="">
+          <span>$32.00</span> away from FREE shipping in the U.S.
+        </div>
+        <div class="ajax-cart__shipping-bar">
+          <div class="ajax-cart__shipping-bar-inner" data-threshold-bar="" style="width: calc(60%);"></div>
+        </div>
+      </div>
+      {% endcomment %}
+      <div class="ajax-cart__body" data-ajax-cart-body="">
+        <div class="ajax-cart-inner">
+          <h3 class="ajax-cart__list-title">Items:</h3>
+          <ul class="ajax-cart__list">
+            {% for line_item in cart.items %}
+              <li
+                class="ajax-cart__item "
+                data-key="{{ line_item.key }}"
+                data-qty="{{ line_item.quantity }}"
+                data-ajax-item=""
+              >
+                <div class="ajax-cart__item-image-wrapper frame frame--1x1">
+                  <img
+                    src="{{ line_item.image | img_url: "150x" }}"
+                    srcset="{{ line_item.image | img_url: "150x" }}"
+                    sizes="(max-width: 540px) 100px, 130px"
+                    class="ajax-cart__item-image"
+                  >
+                </div>
+                <div class="ajax-cart__item-info">
+                  <div class="ajax-cart__title-container">
+                    <a href="{{ line_item.url }}" class="ajax-cart__item-header">
+                      {{ line_item.product.title }}
+                    </a>
+                  </div>
+                  <ul class="ajax-cart__item-options">
+                    <li class="ajax-cart__item-option">
+                      {{ line_item.variant.title }}
+                    </li>
+                    {%- assign property_size = product.properties | size -%}
+                    {% if property_size > 0 %}
+                      {% for p in product.properties %}
+                        {%- assign first_character_in_key = p.first | truncate: 1, '' -%}
+                        {% unless p.last == blank or first_character_in_key == '_' %}
+                          <div>
+                            {{ p.first }}:
+                            {% if p.last contains '/uploads/' %}
+                              <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+                            {% else %}
+                              {{ p.last }}
+                            {% endif %}
+                          </div>
+                        {% endunless %}
+                      {% endfor %}
+                    {% endif %}
+                  </ul>
+                  <div class="ajax-item__footer">
+                    <div class="ajax-cart__item-price">
+                      <span class="ajax-cart__item-price">{{ line_item.original_line_price | money }}</span>
+                    </div>
+                    <div class="ajax-item__item-controls">
+                      <div class="ajax-item__quantity-adjuster" data-quantity-adjuster="">
+                        <button
+                          type="button"
+                          class="quantity-adjuster__decrement"
+                          data-decrement=""
+                          {% if line_item.quantity <= 1 %}
+                            disabled
+                          {% endif %}
+                        >
+                          -
+                        </button>
+                        <input
+                          class="quantity-adjuster__input"
+                          name="updates[]"
+                          type="number"
+                          value="{{ line_item.quantity }}"
+                          min="1"
+                          readonly
+                        >
+                        <button
+                          type="button"
+                          class="quantity-adjuster__increment"
+                          data-increment=""
+                          {% if line_item.variant.inventory_quantity <= line_item.quantity %}
+                            disabled
+                          {% endif %}
+                        >
+                          +
+                        </button>
+                      </div>
+                      <!-- <button class="ajax-cart__item-remove" data-ajax-cart-item-remove="">Remove</button> -->
+                      <cart-remove-button
+                        id="CartDrawer-Remove-{{ item.index | plus: 1 }}"
+                        data-index="{{ item.index | plus: 1 }}"
+                      >
+                        <button
+                          type="button"
+                          data-line-id="{{ line_item.url_to_remove }}"
+                          class="ajax-cart__item-remove"
+                          data-ajax-cart-item-remove=""
+                        >
+                          Remove
+                        </button>
+                      </cart-remove-button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% comment %}
+      <div class="ajax-cart__promo">
+        <p>Free Shipping Orders $80+ / Free Returns</p>
+      </div>
+      {% endcomment %}
+      <div class="ajax-cart__footer" data-ajax-cart-footer="">
+        <div class="ajax-cart__footer-top" data-ajax-cart-footer-top="">
+          <div class="ajax-cart__footer-row">
+            <p class="ajax-cart__footer-subtotal text-center u-fw-bold">
+              <span>Subtotal:</span> <span class="total_price">{{ cart.total_price | money }}</span>
+            </p>
+          </div>
+        </div>
+        <div class="ajax-cart__footer-bottom">
+          <div class="ajax-cart__footer-row">
+            <button type="submit" name="checkout" class="ajax-cart__footer-checkout btn btn-block btn-secondary">
+              Checkout
+            </button>
+          </div>
+          <div class="ajax-cart__footer-row text-center">
+            <button class="btn btn-link ajax-cart__continue-shopping-btn" data-ajax-cart-close="">
+              Continue Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    {% else %}
+      <div class="ajax-cart__header">
+        <span class="ajax-cart__title">Bag</span>
+        <a href="#" class="ajax-cart__close" data-ajax-cart-close="">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon-close"
+            viewBox="0 0 386.667 386.667"
+          >
+            <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="ajax-cart__footer" data-ajax-cart-footer="">
+        <div class="ajax-cart__footer-bottom">
+          <div class="ajax-cart__footer-row text-center">
+            <h2 class="ajax-cart__list-title">No items found!</h2>
+            <button class="btn btn-link ajax-cart__continue-shopping-btn" data-ajax-cart-close="">
+              Continue Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="ajax-cart-backdrop"></div>
+{% schema %}
+{
+  "name": "Ajax Cart",
+  "settings": [],
+       "presets": [
+  {
+    "name": "Ajax Cart"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

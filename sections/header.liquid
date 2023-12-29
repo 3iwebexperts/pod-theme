@@ -1,0 +1,1008 @@
+<div data-section-id="header-logo-center" data-section-type="header">
+  <header class="header is-fixed show-on-scroll" role="banner" data-header="">
+    <div class="header-container">
+      <div class="header-nav">
+        <div class="header-nav__menu">
+          <div class="header-nav__menu-item">
+            <a href="#" id="hamburger_menu" class="hamburger" data-mobile-menu-toggle="">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+              <span class="hamburger-text hide-on-mobile">Menu</span>
+            </a>
+          </div>
+          <div class="header-nav header-nav--center header-nav--logo">
+            {% if section.settings.image != blank %}
+              <a href="/" itemprop="url" class="header-logo">
+                <img
+                  src="{{ section.settings.image | img_url: "master" }}"
+                  alt="{{ section.settings.image.alt }}"
+                  class="header-logo__image"
+                >
+              </a>
+            {% endif %}
+          </div>
+          <div>
+            <div class="header-nav__menu-item" data-search-open-button="">
+              <svg
+                aria-hidden="true"
+
+                focusable="false"
+                role="presentation"
+                class="icon icon-search"
+                viewBox="0 0 33 34"
+              >
+                <g id="magnify-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Search-Icon" fill="#FFFFFF">
+                    <polygon id="Fill-1" points="29.1137219 33.3247229 20.0974919 24.3084929 17.9702219 22.1812229 21.7459019 18.4048529 32.8900919 29.5483529"></polygon>
+                    <polygon id="Fill-2" points="17.9698769 22.1810159 20.0971469 24.3082859 29.1133769 33.3245159 32.8897469 29.5488359 21.7462469 18.4046459"></polygon>
+                    <polygon id="Fill-3" points="17.9698769 22.1810159 20.0971469 24.3082859 29.1133769 33.3245159 32.8897469 29.5488359 21.7462469 18.4046459"></polygon>
+                    <path d="M21.8966669,15.1642679 C21.4260869,18.8647379 18.3990569,21.8924579 14.6978969,22.3630379 C12.083487,22.6921679 9.52703697,21.8248379 7.67990697,19.9777079 C5.83208698,18.1298879 4.96268698,15.5720579 5.29457698,12.960408 C5.76584698,9.25924797 8.79287697,6.23152798 12.494037,5.76163798 C12.856977,5.71540798 13.225437,5.69194798 13.588377,5.69194798 C15.8246669,5.69194798 17.9277869,6.56341798 19.5113369,8.14696797 C21.3591569,9.99478797 22.2285569,12.551928 21.8966669,15.1642679 M23.2055969,4.45270798 C20.2068569,1.45327799 16.0634069,0.0415379999 11.835087,0.579047998 C5.80793698,1.344948 0.877886997,6.27499798 0.111987,12.301458 C-0.424832999,16.5290879 0.986906997,20.6732279 3.98564699,23.6719679 C6.55589698,26.2422179 9.96863697,27.6574079 13.595967,27.6574079 C14.180397,27.6574079 14.7724169,27.6201479 15.3561569,27.5456279 C21.3833069,26.7790379 26.3133569,21.8489879 27.0792569,15.8232179 C27.6167669,11.596968 26.2050269,7.45213797 23.2055969,4.45270798" id="Fill-4"></path>
+                  </g>
+                </g>
+              </svg>
+              {% comment %}
+                <input
+                  type="search"
+                  name="q"
+                  spellcheck="false"
+                  class="custom_input_field header-search__input h5 sm:h4"
+                  aria-label="Search products"
+                  placeholder="Search Products"
+                >
+              {% endcomment %}
+              <span class="sr-only">Open search</span>
+            </div>
+
+            <div class="header-nav__menu-item">
+              <div class="cart_icon" data-ajax-cart-trigger="">
+                <div class="header-cart__badge" data-cart-badge="">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-bag"
+                    viewBox="0 0 30 33"
+                  >
+                    <g id="Artboard1" transform="matrix(0.872696,0,0,1,0,0)" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                      <g id="bag-icon" transform="matrix(1.14587,0,0,1,0,0)">
+                        <path d="M4.684,9.748C5.102,7.134 5.936,5.127 7.056,3.633C9.016,1.015 11.838,0 14.784,0C17.733,0 20.564,1.016 22.532,3.637C23.654,5.131 24.491,7.136 24.911,9.748L29.199,9.748L29.199,32.837L0.555,32.837L0.555,9.748L4.684,9.748ZM5.416,14.609L5.416,27.976L24.338,27.976L24.338,14.609L5.416,14.609ZM20.839,9.748L8.755,9.748C9.062,8.206 9.564,6.977 10.267,6.038C11.404,4.52 13.076,4.012 14.784,4.012C16.498,4.012 18.18,4.523 19.324,6.046C20.027,6.983 20.531,8.21 20.839,9.748Z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span
+                    class="header-cart__badge-count {% if cart.item_count > 0 %}has-items{% endif %}"
+                    data-cart-badge-count=""
+                  >
+                    {%- if cart.item_count > 0 -%}{{ cart.item_count }}{%- endif -%}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header__filler" data-header-filler="" style="height: 70px;"></div>
+  <div id="main_navigation">
+    <div class="navigation " style="top: 70px; height: calc(100% - 70px);">
+      <div class="navigation-body">
+        <div class="navigation-body__container">
+          <div class="navigation-categories swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+            <div class="swiper-wrapper tabs-list">
+              {% if section.settings.tab_title_1 != blank %}
+                <a
+                  href="#tab1"
+                  class="swiper-slide navigation-categories__button navigation-categories__button--active"
+                >
+                  {{- section.settings.tab_title_1 -}}
+                </a>
+              {% endif %}
+              {% if section.settings.tab_title_2 != blank %}
+                <a href="#tab2" class="swiper-slide navigation-categories__button">
+                  {{ section.settings.tab_title_2 -}}
+                </a>
+              {% endif %}
+              {% if section.settings.tab_title_3 != blank %}
+                <a href="#tab3" class="swiper-slide navigation-categories__button">
+                  {{ section.settings.tab_title_3 -}}
+                </a>
+              {% endif %}
+              {% if section.settings.tab_title_4 != blank %}
+                <a href="#tab4" class="swiper-slide navigation-categories__button">
+                  {{ section.settings.tab_title_4 -}}
+                </a>
+              {% endif %}
+              {% if section.settings.tab_title_5 != blank %}
+                <a href="#tab5" class="swiper-slide navigation-categories__button">
+                  {{ section.settings.tab_title_5 -}}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+          <div class="navigation-blocks">
+            {% if section.settings.tab_title_1 != blank %}
+              <div id="tab1" class="tab_inner active" style="display:block;">
+                <div data-shopify-editor-block="" class="card-grid">
+                  {% if section.settings.tab_grid_title_1 != blank %}
+                    <div class="card-grid__title">{{ section.settings.tab_grid_title_1 }}</div>
+                  {% endif %}
+                  <div class="card-grid__grid">
+                    {% for block in section.blocks %}
+                      {% if block.type == 'tab_one_grid' %}
+                        {% assign collection = block.settings.tab_1_collection %}
+                        {% if collection != blank %}
+                          <a
+                            href="{{ collection.url }}"
+                            class="image_card {% if block.settings.enable_highlight_tab1 != blank %}image_card--highlighted{% endif %}"
+                          >
+                            <div class="image-card__image-container frame frame--1x1">
+                              {% if collection.image != blank %}
+                                <img
+                                  src="{{ collection.image | img_url: 'master' }}"
+                                  srcset="{{ collection.image | img_url: 'master' }}"
+                                  sizes="(max-width: 450px) 50w, (max-width: 992px) 176px, 148px"
+                                  loading="lazy"
+                                  alt="{{ collection.title }}"
+                                  class="frame__inner"
+                                >
+                              {% else %}
+                                <img
+                                  src="{{ 'placeholder.png' | asset_url }}"
+                                  srcset="{{ 'placeholder.png' | asset_url }}"
+                                  sizes="(max-width: 450px) 50w, (max-width: 992px) 176px, 148px"
+                                  loading="lazy"
+                                  alt="{{ collection.title }}"
+                                  class="frame__inner"
+                                >
+                              {% endif %}
+                            </div>
+                            <div class="image-card__title">
+                              {% if block.settings.highlight_text_tab1 != blank -%}
+                                <b class="image-card__highlight-text">{{ block.settings.highlight_text_tab1 }}</b>
+                              {%- endif %}
+                              {{ collection.title }}
+                            </div>
+                          </a>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </div>
+                {% if section.settings.tab_button_caption_1 != blank and section.settings.tab_button_link_1 != blank %}
+                  <a
+                    href="{{ section.settings.tab_button_link_1 }}"
+                    target=""
+                    data-shopify-editor-block=""
+                    class="cta  cta--bottom-space"
+                    ><span class="cta__label"> {{ section.settings.tab_button_caption_1 }} </span>
+                    <div class="cta__icon"><span class="cta__arrow-icon"></span></div>
+                  </a>
+                {% endif %}
+                <div class="navigation-carousel">
+                  {% if section.settings.tab_slider_title_1 != blank %}
+                    <div class="navigation-carousel__title">{{ section.settings.tab_slider_title_1 }}</div>
+                  {% endif %}
+                  <div class="navigation-carousel__slider swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                      {% for block in section.blocks %}
+                        {% if block.type == 'tab_one_slider' %}
+                          <a
+                            href="{{ block.settings.tab_1_link }}"
+                            class="navigation-carousel__card swiper-slide"
+                            style="width: 256.111px; margin-right: 15px;"
+                          >
+                            <div class="navigation-carousel__image-container frame frame--16x9">
+                              {% if block.settings.tab_1_image != blank %}
+                                <img
+                                  src="{{ block.settings.tab_1_image | img_url:'master' }}"
+                                  srcset="{{ block.settings.tab_1_image | img_url:'master' }}"
+                                  sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                                  loading="lazy"
+                                  alt="{{ block.settings.tab_1_image.alt }}"
+                                  class="frame__inner navigation-carousel__image"
+                                >
+                              {% else %}
+                                <img
+                                  src="{{ 'placeholder.png' | asset_url }}"
+                                  srcset="{{ 'placeholder.png' | asset_url }}"
+                                  sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                                  loading="lazy"
+                                  alt="placeholder"
+                                  class="frame__inner navigation-carousel__image"
+                                >
+                              {% endif %}
+                            </div>
+
+                            {% if block.settings.tab_1_text != blank %}
+                              <div class="navigation-carousel__card-title">
+                                {{ block.settings.tab_1_text }}
+                              </div>
+                            {% endif %}
+                          </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    <div class="navigation-carousel__arrows-container">
+                      <div data-arrow-prev="true" class="navigation-carousel__arrow--prev swiper-button-disabled"></div>
+                      <div data-arrow-next="true" class="navigation-carousel__arrow--next"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% if section.settings.tab_title_2 != blank %}
+              <div id="tab2" class="tab_inner">
+                <div data-shopify-editor-block="" class="card-grid">
+                  {% if section.settings.tab_grid_title_2 != blank %}
+                    <div class="card-grid__title">{{ section.settings.tab_grid_title_2 }}</div>
+                  {% endif %}
+                  <div class="card-grid__grid">
+                    {% for block in section.blocks %}
+                      {% if block.type == 'tab_two_grid' %}
+                        {% assign collection = block.settings.tab_2_collection %}
+                        {% if collection != blank %}
+                          <a
+                            href="{{ collection.url }}"
+                            class="image_card {% if block.settings.enable_highlight_tab1 != blank %}image_card--highlighted{% endif %}"
+                          >
+                            <div class="image-card__image-container frame frame--1x1">
+                              <img
+                                src="{{ collection.image | img_url: 'master' }}"
+                                srcset="{{ collection.image | img_url: 'master' }}"
+                                sizes="(max-width: 450px) 50w, (max-width: 992px) 176px, 148px"
+                                loading="lazy"
+                                alt="{{ collection.title }}"
+                                class="frame__inner"
+                              >
+                            </div>
+                            <div class="image-card__title">
+                              {% if block.settings.highlight_text_tab1 != blank -%}
+                                <b class="image-card__highlight-text">{{ block.settings.highlight_text_tab1 }}</b>
+                              {%- endif %}
+                              {{ collection.title }}
+                            </div>
+                          </a>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </div>
+                {% if section.settings.tab_button_caption_2 != blank and section.settings.tab_button_link_2 != blank %}
+                  <a
+                    href="{{ section.settings.tab_button_link_2 }}"
+                    target=""
+                    data-shopify-editor-block=""
+                    class="cta  cta--bottom-space"
+                    ><span class="cta__label"> {{ section.settings.tab_button_caption_2 }} </span>
+                    <div class="cta__icon"><span class="cta__arrow-icon"></span></div>
+                  </a>
+                {% endif %}
+                <div class="navigation-carousel">
+                  {% if section.settings.tab_slider_title_2 != blank %}
+                    <div class="navigation-carousel__title">{{ section.settings.tab_slider_title_2 }}</div>
+                  {% endif %}
+                  <div class="navigation-carousel__slider swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                    <div
+                      class="swiper-wrapper"
+                      style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"
+                    >
+                      {% for block in section.blocks %}
+                        {% if block.type == 'tab_two_slider' %}
+                          <a
+                            href="{{ block.settings.tab_1_link }}"
+                            class="navigation-carousel__card swiper-slide"
+                            style="width: 256.111px; margin-right: 15px;"
+                          >
+                            <div class="navigation-carousel__image-container frame frame--16x9">
+                              {% if block.settings.tab_2_image != blank %}
+                                <img
+                                  src="{{ block.settings.tab_2_image | img_url:'master' }}"
+                                  srcset="{{ block.settings.tab_2_image | img_url:'master' }}"
+                                  sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                                  loading="lazy"
+                                  alt="{{ block.settings.tab_2_image.alt }}"
+                                  class="frame__inner navigation-carousel__image"
+                                >
+                              {% else %}
+                                <img
+                                  src="{{ 'placeholder.png' | asset_url }}"
+                                  srcset="{{ 'placeholder.png' | asset_url }}"
+                                  sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                                  loading="lazy"
+                                  alt="placeholder"
+                                  class="frame__inner navigation-carousel__image"
+                                >
+                              {% endif %}
+                            </div>
+
+                            {% if block.settings.tab_2_text != blank %}
+                              <div class="navigation-carousel__card-title">
+                                {{ block.settings.tab_2_text }}
+                              </div>
+                            {% endif %}
+                          </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    <div class="navigation-carousel__arrows-container">
+                      <div data-arrow-prev="true" class="navigation-carousel__arrow--prev swiper-button-disabled"></div>
+                      <div data-arrow-next="true" class="navigation-carousel__arrow--next"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% if section.settings.tab_title_3 != blank %}
+              <div id="tab3" class="tab_inner">
+                <div class="navigation-carousel">
+                  {% if section.settings.tab_slider_title_3 != blank %}
+                    <div class="navigation-carousel__title">{{ section.settings.tab_slider_title_3 }}</div>
+                  {% endif %}
+                  <div class="navigation-carousel__slider swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                    <div
+                      class="swiper-wrapper"
+                      style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"
+                    >
+                      {% for block in section.blocks %}
+                        {% if block.type == 'tab_three_slider' %}
+                          <a
+                            href="{{ block.settings.tab_3_link }}"
+                            class="navigation-carousel__card swiper-slide"
+                            style="width: 256.111px; margin-right: 15px;"
+                          >
+                            <div class="navigation-carousel__image-container frame frame--16x9">
+                              {% if block.settings.tab_3_image != blank %}
+                                <img
+                                  src="{{ block.settings.tab_3_image | img_url:'master' }}"
+                                  srcset="{{ block.settings.tab_3_image | img_url:'master' }}"
+                                  sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                                  loading="lazy"
+                                  alt="{{ block.settings.tab_3_image.alt }}"
+                                  class="frame__inner navigation-carousel__image"
+                                >
+                              {% else %}
+                                <img
+                                  src="{{ 'placeholder.png' | asset_url }}"
+                                  srcset="{{ 'placeholder.png' | asset_url }}"
+                                  sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                                  loading="lazy"
+                                  alt="placeholder"
+                                  class="frame__inner navigation-carousel__image"
+                                >
+                              {% endif %}
+                            </div>
+
+                            {% if block.settings.tab_3_text != blank %}
+                              <div class="navigation-carousel__card-title">
+                                {{ block.settings.tab_3_text }}
+                              </div>
+                            {% endif %}
+                          </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    <div class="navigation-carousel__arrows-container">
+                      <div data-arrow-prev="true" class="navigation-carousel__arrow--prev swiper-button-disabled"></div>
+                      <div data-arrow-next="true" class="navigation-carousel__arrow--next"></div>
+                    </div>
+                  </div>
+                </div>
+                {% for block in section.blocks %}
+                  {% if block.type == 'tab_three_image_text' %}
+                    <a
+                      href="{{ block.settings.tab_3_link }}"
+                      id="18c7c6df-1835-47e3-85f8-bd070170bb21"
+                      data-shopify-editor-block=""
+                      class="card-block   "
+                    >
+                      <div class="card-block__content">
+                        <div class="card-block__image-container frame frame--16x9">
+                          {% if block.settings.tab_3_image != blank %}
+                            <img
+                              src="{{ block.settings.tab_3_image | img_url: "master" }}"
+                              srcset="{{ block.settings.tab_3_image | img_url: "master" }}"
+                              sizes="(max-width: 450px) 90w, (max-width: 991px) 357px, 237px"
+                              loading="lazy"
+                              alt=""
+                              class="card-block__image frame__inner"
+                            >
+                          {% else %}
+                            <img
+                              src="{{ 'placeholder.png' | asset_url }}"
+                              srcset="{{ 'placeholder.png' | asset_url }}"
+                              sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                              loading="lazy"
+                              alt="placeholder"
+                              class="frame__inner navigation-carousel__image"
+                            >
+                          {% endif %}
+                        </div>
+                        <div class="card-block__body-container">
+                          {% if block.settings.tab_3_text != blank %}
+                            <div class="card-block__title">{{ block.settings.tab_3_text }}</div>
+                          {% endif %}
+                          {% if block.settings.tab_3_content != blank %}
+                            <div class="card-block__description">{{ block.settings.tab_3_content }}</div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if section.settings.tab_title_4 != blank %}
+              <div id="tab4" class="tab_inner">
+                <div id="3688f3d4-55b9-412c-9ed6-1ae8a88ead81" class="info-card__container">
+                  {% if section.settings.tab_customer_title != blank %}
+                    <h2 class="info-card__header">{{ section.settings.tab_customer_title }}</h2>
+                  {% endif %}
+                  <div class="info-card">
+                    <div class="info-card__image-container frame frame--1x1">
+                      {% if section.settings.tab_customer_image != blank %}
+                        <img
+                          src="{{ section.settings.tab_customer_image | img_url: "80x" }}"
+                          class="frame__inner info-card__image"
+                        >
+                      {% else %}
+                        <img
+                          src="{{ "placeholder.png" | asset_url }}"
+                          class="frame__inner info-card__image"
+                        >
+                      {% endif %}
+                    </div>
+                    {% if section.settings.cust_in_title != blank %}
+                      <h3 class="info-card__title">{{ section.settings.cust_in_title }}</h3>
+                    {% endif %}
+                    {% if section.settings.cust_in_content != blank %}
+                      <div>
+                        <p class="info-card__body">
+                          {{ section.settings.cust_in_content }}
+                        </p>
+                      </div>
+                    {% endif %}
+                    <div class="info-card__buttons-container">
+                      {% if section.settings.btn_1_caption != blank and section.settings.btn_1_link != blank %}
+                        <a href="{{ section.settings.btn_1_link }}" class="btn btn-white">
+                          {{- section.settings.btn_1_caption -}}
+                        </a>
+                      {% endif %}
+                      {% if section.settings.btn_2_caption != blank and section.settings.btn_2_link != blank %}
+                        <a href="{{ section.settings.btn_2_link }}" class="btn btn-white">
+                          {{- section.settings.btn_2_caption -}}
+                        </a>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+                {% for block in section.blocks %}
+                  {% if block.type == 'tab_four_buttons' %}
+                    {% if block.settings.tab_btn_caption_1 != blank and block.settings.tab_btn_link_1 != blank %}
+                      <a
+                        href="{{ block.settings.tab_btn_link_1 }}"
+                        target=""
+                        data-shopify-editor-block=""
+                        class="cta  "
+                      >
+                        <span class="cta__label"> {{ block.settings.tab_btn_caption_1 }} </span>
+                        <div class="cta__icon"><span class="cta__arrow-icon"></span></div>
+                      </a>
+                    {% endif %}
+                    {% if block.settings.tab_btn_caption_2 != blank and block.settings.tab_btn_link_2 != blank %}
+                      <a
+                        href="{{ block.settings.tab_btn_link_2 }}"
+                        target=""
+                        data-shopify-editor-block=""
+                        class="cta  "
+                      >
+                        <span class="cta__label"> {{ block.settings.tab_btn_caption_2 }} </span>
+                        <div class="cta__icon"><span class="cta__arrow-icon"></span></div>
+                      </a>
+                    {% endif %}
+                    {% if block.settings.tab_btn_caption_3 != blank and block.settings.tab_btn_link_3 != blank %}
+                      <a
+                        href="{{ block.settings.tab_btn_link_3 }}"
+                        target=""
+                        data-shopify-editor-block=""
+                        class="cta  "
+                      >
+                        <span class="cta__label"> {{ block.settings.tab_btn_caption_3 }} </span>
+                        <div class="cta__icon"><span class="cta__arrow-icon"></span></div>
+                      </a>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                <div class="navigation-carousel">
+                  {% if section.settings.tab_slider_title_4 != blank %}
+                    <div class="navigation-carousel__title">{{ section.settings.tab_slider_title_4 }}</div>
+                  {% endif %}
+                  <div class="navigation-carousel__slider swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                      {% for block in section.blocks %}
+                        {% if block.type == 'tab_four_slider' %}
+                          <a
+                            href="{{ block.settings.tab_4_link }}"
+                            class="navigation-carousel__card swiper-slide"
+                            style="width: 256.111px; margin-right: 15px;"
+                          >
+                            <div class="navigation-carousel__image-container frame frame--16x9">
+                              {% if block.settings.tab_4_image != blank %}
+                                <img
+                                  src="{{ block.settings.tab_4_image | img_url:'master' }}"
+                                  srcset="{{ block.settings.tab_4_image | img_url:'master' }}"
+                                  sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                                  loading="lazy"
+                                  alt="{{ block.settings.tab_4_image.alt }}"
+                                  class="frame__inner navigation-carousel__image"
+                                >
+                              {% else %}
+                                <img
+                                  src="{{ 'placeholder.png' | asset_url }}"
+                                  srcset="{{ 'placeholder.png' | asset_url }}"
+                                  sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                                  loading="lazy"
+                                  alt="placeholder"
+                                  class="frame__inner navigation-carousel__image"
+                                >
+                              {% endif %}
+                            </div>
+
+                            {% if block.settings.tab_4_text != blank %}
+                              <div class="navigation-carousel__card-title">
+                                {{ block.settings.tab_4_text }}
+                              </div>
+                            {% endif %}
+                          </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    <div class="navigation-carousel__arrows-container">
+                      <div data-arrow-prev="true" class="navigation-carousel__arrow--prev swiper-button-disabled"></div>
+                      <div data-arrow-next="true" class="navigation-carousel__arrow--next"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% if section.settings.tab_title_5 != blank %}
+              <div id="tab5" class="tab_inner">
+                <div class="navigation-form">
+                  <div class="navigation-form__log-in">
+                    <div class="navigation-form__header">
+                      <h6 class="navigation-form__title">Sign in:</h6>
+                      <p class="navigation-form__subtitle">Quick checkout, order history and more.</p>
+                    </div>
+                    <form
+                      method="post"
+                      action="/account/login"
+                      accept-charset="UTF-8"
+                      data-login-with-shop="true"
+                      data-gtm-form-interact-id="7"
+                    >
+                      <input type="hidden" name="form_type" value="customer_login"
+                      ><input type="hidden" name="utf8" value="✓">
+                      <div class="navigation-form__fields">
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            name="customer[email]"
+                            placeholder="Email"
+                            class="form-control navigation-form__field"
+                            data-gtm-form-interact-field-id="14"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <input
+                            type="password"
+                            name="customer[password]"
+                            placeholder="Password"
+                            class="form-control navigation-form__field"
+                            data-gtm-form-interact-field-id="15"
+                          >
+                        </div>
+                      </div>
+                      <div class="navigation-form__footer text-center">
+                        <button type="submit" class="btn btn-white navigation-form__button">Sign In</button
+                        ><button type="button" class="btn-link btn--small">Forgot Your Password?</button
+                        ><button type="button" class="btn-link navigation-form__link-button">Create Account</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="navigation-backdrop"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+     {
+           "type": "image_picker",
+            "id": "image",
+            "label": "Logo"
+      },
+         {
+           "type": "header",
+           "content":"Tab 1 Options"
+         },
+         {
+           "type": "text",
+           "id":"tab_title_1",
+           "label": "Tab 1 Main Title",
+           "default": "Men"
+         },
+         {
+           "type": "text",
+           "id":"tab_grid_title_1",
+           "label": "Tab 1 Grid Box Title",
+           "default": "SHOP BY CATEGORY"
+         },
+         {
+           "type": "text",
+           "id":"tab_slider_title_1",
+           "label": "Tab 1 Slider Title",
+           "default": "EXPLORE MORE"
+         },
+         {
+           "type": "text",
+           "id":"tab_button_caption_1",
+           "label": "Tab 1 Button Caption",
+           "default": "Shop All Men's Gear"
+         },
+         {
+           "type": "url",
+           "id":"tab_button_link_1",
+           "label": "Tab 1 Button Link"
+         },
+         {
+           "type": "header",
+           "content":"Tab 2 Options"
+         },
+         {
+           "type": "text",
+           "id":"tab_title_2",
+           "label": "Tab 2 Main Title",
+           "default": "Women"
+         },
+         {
+           "type": "text",
+           "id":"tab_grid_title_2",
+           "label": "Tab 2 Grid Box Title",
+           "default": "SHOP BY CATEGORY"
+         },
+         {
+           "type": "text",
+           "id":"tab_slider_title_2",
+           "label": "Tab 2 Slider Title",
+           "default": "EXPLORE MORE"
+         },
+         {
+           "type": "text",
+           "id":"tab_button_caption_2",
+           "label": "Tab 2 Button Caption",
+           "default": "Shop All Women's Gear"
+         },
+         {
+           "type": "url",
+           "id":"tab_button_link_2",
+           "label": "Tab 2 Button Link"
+         },
+         {
+           "type": "header",
+           "content":"Tab 3 Options"
+         },
+         {
+           "type": "text",
+           "id":"tab_title_3",
+           "label": "Tab 3 Main Title",
+           "default": "Featured"
+         },
+         {
+           "type": "text",
+           "id":"tab_slider_title_3",
+           "label": "Tab 2 Slider Title",
+           "default": "Latest"
+         },
+         {
+           "type": "header",
+           "content":"Tab 4 Options"
+         },
+         {
+           "type": "text",
+           "id":"tab_title_4",
+           "label": "Tab 4 Main Title",
+           "default": "Info"
+         },
+         {
+           "type": "text",
+           "id":"tab_slider_title_4",
+           "label": "Tab 4 Slider Title",
+           "default": "ABOUT US"
+         },
+         {
+           "type": "header",
+           "content":"Tab 4 Customer Service Box"
+         },
+         {
+           "type": "image_picker",
+           "id":"tab_customer_image",
+           "label": "Tab 4 Customer Box Image"
+         },
+         {
+           "type": "text",
+           "id":"tab_customer_title",
+           "label": "Tab 4 Customer Box Heading",
+           "default": "CUSTOMER SERVICE"
+         },
+         {
+           "type": "text",
+           "id":"cust_in_title",
+           "label": "Tab 4 Customer Box Title",
+           "default": "Got Questions?"
+         },
+         {
+           "type": "textarea",
+           "id":"cust_in_content",
+           "label": "Tab 4 Customer Box Description",
+           "default": "  Hit up our Customer Experience team! They are&nbsp;<strong class='highlighted'>real people</strong>&nbsp;ready to help out."
+         },
+         {
+           "type": "text",
+           "id":"btn_1_caption",
+           "label": "Button 1 Caption",
+           "default": "Email Us"
+         },
+         {
+           "type": "url",
+           "id":"btn_1_link",
+           "label": "Button 1 Link"
+         },
+         {
+           "type": "text",
+           "id":"btn_2_caption",
+           "label": "Button 2 Caption",
+           "default": "Read FAQ"
+         },
+         {
+           "type": "url",
+           "id":"btn_2_link",
+           "label": "Button 2 Link"
+         },
+         {
+           "type": "header",
+           "content":"Tab 5 Options"
+         },
+         {
+           "type": "text",
+           "id":"tab_title_5",
+           "label": "Tab 5 Main Title",
+           "default": "Account"
+         }
+  ],
+  "blocks": [
+     {
+       "name": "Tab 1 Grid Collection",
+       "type": "tab_one_grid",
+       "settings": [
+         {
+           "type": "collection",
+           "id":"tab_1_collection",
+           "label": "Collection"
+         },
+         {
+           "type": "checkbox",
+           "id":"enable_highlight_tab1",
+           "label": "Enable Highlight Collection",
+           "default": false
+         },
+         {
+           "type": "text",
+           "id":"highlight_text_tab1",
+           "label": "Highlight Text"
+         }
+       ]
+     },
+     {
+       "name": "Tab 2 Grid Collection",
+       "type": "tab_two_grid",
+       "settings": [
+         {
+           "type": "collection",
+           "id":"tab_2_collection",
+           "label": "Collection"
+         },
+         {
+           "type": "checkbox",
+           "id":"enable_highlight_tab1",
+           "label": "Enable Highlight Collection",
+           "default": false
+         },
+         {
+           "type": "text",
+           "id":"highlight_text_tab1",
+           "label": "Highlight Text"
+         }
+       ]
+     },
+     {
+       "name": "Tab 1 Slide Collection",
+       "type": "tab_one_slider",
+       "settings": [
+         {
+           "type": "text",
+           "id":"tab_1_text",
+           "label": "Text",
+           "default":"Bundle & Save"
+         },
+         {
+           "type": "url",
+           "id":"tab_1_link",
+           "label": "Link"
+         },
+         {
+           "type": "image_picker",
+           "id":"tab_1_image",
+           "label": "Image"
+         }
+       ]
+     },
+     {
+       "name": "Tab 2 Slide Collection",
+       "type": "tab_two_slider",
+       "settings": [
+         {
+           "type": "text",
+           "id":"tab_2_text",
+           "label": "Text",
+           "default":"Bundle & Save"
+         },
+         {
+           "type": "url",
+           "id":"tab_2_link",
+           "label": "Link"
+         },
+         {
+           "type": "image_picker",
+           "id":"tab_2_image",
+           "label": "Image"
+         }
+       ]
+     },
+     {
+       "name": "Tab 3 Slide Collection",
+       "type": "tab_three_slider",
+       "settings": [
+         {
+           "type": "text",
+           "id":"tab_3_text",
+           "label": "Text",
+           "default":"Bundle & Save"
+         },
+         {
+           "type": "url",
+           "id":"tab_3_link",
+           "label": "Link"
+         },
+         {
+           "type": "image_picker",
+           "id":"tab_3_image",
+           "label": "Image"
+         }
+       ]
+     },
+     {
+       "name": "Tab 4 Slide Collection",
+       "type": "tab_four_slider",
+       "settings": [
+         {
+           "type": "text",
+           "id":"tab_4_text",
+           "label": "Text",
+           "default":"Bundle & Save"
+         },
+         {
+           "type": "url",
+           "id":"tab_4_link",
+           "label": "Link"
+         },
+         {
+           "type": "image_picker",
+           "id":"tab_4_image",
+           "label": "Image"
+         }
+       ]
+     },
+     {
+       "name": "Tab 3 Image Text Block",
+       "type": "tab_three_image_text",
+       "settings": [
+         {
+           "type": "text",
+           "id":"tab_3_text",
+           "label": "Title",
+           "default":"Bundle & Save"
+         },
+         {
+           "type": "text",
+           "id":"tab_3_content",
+           "label": "Content",
+           "default":"Bundle & Save"
+         },
+         {
+           "type": "url",
+           "id":"tab_3_link",
+           "label": "Link"
+         },
+         {
+           "type": "image_picker",
+           "id":"tab_3_image",
+           "label": "Image"
+         }
+       ]
+     },
+     {
+       "name": "Tab 4 Buttons",
+       "type": "tab_four_buttons",
+       "limit": 1,
+       "settings": [
+         {
+           "type": "text",
+           "id":"tab_btn_caption_1",
+           "label": "Button Caption",
+           "default":"Account"
+         },
+        {
+           "type": "url",
+           "id":"tab_btn_link_1",
+           "label": "Button Link"
+        },
+         {
+           "type": "text",
+           "id":"tab_btn_caption_2",
+           "label": "Button Caption",
+           "default":"Gift Cards"
+         },
+        {
+           "type": "url",
+           "id":"tab_btn_link_2",
+           "label": "Button Link"
+        },
+         {
+           "type": "text",
+           "id":"tab_btn_caption_3",
+           "label": "Button Caption",
+           "default":"Returns & Exchanges"
+         },
+        {
+           "type": "url",
+           "id":"tab_btn_link_3",
+           "label": "Button Link"
+        }
+
+       ]
+     }
+   ],
+   "presets": [
+    {
+      "name": "Header"
+    }
+   ]
+
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

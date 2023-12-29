@@ -1,0 +1,220 @@
+<div
+  class="related-product-wrapper product-recommendations"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=5"
+>
+  {%- if recommendations.performed? and recommendations.products_count > 0 -%}
+    <div
+      id="product-card-slider-product-new"
+      class="card-slider card-slider--pdp"
+      data-section-type="product-card-slider"
+      data-section-id="product-new"
+    >
+      <style>
+        #product-card-slider-product-new {
+          background-color: #393d49;
+          color: #ffffff;
+        }
+
+        #product-card-slider-product-new .product-card__add-to-cart {
+          color: #ffffff;
+          border-color: #ffffff;
+        }
+      </style>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="card-slider__heading">
+            <div class="card-slider__info-container">
+              <h2 class="card-slider__title h2">YOU WILL LIKE THESE TOO</h2>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row swiper custom_card_swiper"
+          data-card-slider=""
+        >
+          <div
+            class="swiper-wrapper"
+          >
+            {%- for product in recommendations.products -%}
+              <div
+                class="swiper-slide"
+                data-card-slide=""
+              >
+                {% assign current_variant = product.selected_or_first_available_variant %}
+                <div id="product-card-{{ product.id }}" class="product-card " data-product-card>
+                  <a
+                    href="{{ current_variant.url }}"
+                    class="product-card__gallery"
+                    data-gallery-slider
+                    data-product-url="{{ product.url }}"
+                  >
+                    <div
+                      class="
+                        product-card__gallery-slide
+                        is-active
+                      "
+                      href="{{ current_variant.url }}"
+                      data-product-url="{{ product.url }}"
+                      data-gallery-slide
+                      data-image-selector="fern"
+                    >
+                      <div class="discount-badge" data-discount-badge></div>
+                      {% if current_variant.image != blank %}
+                        <img
+                          src="{{ current_variant.image | img_url: "1024x" }}"
+                          class="product-card__image"
+                          loading="lazy"
+                          alt=""
+                        >
+                      {% else %}
+                        <img
+                          src="{{ 'placeholder.png' | asset_url }}"
+                          class="product-card__image"
+                          loading="lazy"
+                          alt=""
+                        >
+                      {% endif %}
+                    </div>
+                  </a>
+                  <form target="/cart/add" class="product-card__content text-center">
+                    <a
+                      href="{{ current_variant.url }}"
+                      class="product-card__url"
+                      data-product-url="{{ product.url }}"
+                    ></a>
+                    {% unless product.has_only_default_variant %}
+                      <div class="product-option">
+                        <div class="product-option__swatch swiper" data-swatch-slider>
+                          <div class="swiper-wrapper">
+                            {% for option in product.options %}
+                              {% if option == 'Color' or option == 'color' %}
+                                {% assign index = forloop.index0 %}
+                                {% assign colorlist = '' %}
+                                {% assign color = '' %}
+                                {% for variant in product.variants %}
+                                  {% capture color %}
+              {{ variant.options[index] }}
+              {% endcapture %}
+                                  {% unless colorlist contains color %}
+                                    <label class="product-option__single-selector swiper-slide" data-swatch-slide>
+                                      <input
+                                        onclick="Vardetails(this);"
+                                        type="radio"
+                                        name="option1"
+                                        value="{{- color | escape -}}"
+                                        class="hide"
+                                        data-option-name="color"
+                                        data-product-option="option1"
+                                        data-option-value="{{- color | escape -}}"
+                                        {% if variant.available == true %}
+                                          checked="checked"
+                                        {% endif %}
+                                        data-var_url="{{ variant.url }}"
+                                        data-var_handle="{{ product.handle }}"
+                                        data-var_img="{{ variant.image | img_url:"1024x" }}"
+                                        data-index="option1"
+                                        data-available="{{ variant.available }}"
+                                        data-quantity="{{ variant.inventory_quantity }}"
+                                        data-single-option-selector
+                                      >
+
+                                      <div class="product-option__ui">
+                                        <img
+                                          src="{{ variant.image | img_url: "1024x" }}"
+                                          srcset="{{ variant.image | img_url: "1024x" }}"
+                                          class=""
+                                          sizes="(max-width: 992px) 15vw, 6vw"
+                                          loading="lazy"
+                                          alt="{{ variant.title }}"
+                                        >
+                                      </div>
+                                    </label>
+                                    {% capture tempList %}
+              {{colorlist | append: color | append: ' '}}
+              {% endcapture %}
+                                    {% assign colorlist = tempList %}
+                                  {% endunless %}
+                                {% endfor %}
+                              {% endif %}
+                            {% endfor %}
+                          </div>
+                          <div class="swiper-scrollbar product-option__scrollbar"></div>
+                        </div>
+                      </div>
+
+                      <span class="product-card__color-title" data-color-title data-color-index="option1">
+                        {%- for option in product.options_with_values -%}
+                          {% if option.name == 'Color' %}
+                            {%- for value in option.values -%}
+                              {{ value | escape }}
+                              {% break %}
+                            {% endfor %}
+                          {% endif %}
+                        {% endfor %}
+                      </span>
+                    {% endunless %}
+                    <h4 class="product-card__title">{{ product.title }}</h4>
+
+                    <div class="product-card__price-container">
+                      <s class="product-card__compare-price" data-compare-price> </s>
+                      <span class="product-price" data-product-price> {{ current_variant.price | money }} </span>
+                    </div>
+
+                    <input
+                      type="hidden"
+                      data-option-name="Size"
+                      data-single-option-selector
+                      data-drawer-field
+                      data-product-option="option2"
+                      data-option-index="option2"
+                      data-product-title="{{ product.title }}"
+                    >
+                    <input type="hidden" name="quantity" value="1">
+                    <input type="hidden" name="id">
+                  </form>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<script
+  type="text/javascript"
+>
+   const proRecommendationsSection = document.querySelector(".product-recommendations");
+   fetch(window.Shopify.routes.root +"recommendations/products?product_id={{product.id}}&limit=10&section_id=main-product&intent=related")
+     .then((response) => response.text())
+     .then((text) => {
+       const html = document.createElement("div");
+       html.innerHTML = text;
+       const pro_recommendations = html.querySelector(".product-recommendations");
+       if (
+         pro_recommendations &&
+         pro_recommendations.innerHTML.trim().length
+       ) {
+         proRecommendationsSection.innerHTML = pro_recommendations.innerHTML;
+       var contentSlider = new Swiper(".custom_card_swiper", {
+         autoHeight: true,
+         slidesPerView: 1,
+   });
+  if ($(".product-option__swatch") !== undefined) {
+     new Swiper(".product-option__swatch", {
+       loop: false,
+       slidesPerView: 5,
+       spaceBetween: 10,
+       scrollbar: {
+         el: ".product-option__scrollbar",
+         hide: false,
+       },
+     });
+   }
+
+       }
+     });
+</script>

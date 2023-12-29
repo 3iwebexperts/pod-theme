@@ -1,0 +1,111 @@
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% for option in product.options %}
+  {% if option == 'Size' or option == 'size' %}
+    {% assign index = forloop.index0 %}
+    {% assign sizelist = '' %}
+    {% assign size = '' %}
+
+    <div id="swatch_drawer">
+      <div class="drawers-container-child">
+        <div class="drawer product-option__drawer">
+          <div class="drawer__inner product-option__drawer-inner">
+            <div class="drawer__header">
+              <div class="drawer__header-title">Select<span data-option-name="true"> {{ option }}</span></div>
+              <a class="drawer__close">
+                <svg
+                  enable-background="new 0 0 386.667 386.667"
+                  height="512"
+                  viewBox="0 0 386.667 386.667"
+                  width="512"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentcolor"
+                  class="icon icon-close"
+                >
+                  <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"></path>
+                </svg>
+                <div class="sr-only">Close<span data-option-name="true"></span>drawer</div>
+              </a>
+            </div>
+            <div data-drawer-body="true" class="drawer__body-contents">
+              <div>
+                {% for variant in product.variants %}
+                  {% if current_variant.option1 == variant.option1 %}
+                    {% capture size %}{{ variant.options[index] }}{% endcapture %}
+                    {% unless sizelist contains size %}
+                      <label class="product-option__single-selector">
+                        <input
+                          type="radio"
+                          name="option2"
+                          data-variant-id="{{ variant.id }}"
+                          data-final-sale-message="Not eligible for returns or exchanges."
+                          class="hide"
+                          value="{{ size | escape }}"
+                          {%- if variant.available == false -%}
+                            disabled
+                          {%- endif -%}
+                        >
+                        <div data-option-ui="true" class="product-option__ui">
+                          <div class="product-option__ui-group-corner">
+                            <div class="product-option__ui-checkmark">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="15"
+                                height="10.941"
+                                viewBox="0 0 15 10.941"
+                                fill="currentcolor"
+                                class="icon icon-checkmark "
+                              >
+                                <path d="M13.257,0C10.881,2.383,8.133,5.123,5.676,7.585L1.6,4.128,0,6.011l4.936,4.2.871.733.8-.8C9.24,7.5,12.365,4.386,15,1.744Z"></path>
+                              </svg>
+                            </div>
+                            <div class="product-option__ui-label">{{ size }}</div>
+                          </div>
+                          <div class="product-option__ui-group-middle">
+                            <div class="product-option__ui-availability">
+                              {%- if variant.available == true -%}Available {% else %} Sold Out{%- endif -%}
+                            </div>
+                          </div>
+                          <div class="product-option__ui-group-corner">
+                            <div class="product-option__ui-quantity"></div>
+                          </div>
+                        </div>
+                      </label>
+                      {% capture tempList %}{{sizelist | append: size | append: ' '}}{% endcapture %}
+                      {% assign sizelist = tempList %}
+                    {% endunless %}
+                  {% endif %}
+                {% endfor %}
+                <div class="btn-container text-center" style="margin-top: 10px;">
+                  <a
+                    href="/products/origin-superblend-t-shirt?variant=41519008579723#fitGuide"
+                    class="btn-link product__size-guide-button p4"
+                  >
+                    Need help with sizing?
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-backdrop"></div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Swatch Drawer",
+     "presets": [
+    {
+      "name": "Swatch Drawer"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

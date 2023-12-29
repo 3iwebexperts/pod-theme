@@ -1,0 +1,235 @@
+<div class="layout-content-wrapper" data-section-id="page-contact" data-section-type="page-contact">
+  <div class="contact">
+    <div class="container-fluid">
+      {% form 'contact', id: 'contact_page', class: 'contact-form' %}
+        <div class="row justify-content-center row-adjusted">
+          <div class="col-xl-22 col-lg-22 col-md-20 col-sm-22 col-22">
+            <div class="contact__banner-container"></div>
+            <div class="row justify-content-center">
+              <div class="contact__titles-container col-xl-20 col-lg-20 col-md-24 col-sm-24 col-24">
+                {% if section.settings.title != blank %}
+                  <span class="h5"> {{ section.settings.title }} </span>
+                {% endif %}
+                {% if section.settings.heading != blank %}
+                  <h1>{{ section.settings.heading }}</h1>
+                {% endif %}
+                {% if section.settings.sub_text != blank %}
+                  <div class="p2">
+                    {{ section.settings.sub_text }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="contact__content">
+              <div class="row justify-content-center">
+                <div class="contact__links-container col-xl-7 col-lg-7 col-md-24 col-sm-24 col-24">
+                  <ul class="contact__link-list">
+                    {% for block in section.blocks %}
+                      {% if block.settings.name_field != blank %}
+                        <li class="contact__link-item">
+                          <span class="h6 contact__link-label">{{ block.settings.name_field }}</span>
+                          {% if block.settings.link_text != blank and block.settings.name_field_link != blank %}
+                            <a class="p2" href="{{ block.settings.name_field_link }}">{{ block.settings.link_text }}</a>
+                          {% endif %}
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                    {% if section.settings.contact_item != blank %}
+                      <li class="contact__link-item">
+                        <span class="h6 contact__link-label">{{ section.settings.contact_item }}</span>
+                        {% if section.settings.contact_text != blank %}
+                          <p2 class="p2"> {{ section.settings.contact_text }}</p2>
+                        {% endif %}
+                      </li>
+                    {% endif %}
+
+                    {% comment %}
+                      <li class="contact__link-item">
+                        <span class="h6 contact__link-label">Email</span>
+                        <p2 class="p2"> hello@municipal.com </p2>
+                      </li>
+                    {% endcomment %}
+                  </ul>
+                </div>
+
+                <div class="contact__form-container col-xl-17 col-lg-17 col-md-24 col-sm-24 col-24">
+                  {%- if form.errors -%}
+                    <small class="newsletter-form__message form__message" id="ContactFooter-error">
+                      {{- form.errors.translated_fields.email | capitalize }}
+                      {{ form.errors.messages.email -}}
+                    </small>
+                  {%- endif -%}
+                  {%- if form.posted_successfully? -%}
+                    <div class="alert alert-success">
+                      Thanks for contacting us. We'll get back to you as soon as possible.
+                    </div>
+                  {% endif %}
+                  <div class="contact__form-input-container">
+                    <label class="h5 contact__form-label" for="contact__form-name">Name*</label>
+                    <input
+                      class="contact__form-input"
+                      type="text"
+                      name="contact[name]"
+                      id="contact__form-name"
+                      placeholder="Name"
+                      value=""
+                      required
+                    >
+                  </div>
+
+                  <div class="contact__form-input-container">
+                    <label class="h5 contact__form-label" for="contact__form-email">Email*</label>
+                    <input
+                      class="contact__form-input"
+                      type="email"
+                      name="contact[email]"
+                      id="contact__form-email"
+                      placeholder="Email"
+                      value=""
+                      spellcheck="false"
+                      autocomplete="off"
+                      autocapitalize="off"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <div class="contact__form-input-container">
+                      <label class="h5 contact__form-label" for="contact__form-subject-select">Subject*</label>
+                      <div class="dropdown">
+                        <select
+                          class="contact__form-input form-control"
+                          id="contact__form-subject-select"
+                          name="contact[reason]"
+                        >
+                          <option value="Product Question">Product Question</option>
+                          <option value="Order Status">Order Status</option>
+                          <option value="Return Status">Return Status</option>
+                          <option value="General Questions">General Questions</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact__form-input-container contact__form-message-container">
+                    <label class="h5 contact__form-label" for="contact__form-message">Message*</label>
+                    <textarea
+                      rows="10"
+                      name="contact[body]"
+                      id="contact__form-message"
+                      class="contact__form-input contact__form-input--message"
+                      placeholder="What&#39;s on your mind?"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="contact__form-submit-container-mobile">
+                    <button type="submit" class="btn btn-primary contact__form-submit">Send Message</button>
+                    <!--
+                      <input
+                        type="submit"
+                        class="btn btn-primary contact__form-submit"
+                        form="contact_form"
+                        value="Send Message"
+                      >
+                    -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-22 col-lg-22">
+            <div class="row justify-content-center">
+              <div class="contact__form-submit-container-desktop offset-xl-8 offset-lg-8 col-xl-16 col-lg-16">
+                <button type="submit" class="btn btn-primary contact__form-submit">Send Message</button>
+                <!--
+                  <input
+                    type="submit"
+                    class="btn btn-primary contact__form-submit"
+                    form="contact_form"
+                    value="Send Message"
+                  >
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Contact form",
+  "settings": [
+
+      {
+         "type": "text",
+        "id": "title",
+      "label": "Title"
+      },
+     {
+        "type": "text",
+        "id": "heading",
+      "label": "Heading"
+      },
+     {
+        "type": "richtext",
+        "id": "sub_text",
+      "label": "Sub Text"
+      },
+     {
+        "type": "text",
+        "id": "contact_item",
+      "label": "Contact Item"
+      },
+     {
+        "type": "text",
+        "id": "contact_text",
+      "label": "Contact Text"
+      }
+ ],
+   "blocks": [
+     {
+       "name": " Contact Item",
+       "type": "contactitem",
+       "settings": [
+         {
+           "type": "text",
+           "id": "name_field",
+           "label": "Name Field"
+         },
+         {
+           "type": "text",
+           "id": "link_text",
+           "label": "Link Text"
+         },
+         {
+           "type": "url",
+           "id": "name_field_link",
+           "label": "Name Link "
+         }
+
+       ]
+     }
+  ],
+
+
+    "presets": [
+  {
+    "name": "Contact Form"
+  }
+]
+
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

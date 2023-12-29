@@ -1,0 +1,76 @@
+<div class="icons_inner card-slider">
+  {% for block in section.blocks %}
+   
+  <div class="icon_item">
+    {% if block.settings.image != blank  %}
+    <div class="icon_img">
+      <div
+        class="backimg"
+        style="background-image:url({{ block.settings.image | img_url:"80x" }})"
+      >
+        <svg class="transparent_svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+          <rect class="cls-1" x="0.5" y="0.5" width="24" height="24"></rect>
+        </svg>
+      </div>
+    </div>
+    {% endif %}
+    <div class="icon_txt">
+      <div class="prose">
+      {% if block.settings.heading != blank %}
+        <p class="h6">{{ block.settings.heading }}</p>
+        {% endif %}
+        {% if block.settings.subtext != blank %}
+        <p class="icn_txt">{{ block.settings.subtext }}</p>
+        {% endif %}
+      </div>
+    </div>
+   </div>
+  {% endfor %}
+  
+  
+  
+</div>
+{% schema %}
+{
+  "name": "Icon with Text",
+  "class":"c_icon_text",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Icon with Text Box"
+    }
+  ],
+   "blocks": [
+     {
+       "name": "Icon With Text",
+       "type": "Icon_text",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id":"image",
+           "label": "Icon"
+         },
+         {
+            "type": "text",
+           "id":"heading",
+           "label": "Heading"
+         },
+         {
+           "type":"text",
+           "id":"subtext",
+           "label":"Subtext"
+         }
+        
+       ]
+     }
+   ]
+   
+  
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
