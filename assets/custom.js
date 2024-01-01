@@ -174,7 +174,7 @@ function common_functions() {
       },
     },
   });
-   new Swiper(".product-option__swatch", {
+   new Swiper(".custSwip", {
        loop: false,
        autoHeight: true,
        slidesPerView: 1,
