@@ -18,10 +18,10 @@
     >
       <div class="discount-badge" data-discount-badge></div>
   
-      {% if current_variant.image != blank %}
+      {% if product.featured_image != blank %}
         
         <img
-          src="{{ current_variant.image | img_url: "1024x" }}"
+          src="{{ product.featured_image | img_url: "1024x" }}"
           class="product-card__image"
           loading="lazy"
           alt=""
