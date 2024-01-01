@@ -1,10 +1,5 @@
 {
   "sections": {
-    "collection_banner": {
-      "type": "collection_banner",
-      "settings": {
-      }
-    },
     "aaad0ddd-f269-467f-9f75-6fb5af4a79cc": {
       "type": "main-list-collections",
       "settings": {
@@ -12,7 +7,6 @@
     }
   },
   "order": [
-    "collection_banner",
     "aaad0ddd-f269-467f-9f75-6fb5af4a79cc"
   ]
 }
