@@ -175,14 +175,14 @@ function common_functions() {
     },
   });
   
-  // new Swiper(".custSwip",{
-  //   slidesPerView: 1,
-  //   autoHeight: true,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  // });
+  new Swiper(".custSwip",{
+    slidesPerView: 1,
+    autoHeight: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
   new Swiper(".feature_card_slider", {
     // slidesPerView: 4,
