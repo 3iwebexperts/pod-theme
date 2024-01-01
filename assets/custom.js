@@ -176,7 +176,6 @@ function common_functions() {
   });
   
   var contentSlider = new Swiper(".cust_swip",{
-  
     slidesPerView: 1,
     autoHeight: true,
     pagination: {
