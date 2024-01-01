@@ -1596,7 +1596,7 @@ p {
   .page-text-only ul > li,
   .page-text-only__content p,
   .page-text-only__header p {
-    font-size: 27px;
+    font-size: 22px;
     line-height: 38px;
   }
 }
