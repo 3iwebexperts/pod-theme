@@ -175,7 +175,7 @@ function common_functions() {
     },
   });
   
-  new Swiper(".cust_swip",{
+  new Swiper(".swiper",{
     slidesPerView: 1,
     autoHeight: true,
     pagination: {
