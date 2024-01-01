@@ -49,7 +49,7 @@
                 <div class="swiper-wrapper">
                   {% for block in section.blocks %}
                     {% if block.type == 'text' %}
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-card-slide>
                         <p class="content-slider__body-content">
                           {{ block.settings.text }}
                         </p>
