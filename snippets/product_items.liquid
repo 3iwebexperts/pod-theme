@@ -19,7 +19,7 @@
       <div class="discount-badge" data-discount-badge></div>
       Variant is {{ current_variant.image.src }}
   
-      {% if current_variant.image != blank %}
+      {% if current_variant.featured_media != blank %}
         
         <img
           src="{{ current_variant.featured_media | image_url: "1024x" }}"
