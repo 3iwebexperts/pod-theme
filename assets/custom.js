@@ -174,14 +174,14 @@ function common_functions() {
       },
     },
   });
-  var contentSlider = new Swiper(".cust_swip", {
-    slidesPerView: 1,
-    autoHeight: true,
-    pagination: {
-      el: ".swiper-paginatio",
-      clickable: true,
-    },
-  });
+  // var contentSlider = new Swiper(".cust_swip", {
+  //   slidesPerView: 1,
+  //   autoHeight: true,
+  //   pagination: {
+  //     el: ".swiper-paginatio",
+  //     clickable: true,
+  //   },
+  // });
 
   new Swiper(".feature_card_slider", {
     // slidesPerView: 4,
