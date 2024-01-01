@@ -19,6 +19,7 @@
             </div>
           </div>
           <div class="sticky-image__info-container">
+            {% if product.collections.first.url != blank %}
             <a
               href="{{ product.collections.first.url }}"
               class="badge sticky-image__badge"
@@ -26,7 +27,7 @@
             >
               {{ product.collections.first.title }}
             </a>
-
+          {% endif %}
             <h1 class="sticky-image__title">{{ product.title }}</h1>
 
             <div class="sticky-image__price" data-price="">
