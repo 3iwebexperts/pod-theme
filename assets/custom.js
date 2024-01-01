@@ -174,22 +174,15 @@ function common_functions() {
       },
     },
   });
-
-  // new Swiper(".cust_swip", {
-  // slidesPerView: 1,
-  //   autoHeight: true,
-  //   pagination: {
-  //     el: ".cust_swiper-pagination",
-  //     clickable: true,
-  //   },
-  // });
-   var swiper = new Swiper(".cust_swip", {
-      spaceBetween: 30,
-      pagination: {
-        el: ".cust_swiper-pagination",
-        clickable: true,
-      },
-    });
+  
+  var contentSlider = new Swiper(".cust_swip", {
+    slidesPerView: 1,
+    autoHeight: true,
+    pagination: {
+      el: ".cust_swiper-pagination",
+      clickable: true,
+    },
+  });
 
   new Swiper(".feature_card_slider", {
     // slidesPerView: 4,
