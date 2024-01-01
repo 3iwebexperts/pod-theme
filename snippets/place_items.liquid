@@ -18,12 +18,21 @@
       >
         <div class="discount-badge" data-discount-badge=""></div>
 
-        <img
-          src="{{ "placeholder.png" | asset_url }}"
-          class="product-card__image"
-          loading="lazy"
-          alt=""
-        >
+        {% if current_variant.image != blank %}
+                        <img
+                          src="{{ current_variant.image | img_url: "1024x" }}"
+                          class="product-card__image"
+                          loading="lazy"
+                          alt=""
+                        >
+                      {% else %}
+                        <img
+                          src="{{ 'placeholder.png' | asset_url }}"
+                          class="product-card__image"
+                          loading="lazy"
+                          alt=""
+                        >
+                      {% endif %}
       </div>
     </a>
     <form target="/cart/add" class="product-card__content text-center">
