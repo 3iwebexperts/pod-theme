@@ -17,6 +17,7 @@
       data-image-selector="fern"
     >
       <div class="discount-badge" data-discount-badge></div>
+      Variant is {{ current_variant }}
       {% if current_variant.image != blank %}
         <img
           src="{{ current_variant.image | image_url: "1024x" }}"
