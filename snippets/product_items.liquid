@@ -17,12 +17,11 @@
       data-image-selector="fern"
     >
       <div class="discount-badge" data-discount-badge></div>
-      Variant is {{ current_variant.image.src | img_url }}
   
-      {% if current_variant.image.src  != blank %}
+      {% if current_variant.image != blank %}
         
         <img
-          src="{{ current_variant.image.src  | img_url: "1024x" }}"
+          src="{{ current_variant.image | img_url: "1024x" }}"
           class="product-card__image"
           loading="lazy"
           alt=""
