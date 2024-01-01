@@ -177,6 +177,7 @@ function common_functions() {
   new Swiper(".cust_swip", {
     slidesPerView: 1,
     autoHeight: true,
+    
     pagination: {
       el: ".cust_pagination",
       clickable: true,
