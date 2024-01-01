@@ -174,15 +174,16 @@ function common_functions() {
       },
     },
   });
-  
-  new Swiper(".custSwip",{
-    slidesPerView: 1,
-    autoHeight: true,
-    pagination: {
-      el: ".cust_swiper-pagination",
-      clickable: true,
-    },
-  });
+   new Swiper(".product-option__swatch", {
+       loop: false,
+       autoHeight: true,
+       slidesPerView: 1,
+       spaceBetween: 10,
+       scrollbar: {
+         el: ".cust_swiper-pagination",
+         
+       },
+     });
 
   new Swiper(".feature_card_slider", {
     // slidesPerView: 4,
