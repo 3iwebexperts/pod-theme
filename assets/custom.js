@@ -183,7 +183,7 @@ function common_functions() {
     },
   });
 
-  new Swiper(".card-slider__slider", {
+  new Swiper(".feature_card_slider", {
     // slidesPerView: 4,
     loop: false,
     // cssMode: true,
