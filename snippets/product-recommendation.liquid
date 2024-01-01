@@ -62,7 +62,7 @@
                       <div class="discount-badge" data-discount-badge></div>
                       {% if current_variant.image != blank %}
                         <img
-                          src="{{ current_variant.image | img_url: "1024x" }}"
+                          src="{{ current_variant.image | image_url: "1024x" }}"
                           class="product-card__image"
                           loading="lazy"
                           alt=""
