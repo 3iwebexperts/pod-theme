@@ -75,6 +75,7 @@
     "0e5b9ff2-faef-4ccc-a78c-04c8577f97e7": {
       "type": "hero_banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/woman-in-the-city_925x_5bca1aa1-1625-4ea1-adc3-d709b243e190.jpg",
         "heading": "Fashion, Without Limits",
         "text_color": "#a3ff00",
         "highlight_color": "#ffffff",
