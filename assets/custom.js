@@ -174,14 +174,16 @@ function common_functions() {
       },
     },
   });
-  var contentSlider = new Swiper(".cust_swip", {
-    slidesPerView: 1,
+
+  new Swiper(".cust_swip", {
+  slidesPerView: 1,
     autoHeight: true,
     pagination: {
       el: ".cust_swiper-pagination",
       clickable: true,
     },
   });
+
 
   new Swiper(".feature_card_slider", {
     // slidesPerView: 4,
