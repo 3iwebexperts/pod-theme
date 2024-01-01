@@ -18,7 +18,9 @@
     >
       <div class="discount-badge" data-discount-badge></div>
       Variant is {{ current_variant.title }}
+      {{ current_variant.featured_image }}
       {% if current_variant.image != blank %}
+        
         <img
           src="{{ current_variant.featured_image | image_url: "1024x" }}"
           class="product-card__image"
