@@ -248,8 +248,8 @@ function common_functions() {
     spaceBetween: 20,
     loop: false,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".shop-the-look__arrow--next",
+      prevEl: ".shop-the-look__arrow--prev",
     },
     pagination: {
       el: ".look_pagination",
