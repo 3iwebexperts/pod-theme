@@ -179,7 +179,7 @@ function common_functions() {
     slidesPerView: 1,
     autoHeight: true,
     pagination: {
-      el: ".swiper-paginatio",
+      el: ".swiper-pagination",
       clickable: true,
     },
   });
