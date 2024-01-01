@@ -12778,7 +12778,7 @@ html {
 .card-slider__arrow.swiper-button-prev {
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/cdn/shop/t/5/assets/arrow.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0600/6292/4982/t/5/assets/arrow.png);
   transform: rotate(180deg);
 }
 .card-slider {
