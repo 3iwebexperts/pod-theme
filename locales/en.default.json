@@ -5,7 +5,7 @@
     },
     "cart": {
       "title": "Cart",
-      "prouct": "Products",
+      "prdouct": "Products",
       "price": "Price",
       "quantity": "Quantity",
       "total": "Total",
