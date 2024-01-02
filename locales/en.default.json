@@ -5,10 +5,10 @@
     },
     "cart": {
       "title": "Cart",
-      "prouct_label": "Products",
-      "price_label": "Price",
+      "prouct": "Products",
+      "price": "Price",
       "quantity": "Quantity",
-      "total_label": "Total",
+      "total": "Total",
       "subtotal": "Subtotal",
       "savings": "Savings",
       "shipping_at_checkout": "shipping at checkout",

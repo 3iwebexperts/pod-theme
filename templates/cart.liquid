@@ -5,10 +5,10 @@
     <table class="responsive-table">
       <thead class="small--hide">
         <tr>
-          <th colspan="2">{{ 'cart.label.product' }}</th>
-          <th>{{ 'cart.label.price'  }}</th>
-          <th>{{ 'cart.label.quantity' }}</th>
-          <th>{{ 'cart.label.total' }}</th>
+          <th colspan="2">{{ 'cart.general.product' }}</th>
+          <th>{{ 'cart.general.price'  }}</th>
+          <th>{{ 'cart.general.quantity' }}</th>
+          <th>{{ 'cart.general.total' }}</th>
         </tr>
       </thead>
       <tbody>
@@ -74,7 +74,7 @@
                 {{ item.price | money }}
               {% endif %}
             </td>
-            <td data-label="{{ 'cart.label.quantity' }}">
+            <td data-label="{{ 'cart.general.quantity' }}">
               <input type="number"
                      name="updates[]"
                      id="updates_{{ item.key }}"
@@ -102,7 +102,7 @@
       <p>{{ 'cart.general.savings' }} {{ cart.total_discounts | money }}</p>
     {% endif %}
     <p>{{ 'cart.general.shipping_at_checkout' }}</p>
-    <input type="submit" name="update" value="{{ 'cart.general.update' }}">
+    <input type="submit" name="update" value="{{ 'cart.general.cart_update' }}">
     <input type="submit" name="checkout" class="button" value="{{ 'cart.general.checkout' }}">
   </form>
 {% else %}
