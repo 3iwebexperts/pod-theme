@@ -381,6 +381,9 @@ label.popover__choice-item:has(input:checked):after {
 .template-cart table tbody tr {
   height: 200px;
 }
+.template-cart table tbody tr td p {
+  margin-bottom: 15px;
+}
 .template-cart table thead tr {
 }
 .template-cart table {
