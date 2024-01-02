@@ -13380,3 +13380,6 @@ h1.collection-banner__title.text-left.h1 {
 .template-cart .responsive-table-row td {
   padding-right: 20px;
 }
+
+.template-cart .responsive-table-row td .cart_quantity {
+}
