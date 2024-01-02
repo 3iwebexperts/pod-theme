@@ -61,20 +61,20 @@
               {% endif %}
 
               <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
-                <small>{{ 'cart.general.remove' | t }}</small>
+                <small>{{ 'cart.general.remove' }}</small>
               </a>
             </td>
-            <td data-label="{{ 'cart.label.price' | t }}">
+            <td data-label="{{ 'cart.label.price' }}">
               {% if item.original_line_price != item.line_price %}
-                <span class="visually-hidden">{{ 'cart.label.discounted_price' | t }}</span>
+                <span class="visually-hidden">{{ 'cart.label.discounted_price' }}</span>
                 {{ item.price | money }}
-                <span class="visually-hidden">{{ 'cart.label.original_price' | t }}</span>
+                <span class="visually-hidden">{{ 'cart.label.original_price' }}</span>
                 <s>{{ item.original_price | money }}</s>
               {% else %}
                 {{ item.price | money }}
               {% endif %}
             </td>
-            <td data-label="{{ 'cart.label.quantity' | t }}">
+            <td data-label="{{ 'cart.label.quantity' }}">
               <input type="number"
                      name="updates[]"
                      id="updates_{{ item.key }}"
