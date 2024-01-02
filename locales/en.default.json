@@ -8,7 +8,8 @@
       "prouct_label": "Products",
       "price_label": "Price",
       "quantity_label": "Quantity",
-      "total_label": "Total"
+      "total_label": "Total",
+      "subtotal": "Subtotal"
     }
   }
 }
