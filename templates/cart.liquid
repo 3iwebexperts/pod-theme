@@ -64,7 +64,7 @@
                 <small>{{ 'cart.remove' }}</small>
               </a>
             </td>
-            <td data-label="{{ 'cart.price' }}">
+            <td data-label="{{ 'cart.price' | t }}">
               {% if item.original_line_price != item.line_price %}
                 <span class="visually-hidden">{{ 'cart.label.discounted_price' }}</span>
                 {{ item.price | money }}
@@ -96,13 +96,13 @@
       <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
     {% endif %}
 
-    <p>{{ 'cart.subtotal' }}</p>
+    <p>{{ 'cart.subtotal' | t }}</p>
     <p>{{ cart.total_price | money }}</p>
     {% if cart.total_discounts > 0 %}
       <p>{{ 'cart.savings' }} {{ cart.total_discounts | money }}</p>
     {% endif %}
     <p>{{ 'cart.shipping_at_checkout' }}</p>
-    <input type="submit" name="update" value="{{ 'cart_update' }}">
+    <input type="submit" name="update" value="{{ 'cart.update' | t }}">
     <input type="submit" name="checkout" class="button" value="{{ 'cart.checkout' }}">
   </form>
 {% else %}
