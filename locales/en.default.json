@@ -4,7 +4,7 @@
       "success": "Thanks for subscribing"
     },
     "cart": {
-      "name": "Cart",
+      "title": "Cart",
       "settings": {
         "cart_type": {
           "label": "Warenkorbstil",
