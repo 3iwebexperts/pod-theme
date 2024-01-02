@@ -1,1 +1,213 @@
-{"current":{"social_twitter_link":"#","social_facebook_link":"#","social_instagram_link":"#","social_youtube_link":"#","social_linkedin_link":"#","social_gmail_link":"#","checkout_logo_image":"shopify:\/\/shop_images\/logo_image_1.png","checkout_logo_position":"center","checkout_logo_size":"large","checkout_body_background_color":"#000000","checkout_sidebar_background_color":"#000000","checkout_accent_color":"#ffffff","checkout_button_color":"#ffffff","sections":{"header":{"type":"header","blocks":{"5084e073-37dd-4177-b142-2f3fd3ae3968":{"type":"tab_one_grid","settings":{"tab_1_collection":"mens-shmeww-swag","enable_highlight_tab1":true,"highlight_text_tab1":"New"}},"b0a1b563-0c0c-4683-8398-b984025fbe3e":{"type":"tab_one_grid","settings":{"tab_1_collection":"women-love-to-shmeww","enable_highlight_tab1":false,"highlight_text_tab1":""}},"cc5d1190-df04-4b39-b293-caf6708cd174":{"type":"tab_one_grid","settings":{"tab_1_collection":"unisex","enable_highlight_tab1":false,"highlight_text_tab1":""}},"955c9fee-729b-4607-8254-c5aaa4c6bc42":{"type":"tab_two_grid","settings":{"tab_2_collection":"everyday-shmeww","enable_highlight_tab1":false,"highlight_text_tab1":""}},"1efb40d3-75aa-4c57-925a-35d90ebd9e1f":{"type":"tab_two_grid","settings":{"tab_2_collection":"pet-shmeww","enable_highlight_tab1":false,"highlight_text_tab1":""}},"1d48c484-b080-4a01-810f-2c128fdacbbd":{"type":"tab_two_grid","disabled":true,"settings":{"tab_2_collection":"accessories","enable_highlight_tab1":false,"highlight_text_tab1":""}},"d4c8654f-ecf2-441a-a473-b9647dd95b3b":{"type":"tab_one_slider","settings":{"tab_1_text":"Amazing Hats","tab_1_link":"shopify:\/\/products\/distressed-shmeww-hat","tab_1_image":"shopify:\/\/shop_images\/Untitled_design_1.jpg"}},"047b2c20-1c12-436c-b845-f3772ac1e8c8":{"type":"tab_one_slider","settings":{"tab_1_text":"ShmewW Best Collection","tab_1_link":"shopify:\/\/collections\/accessories","tab_1_image":"shopify:\/\/shop_images\/Untitled_design_16.jpg"}},"087b9b69-18a7-46f6-a576-cfb52e87f101":{"type":"tab_two_slider","settings":{"tab_2_text":"Women Best Collection","tab_2_link":"shopify:\/\/collections\/women-love-to-shmeww","tab_2_image":"shopify:\/\/shop_images\/Untitled_design_15.jpg"}},"37756ef3-f0fc-403b-93a1-dd960632ef29":{"type":"tab_two_slider","settings":{"tab_2_text":"Women's Beach Collection","tab_2_link":"shopify:\/\/collections\/accessories","tab_2_image":"shopify:\/\/shop_images\/Untitled_design_4.jpg"}},"a51c5806-0141-4895-81ff-507f47fe74df":{"type":"tab_three_slider","settings":{"tab_3_text":"Golf","tab_3_link":"shopify:\/\/collections\/women","tab_3_image":"shopify:\/\/shop_images\/WhatsApp_Image_2023-11-11_at_21.09.38.jpg"}},"150e9d0b-d19a-4b05-8cf9-0e4a3ed5dc30":{"type":"tab_three_slider","settings":{"tab_3_text":"Shmeww Gives Back","tab_3_link":"shopify:\/\/collections\/shmeww-gives-back","tab_3_image":"shopify:\/\/shop_images\/WhatsApp_Image_2023-11-11_at_21.00.40.jpg"}},"7bf60947-b0b7-43fa-ac6d-d22314fd1715":{"type":"tab_three_image_text","disabled":true,"settings":{"tab_3_text":"Best Seller","tab_3_content":"Top Picks: Best Sellers Collection Unveiled","tab_3_link":"shopify:\/\/collections\/women","tab_3_image":"shopify:\/\/shop_images\/Untitled_design_18.jpg"}},"cb0287dc-6be2-49e6-943d-6ce98214992e":{"type":"tab_three_image_text","disabled":true,"settings":{"tab_3_text":"Bundle & Save","tab_3_content":"Bundle Up, Save More: Perfect Packages Await","tab_3_link":"shopify:\/\/collections\/women-love-to-shmeww","tab_3_image":"shopify:\/\/shop_images\/Untitled_design_19.jpg"}},"4ce9e05e-ae58-48f5-876d-1e5abb121dfa":{"type":"tab_four_slider","settings":{"tab_4_text":"Learn About ShmewW","tab_4_link":"shopify:\/\/pages\/about-us","tab_4_image":"shopify:\/\/shop_images\/Untitled_design_2.jpg"}}},"block_order":["5084e073-37dd-4177-b142-2f3fd3ae3968","b0a1b563-0c0c-4683-8398-b984025fbe3e","cc5d1190-df04-4b39-b293-caf6708cd174","955c9fee-729b-4607-8254-c5aaa4c6bc42","1efb40d3-75aa-4c57-925a-35d90ebd9e1f","1d48c484-b080-4a01-810f-2c128fdacbbd","d4c8654f-ecf2-441a-a473-b9647dd95b3b","047b2c20-1c12-436c-b845-f3772ac1e8c8","087b9b69-18a7-46f6-a576-cfb52e87f101","37756ef3-f0fc-403b-93a1-dd960632ef29","a51c5806-0141-4895-81ff-507f47fe74df","150e9d0b-d19a-4b05-8cf9-0e4a3ed5dc30","7bf60947-b0b7-43fa-ac6d-d22314fd1715","cb0287dc-6be2-49e6-943d-6ce98214992e","4ce9e05e-ae58-48f5-876d-1e5abb121dfa"],"settings":{"image":"shopify:\/\/shop_images\/logo_image_1.png","tab_title_1":"ShmewW","tab_grid_title_1":"SHOP BY CATEGORY","tab_slider_title_1":"EXPLORE MORE","tab_button_caption_1":"Shop All ShmewW's Gear","tab_button_link_1":"shopify:\/\/collections\/women-love-to-shmeww","tab_title_2":"Accessories","tab_grid_title_2":"SHOP BY CATEGORY","tab_slider_title_2":"EXPLORE MORE","tab_button_caption_2":"Shop All Accessories","tab_button_link_2":"shopify:\/\/collections\/accessories","tab_title_3":"Featured","tab_slider_title_3":"Latest","tab_title_4":"Info","tab_slider_title_4":"ABOUT US","tab_customer_image":"shopify:\/\/shop_images\/Mandi-343-Edit-2-PRINT.jpg","tab_customer_title":"CUSTOMER SERVICE","cust_in_title":"Got Questions?","cust_in_content":"Hit up our Customer Experience team! They are <strong class=\"highlighted\">real people<\/strong> ready to help out.","btn_1_caption":"Email Us","btn_1_link":"shopify:\/\/pages\/contact","btn_2_caption":"Read FAQ","btn_2_link":"shopify:\/\/pages\/faqs","tab_title_5":"Account"}},"footer":{"type":"footer","blocks":{"67f64906-e105-40aa-8e27-f360ef4a6c65":{"type":"text","settings":{"footer_text":"STEP INTO SHMEWW:","highlight_text":"WHERE FASHION SPEAKS LOUDER THAN WORDS"}}},"block_order":["67f64906-e105-40aa-8e27-f360ef4a6c65"],"settings":{"form_pre_heading":"Sign up for first access on everything","form_heading":"INSTANT UPDATES ON THE LATEST FASHION TRENDS","menu_1":"main-menu","menu_2":"footer","menu_3":"about-us","menu_4":"","copy_text":"© 2023 ShmewW. All rights reserved."}},"ajax-cart":{"type":"ajax-cart","settings":{}}},"content_for_index":[],"blocks":{"5946647744298494267":{"type":"shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-app-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612","disabled":false,"settings":{}}}}}
+{
+  "current": {
+    "social_twitter_link": "#",
+    "social_facebook_link": "#",
+    "social_instagram_link": "#",
+    "social_youtube_link": "#",
+    "social_linkedin_link": "#",
+    "social_gmail_link": "#",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_image_1.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#000000",
+    "checkout_sidebar_background_color": "#000000",
+    "checkout_accent_color": "#ffffff",
+    "checkout_button_color": "#ffffff",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "5084e073-37dd-4177-b142-2f3fd3ae3968": {
+            "type": "tab_one_grid",
+            "settings": {
+              "tab_1_collection": "mens-shmeww-swag",
+              "enable_highlight_tab1": true,
+              "highlight_text_tab1": "New"
+            }
+          },
+          "b0a1b563-0c0c-4683-8398-b984025fbe3e": {
+            "type": "tab_one_grid",
+            "settings": {
+              "tab_1_collection": "women-love-to-shmeww",
+              "enable_highlight_tab1": false,
+              "highlight_text_tab1": ""
+            }
+          },
+          "cc5d1190-df04-4b39-b293-caf6708cd174": {
+            "type": "tab_one_grid",
+            "settings": {
+              "tab_1_collection": "unisex",
+              "enable_highlight_tab1": false,
+              "highlight_text_tab1": ""
+            }
+          },
+          "955c9fee-729b-4607-8254-c5aaa4c6bc42": {
+            "type": "tab_two_grid",
+            "settings": {
+              "tab_2_collection": "everyday-shmeww",
+              "enable_highlight_tab1": false,
+              "highlight_text_tab1": ""
+            }
+          },
+          "1efb40d3-75aa-4c57-925a-35d90ebd9e1f": {
+            "type": "tab_two_grid",
+            "settings": {
+              "tab_2_collection": "pet-shmeww",
+              "enable_highlight_tab1": false,
+              "highlight_text_tab1": ""
+            }
+          },
+          "1d48c484-b080-4a01-810f-2c128fdacbbd": {
+            "type": "tab_two_grid",
+            "disabled": true,
+            "settings": {
+              "tab_2_collection": "accessories",
+              "enable_highlight_tab1": false,
+              "highlight_text_tab1": ""
+            }
+          },
+          "d4c8654f-ecf2-441a-a473-b9647dd95b3b": {
+            "type": "tab_one_slider",
+            "settings": {
+              "tab_1_text": "Amazing Hats",
+              "tab_1_link": "shopify:\/\/products\/distressed-shmeww-hat"
+            }
+          },
+          "047b2c20-1c12-436c-b845-f3772ac1e8c8": {
+            "type": "tab_one_slider",
+            "settings": {
+              "tab_1_text": "ShmewW Best Collection",
+              "tab_1_link": "shopify:\/\/collections\/accessories"
+            }
+          },
+          "087b9b69-18a7-46f6-a576-cfb52e87f101": {
+            "type": "tab_two_slider",
+            "settings": {
+              "tab_2_text": "Women Best Collection",
+              "tab_2_link": "shopify:\/\/collections\/women-love-to-shmeww"
+            }
+          },
+          "37756ef3-f0fc-403b-93a1-dd960632ef29": {
+            "type": "tab_two_slider",
+            "settings": {
+              "tab_2_text": "Women's Beach Collection",
+              "tab_2_link": "shopify:\/\/collections\/accessories"
+            }
+          },
+          "a51c5806-0141-4895-81ff-507f47fe74df": {
+            "type": "tab_three_slider",
+            "settings": {
+              "tab_3_text": "Golf",
+              "tab_3_link": "shopify:\/\/collections\/women"
+            }
+          },
+          "150e9d0b-d19a-4b05-8cf9-0e4a3ed5dc30": {
+            "type": "tab_three_slider",
+            "settings": {
+              "tab_3_text": "Shmeww Gives Back",
+              "tab_3_link": "shopify:\/\/collections\/shmeww-gives-back"
+            }
+          },
+          "7bf60947-b0b7-43fa-ac6d-d22314fd1715": {
+            "type": "tab_three_image_text",
+            "disabled": true,
+            "settings": {
+              "tab_3_text": "Best Seller",
+              "tab_3_content": "Top Picks: Best Sellers Collection Unveiled",
+              "tab_3_link": "shopify:\/\/collections\/women"
+            }
+          },
+          "cb0287dc-6be2-49e6-943d-6ce98214992e": {
+            "type": "tab_three_image_text",
+            "disabled": true,
+            "settings": {
+              "tab_3_text": "Bundle & Save",
+              "tab_3_content": "Bundle Up, Save More: Perfect Packages Await",
+              "tab_3_link": "shopify:\/\/collections\/women-love-to-shmeww"
+            }
+          },
+          "4ce9e05e-ae58-48f5-876d-1e5abb121dfa": {
+            "type": "tab_four_slider",
+            "settings": {
+              "tab_4_text": "Learn About ShmewW",
+              "tab_4_link": "shopify:\/\/pages\/about-us"
+            }
+          }
+        },
+        "block_order": [
+          "5084e073-37dd-4177-b142-2f3fd3ae3968",
+          "b0a1b563-0c0c-4683-8398-b984025fbe3e",
+          "cc5d1190-df04-4b39-b293-caf6708cd174",
+          "955c9fee-729b-4607-8254-c5aaa4c6bc42",
+          "1efb40d3-75aa-4c57-925a-35d90ebd9e1f",
+          "1d48c484-b080-4a01-810f-2c128fdacbbd",
+          "d4c8654f-ecf2-441a-a473-b9647dd95b3b",
+          "047b2c20-1c12-436c-b845-f3772ac1e8c8",
+          "087b9b69-18a7-46f6-a576-cfb52e87f101",
+          "37756ef3-f0fc-403b-93a1-dd960632ef29",
+          "a51c5806-0141-4895-81ff-507f47fe74df",
+          "150e9d0b-d19a-4b05-8cf9-0e4a3ed5dc30",
+          "7bf60947-b0b7-43fa-ac6d-d22314fd1715",
+          "cb0287dc-6be2-49e6-943d-6ce98214992e",
+          "4ce9e05e-ae58-48f5-876d-1e5abb121dfa"
+        ],
+        "settings": {
+          "tab_title_1": "ShmewW",
+          "tab_grid_title_1": "SHOP BY CATEGORY",
+          "tab_slider_title_1": "EXPLORE MORE",
+          "tab_button_caption_1": "Shop All ShmewW's Gear",
+          "tab_button_link_1": "shopify:\/\/collections\/new-arrivals",
+          "tab_title_2": "Accessories",
+          "tab_grid_title_2": "SHOP BY CATEGORY",
+          "tab_slider_title_2": "EXPLORE MORE",
+          "tab_button_caption_2": "Shop All Accessories",
+          "tab_button_link_2": "shopify:\/\/collections\/accessories",
+          "tab_title_3": "Featured",
+          "tab_slider_title_3": "Latest",
+          "tab_title_4": "Info",
+          "tab_slider_title_4": "ABOUT US",
+          "tab_customer_title": "CUSTOMER SERVICE",
+          "cust_in_title": "Got Questions?",
+          "cust_in_content": "Hit up our Customer Experience team! They are <strong class=\"highlighted\">real people<\/strong> ready to help out.",
+          "btn_1_caption": "Email Us",
+          "btn_1_link": "shopify:\/\/pages\/contact",
+          "btn_2_caption": "Read FAQ",
+          "btn_2_link": "shopify:\/\/pages\/faqs",
+          "tab_title_5": "Account"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "67f64906-e105-40aa-8e27-f360ef4a6c65": {
+            "type": "text",
+            "settings": {
+              "footer_text": "STEP INTO SHMEWW:",
+              "highlight_text": "WHERE FASHION SPEAKS LOUDER THAN WORDS"
+            }
+          }
+        },
+        "block_order": [
+          "67f64906-e105-40aa-8e27-f360ef4a6c65"
+        ],
+        "settings": {
+          "form_pre_heading": "Sign up for first access on everything",
+          "form_heading": "INSTANT UPDATES ON THE LATEST FASHION TRENDS",
+          "menu_1": "main-menu",
+          "menu_2": "footer",
+          "menu_3": "",
+          "menu_4": "",
+          "copy_text": "© 2023 ShmewW. All rights reserved."
+        }
+      },
+      "ajax-cart": {
+        "type": "ajax-cart",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
