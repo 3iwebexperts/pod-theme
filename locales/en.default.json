@@ -10,7 +10,8 @@
       "quantity_label": "Quantity",
       "total_label": "Total",
       "subtotal": "Subtotal",
-      "savings": "Savings"
+      "savings": "Savings",
+      "shipping_at_checkout": "shipping at checkout"
     }
   }
 }
