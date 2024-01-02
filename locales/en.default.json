@@ -11,7 +11,9 @@
       "total_label": "Total",
       "subtotal": "Subtotal",
       "savings": "Savings",
-      "shipping_at_checkout": "shipping at checkout"
+      "shipping_at_checkout": "shipping at checkout",
+      "cart_update": "Update",
+      "checkout": "Checkout"
     }
   }
 }
