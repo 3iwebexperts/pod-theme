@@ -6,7 +6,9 @@
     "cart": {
       "title": "Cart",
       "prouct_label": "Products",
-      "item_added": "Item added to your cart"
+      "price_label": "Price",
+      "quantity_label": "Quantity",
+      "total_label": "Total"
     }
   }
 }
