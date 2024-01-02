@@ -80,9 +80,9 @@
                      id="updates_{{ item.key }}"
                      value="{{ item.quantity }}"
                      min="0"
-                     aria-label="{{ 'cart.general.item_quantity' | t }}">
+                     aria-label="{{ 'cart.general.item_quantity' }}">
             </td>
-            <td data-label="{{ 'cart.label.total' | t }}">
+            <td data-label="{{ 'cart.label.total' }}">
               {{ item.line_price | money }}
             </td>
           </tr>
@@ -92,28 +92,28 @@
     </table>
 
     {% if settings.cart_notes_enable %}
-      <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
+      <label for="CartSpecialInstructions">{{ 'cart.general.note' }}</label>
       <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
     {% endif %}
 
-    <p>{{ 'cart.general.subtotal' | t }}</p>
+    <p>{{ 'cart.general.subtotal' }}</p>
     <p>{{ cart.total_price | money }}</p>
     {% if cart.total_discounts > 0 %}
-      <p>{{ 'cart.general.savings' | t }} {{ cart.total_discounts | money }}</p>
+      <p>{{ 'cart.general.savings' }} {{ cart.total_discounts | money }}</p>
     {% endif %}
-    <p>{{ 'cart.general.shipping_at_checkout' | t }}</p>
-    <input type="submit" name="update" value="{{ 'cart.general.update' | t }}">
-    <input type="submit" name="checkout" class="button" value="{{ 'cart.general.checkout' | t }}">
+    <p>{{ 'cart.general.shipping_at_checkout' }}</p>
+    <input type="submit" name="update" value="{{ 'cart.general.update' }}">
+    <input type="submit" name="checkout" class="button" value="{{ 'cart.general.checkout' }}">
   </form>
 {% else %}
-  <h1>{{ 'cart.general.title' | t }}</h1>
+  <h1>{{ 'cart.general.title' }}</h1>
 
   {% comment %}
   Cart empty state
   {% endcomment %}
   <div class="supports-cookies">
-    <p>{{ 'cart.general.empty' | t }}</p>
-    <p>{{ 'cart.general.continue_browsing_html' | t }}</p>
+    <p>{{ 'cart.general.empty' }}</p>
+    <p>{{ 'cart.general.continue_browsing_html' }}</p>
   </div>
 
   {% comment %}
@@ -123,6 +123,6 @@
   browser a message is displayed prompting the user to enable them.
   {% endcomment %}
   <div class="supports-no-cookies">
-    <p>{{ 'cart.general.cookies_required' | t }}</p>
+    <p>{{ 'cart.general.cookies_required' }}</p>
   </div>
 {% endif %}
