@@ -13378,13 +13378,13 @@ h1.collection-banner__title.text-left.h1 {
 }
 
 .template-cart .responsive-table-row td {
-  text-align: center;
+  text-align: center !important;
   padding-right: 20px;
 }
 
-.template-cart .responsive-table-row td .cart_quantity input {
-  width: 50%;
-  text-align: center;
+.template-cart .responsive-table-row .cart_quantity input {
+  width: 50% !important;
+  text-align: center !important;
 }
 .template-cart table thead tr {
   text-align: center;
