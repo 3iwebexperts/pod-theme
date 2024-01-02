@@ -7,7 +7,7 @@
       "title": "Cart",
       "prouct_label": "Products",
       "price_label": "Price",
-      "quantity_label": "Quantity",
+      "quantity": "Quantity",
       "total_label": "Total",
       "subtotal": "Subtotal",
       "savings": "Savings",
