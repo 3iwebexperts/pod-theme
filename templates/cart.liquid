@@ -74,7 +74,7 @@
                 {{ item.price | money }}
               {% endif %}
             </td>
-            <td class="{{ 'cart.quantity' |t | downcase}}" data-label="{{ 'cart.quantity' }}">
+            <td class="cart_{{ 'cart.quantity' |t | downcase}}" data-label="{{ 'cart.quantity' }}">
               <input type="number"
                      name="updates[]"
                      id="updates_{{ item.key }}"
