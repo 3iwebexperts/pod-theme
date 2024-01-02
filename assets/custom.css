@@ -396,3 +396,6 @@ label.popover__choice-item:has(input:checked):after {
   width: 30%;
   padding: 25px;
 }
+.template-cart .custom_cart_card p {
+  margin-bottom: 10px;
+}
