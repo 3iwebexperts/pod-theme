@@ -1,7 +1,7 @@
 <div data-section-id="ajax-cart" id="ajax_cart" data-section-type="ajax-cart">
   <div class="ajax-cart-container" data-ajax-cart-container="">
     {% if cart.item_count > 0 %}
-    <form action="/collections/all" method="post" class="ajax-cart-form" novalidate="" data-count="{{ cart.item_count }}">
+    <form action="/cart" method="post" class="ajax-cart-form" novalidate="" data-count="{{ cart.item_count }}">
       <input name="section_id" type="hidden" value="ajax-cart">
       <div class="ajax-cart__header">
         <span class="ajax-cart__title">Bag</span>
