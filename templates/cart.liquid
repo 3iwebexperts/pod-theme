@@ -1,5 +1,4 @@
 {% if cart.item_count > 0 %}
-  {{ cart.title }}
   <h1>{{ cart.title }}</h1>
 
   <form action="/cart" method="post" novalidate>
@@ -81,7 +80,7 @@
                      id="updates_{{ item.key }}"
                      value="{{ item.quantity }}"
                      min="0"
-                     aria-label="{{ 'cart.general.item_quantity' }}">
+                     aria-label="{{ 'cart.general.item_quantity'| g }}">
             </td>
             <td data-label="{{ 'cart.label.total' }}">
               {{ item.line_price | money }}
