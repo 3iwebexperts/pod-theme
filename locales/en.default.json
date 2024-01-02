@@ -5,7 +5,7 @@
     },
     "cart": {
       "title": "Cart",
-      "view_empty_cart": "View cart",
+      "prouct_label": "Products",
       "item_added": "Item added to your cart"
     }
   }
