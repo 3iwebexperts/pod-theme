@@ -1,11 +1,11 @@
 {% if cart.item_count > 0 %}
-  <h1>{{- 'general.cart.title' | t -}}</h1>
+  <h1>{{- 'cart.title' | t -}}</h1>
 
   <form action="/cart" method="post" novalidate>
     <table class="responsive-table">
       <thead class="small--hide">
         <tr>
-          <th colspan="2">{{- 'general.cart.prdouct_label' -}}</th>
+          <th colspan="2">{{- 'cart.prdouct_label' -}}</th>
           <th>{{ 'general.cart.price'  }}</th>
           <th>{{ 'general.cart.quantity' }}</th>
           <th>{{ 'general.cart.total' }}</th>
