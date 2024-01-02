@@ -95,7 +95,7 @@
       <label for="CartSpecialInstructions">{{ 'cart.general.note' }}</label>
       <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
     {% endif %}
-
+  <div>
     <p>{{ 'cart.subtotal' | t }}</p>
     <p>{{ cart.total_price | money }}</p>
     {% if cart.total_discounts > 0 %}
@@ -104,6 +104,7 @@
     <p>{{ 'cart.shipping_at_checkout' | t }}</p>
     <input type="submit" name="update" value="{{ 'cart.update' | t }}">
     <input type="submit" name="checkout" class="button" value="{{ 'cart.checkout' | t }}">
+  </div>
   </form>
 {% else %}
   <h1>{{ 'cart.title' |t }}</h1>
