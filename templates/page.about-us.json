@@ -1,1 +1,92 @@
-{"sections":{"hero_video":{"type":"hero_video","settings":{"video_sec":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e0690676f18045bc90cc2706df450d9d.mp4","title_cnt":"EVERY JOURNEY BEGINS WITH A STORY","subtext":"","button_text":"","link":""}},"0b624512-2e3f-47ab-95aa-9b2817ef607f":{"type":"text-section","settings":{"big_text":"About ShmewW","sub_text":"<p>Founded in 2023 by Dasia Grayman, ShmewW is not just a brand; it's a lifestyle. At ShmewW, we believe in empowering individuals to embrace their unique style and make a statement. Our diverse range of fashion caters to every aspect of your life, reflecting the essence of who you are and who you want to become.<\/p>"}},"54fb7b33-9dce-42f9-b523-741c4e5828ca":{"type":"big_image","settings":{"image":"shopify:\/\/shop_images\/Home_Page_Banner_4.jpg","bottom-text":""}},"68ad28f0-3f47-487e-9771-1e15d04503d4":{"type":"text-section","settings":{"big_text":"INSPIRATION IN EVERY STITCH","sub_text":"<p>For those who love to ShmewW, we offer a curated selection of trendy and timeless pieces that speak volumes. From chic women's fashion to unisex essentials and exclusive men's ShmewW swag, our collections are designed to inspire confidence and celebrate individuality. We understand that fashion is not just about clothing; it's a way of expressing your identity and aspirations.<\/p>"}},"9c582805-9fd7-4d54-9f48-7f02872e461c":{"type":"big_image","settings":{"image":"shopify:\/\/shop_images\/Home_Page_Banner_5.jpg","bottom-text":""}},"b927c7b9-cdc4-4ccb-8db6-efcdaa41adb4":{"type":"text-section","settings":{"big_text":"ACCESSORIES THAT TRANSFORM","sub_text":"<p>Elevate your style with our carefully crafted accessories. Whether you're searching for the perfect statement piece or subtle accents to complete your look, our accessories collection is your go-to destination. From bold necklaces to elegant watches, we have everything you need to enhance your fashion journey.<\/p>"}},"511c8376-72ec-41b0-affd-1d8d946b277a":{"type":"image_box2","disabled":true,"settings":{"bottom_text":"Head of Content, AJ Voelpel, shooting with notable personal trainer Mario Guevara.","bottom_text2":"Professional barber, Gerry Flores, in his B Klassy Barber Studio in Kansas City, Mo."}},"95b1c64d-188f-490c-9020-5b261eb052b3":{"type":"pullquote","settings":{"big_heading":"UNLEASH YOUR INNER <span>ATHLETE<span><\/span><\/span>","image":"shopify:\/\/shop_images\/Untitled_design_5.png"}},"5ab5aeb8-96b9-49b9-a4d2-eecd6ba53529":{"type":"big_image","settings":{"image":"shopify:\/\/shop_images\/Home_Page_Banner_6.jpg","bottom-text":"When you wear ShmewW, you're not just wearing clothing; you're embracing a mindset. It's a symbol of hustle, passion, and self-belief. Our fashion is made for the dreamers, the doers, and the hustlers. Join us on this exciting journey, wear ShmewW with pride, and let your style tell your unique story. Get ready to make a statement, because at ShmewW, your fashion dreams become a reality."}},"d07b223c-3681-4544-a19b-520afd2f47e2":{"type":"feature_collection","settings":{"heading":"WEAR WITH PRIDE","content":"Seize Your Style, Embrace the Unstoppable You!","feature_collection":"unisex","products_limit":5}}},"order":["hero_video","0b624512-2e3f-47ab-95aa-9b2817ef607f","54fb7b33-9dce-42f9-b523-741c4e5828ca","68ad28f0-3f47-487e-9771-1e15d04503d4","9c582805-9fd7-4d54-9f48-7f02872e461c","b927c7b9-cdc4-4ccb-8db6-efcdaa41adb4","511c8376-72ec-41b0-affd-1d8d946b277a","95b1c64d-188f-490c-9020-5b261eb052b3","5ab5aeb8-96b9-49b9-a4d2-eecd6ba53529","d07b223c-3681-4544-a19b-520afd2f47e2"]}
+{
+  "sections": {
+    "hero_video": {
+      "type": "hero_video",
+      "settings": {
+        "video_sec": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e0690676f18045bc90cc2706df450d9d.mp4",
+        "title_cnt": "EVERY JOURNEY BEGINS WITH A STORY",
+        "subtext": "",
+        "button_text": "",
+        "link": ""
+      }
+    },
+    "0b624512-2e3f-47ab-95aa-9b2817ef607f": {
+      "type": "text-section",
+      "settings": {
+        "big_text": "About ShmewW",
+        "sub_text": "<p>Founded in 2023 by Dasia Grayman, ShmewW is not just a brand; it's a lifestyle. At ShmewW, we believe in empowering individuals to embrace their unique style and make a statement. Our diverse range of fashion caters to every aspect of your life, reflecting the essence of who you are and who you want to become.<\/p>"
+      }
+    },
+    "54fb7b33-9dce-42f9-b523-741c4e5828ca": {
+      "type": "big_image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/putting-on-your-shoes_925x_521ecf82-dcea-4802-8845-02f2cb8217b5.jpg",
+        "bottom-text": ""
+      }
+    },
+    "68ad28f0-3f47-487e-9771-1e15d04503d4": {
+      "type": "text-section",
+      "settings": {
+        "big_text": "INSPIRATION IN EVERY STITCH",
+        "sub_text": "<p>For those who love to ShmewW, we offer a curated selection of trendy and timeless pieces that speak volumes. From chic women's fashion to unisex essentials and exclusive men's ShmewW swag, our collections are designed to inspire confidence and celebrate individuality. We understand that fashion is not just about clothing; it's a way of expressing your identity and aspirations.<\/p>"
+      }
+    },
+    "9c582805-9fd7-4d54-9f48-7f02872e461c": {
+      "type": "big_image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/young-hip-woman-at-carnival_925x_2ff92405-1976-4e05-a955-fcd5f0567844.jpg",
+        "bottom-text": ""
+      }
+    },
+    "b927c7b9-cdc4-4ccb-8db6-efcdaa41adb4": {
+      "type": "text-section",
+      "settings": {
+        "big_text": "ACCESSORIES THAT TRANSFORM",
+        "sub_text": "<p>Elevate your style with our carefully crafted accessories. Whether you're searching for the perfect statement piece or subtle accents to complete your look, our accessories collection is your go-to destination. From bold necklaces to elegant watches, we have everything you need to enhance your fashion journey.<\/p>"
+      }
+    },
+    "511c8376-72ec-41b0-affd-1d8d946b277a": {
+      "type": "image_box2",
+      "disabled": true,
+      "settings": {
+        "bottom_text": "Head of Content, AJ Voelpel, shooting with notable personal trainer Mario Guevara.",
+        "bottom_text2": "Professional barber, Gerry Flores, in his B Klassy Barber Studio in Kansas City, Mo."
+      }
+    },
+    "95b1c64d-188f-490c-9020-5b261eb052b3": {
+      "type": "pullquote",
+      "settings": {
+        "big_heading": "UNLEASH YOUR INNER ATHLETE",
+        "image": "shopify:\/\/shop_images\/casual-fashion-woman_925x_a06ea34b-316e-48b8-a432-42fe3fcef845.jpg"
+      }
+    },
+    "5ab5aeb8-96b9-49b9-a4d2-eecd6ba53529": {
+      "type": "big_image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/urban-fashion_925x_782926c7-1f9a-4dc7-a348-97ad208b043c.jpg",
+        "bottom-text": "When you wear ShmewW, you're not just wearing clothing; you're embracing a mindset. It's a symbol of hustle, passion, and self-belief. Our fashion is made for the dreamers, the doers, and the hustlers. Join us on this exciting journey, wear ShmewW with pride, and let your style tell your unique story. Get ready to make a statement, because at ShmewW, your fashion dreams become a reality."
+      }
+    },
+    "d07b223c-3681-4544-a19b-520afd2f47e2": {
+      "type": "feature_collection",
+      "settings": {
+        "heading": "WEAR WITH PRIDE",
+        "content": "Seize Your Style, Embrace the Unstoppable You!",
+        "feature_collection": "new-arrivals",
+        "products_limit": 5
+      }
+    }
+  },
+  "order": [
+    "hero_video",
+    "0b624512-2e3f-47ab-95aa-9b2817ef607f",
+    "54fb7b33-9dce-42f9-b523-741c4e5828ca",
+    "68ad28f0-3f47-487e-9771-1e15d04503d4",
+    "9c582805-9fd7-4d54-9f48-7f02872e461c",
+    "b927c7b9-cdc4-4ccb-8db6-efcdaa41adb4",
+    "511c8376-72ec-41b0-affd-1d8d946b277a",
+    "95b1c64d-188f-490c-9020-5b261eb052b3",
+    "5ab5aeb8-96b9-49b9-a4d2-eecd6ba53529",
+    "d07b223c-3681-4544-a19b-520afd2f47e2"
+  ]
+}
