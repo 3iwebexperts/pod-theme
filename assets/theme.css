@@ -13384,4 +13384,8 @@ h1.collection-banner__title.text-left.h1 {
 
 .template-cart .responsive-table-row td .cart_quantity input {
   width: 50%;
+  text-align: center;
+}
+.template-cart table thead tr {
+  text-align: center;
 }
