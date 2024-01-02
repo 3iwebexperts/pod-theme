@@ -5,20 +5,8 @@
     },
     "cart": {
       "title": "Cart",
-      "settings": {
-        "cart_type": {
-          "label": "Warenkorbstil",
-          "drawer": {
-            "label": "Einschub"
-          },
-          "page": {
-            "label": "Seite"
-          },
-          "notification": {
-            "label": "Pop-up-Benachrichtigung"
-          }
-        }
-      }
+      "view_empty_cart": "View cart",
+      "item_added": "Item added to your cart"
     }
   }
 }
