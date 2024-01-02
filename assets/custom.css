@@ -379,7 +379,7 @@ label.popover__choice-item:has(input:checked):after {
   text-align: center !important;
 }
 .template-cart table tbody tr {
-  min-height: 200px;
+  height: 200px;
 }
 .template-cart table thead tr {
 }
