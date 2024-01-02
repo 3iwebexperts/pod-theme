@@ -380,6 +380,7 @@ label.popover__choice-item:has(input:checked):after {
 }
 .template-cart table thead tr {
   text-align: center;
+  height: 200px;
 }
 .template-cart table {
   margin: auto;
