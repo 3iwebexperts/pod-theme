@@ -368,3 +368,16 @@ label.popover__choice-item:has(input:checked):after {
   font-family: "SequelSans Body";
   padding-left: 5px;
 }
+/* Cart */
+.template-cart .responsive-table-row td {
+  text-align: center !important;
+  padding-right: 20px;
+}
+
+.template-cart .responsive-table-row .cart_quantity input {
+  width: 50% !important;
+  text-align: center !important;
+}
+.template-cart table thead tr {
+  text-align: center;
+}

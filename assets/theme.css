@@ -13376,17 +13376,3 @@ h1.collection-banner__title.text-left.h1 {
 .drawer__body-contents.reviews__body {
   overflow-y: visible !important;
 }
-
-/* Cart */
-.template-cart .responsive-table-row td {
-  text-align: center !important;
-  padding-right: 20px;
-}
-
-.template-cart .responsive-table-row .cart_quantity input {
-  width: 50% !important;
-  text-align: center !important;
-}
-.template-cart table thead tr {
-  text-align: center;
-}
