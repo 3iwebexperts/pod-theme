@@ -378,9 +378,10 @@ label.popover__choice-item:has(input:checked):after {
   width: 50% !important;
   text-align: center !important;
 }
-.template-cart table thead tr {
-  text-align: center;
+.template-cart table tbody tr {
   height: 200px;
+}
+.template-cart table thead tr {
 }
 .template-cart table {
   margin: auto;
