@@ -9,7 +9,8 @@
       "price_label": "Price",
       "quantity_label": "Quantity",
       "total_label": "Total",
-      "subtotal": "Subtotal"
+      "subtotal": "Subtotal",
+      "savings": "Savings"
     }
   }
 }
