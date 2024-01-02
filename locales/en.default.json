@@ -1,1 +1,24 @@
-{"general":{"newsletter":{"success":"Thanks for subscribing"}}}
+{
+  "general": {
+    "newsletter": {
+      "success": "Thanks for subscribing"
+    },
+    "cart": {
+      "name": "Cart",
+      "settings": {
+        "cart_type": {
+          "label": "Warenkorbstil",
+          "drawer": {
+            "label": "Einschub"
+          },
+          "page": {
+            "label": "Seite"
+          },
+          "notification": {
+            "label": "Pop-up-Benachrichtigung"
+          }
+        }
+      }
+    }
+  }
+}
