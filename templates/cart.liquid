@@ -61,7 +61,7 @@
               {% endif %}
 
               <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
-                <small>{{ 'cart.remove' }}</small>
+                <small>{{ 'cart.remove' | t }}</small>
               </a>
             </td>
             <td data-label="{{ 'cart.price' | t }}">
@@ -101,7 +101,7 @@
     {% if cart.total_discounts > 0 %}
       <p>{{ 'cart.savings' }} {{ cart.total_discounts | money }}</p>
     {% endif %}
-    <p>{{ 'cart.shipping_at_checkout' }}</p>
+    <p>{{ 'cart.shipping_at_checkout' | t }}</p>
     <input type="submit" name="update" value="{{ 'cart.update' | t }}">
     <input type="submit" name="checkout" class="button" value="{{ 'cart.checkout' | t }}">
   </form>
