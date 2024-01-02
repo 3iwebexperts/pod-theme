@@ -103,10 +103,10 @@
     {% endif %}
     <p>{{ 'cart.shipping_at_checkout' }}</p>
     <input type="submit" name="update" value="{{ 'cart.update' | t }}">
-    <input type="submit" name="checkout" class="button" value="{{ 'cart.checkout' }}">
+    <input type="submit" name="checkout" class="button" value="{{ 'cart.checkout' | t }}">
   </form>
 {% else %}
-  <h1>{{ 'cart.title' }}</h1>
+  <h1>{{ 'cart.title' |t }}</h1>
 
   {% comment %}
   Cart empty state
