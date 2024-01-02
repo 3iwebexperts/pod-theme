@@ -381,3 +381,6 @@ label.popover__choice-item:has(input:checked):after {
 .template-cart table thead tr {
   text-align: center;
 }
+.template-cart h1 {
+  margin-top: 15px;
+}
