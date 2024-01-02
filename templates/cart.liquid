@@ -61,10 +61,10 @@
               {% endif %}
 
               <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
-                <small>{{ 'cart.general.remove' }}</small>
+                <small>{{ 'cart.remove' }}</small>
               </a>
             </td>
-            <td data-label="{{ 'cart.label.price' }}">
+            <td data-label="{{ 'cart.price' }}">
               {% if item.original_line_price != item.line_price %}
                 <span class="visually-hidden">{{ 'cart.label.discounted_price' }}</span>
                 {{ item.price | money }}
@@ -74,7 +74,7 @@
                 {{ item.price | money }}
               {% endif %}
             </td>
-            <td data-label="{{ 'cart.general.quantity' }}">
+            <td data-label="{{ 'cart.quantity' }}">
               <input type="number"
                      name="updates[]"
                      id="updates_{{ item.key }}"
@@ -82,7 +82,7 @@
                      min="0"
                      aria-label="{{ 'cart.general.item_quantity' }}">
             </td>
-            <td data-label="{{ 'cart.label.total' }}">
+            <td data-label="{{ 'cart.total' }}">
               {{ item.line_price | money }}
             </td>
           </tr>
@@ -96,17 +96,17 @@
       <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
     {% endif %}
 
-    <p>{{ 'cart.general.subtotal' }}</p>
+    <p>{{ 'cart.subtotal' }}</p>
     <p>{{ cart.total_price | money }}</p>
     {% if cart.total_discounts > 0 %}
-      <p>{{ 'cart.general.savings' }} {{ cart.total_discounts | money }}</p>
+      <p>{{ 'cart.savings' }} {{ cart.total_discounts | money }}</p>
     {% endif %}
-    <p>{{ 'cart.general.shipping_at_checkout' }}</p>
-    <input type="submit" name="update" value="{{ 'cart.general.cart_update' }}">
-    <input type="submit" name="checkout" class="button" value="{{ 'cart.general.checkout' }}">
+    <p>{{ 'cart.shipping_at_checkout' }}</p>
+    <input type="submit" name="update" value="{{ 'cart_update' }}">
+    <input type="submit" name="checkout" class="button" value="{{ 'cart.checkout' }}">
   </form>
 {% else %}
-  <h1>{{ 'cart.general.title' }}</h1>
+  <h1>{{ 'cart.title' }}</h1>
 
   {% comment %}
   Cart empty state
