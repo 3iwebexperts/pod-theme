@@ -1,0 +1,27 @@
+{%- layout none -%}
+
+{%- capture suggested_search_terms -%}
+  {%- assign suggested_terms = search.terms | append: ' for' | split: ' ' -%}
+  {%- for term in suggested_terms -%}
+    {{ term }}{{- forloop.last | unless: forloop.first -}} {{- endunless -}}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if search.performed -%}
+  <h1>{{ 'search.results_for' | t: terms: search.terms }}</h1>
+
+  {%- if search.results_count == 0 -%}
+    <p>{{ 'search.no_results' | t: terms: suggested_search_terms }}</p>
+  {%- else -%}
+    <ul>
+      {%- for item in search.results -%}
+        <li>
+          <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+          <p>{{ item.description }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+{%- else -%}
+  <p>{{ 'search.start_typing' | t }}</p>
+{%- endif -%}
