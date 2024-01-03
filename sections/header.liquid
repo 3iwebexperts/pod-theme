@@ -2,6 +2,9 @@
 <noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
 
 <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+{%- if settings.predictive_search_enabled -%}
+  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
