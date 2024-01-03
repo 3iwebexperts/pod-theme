@@ -20,17 +20,15 @@
             </a>
           </div>
           <div class="header-nav header-nav--center header-nav--logo">
-            <a href="/" itemprop="url" class="header-logo">
-              {% if section.settings.image != blank %}
+            {% if section.settings.image != blank %}
+              <a href="/" itemprop="url" class="header-logo">
                 <img
                   src="{{ section.settings.image | img_url: "master" }}"
                   alt="{{ section.settings.image.alt }}"
                   class="header-logo__image"
                 >
-              {% else %}
-                {{ shop.name }}
-              {% endif %}
-            </a>
+              </a>
+            {% endif %}
           </div>
           <div>
             <div class="header-nav__menu-item" data-search-open-button="">
