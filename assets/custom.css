@@ -412,7 +412,9 @@ label.popover__choice-item:has(input:checked):after {
 .customer .field input::-webkit-search-cancel-button {
   display: none;
 }
-
+.template-product .swym-button-bar {
+  display: none;
+}
 /* Search */
 menu-drawer + .header__search {
   display: none;
