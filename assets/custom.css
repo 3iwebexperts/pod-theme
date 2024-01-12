@@ -572,6 +572,9 @@ details[open] .modal-overlay::after {
 predictive-search form input[type="search"]::-webkit-search-cancel-button {
   color: #fff;
 }
+.predictive-search h6 {
+  margin-bottom: 20px;
+}
 .predictive-search ul {
   list-style: none;
 }
