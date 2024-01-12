@@ -565,6 +565,7 @@ details[open] .modal-overlay::after {
 }
 .header predictive-search form input:focus-visible {
   border: none;
+  outline: none;
   outline-offset: none;
   border-bottom: 2px;
 }
