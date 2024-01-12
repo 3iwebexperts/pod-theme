@@ -547,3 +547,13 @@ details[open] .modal-overlay::after {
     margin-left: 0.5rem;
   }
 }
+
+/* Predictive search */
+.predictive-search {
+  position: absolute;
+  background: #fff;
+  right: 8%;
+  height: 250px;
+  overflow: auto;
+  padding: 15px;
+}
