@@ -587,6 +587,17 @@ predictive-search form input[type="search"]::-webkit-search-cancel-button {
   font-size: 28px;
   color: var(--black);
 }
+.predictive-search button {
+  border: none;
+  font-size: 13px;
+  font-family: inherit;
+  line-height: 1;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  justify-content: center;
+  width: 56%;
+}
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
     width: 180px;
