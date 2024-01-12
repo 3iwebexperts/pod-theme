@@ -569,6 +569,9 @@ details[open] .modal-overlay::after {
   outline-offset: none;
   border-bottom: 2px solid var(--swym-remind-cta-text-color);
 }
+predictive-search form input[type="search"]::-webkit-search-cancel-button {
+  color: #fff;
+}
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
     width: 180px;
