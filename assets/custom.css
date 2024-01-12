@@ -557,6 +557,12 @@ details[open] .modal-overlay::after {
   overflow: auto;
   padding: 15px;
 }
+.header predictive-search form input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: var(--swym-remind-cta-text-color);
+}
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
     width: 180px;
