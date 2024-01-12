@@ -557,3 +557,5 @@ details[open] .modal-overlay::after {
   overflow: auto;
   padding: 15px;
 }
+@media screen and (min-width: 990px) {
+}
