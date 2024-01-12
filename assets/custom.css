@@ -560,14 +560,14 @@ details[open] .modal-overlay::after {
 .header predictive-search form input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--swym-remind-cta-text-color);
   color: var(--swym-remind-cta-text-color);
 }
 .header predictive-search form input:focus-visible {
   border: none;
   outline: none;
   outline-offset: none;
-  border-bottom: 2px;
+  border-bottom: 2px solid var(--swym-remind-cta-text-color);
 }
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
