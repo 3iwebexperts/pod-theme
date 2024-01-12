@@ -553,7 +553,7 @@ details[open] .modal-overlay::after {
   position: absolute;
   background: #fff;
   right: 8%;
-  height: 250px;
+  max-height: 250px;
   overflow: auto;
   padding: 15px;
 }
