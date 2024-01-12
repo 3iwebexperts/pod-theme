@@ -578,6 +578,7 @@ predictive-search form input[type="search"]::-webkit-search-cancel-button {
 .predictive-search ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 20px;
 }
 .predictive-search ul li {
   margin: 5px 0;
