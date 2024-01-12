@@ -1,54 +1,22 @@
-<!-- Add the following CSS styles to your stylesheets (styles.css or similar) -->
-<style>
-  #predictive-search-results {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    max-height: 200px;
-    overflow-y: auto;
-    width: 100%;
-  }
-</style>
+<script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
 
-<!-- Add the following JavaScript code to the end of your theme.liquid or footer.liquid file -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script>
-  $(document).ready(function() {
-    // Adjust the selector based on your search input field
-    var $searchInput = $('#search-input');
-    var $searchResults = $('<div id="predictive-search-results"></div>');
+<predictive-search>
+  <form action="{{ routes.search_url }}" method="get" role="search">
+    <label for="Search">Search</label>
+    <input
+      id="Search"
+      type="search"
+      name="q"
+      value="{{ search.terms | escape }}"
+      role="combobox"
+      aria-expanded="false"
+      aria-owns="predictive-search-results"
+      aria-controls="predictive-search-results"
+      aria-haspopup="listbox"
+      aria-autocomplete="list"
+    >
+    <input name="options[prefix]" type="hidden" value="last">
 
-    // Attach the results container to the body
-    $('body').append($searchResults);
-
-    $searchInput.on('input', function() {
-      var query = $searchInput.val();
-
-      // Clear previous results
-      $searchResults.empty();
-
-      // Make an AJAX request to your backend or use Shopify's AJAX API to get search results
-      // Adjust the AJAX URL based on your implementation
-      $.ajax({
-        url: '/search/suggest.json?q=' + encodeURIComponent(query),
-        method: 'GET',
-        dataType: 'json',
-        success: function(data) {
-          // Process the data and append results to the results container
-          if (data && data.results) {
-            data.results.forEach(function(result) {
-              $searchResults.append('<div>' + result.title + '</div>');
-            });
-          }
-
-          // Show or hide the results container based on whether there are results
-          $searchResults.toggle(!!data.results.length);
-        },
-        error: function() {
-          console.error('Error fetching search results.');
-        }
-      });
-    });
-  });
-</script>
+    <div id="predictive-search" tabindex="-1"></div>
+  </form>
+</predictive-search>
