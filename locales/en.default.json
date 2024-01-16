@@ -11,6 +11,12 @@
         "one": "{{ count }} result",
         "other": "{{ count }} results"
       }
+    },
+    "pagination": {
+      "label": "Pagination",
+      "page": "Page {{ number }}",
+      "next": "Next page",
+      "previous": "Previous page"
     }
   },
   "cart": {
