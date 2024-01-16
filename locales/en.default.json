@@ -5,7 +5,8 @@
     },
     "search": {
       "search": "Search",
-      "reset": "Clear search term"
+      "reset": "Clear search term",
+      "heading": "Search"
     }
   },
   "cart": {
