@@ -456,6 +456,8 @@ menu-drawer + .header__search {
   justify-content: center;
   gap: 16px;
 }
+.arrow_previous {
+}
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
   .header--top-center > .header__search {
