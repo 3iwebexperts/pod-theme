@@ -616,7 +616,11 @@ details[open] .modal-overlay::after {
   margin: 0 auto;
 }
 .template-search .field {
-  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 .template-search main-search .search .field .search__input {
   border: 1px solid;
