@@ -21,7 +21,10 @@
 
     </div>
   </form>
-  <link href="{{ 'filter.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
+  
+</predictive-search>
+
+<link href="{{ 'filter.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
 {%- liquid
   assign results = collection
   assign sort_by = results.sort_by | default: results.default_sort_by
@@ -237,4 +240,3 @@
 {% javascript %}
 {% endjavascript %}
 
-</predictive-search>
