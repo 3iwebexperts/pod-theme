@@ -8,9 +8,7 @@
   <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-{% if section.settings.image_shape == 'blob' %}
-  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
-{%- endif -%}
+
 
 <script src="{{ 'main-search.js' | asset_url }}" defer="defer"></script>
 
@@ -336,13 +334,11 @@
     {%- endif -%}
   </div>
 {% endpaginate %}
-{% if section.settings.image_shape == 'arch' %}
-  {% render 'mask-arch' %}
-{%- endif -%}
+
 
 {% schema %}
 {
-  "name": "t:sections.main-search.name",
+  "name": "Search",
   "tag": "section",
   "class": "section"
 }
