@@ -612,7 +612,7 @@ details[open] .modal-overlay::after {
 .template-search .template-search__search {
   margin: 0 auto;
 }
-.template-searc .field {
+.template-search .field {
   text-align: center;
 }
 @media screen and (max-width: 340px) {
