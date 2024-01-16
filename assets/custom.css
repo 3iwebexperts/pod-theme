@@ -621,3 +621,5 @@ predictive-search form input[type="search"]::-webkit-search-cancel-button {
     width: 180px;
   }
 }
+@media only screen and (max-width: 991px) {
+}
