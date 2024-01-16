@@ -328,7 +328,7 @@
                 {%- endfor -%}
               </ul>
               {%- if paginate.pages > 1 -%}
-                 <div class="collection page-width grid-loader">
+                {% comment %} <div class="collection page-width grid-loader">
                 {%- if paginate.pages > 1 and paginate.next -%}
                   <input type="hidden" value="{{ paginate.next.url }}" data-next-link>
                   <input type="hidden" value="{{ paginate.pages }}" data-all-pages>
@@ -343,7 +343,7 @@
                     </button>
                   </div>
                 {%- endif -%}
-              </div>
+              </div>{% endcomment %}
    
               {%- endif -%}
             </div>
