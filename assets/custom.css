@@ -606,6 +606,9 @@ details[open] .modal-overlay::after {
   justify-content: space-around;
   list-style: none;
 }
+.template-search .template-search__header {
+  margin-bottom: 3rem;
+}
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
     width: 180px;
