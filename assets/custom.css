@@ -599,6 +599,13 @@ details[open] .modal-overlay::after {
 #Search::placeholder {
   color: var(--swym-remind-cta-text-color);
 }
+.template-search .product-grid-container .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-around;
+  list-style: none;
+}
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
     width: 180px;
