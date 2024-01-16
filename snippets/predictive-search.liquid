@@ -1,0 +1,24 @@
+{%- if predictive_search.performed -%}
+  <div id="predictive-search-results">
+    {%- if predictive_search.resources.products.size > 0 -%}
+      <h6 id="predictive-search-products" class="123">
+        Products
+      </h6>
+      <ul role="listbox" aria-labelledby="predictive-search-products">
+        {%- for product in predictive_search.resources.products -%}
+          <li role="option">
+            <a href="{{ product.url }}">
+              {{ product | image_url: width: 70 | image_tag }}
+              <span>{{ product.title }}</span>
+            </a>
+          </li>
+        {% render 'place_items' %}
+        {%- endfor -%}
+      </ul>
+
+    {%- endif -%}
+    <button>
+      Search for “{{ predictive_search.terms }}”
+    </button>
+  </div>
+{%- endif -%}
