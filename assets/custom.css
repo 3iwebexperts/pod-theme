@@ -617,7 +617,7 @@ predictive-search form input[type="search"]::-webkit-search-cancel-button {
   width: 100%;
 }
 #Search::placeholder {
-  color: red;
+  color: var(--swym-remind-cta-text-color);
 }
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
