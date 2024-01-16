@@ -616,6 +616,9 @@ predictive-search form input[type="search"]::-webkit-search-cancel-button {
   justify-content: center;
   width: 100%;
 }
+#Search::placeholder {
+  coor: red;
+}
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
     width: 180px;
