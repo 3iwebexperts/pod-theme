@@ -661,6 +661,7 @@ main-search .predictive-search button {
 }
 .template-search .template-search__header p {
   margin-left: 70px;
+  margin-top: 30px;
 }
 .search__button .icon {
   max-height: 20px;
