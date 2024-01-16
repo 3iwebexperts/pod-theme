@@ -570,6 +570,9 @@ details[open] .modal-overlay::after {
   border-bottom: 2px solid var(--swym-remind-cta-text-color);
 }
 
+.template-search main-search .predictive-search {
+  z-index: 1;
+}
 .predictive-search h6 {
   margin-bottom: 20px;
 }
