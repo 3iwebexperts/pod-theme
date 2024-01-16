@@ -612,6 +612,9 @@ details[open] .modal-overlay::after {
 .template-search .template-search__search {
   margin: 0 auto;
 }
+.template-searc .field {
+  text-align: center;
+}
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
     width: 180px;
