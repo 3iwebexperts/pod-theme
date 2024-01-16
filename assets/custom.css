@@ -457,6 +457,7 @@ menu-drawer + .header__search {
   gap: 16px;
 }
 .pagination-wrapper .arrow_previous {
+  rotate: 180deg;
 }
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
