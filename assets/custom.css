@@ -606,6 +606,9 @@ details[open] .modal-overlay::after {
   justify-content: space-around;
   list-style: none;
 }
+.template-search__search .search {
+  margin-top: 0;
+}
 .template-search .template-search__header {
   margin-bottom: 1rem;
 }
