@@ -617,8 +617,7 @@ predictive-search form input[type="search"]::-webkit-search-cancel-button {
   width: 100%;
 }
 #Search::placeholder {
-  background: yellow;
-  coor: red;
+  color: red;
 }
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
