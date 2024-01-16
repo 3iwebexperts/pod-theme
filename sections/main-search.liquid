@@ -328,7 +328,23 @@
                 {%- endfor -%}
               </ul>
               {%- if paginate.pages > 1 -%}
-                {% render 'pagination', paginate: paginate %}
+                 <div class="collection page-width grid-loader">
+                {%- if paginate.pages > 1 and paginate.next -%}
+                  <input type="hidden" value="{{ paginate.next.url }}" data-next-link>
+                  <input type="hidden" value="{{ paginate.pages }}" data-all-pages>
+                  <input type="hidden" value="{{ paginate.current_page }}" data-this-page>
+                  <input type="hidden" value="{{ collection.url }}" data-coll-url>
+                  <div class="load-more_wrap">
+                    <button id="loadMore" class="btn js-load-more btn--primary hero__btn button ">
+                      <span load-more-text>Load More</span>
+                      <span class="hide" loader>
+                        <img src="{{ 'loader.gif' | asset_url }}">
+                      </span>
+                    </button>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
               {%- endif -%}
             </div>
           {%- endif -%}
