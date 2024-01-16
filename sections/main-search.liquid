@@ -102,7 +102,7 @@
               >
              
               <input name="options[prefix]" type="hidden" value="last">
-               <div id="predictive-search" class="predictive-search" tabindex="-1"></div>
+               
 
               {%- if settings.predictive_search_enabled -%}
                 <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
@@ -130,6 +130,7 @@
                   </g>
                 </svg>
               </button>
+              <div id="predictive-search" class="predictive-search" tabindex="-1"></div>
             </div>
           </form>
         </main-search>
