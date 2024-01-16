@@ -12,7 +12,7 @@
               <span>{{ product.title }}</span>
             </a>
           </li>
-        {% include 'place_items' %}
+        {% include 'place_items', product: product %}
         {%- endfor -%}
       </ul>
 
