@@ -626,6 +626,9 @@ details[open] .modal-overlay::after {
   z-index: 1;
   width: 100%;
 }
+.template-search main-search .predictive-search #predictive-search-results {
+  text-align: center;
+}
 .template-search main-search .predictive-search #predictive-search-results ul {
   display: flex;
   justify-content: center;
