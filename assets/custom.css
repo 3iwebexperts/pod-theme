@@ -609,12 +609,7 @@ details[open] .modal-overlay::after {
   color: var(--swym-remind-cta-text-color);
 }
 .template-search .product-grid-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: space-between;
   list-style: none;
-  padding-right: 40px;
 }
 .template-search__search .search {
   margin-top: 0;
