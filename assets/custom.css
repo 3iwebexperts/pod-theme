@@ -644,6 +644,8 @@ details[open] .modal-overlay::after {
   padding: 15px;
   border-radius: 3px;
   justify-content: center;
+}
+.template-search main-search .search .field search__button {
   background: transparent;
 }
 main-search .predictive-search button {
