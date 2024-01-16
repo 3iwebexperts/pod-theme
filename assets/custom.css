@@ -610,6 +610,7 @@ details[open] .modal-overlay::after {
   margin-bottom: 1rem;
 }
 .template-search .template-search__search {
+  margin: 0 auto;
 }
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
