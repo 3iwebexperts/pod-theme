@@ -632,6 +632,10 @@ details[open] .modal-overlay::after {
   border-radius: 3px;
   justify-content: center;
 }
+.search__button .icon {
+  max-height: 30px;
+  max-width: 30px;
+}
 .template-search main-search .search .field .search__input {
   border: 1px solid;
 }
