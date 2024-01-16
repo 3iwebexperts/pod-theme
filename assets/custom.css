@@ -625,6 +625,8 @@ details[open] .modal-overlay::after {
 .template-search main-search .predictive-search {
   z-index: 1;
 }
+.predictive-search #predictive-search-results ul {
+}
 .template-search main-search .search .field button {
   border: none;
   font-size: 13px;
