@@ -624,8 +624,12 @@ details[open] .modal-overlay::after {
 }
 .template-search main-search .predictive-search {
   z-index: 1;
+  width: 100%;
 }
-.predictive-search #predictive-search-results ul {
+.template-search main-search .predictive-search #predictive-search-results ul {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 .template-search main-search .search .field button {
   border: none;
