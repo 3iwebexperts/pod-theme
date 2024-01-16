@@ -622,6 +622,7 @@ details[open] .modal-overlay::after {
   border: 1px solid;
 }
 .template-search main-search .search .field .search__input:focus-visible {
+  outline: none;
 }
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
