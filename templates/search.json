@@ -1,7 +1,7 @@
 {
   "sections": {
     "search": {
-      "type": "main-search",
+      "type": "predictive-search",
       "settings": {
       }
     }
