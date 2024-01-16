@@ -608,7 +608,7 @@ details[open] .modal-overlay::after {
 #Search::placeholder {
   color: var(--swym-remind-cta-text-color);
 }
-.template-search .product-grid-container .product-grid {
+.template-search .product-grid-container ul {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
