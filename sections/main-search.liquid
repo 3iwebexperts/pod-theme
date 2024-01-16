@@ -264,8 +264,7 @@
             >
               <div class="loading-overlay gradient"></div>
               <ul
-                class="grid product-grid  grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop"
-                role="list"
+                class="row content-grid content-grid--1-col content-grid--md-2-col content-grid--lg-3-col content-grid--xl-4-col"role="list"
               >
                 {%- for item in search.results -%}
                   {% assign lazy_load = false %}
