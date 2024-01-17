@@ -624,8 +624,7 @@ details[open] .modal-overlay::after {
   text-align: center;
 }
 .template-search .product-grid-container .pagination__item--current {
-  background: var(--swym-subscribe-success-text-color);
-  color: var(--swym-remind-cta-text-color);
+  border-bottom: 1px solid;
 }
 .template-search .product-grid-container {
   overflow: hidden;
