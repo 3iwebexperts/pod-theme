@@ -612,6 +612,11 @@ details[open] .modal-overlay::after {
 .template-search .product-grid-container ul {
   list-style: none;
 }
+.template-search .product-grid-container ul li {
+  border: 1px solid;
+  width: 3%;
+  text-align: center;
+}
 .template-search .product-grid-container {
   overflow: hidden;
   padding-right: 40px;
