@@ -677,9 +677,9 @@ predictive-search
 }
 .template-search main-search .predictive-search {
   z-index: 1;
-  width: 35%;
+  width: 50%;
   margin-top: 15px;
-  left: 30%;
+  left: 25%;
 }
 .template-search main-search .predictive-search #predictive-search-results {
   text-align: center;
