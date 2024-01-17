@@ -42,10 +42,11 @@
       class="product-card__url"
       data-product-url="{{ product.url }}"
     ></a>
-    {% unless product.has_only_default_variant %}
+   
       <div class="product-option">
         <div class="product-option__swatch swiper" data-swatch-slider>
           <div class="swiper-wrapper">
+             {% unless product.has_only_default_variant %}
             {% for option in product.options %}
               {% if option == 'Color' or option == 'color' %}
                 {% assign index = forloop.index0 %}
@@ -96,7 +97,9 @@
                   {% endunless %}
                 {% endfor %}
               {% endif %}
+               
             {% endfor %}
+               {% endunless %}
           </div>
           <div class="swiper-scrollbar product-option__scrollbar"></div>
         </div>
@@ -113,7 +116,7 @@
           {% endif %}
         {% endfor %}
       </span>
-    {% endunless %}
+   
     <h4 class="product-card__title">{{ product.title }}</h4>
 
     <div class="product-card__price-container">
