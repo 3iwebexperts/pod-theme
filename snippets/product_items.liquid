@@ -42,7 +42,7 @@
       class="product-card__url"
       data-product-url="{{ product.url }}"
     ></a>
-    {% unless product.has_only_default_variant %}
+   
       <div class="product-option">
         <div class="product-option__swatch swiper" data-swatch-slider>
           <div class="swiper-wrapper">
@@ -113,7 +113,7 @@
           {% endif %}
         {% endfor %}
       </span>
-    {% endunless %}
+   
     <h4 class="product-card__title">{{ product.title }}</h4>
 
     <div class="product-card__price-container">
