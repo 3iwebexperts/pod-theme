@@ -458,8 +458,12 @@ menu-drawer + .header__search {
 }
 .pagination-wrapper .arrow_previous {
   rotate: 90deg;
+  height: 1rem;
+  width: 0.5rem;
 }
 .pagination-wrapper .arrow_next {
+  height: 1rem;
+  width: 0.5rem;
   rotate: -90deg;
 }
 @media screen and (min-width: 990px) {
