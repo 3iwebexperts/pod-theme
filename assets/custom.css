@@ -626,6 +626,7 @@ details[open] .modal-overlay::after {
 }
 .template-search .product-grid-container .pagination__item--current {
   border-bottom: 1px solid;
+  font-style: bold;
 }
 .template-search .product-grid-container {
   overflow: hidden;
