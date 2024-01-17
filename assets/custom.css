@@ -686,6 +686,7 @@ predictive-search
   display: flex;
   justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 .template-search main-search .search .input-field button {
   border: none;
