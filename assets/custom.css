@@ -627,7 +627,7 @@ details[open] .modal-overlay::after {
 .template-search .pagination-wrapper ul li a {
   color: var(--swym-subscribe-success-text-color);
 }
-.template-search .product-grid-container li.pagination__item--current {
+.template-search .product-grid-container li:has(.pagination__item--current) {
   border-bottom: 1px solid;
   font-style: bold;
   font-size: 21px;
