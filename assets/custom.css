@@ -459,6 +459,9 @@ menu-drawer + .header__search {
 .pagination-wrapper .arrow_previous {
   rotate: -90deg;
 }
+.pagination-wrapper .arrow_next {
+  rotate: 90deg;
+}
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
   .header--top-center > .header__search {
