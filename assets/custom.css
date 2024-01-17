@@ -624,7 +624,7 @@ details[open] .modal-overlay::after {
 .template-search .template-search__search {
   margin: 0 auto;
 }
-.template-search .field .field_inner {
+.template-search .input-field .field_inner {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
