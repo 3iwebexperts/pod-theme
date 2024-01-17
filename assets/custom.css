@@ -619,6 +619,7 @@ predictive-search
 .predictive-search ul li a {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 .predictive-search ul li span {
   font-size: 24px;
