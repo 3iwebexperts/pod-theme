@@ -4277,6 +4277,7 @@ symbol.icon:not(.icon--full-color) rect {
   color: #121212;
   padding: 16px 20px 26px;
   position: relative;
+  flex: 1 0 auto;
 }
 .product-card__url {
   height: 100%;
