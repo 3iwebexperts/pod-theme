@@ -592,7 +592,7 @@ predictive-search
   padding: 15px;
 }
 .header predictive-search form input {
-  padding-left: 3px;
+  padding-left: 5px;
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--swym-remind-cta-text-color);
@@ -713,7 +713,7 @@ main-search .predictive-search button {
 }
 .template-search main-search .search .input-field .search__input {
   border: 1px solid;
-  padding-left: 3px;
+  padding-left: 5px;
 }
 .template-search main-search .search .input-field .search__input:focus-visible {
   outline: none;
