@@ -630,6 +630,7 @@ details[open] .modal-overlay::after {
 .template-search .product-grid-container .pagination__item--current {
   border-bottom: 1px solid;
   font-style: bold;
+  font-size: 21px;
 }
 .template-search .product-grid-container {
   overflow: hidden;
