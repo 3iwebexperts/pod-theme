@@ -621,6 +621,7 @@ details[open] .modal-overlay::after {
 }
 .template-search .pagination-wrapper ul li {
   width: 3%;
+  font-size: 10px;
   text-align: center;
 }
 .template-search .product-grid-container .pagination__item--current {
