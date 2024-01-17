@@ -643,7 +643,7 @@ details[open] .modal-overlay::after {
   justify-content: center;
   gap: 8px;
 }
-.template-search main-search .search .field button {
+.template-search main-search .search .input-field button {
   border: none;
   font-size: 13px;
   font-family: inherit;
@@ -653,7 +653,7 @@ details[open] .modal-overlay::after {
   border-radius: 3px;
   justify-content: center;
 }
-.template-search main-search .search .field .search__button {
+.template-search main-search .search .input-field .search__button {
   background: transparent;
 }
 main-search .predictive-search button {
@@ -671,10 +671,10 @@ main-search .predictive-search button {
   max-height: 20px;
   max-width: 30px;
 }
-.template-search main-search .search .field .search__input {
+.template-search main-search .search .input-field .search__input {
   border: 1px solid;
 }
-.template-search main-search .search .field .search__input:focus-visible {
+.template-search main-search .search .input-field .search__input:focus-visible {
   outline: none;
 }
 @media screen and (max-width: 340px) {
