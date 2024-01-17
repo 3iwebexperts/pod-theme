@@ -673,6 +673,7 @@ main-search .predictive-search button {
 }
 .template-search main-search .search .input-field .search__input {
   border: 1px solid;
+  padding-left: 3px;
 }
 .template-search main-search .search .input-field .search__input:focus-visible {
   outline: none;
