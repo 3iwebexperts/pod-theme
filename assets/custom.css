@@ -740,8 +740,8 @@ main-search .predictive-search button {
 @media only screen and (max-width: 750px) {
   .template-search main-search .predictive-search {
     z-index: 1;
-    width: 50%;
+    width: 100%;
     margin-top: 15px;
-    left: 25%;
+    left: 0;
   }
 }
