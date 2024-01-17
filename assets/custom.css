@@ -536,7 +536,7 @@ predictive-search
   fill: #000;
   cursor: pointer;
 }
-predictive-search input[type="search"]::-webkit-search-cancel-button {
+.header predictive-search input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 24px;
   width: 24px;
