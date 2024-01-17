@@ -612,7 +612,7 @@ details[open] .modal-overlay::after {
 .template-search .product-grid-container ul {
   list-style: none;
 }
-.template-search .product-grid-container ul li {
+.template-search .pagination-wrapper ul li {
   border: 1px solid;
   width: 3%;
   text-align: center;
