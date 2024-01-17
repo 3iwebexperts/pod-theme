@@ -525,7 +525,7 @@ details[open] .modal-overlay::after {
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   position: relative;
 }
-input[type="search"]::-webkit-search-cancel-button {
+predictive-search input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 24px;
   width: 24px;
