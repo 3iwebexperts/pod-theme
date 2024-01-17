@@ -620,11 +620,10 @@ details[open] .modal-overlay::after {
   list-style: none;
 }
 .template-search .pagination-wrapper ul li {
-  border: 1px solid;
   width: 3%;
   text-align: center;
 }
-.template-search .product-grid-container ul li.pagination__item--current {
+.template-search .product-grid-container .pagination__item--current {
   background: var(--swym-subscribe-success-text-color);
   color: var(--swym-remind-cta-text-color);
 }
