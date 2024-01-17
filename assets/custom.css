@@ -677,13 +677,15 @@ predictive-search
 }
 .template-search main-search .predictive-search {
   z-index: 1;
-  width: 100%;
+  width: 35%;
+  margin-top: 15px;
+  left: 30%;
 }
 .template-search main-search .predictive-search #predictive-search-results {
   text-align: center;
 }
 .template-search main-search .predictive-search #predictive-search-results ul {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
