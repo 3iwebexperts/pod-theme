@@ -534,6 +534,9 @@ predictive-search input[type="search"]::-webkit-search-cancel-button {
   fill: #000;
   cursor: pointer;
 }
+header predictive-search input[type="search"]::-webkit-search-cancel-button {
+  fill: #fff;
+}
 .search-modal__content-bottom {
   bottom: calc((var(--inputs-margin-offset) / 2));
 }
