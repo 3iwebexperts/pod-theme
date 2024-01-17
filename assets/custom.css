@@ -623,6 +623,8 @@ details[open] .modal-overlay::after {
   width: 3%;
   font-size: 20px;
   text-align: center;
+}
+.template-search .pagination-wrapper ul li a {
   color: var(--swym-subscribe-success-text-color);
 }
 .template-search .product-grid-container .pagination__item--current {
