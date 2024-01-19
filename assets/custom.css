@@ -593,7 +593,11 @@ predictive-search
   padding: 15px;
 }
 .predictive-search::-webkit-scrollbar {
-  background: red;
+  width: 6px;
+  background-color: #f5f5f5;
+}
+.predictive-search::-webkit-scrollbar-thumb {
+  background-color: #000000;
 }
 .header predictive-search form input {
   padding-left: 5px;
