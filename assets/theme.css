@@ -6206,8 +6206,6 @@ symbol.icon:not(.icon--full-color) rect {
   content: "";
   display: block;
   height: 20px;
-  -webkit-mask-image: url(icon-arrow-yotpo.svg);
-  mask-image: url(icon-arrow-yotpo.svg);
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
