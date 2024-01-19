@@ -1299,28 +1299,7 @@ template {
 [hidden] {
   display: none !important;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Sequel Sans Small Title;
-    src: url(SequelSans-SemiBoldHead.svg#SequelSans-SemiBoldHead) format("svg");
-  }
-}
-@font-face {
-  font-family: SequelSans Body;
-  font-style: normal;
-  font-weight: 400;
-  src: url(SequelSans-SemiBoldBody.eot?#iefix);
-  src: url(SequelSans-SemiBoldBody.eot?#iefix) format("embedded-opentype"),
-    url(SequelSans-SemiBoldBody.woff) format("woff"),
-    url(SequelSans-SemiBoldBody.ttf) format("truetype"),
-    url(SequelSans-SemiBoldBody.svg#SequelSans-SemiBoldBody) format("svg");
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: SequelSans Body;
-    src: url(SequelSans-SemiBoldBody.svg#SequelSans-SemiBoldBody) format("svg");
-  }
-}
+
 body,
 html {
   font-family: SequelSans Body, sans-serif;
