@@ -1299,48 +1299,6 @@ template {
 [hidden] {
   display: none !important;
 }
-@font-face {
-  font-family: Sequel Sans Title;
-  font-style: normal;
-  font-weight: 400;
-  src: url(SequelSans-BoldDisp.eot?#iefix);
-  src: url(SequelSans-BoldDisp.eot?#iefix) format("embedded-opentype"),
-    url(SequelSans-BoldDisp.woff) format("woff"),
-    url(SequelSans-BoldDisp.ttf) format("truetype"),
-    url(SequelSans-BoldDisp.svg#SequelSans-BoldDisp) format("svg");
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Sequel Sans Title;
-    src: url(SequelSans-BoldDisp.svg#SequelSans-BoldDisp) format("svg");
-  }
-}
-@font-face {
-  font-family: Sequel Sans Title;
-  font-style: normal;
-  font-weight: 400;
-  src: url(SequelSans-BoldHead.eot?#iefix);
-  src: url(SequelSans-BoldHead.eot?#iefix) format("embedded-opentype"),
-    url(SequelSans-BoldHead.woff) format("woff"),
-    url(SequelSans-BoldHead.ttf) format("truetype"),
-    url(SequelSans-BoldHead.svg#SequelSans-BoldHead) format("svg");
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Sequel Sans Title;
-    src: url(SequelSans-BoldHead.svg#SequelSans-BoldHead) format("svg");
-  }
-}
-@font-face {
-  font-family: Sequel Sans Small Title;
-  font-style: normal;
-  font-weight: 400;
-  src: url(SequelSans-SemiBoldHead.eot?#iefix);
-  src: url(SequelSans-SemiBoldHead.eot?#iefix) format("embedded-opentype"),
-    url(SequelSans-SemiBoldHead.woff) format("woff"),
-    url(SequelSans-SemiBoldHead.ttf) format("truetype"),
-    url(SequelSans-SemiBoldHead.svg#SequelSans-SemiBoldHead) format("svg");
-}
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: Sequel Sans Small Title;
