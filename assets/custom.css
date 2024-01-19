@@ -586,9 +586,10 @@ predictive-search
 .predictive-search {
   position: absolute;
   background: #fff;
-  /* right: 8%; */
+  right: 1px;
   max-height: 250px;
   overflow: auto;
+  margin-top: 10px;
   padding: 15px;
 }
 .header predictive-search form input {
