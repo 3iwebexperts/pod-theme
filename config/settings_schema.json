@@ -39,6 +39,27 @@
     ]
   },
   {
+    "name": "t:settings_schema.cart.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Drawer"
+          },
+          {
+            "value": "page",
+            "label": "Page"
+          }
+        ],
+        "default": "drawer",
+        "label": "Cart type"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.search_input.name",
     "settings": [
       {
