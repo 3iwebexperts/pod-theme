@@ -593,6 +593,7 @@ predictive-search
   padding: 15px;
 }
 .predictive-search ::-webkit-scrollbar {
+  background: red;
 }
 .header predictive-search form input {
   padding-left: 5px;
