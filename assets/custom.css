@@ -597,7 +597,7 @@ predictive-search
   background-color: #ddd;
 }
 .predictive-search::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: #7c7979;
 }
 .header predictive-search form input {
   padding-left: 5px;
