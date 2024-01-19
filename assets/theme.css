@@ -13380,5 +13380,6 @@ h1.collection-banner__title.text-left.h1 {
 /* Background */
 .custom_collage,
 .c_icon_text {
-  background: var(--white);
+  /* background: var(--white); */
+  background: red;
 }
