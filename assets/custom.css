@@ -596,6 +596,7 @@ predictive-search
   padding-left: 5px;
   background: transparent;
   border: none;
+  font-size: 20px;
   border-bottom: 1px solid var(--swym-remind-cta-text-color);
   color: var(--swym-remind-cta-text-color);
 }
