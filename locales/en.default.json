@@ -20,6 +20,7 @@
     }
   },
   "cart": {
+    "name": "Cart",
     "title": "Cart",
     "prdouct": "Product",
     "price": "Price",
