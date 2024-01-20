@@ -10,7 +10,7 @@
   <header class="header is-fixed show-on-scroll" role="banner" data-header="">
     <div class="header-container">
       <div class="header-nav">
-        <div class="header-nav__menu">
+        <div class="header-nav__menu {% if settings.logo_position == "left" %}logo_left{% endif %}">
           <div class="header-nav__menu-item">
             <a href="#" id="hamburger_menu" class="hamburger" data-mobile-menu-toggle="">
               <span class="hamburger-box">
@@ -668,15 +668,15 @@
         "id": "logo_position",
         "options": [
           {
-            "value": "middle-left",
-            "label": "Middle Left"
+            "value": "left",
+            "label": "Left"
           },
           {
-            "value": "middle-center",
-            "label": "Middle Center"
+            "value": "center",
+            "label": "Center"
           }
         ],
-        "default": "middle-center",
+        "default": "center",
         "label": "Desktop logo position"
       },
          {
