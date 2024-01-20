@@ -7979,6 +7979,8 @@ body.ajax-cart-open {
 }
 .btn.ajax-cart__footer-checkout:hover {
   color: #fff;
+  background: #000;
+  border-color: #000;
 }
 @media (min-width: 992px) {
   .ajax-cart__footer-checkout:hover {
