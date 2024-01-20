@@ -11905,8 +11905,10 @@ input[type="radio"]:checked ~ .bundle-option__ui .bundle-option__checkmark {
   display: block;
   height: 30px;
   margin-left: auto;
-  -webkit-mask: url(icon-arrow-yotpo.svg) no-repeat center;
-  mask: url(icon-arrow-yotpo.svg) no-repeat center;
+  -webkit-mask: url("https://cdn.shopify.com/s/files/1/0559/1010/5184/t/4/assets/icon-arrow.png")
+    no-repeat center;
+  mask: url("https://cdn.shopify.com/s/files/1/0559/1010/5184/t/4/assets/icon-arrow.png")
+    no-repeat center;
   -webkit-mask-size: contain;
   mask-size: contain;
   position: relative;
