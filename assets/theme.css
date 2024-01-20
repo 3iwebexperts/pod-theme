@@ -6202,7 +6202,7 @@ symbol.icon:not(.icon--full-color) rect {
   right: -5px;
 }
 .cta__icon:before {
-  background-color: currentcolor;
+  background-color: #121212;
   content: "";
   display: block;
   height: 20px;
