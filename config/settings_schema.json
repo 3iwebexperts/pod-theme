@@ -64,7 +64,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "t:settings_schema.search_input.settings.header.content"
+        "content": "Search suggestions"
       },
       {
         "type": "checkbox",
