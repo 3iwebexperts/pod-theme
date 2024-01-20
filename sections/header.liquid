@@ -23,11 +23,15 @@
             {% if section.settings.image != blank %}
               <a href="/" itemprop="url" class="header-logo">
                 <img
-                  src="{{ section.settings.image | img_url: "master" }}"
+                  src="{{ section.settings.image | image_url: "master" }}"
                   alt="{{ section.settings.image.alt }}"
                   class="header-logo__image"
+                  width=""
+                  height=""
                 >
               </a>
+            {% else %}
+              <span class="h2">{{ shop.name }}</span>
             {% endif %}
           </div>
           <div>
