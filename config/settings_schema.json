@@ -39,7 +39,7 @@
     ]
   },
   {
-    "name": "settings_schema.cart.name",
+    "name": "{{ settings_schema.cart.name }}",
     "settings": [
       {
         "type": "select",
