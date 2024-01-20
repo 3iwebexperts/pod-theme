@@ -33,6 +33,25 @@
     "checkout": "Checkout",
     "remove": "Remove"
   },
+  "search_input": {
+    "name": "Search behavior",
+    "settings": {
+      "header": {
+        "content": "Search suggestions"
+      },
+      "predictive_search_enabled": {
+        "label": "Enable search suggestions"
+      },
+      "predictive_search_show_vendor": {
+        "label": "Show product vendor",
+        "info": "Visible when search suggestions enabled."
+      },
+      "predictive_search_show_price": {
+        "label": "Show product price",
+        "info": "Visible when search suggestions enabled."
+      }
+    }
+  },
   "templates": {
     "search": {
       "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
