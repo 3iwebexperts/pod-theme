@@ -6206,6 +6206,8 @@ symbol.icon:not(.icon--full-color) rect {
   content: "";
   display: block;
   height: 20px;
+  -webkit-mask-image: url("https://cdn.shopify.com/s/files/1/0559/1010/5184/t/4/assets/icon-arrow.png"); */
+    mask-image: url("https://cdn.shopify.com/s/files/1/0559/1010/5184/t/4/assets/icon-arrow.png");
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
