@@ -60,7 +60,7 @@
     ]
   },
   {
-    "name": "settings_schema.general.search.name",
+    "name": "t:settings_schema.general.search.name",
     "settings": [
       {
         "type": "header",
