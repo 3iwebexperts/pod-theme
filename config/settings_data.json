@@ -154,6 +154,7 @@
         ],
         "settings": {
           "image": "shopify:\/\/shop_images\/woman-in-the-city_925x_5bca1aa1-1625-4ea1-adc3-d709b243e190.jpg",
+          "logo_position": "left",
           "tab_title_1": "ShmewW",
           "tab_grid_title_1": "SHOP BY CATEGORY",
           "tab_slider_title_1": "EXPLORE MORE",
