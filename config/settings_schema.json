@@ -60,7 +60,7 @@
     ]
   },
   {
-    "name": "t:settings_schema.search_input.name",
+    "name": "Search behavior",
     "settings": [
       {
         "type": "header",
