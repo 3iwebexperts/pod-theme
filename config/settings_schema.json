@@ -39,7 +39,7 @@
     ]
   },
   {
-    "name": "settings_schema.cart.title",
+    "name": "{{ settings_schema.cart.name }}",
     "settings": [
       {
         "type": "select",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "name": "settings_schema.general.search.search",
+    "name": "settings_schema.search_input.name",
     "settings": [
       {
         "type": "header",
