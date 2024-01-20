@@ -70,7 +70,7 @@
         "type": "checkbox",
         "id": "predictive_search_enabled",
         "default": true,
-        "label": "t:settings_schema.search_input.settings.predictive_search_enabled.label"
+        "label": "Enabled Predictive Search"
       }
     ]
   }
