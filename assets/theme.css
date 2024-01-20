@@ -7964,7 +7964,9 @@ body.ajax-cart-open {
   }
 }
 .ajax-cart__footer-checkout {
-  background-color: #0036eb;
+  border-color: #a3ff00;
+  background-color: #a3ff00;
+  color: #000;
   font-family: SequelSans Body, sans-serif;
   font-size: 13px;
   font-weight: 600;
