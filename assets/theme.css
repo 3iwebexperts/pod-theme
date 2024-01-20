@@ -13318,3 +13318,6 @@ h1.collection-banner__title.text-left.h1 {
 .drawer__body-contents.reviews__body {
   overflow-y: visible !important;
 }
+.shop_name {
+  color: #00ff00;
+}
