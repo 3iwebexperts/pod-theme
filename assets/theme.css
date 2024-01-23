@@ -13321,10 +13321,9 @@ h1.collection-banner__title.text-left.h1 {
 .shop_name {
   color: #00ff00;
 }
-.header-nav__menu.logo_left {
-  position: relative !important;
-}
+
 .logo_left .header-nav--logo {
   left: 40px !important;
   text-align: left;
+  transform: translate(0, -50%);
 }
