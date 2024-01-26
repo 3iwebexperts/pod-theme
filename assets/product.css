@@ -20,7 +20,7 @@
 .product .thumb_slider input[type="radio"]:checked ~ .product-option__ui {
   border-color: #000;
 }
-.thumb_slider input[type="radio"]:checked ~ .product-option__single-selector {
+.thumb_slider input[type="radio"]:checked ~ label {
   order: -1 !important;
 }
 label.pro_selector {
