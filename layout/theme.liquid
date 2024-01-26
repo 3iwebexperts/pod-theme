@@ -11,13 +11,7 @@
     {%- endif -%}
 
     <!-- Title and description ================================================== -->
-    {% comment %}
-      <title>
-        EXECUTIVE RETAIL LTD.
-      </title>
-    {% endcomment %}
-
-    {%- capture seo_title -%}
+   {%- capture seo_title -%}
     {%- if request.page_type == 'search' and search.performed == true -%}
       {{ 'general.search.heading' | t: count: search.results_count }}: {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
     {%- else -%}
@@ -35,25 +29,6 @@
     {%- endunless -%}
   {%- endcapture -%}
     <title>{{ seo_title | strip }}</title>
-    {% comment %}
-    <meta name="description" content="Condolence Books, Book of Remembrance, Celebration Of Life Books, In Loving Memory Books, In Memory Books, Loose Leaf Books, Open Format Books, All Books, Other Products.">
-    <!-- Social meta ================================================== -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Condolence Books, Book of Remembrance, Celebration Of Life Books, In Loving Memory Books, In Memory Books, Loose Leaf Books, Open Format Books, All Books, Other Products.">
-    <meta property="og:url" content="https://">
-    <meta property="og:description" content="Condolence Books, Book of Remembrance, Celebration Of Life Books, In Loving Memory Books, In Memory Books, Loose Leaf Books, Open Format Books, All Books, Other Products.">
-    <meta property="og:site_name" content="Angel &amp; Dove">
-    <meta name="twitter:card" content="summary">
-    <meta
-      name="twitter:title"
-      content="Condolence Books, Book of Remembrance, Celebration Of Life Books, In Loving Memory Books, In Memory Books, Loose Leaf Books, Open Format Books, All Books, Other Products."
-    >
-
-    <!-- Helpers ================================================== -->
-    <meta name="theme-color" content="#f3cac0">
-    <!-- CSS ================================================== -->
-
-    {% endcomment %}
     <style>
       @import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap';
 
