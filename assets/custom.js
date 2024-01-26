@@ -189,7 +189,6 @@ function common_functions() {
       loop: false,
       autoHeight: true, 
       spaceBetween: 20,
-      loop: false,
       navigation: {
         nextEl: ".feature_next",
         prevEl: ".feature_prev",
@@ -227,8 +226,8 @@ function common_functions() {
   if (($(".coming_soon") !== undefined) && ($(".coming_soon").find('.swiper-slide').length > 0)) {
     new Swiper(".coming_soon", {
       loop: false,
+      autoHeight: true,
       spaceBetween: 20,
-      loop: false,
       navigation: {
         nextEl: ".coming_soon_prev",
         prevEl: ".coming_soon_next",
