@@ -58,7 +58,7 @@
                       {% unless colorlist contains color %}
                         <label class="product-option__single-selector swiper-slide {% if forloop.first %}swiper-slide-active{% endif %}" data-swatch-slide>
                           <input
-                            onclick="Vardetails(this);"
+                       onclick="Vardetails(this);"
                             type="radio"
                             name="option1"
                             value="{{- color | escape -}}"
