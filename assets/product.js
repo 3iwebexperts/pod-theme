@@ -72,6 +72,13 @@ function product_render_function() {
     
     selectVariant();
   });
+
+   $('.thumb_slider input[type="radio"]').change(function() {
+        if ($(this).is(':checked')) {
+          $('.product-option__single-selector').removeClass('custom_order'); 
+          $(this).parent('.product-option__single-selector').addClass('custom_order');
+        }
+      });
 }
 $(document).ready(function () {
   $(document).on("click", "#swatch_drawer .drawer__body-contents .pro_selector input", function (e) {
