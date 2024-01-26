@@ -142,7 +142,7 @@ function not_rendered_functions() {
   }
 }
 function common_functions() {
-  if ($(".featured-categories") !== undefined) {
+  if (($(".featured-categories") !== undefined) && ($(".featured-categories").find('.swiper-slide').length > 0)) {
     new Swiper(".featured-categories", {
       loop: false,
       nextButton: ".swiper-button-next",
@@ -151,7 +151,7 @@ function common_functions() {
       grabCurso: true,
     });
   }
-  if ($(".navigation-categories") !== undefined) {
+  if (($(".navigation-categories") !== undefined) && ($(".navigation-categories").find('.swiper-slide').length > 0)) {
     new Swiper(".navigation-categories", {
       loop: false,
       cssMode: true,
@@ -159,7 +159,7 @@ function common_functions() {
       loop: false,
     });
   }
-  if ($(".navigation-carousel__slider") !== undefined) {
+  if (($(".navigation-carousel__slider") !== undefined) && ($(".navigation-carousel__slider").find('.swiper-slide').length > 0)) {
     new Swiper(".navigation-carousel__slider", {
       direction: "horizontal",
       loop: false,
@@ -173,7 +173,7 @@ function common_functions() {
       },
     });
   }
-  if ($(".cust_swip") !== undefined) {
+  if (($(".cust_swip") !== undefined) && ($(".cust_swip").find('.swiper-slide').length > 0)) {
     new Swiper(".cust_swip", {
       slidesPerView: 1,
       autoHeight: true,
@@ -225,7 +225,7 @@ function common_functions() {
     });
   }
 
-  if ($(".coming_soon") !== undefined) {
+  if (($(".coming_soon") !== undefined) && ($(".coming_soon").find('.swiper-slide').length > 0)) {
   new Swiper(".coming_soon", {
     loop: false,
     spaceBetween: 20,
@@ -254,7 +254,7 @@ function common_functions() {
     },
   });
   }
-  if ($(".shop-the-look__looks-container") !== undefined) {
+  if (($(".shop-the-look__looks-container") !== undefined) && ($(".shop-the-look__looks-container").find('.swiper-slide').length > 0)) {
   new Swiper(".shop-the-look__looks-container", {
     loop: false,
     spaceBetween: 20,
