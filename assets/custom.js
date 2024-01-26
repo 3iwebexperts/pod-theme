@@ -192,7 +192,7 @@ function common_functions() {
       // slidesPerView: 4,
       loop: false,
       // cssMode: true,
-        autoHeight: true, 
+      autoHeight: true, 
       spaceBetween: 20,
       loop: false,
       navigation: {
