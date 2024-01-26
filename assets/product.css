@@ -19,6 +19,8 @@
 }
 .product .thumb_slider input[type="radio"]:checked ~ .product-option__ui {
   border-color: #000;
+}
+input[type="radio"]:checked ~ .product-option__ui {
   order: -1 !important;
 }
 label.pro_selector {
