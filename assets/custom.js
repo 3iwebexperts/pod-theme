@@ -354,20 +354,24 @@ function common_functions() {
       }
     });
   }
-  $(".faq_box .accordion__toggle").click(function() {
-    $(this)
-      .closest(".accordion.group")
-      .find(".accordion__content")
-      .slideToggle();
-    $(this).toggleClass("active");
-  });
-  $(".accordion").click(function() {
-    $(this)
-      .closest(" .accordion__toggle")
-      .find(".accordion__body")
-      .slideToggle();
-    $(this).toggleClass(" is-open");
-  });
+  if ($(".faq_box .accordion__toggle") !== undefined) {
+    $(".faq_box .accordion__toggle").click(function() {
+      $(this)
+        .closest(".accordion.group")
+        .find(".accordion__content")
+        .slideToggle();
+      $(this).toggleClass("active");
+    });
+  }
+  if ($(".accordion") !== undefined) {
+    $(".accordion").click(function() {
+      $(this)
+        .closest(" .accordion__toggle")
+        .find(".accordion__body")
+        .slideToggle();
+      $(this).toggleClass(" is-open");
+    });
+  }  
 }
 $(document).ready(function() {
   $(".shop-the-look__slider .shop-the-look__slide").click(function() {
