@@ -73,7 +73,6 @@
     {% endcomment %}
     {{ content_for_header }}
     {% comment %}
-    <script src="{{ 'vendor.js' | asset_url }}" />
     <script src="{{ 'jquery-3.7.1.min.js' | asset_url }}"></script>
     <script src="{{ 'swiper-bundle.min.js' | asset_url }}" async="async"></script>
     <script src="{{ 'swiper-min.js' | asset_url }}" async="async"></script>
@@ -105,14 +104,6 @@
     <script src="{{ 'custom.js' | asset_url }}" type="text/javascript" />
 
     {% section 'ajax-cart' %}
-
-    <!--
-      <div id="drawer-container">
-        <div class="all_drawers drawers-container-child">
-          <div class="drawer-backdrop null"></div>
-        </div>
-      </div>
-    -->
 
     <div class="custom-overlay"></div>
     <div class="custom-loader-overlay"><img src="{{ 'loader.gif' | asset_img_url }}" alt="loader" /></div>
