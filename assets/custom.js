@@ -365,6 +365,7 @@ function common_functions() {
   });
 }
 $(document).ready(function() {
+  console.log("here");
   $(".shop-the-look__slider .shop-the-look__slide").click(function() {
     $("#look_drawer .look-drawer").toggleClass("is-visible");
     $("#look_drawer .drawer-backdrop").toggleClass("is-visible");
