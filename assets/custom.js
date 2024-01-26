@@ -133,8 +133,7 @@ function not_rendered_functions() {
       });
       // return false;
     });
-  }
-  // cart drawer remove item end
+  } 
   if (
     $("#swatch_drawer .drawer-backdrop") !== undefined ||
     $("#swatch_drawer .drawer__close") !== undefined
@@ -146,6 +145,7 @@ function not_rendered_functions() {
       }
     );
   }
+  // cart drawer remove item end
 }
 function common_functions() {
   if (($(".featured-categories") !== undefined) && ($(".featured-categories").find('.swiper-slide').length > 0)) {
