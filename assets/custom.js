@@ -341,17 +341,19 @@ function common_functions() {
   }
   var mmute = document.getElementById("mute");
   var uunmute = document.getElementById("unmute");
-  $("#snd_icn").click(function() {
-    if ($("#player").prop("muted")) {
-      $("#player").prop("muted", false);
-      mmute.classList.remove("hidden");
-      uunmute.classList.add("hidden");
-    } else {
-      $("#player").prop("muted", true);
-      mmute.classList.add("hidden");
-      uunmute.classList.remove("hidden");
-    }
-  });
+  if ($("#snd_icn") !== undefined) {
+    $("#snd_icn").click(function() {
+      if ($("#player").prop("muted")) {
+        $("#player").prop("muted", false);
+        mmute.classList.remove("hidden");
+        uunmute.classList.add("hidden");
+      } else {
+        $("#player").prop("muted", true);
+        mmute.classList.add("hidden");
+        uunmute.classList.remove("hidden");
+      }
+    });
+  }
   $(".faq_box .accordion__toggle").click(function() {
     $(this)
       .closest(".accordion.group")
