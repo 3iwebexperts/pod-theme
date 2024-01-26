@@ -153,6 +153,7 @@
           "4ce9e05e-ae58-48f5-876d-1e5abb121dfa"
         ],
         "settings": {
+          "image": "shopify:\/\/shop_images\/light-png.png",
           "logo_position": "left",
           "tab_title_1": "ShmewW",
           "tab_grid_title_1": "SHOP BY CATEGORY",
