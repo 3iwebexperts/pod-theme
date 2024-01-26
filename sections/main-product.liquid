@@ -9,13 +9,31 @@
         <div class="sticky-image col-lg-24" data-sticky-image="">
           <div class="sticky-image__background-container hide-mobile">
             <div class="sticky-image__background-image">
-              <img
-                src="{{ product.featured_image| img_url: 'master' }}"
-                srcset="{{ product.featured_image| img_url: 'master' }}"
-                class=""
-                loading="eager"
-                alt=""
-              >
+               {% if product.selected_variant.image != blank %}
+                <img
+                  src="{{ product.selected_variant.image | img_url: '1024x' }}"
+                  srcset="{{ product.selected_variant.image | img_url: '1024x' }}"
+                  class=""
+                  loading="eager"
+                  alt=""
+                >
+              {% elsif product.variants.first.image != blank %}
+                <img
+                  src="{{ product.variants.first.image | img_url: '1024x' }}"
+                  srcset="{{ product.variants.first.image | img_url: '1024x' }}"
+                  class=""
+                  loading="eager"
+                  alt=""
+                >
+              {% else %}
+                <img
+                  src="{{ product.featured_image | img_url: '1024x' }}"
+                  srcset="{{ product.featured_image | img_url: '1024x' }}"
+                  class=""
+                  loading="eager"
+                  alt=""
+                >
+              {% endif %}
             </div>
           </div>
           <div class="sticky-image__info-container">
