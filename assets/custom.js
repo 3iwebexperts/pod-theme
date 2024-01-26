@@ -174,26 +174,36 @@ function common_functions() {
       },
     },
   });
-  
-  new Swiper(".custSwip",{
+  var contentSlider = new Swiper(".cust_swip", {
     slidesPerView: 1,
     autoHeight: true,
     pagination: {
-      el: ".cust_swiper-pagination",
+      el: ".swiper-pagination",
       clickable: true,
     },
   });
 
-  new Swiper(".feature_card_slider", {
+  new Swiper(".card-slider__slider", {
     // slidesPerView: 4,
     loop: false,
     // cssMode: true,
+      autoHeight: true, 
     spaceBetween: 20,
     loop: false,
     navigation: {
       nextEl: ".feature_next",
       prevEl: ".feature_prev",
     },
+   on: {
+    init: function () {
+      this.updateAutoHeight();
+      this.setEqualHeight();
+    },
+    slideChange: function () {
+      this.updateAutoHeight();
+      this.setEqualHeight(); 
+    },
+  },
     pagination: {
       el: ".feature_paginate",
       clickable: true,
@@ -249,8 +259,8 @@ function common_functions() {
     spaceBetween: 20,
     loop: false,
     navigation: {
-      nextEl: ".shop-the-look__arrow--next",
-      prevEl: ".shop-the-look__arrow--prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
       el: ".look_pagination",
@@ -530,51 +540,3 @@ $(document).ready(function() {
   product_functions();
   common_functions();
 });
-
-
-// Search
-function trapFocus(container, elementToFocus = container) {
-  var elements = getFocusableElements(container);
-  var first = elements[0];
-  var last = elements[elements.length - 1];
-
-  removeTrapFocus();
-
-  trapFocusHandlers.focusin = (event) => {
-    if (event.target !== container && event.target !== last && event.target !== first) return;
-
-    document.addEventListener('keydown', trapFocusHandlers.keydown);
-  };
-
-  trapFocusHandlers.focusout = function () {
-    document.removeEventListener('keydown', trapFocusHandlers.keydown);
-  };
-
-  trapFocusHandlers.keydown = function (event) {
-    if (event.code.toUpperCase() !== 'TAB') return; // If not TAB key
-    // On the last focusable element and tab forward, focus the first element.
-    if (event.target === last && !event.shiftKey) {
-      event.preventDefault();
-      first.focus();
-    }
-
-    //  On the first focusable element and tab backward, focus the last element.
-    if ((event.target === container || event.target === first) && event.shiftKey) {
-      event.preventDefault();
-      last.focus();
-    }
-  };
-
-  document.addEventListener('focusout', trapFocusHandlers.focusout);
-  document.addEventListener('focusin', trapFocusHandlers.focusin);
-
-  elementToFocus.focus();
-
-  if (
-    elementToFocus.tagName === 'INPUT' &&
-    ['search', 'text', 'email', 'url'].includes(elementToFocus.type) &&
-    elementToFocus.value
-  ) {
-    elementToFocus.setSelectionRange(0, elementToFocus.value.length);
-  }
-}
