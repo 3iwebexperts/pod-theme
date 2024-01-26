@@ -53,6 +53,7 @@ function not_rendered_functions() {
     );
   }
   // cart icon and cart drawer event end
+  // swatch drawer code start
   if ( $("#swatch_drawer .drawer__body-contents .product-option__single-selector input") !== undefined ) {
     $(document).on("click", "#swatch_drawer .drawer__body-contents .product-option__single-selector input, .pro_add_cart:not(.has_size)", function(e) {
         var variant_id = $(this).data("variant-id");
@@ -86,6 +87,7 @@ function not_rendered_functions() {
       }
     );
   }
+  // swatch drawer code end
   // quantity code start
   if ($(".quantity-adjuster__increment") !== undefined) {
     $(document).on("click", ".quantity-adjuster__increment", function(e) {
