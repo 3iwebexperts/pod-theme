@@ -90,6 +90,13 @@ $(document).ready(function () {
         }
       });
     }
+
+                  $('.thumb_slider input[type="radio"]').change(function() {
+        if ($(this).is(':checked')) {
+          $('.product-option__single-selector').removeClass('custom_order'); 
+          $(this).parent('.product-option__single-selector').addClass('custom_order');
+        }
+      });
   );
   // add to cart js start
   if ($(".product .product__atc-btn") !== undefined) {
