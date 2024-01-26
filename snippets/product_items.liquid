@@ -17,8 +17,7 @@
       data-image-selector="fern"
     >
       <div class="discount-badge" data-discount-badge></div>
-  
-        {% if current_variant.image != blank %}
+      {% if current_variant.image != blank %}
         <img
           src="{{ current_variant.image | img_url: "1024x" }}"
           class="product-card__image"
@@ -64,7 +63,7 @@
                       {% unless colorlist contains color %}
                         <label class="product-option__single-selector swiper-slide {% if forloop.first %}swiper-slide-active{% endif %}" data-swatch-slide>
                           <input
-                       onclick="Vardetails(this);"
+                            onclick="Vardetails(this);"
                             type="radio"
                             name="option1"
                             value="{{- color | escape -}}"
