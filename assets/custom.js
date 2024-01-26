@@ -224,7 +224,6 @@ function common_functions() {
       }
     });
   }
-
   if (($(".coming_soon") !== undefined) && ($(".coming_soon").find('.swiper-slide').length > 0)) {
     new Swiper(".coming_soon", {
       loop: false,
