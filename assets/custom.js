@@ -133,9 +133,7 @@ function not_rendered_functions() {
     $("#swatch_drawer .drawer-backdrop") !== undefined ||
     $("#swatch_drawer .drawer__close") !== undefined
   ) {
-    $(document).on(
-      "click", "#swatch_drawer .drawer__close, #swatch_drawer .drawer-backdrop",
-      function(e) {
+    $(document).on("click", "#swatch_drawer .drawer__close, #swatch_drawer .drawer-backdrop", function(e) {
         $("#swatch_drawer .product-option__drawer").toggleClass("is-visible");
         $("#swatch_drawer .drawer-backdrop").toggleClass("is-visible");
         $("body").toggleClass("drawer-open");
