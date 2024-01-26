@@ -1,1 +1,39 @@
-{"sections":{"main-product":{"type":"main-product","blocks":{"542378d7-6bef-4487-9aeb-a52bc91f3ad6":{"type":"text","settings":{"text":"Standard shipping on all orders over $80","button_label":"","button_url":""}},"61479d58-c95b-4b69-a27e-f413dd5ddfe2":{"type":"image_picker","settings":{"content_image":"shopify:\/\/shop_images\/municipal-apparel_customer-service_miles.webp","content_heading":"Got Questions?","content_text":"Hit up our Customer Experience team! They are real people ready to help out.","email_btn_label":"Email Us","email_btn_url":"shopify:\/\/pages\/contact","faq_btn_label":"Read FAQ","faq_btn_url":"shopify:\/\/pages\/faqs"}}},"block_order":["542378d7-6bef-4487-9aeb-a52bc91f3ad6","61479d58-c95b-4b69-a27e-f413dd5ddfe2"],"settings":{"size_chart":"size-chat"}}},"order":["main-product"]}
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "542378d7-6bef-4487-9aeb-a52bc91f3ad6": {
+          "type": "text",
+          "settings": {
+            "text": "Standard shipping on all orders over $80",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "61479d58-c95b-4b69-a27e-f413dd5ddfe2": {
+          "type": "image_picker",
+          "settings": {
+            "content_image": "shopify:\/\/shop_images\/municipal-apparel_customer-service_miles.webp",
+            "content_heading": "Got Questions?",
+            "content_text": "Hit up our Customer Experience team! They are real people ready to help out.",
+            "email_btn_label": "Email Us",
+            "email_btn_url": "shopify:\/\/pages\/contact",
+            "faq_btn_label": "Read FAQ",
+            "faq_btn_url": "shopify:\/\/pages\/faqs"
+          }
+        }
+      },
+      "block_order": [
+        "542378d7-6bef-4487-9aeb-a52bc91f3ad6",
+        "61479d58-c95b-4b69-a27e-f413dd5ddfe2"
+      ],
+      "settings": {
+        "size_chart": "size-chart"
+      }
+    }
+  },
+  "order": [
+    "main-product"
+  ]
+}
