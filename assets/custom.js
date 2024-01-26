@@ -233,10 +233,10 @@ function common_functions() {
         nextEl: ".coming_soon_prev",
         prevEl: ".coming_soon_next",
       },
-      pagination: {
-        el: ".coming_soon_paginate",
-        clickable: true,
-      },
+      // pagination: {
+      //   el: ".coming_soon_paginate",
+      //   clickable: true,
+      // },
       breakpoints: {
         320: {
           slidesPerView: 1,
