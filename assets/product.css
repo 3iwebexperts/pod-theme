@@ -19,7 +19,7 @@
 }
 .product .thumb_slider input[type="radio"]:checked ~ .product-option__ui {
   border-color: #000;
-  order: -1;
+  order: -1 !important;
 }
 label.pro_selector {
   font-family: Sequel Sans Title, SequelSans Body, sans-serif;
