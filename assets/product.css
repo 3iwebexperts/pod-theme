@@ -23,7 +23,7 @@
 .product
   .thumb_slider
   input[type="radio"]:checked
-  + .product-option__single-selector {
+  ~ .product-option__single-selector {
   order: -1 !important;
 }
 label.pro_selector {
