@@ -3,10 +3,10 @@
   display: inline-block;
   width: 100%;
 }
-.product .product-gallery__arrows-container{
+.product .product-gallery__arrows-container {
   flex-direction: row-reverse;
 }
-.product-option__header{
+.product-option__header {
   margin-top: 25px;
 }
 .product .thumb_slider .product-option__ui {
@@ -17,14 +17,15 @@
   position: relative;
   width: 100%;
 }
-.product .thumb_slider input[type=radio]:checked~.product-option__ui {
+.product .thumb_slider input[type="radio"]:checked ~ .product-option__ui {
   border-color: #000;
-}    
+  order: -1;
+}
 label.pro_selector {
-  font-family: Sequel Sans Title,SequelSans Body,sans-serif;
+  font-family: Sequel Sans Title, SequelSans Body, sans-serif;
   width: 100%;
 }
-.product #custom_sizing_drwer img{
+.product #custom_sizing_drwer img {
   display: block;
   width: 100%;
 }
@@ -32,7 +33,7 @@ label.pro_selector {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
-}    
+}
 .product .product-card__content {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
