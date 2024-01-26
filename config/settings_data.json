@@ -21,7 +21,7 @@
           "5084e073-37dd-4177-b142-2f3fd3ae3968": {
             "type": "tab_one_grid",
             "settings": {
-              "tab_1_collection": "mens-shmeww-swag",
+              "tab_1_collection": "",
               "enable_highlight_tab1": true,
               "highlight_text_tab1": "New"
             }
@@ -29,7 +29,7 @@
           "b0a1b563-0c0c-4683-8398-b984025fbe3e": {
             "type": "tab_one_grid",
             "settings": {
-              "tab_1_collection": "women-love-to-shmeww",
+              "tab_1_collection": "",
               "enable_highlight_tab1": false,
               "highlight_text_tab1": ""
             }
@@ -37,7 +37,7 @@
           "cc5d1190-df04-4b39-b293-caf6708cd174": {
             "type": "tab_one_grid",
             "settings": {
-              "tab_1_collection": "unisex",
+              "tab_1_collection": "",
               "enable_highlight_tab1": false,
               "highlight_text_tab1": ""
             }
@@ -45,7 +45,7 @@
           "955c9fee-729b-4607-8254-c5aaa4c6bc42": {
             "type": "tab_two_grid",
             "settings": {
-              "tab_2_collection": "everyday-shmeww",
+              "tab_2_collection": "",
               "enable_highlight_tab1": false,
               "highlight_text_tab1": ""
             }
@@ -53,16 +53,15 @@
           "1efb40d3-75aa-4c57-925a-35d90ebd9e1f": {
             "type": "tab_two_grid",
             "settings": {
-              "tab_2_collection": "pet-shmeww",
+              "tab_2_collection": "",
               "enable_highlight_tab1": false,
               "highlight_text_tab1": ""
             }
           },
           "1d48c484-b080-4a01-810f-2c128fdacbbd": {
             "type": "tab_two_grid",
-            "disabled": true,
             "settings": {
-              "tab_2_collection": "accessories",
+              "tab_2_collection": "",
               "enable_highlight_tab1": false,
               "highlight_text_tab1": ""
             }
@@ -111,7 +110,6 @@
           },
           "7bf60947-b0b7-43fa-ac6d-d22314fd1715": {
             "type": "tab_three_image_text",
-            "disabled": true,
             "settings": {
               "tab_3_text": "Best Seller",
               "tab_3_content": "Top Picks: Best Sellers Collection Unveiled",
@@ -120,7 +118,6 @@
           },
           "cb0287dc-6be2-49e6-943d-6ce98214992e": {
             "type": "tab_three_image_text",
-            "disabled": true,
             "settings": {
               "tab_3_text": "Bundle & Save",
               "tab_3_content": "Bundle Up, Save More: Perfect Packages Await",
