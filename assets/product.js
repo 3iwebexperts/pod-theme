@@ -65,7 +65,10 @@ function product_render_function() {
   });
   // color variant change code
   $('.thumb_slider input[type="radio"]').on("change", function (params) {
-    console.log("asdasd");
+    console.log($(this).data("v_id"),"asdasd");
+    let v_image = $(this).data("v_image");
+    $(".sticky-image__background-image img").prop("src", v_image);
+    $(".sticky-image__background-image img").prop("srcset", v_image);
     selectVariant();
   });
 }
