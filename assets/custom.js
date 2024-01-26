@@ -184,7 +184,7 @@ function common_functions() {
     });
   }
 
-  if ($(".card-slider__slider") !== undefined) {
+  if (($(".card-slider__slider") !== undefined) && ($(".card-slider__slider").find('.swiper-slide').length > 0)) {
     new Swiper(".card-slider__slider", {
       loop: false,
       autoHeight: true, 
