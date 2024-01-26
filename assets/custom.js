@@ -226,62 +226,62 @@ function common_functions() {
   }
 
   if (($(".coming_soon") !== undefined) && ($(".coming_soon").find('.swiper-slide').length > 0)) {
-  new Swiper(".coming_soon", {
-    loop: false,
-    spaceBetween: 20,
-    loop: false,
-    navigation: {
-      nextEl: ".coming_soon_prev",
-      prevEl: ".coming_soon_next",
-    },
-    pagination: {
-      el: ".coming_soon_paginate",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
+    new Swiper(".coming_soon", {
+      loop: false,
+      spaceBetween: 20,
+      loop: false,
+      navigation: {
+        nextEl: ".coming_soon_prev",
+        prevEl: ".coming_soon_next",
       },
-      530: {
-        slidesPerView: 2,
+      pagination: {
+        el: ".coming_soon_paginate",
+        clickable: true,
       },
-      992: {
-        slidesPerView: 3,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        530: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 4,
+        },
       },
-      1400: {
-        slidesPerView: 4,
-      },
-    },
-  });
+    });
   }
   if (($(".shop-the-look__looks-container") !== undefined) && ($(".shop-the-look__looks-container").find('.swiper-slide').length > 0)) {
-  new Swiper(".shop-the-look__looks-container", {
-    loop: false,
-    spaceBetween: 20,
-    loop: false,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".look_pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
+    new Swiper(".shop-the-look__looks-container", {
+      loop: false,
+      spaceBetween: 20,
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-      530: {
-        slidesPerView: 2,
+      pagination: {
+        el: ".look_pagination",
+        clickable: true,
       },
-      992: {
-        slidesPerView: 3,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        530: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 4,
+        },
       },
-      1400: {
-        slidesPerView: 4,
-      },
-    },
-  });
+    });
   }
   if ($(".coming_col") !== undefined) {
     $(".coming_col").click(function(e) {
