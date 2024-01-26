@@ -66,13 +66,13 @@
     <link href="{{ 'theme.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ 'custom.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ 'vendor.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+    {{ content_for_header }}
+
+    
     {% comment %}
     <link href="{{ 'chosen.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
     <link href="{{ 'swiper-bundle.min.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    {% endcomment %}
-    {{ content_for_header }}
-    {% comment %}
     <script src="{{ 'jquery-3.7.1.min.js' | asset_url }}"></script>
     <script src="{{ 'swiper-bundle.min.js' | asset_url }}" async="async"></script>
     <script src="{{ 'swiper-min.js' | asset_url }}" async="async"></script>
