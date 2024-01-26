@@ -69,6 +69,7 @@ function product_render_function() {
     let v_image = $(this).data("v_image");
     $(".sticky-image__background-image img").prop("src", v_image);
     $(".sticky-image__background-image img").prop("srcset", v_image);
+    $(".product-option__single-selector .product-option__ui").addClass("custom_order");
     selectVariant();
   });
 }
