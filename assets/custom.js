@@ -80,7 +80,7 @@ function not_rendered_functions() {
             render_cart();
           },
           error: function(error) {
-            console.log("select available variant!");
+            console.log(error);
           },
         });
       }
@@ -145,7 +145,6 @@ function not_rendered_functions() {
 }
 function common_functions() {
   if ($(".featured-categories") !== undefined) {
-    // Swiper: Slider
     new Swiper(".featured-categories", {
       loop: false,
       nextButton: ".swiper-button-next",
@@ -189,9 +188,7 @@ function common_functions() {
 
   if ($(".card-slider__slider") !== undefined) {
     new Swiper(".card-slider__slider", {
-      // slidesPerView: 4,
       loop: false,
-      // cssMode: true,
       autoHeight: true, 
       spaceBetween: 20,
       loop: false,
@@ -232,9 +229,7 @@ function common_functions() {
 
   if ($(".coming_soon") !== undefined) {
   new Swiper(".coming_soon", {
-    // slidesPerView: 4,
     loop: false,
-    // cssMode: true,
     spaceBetween: 20,
     loop: false,
     navigation: {
@@ -263,9 +258,7 @@ function common_functions() {
   }
   if ($(".shop-the-look__looks-container") !== undefined) {
   new Swiper(".shop-the-look__looks-container", {
-    // slidesPerView: 4,
     loop: false,
-    // cssMode: true,
     spaceBetween: 20,
     loop: false,
     navigation: {
@@ -299,16 +292,10 @@ function common_functions() {
       $(".main_coming_soon .notify_over").toggleClass("is-visible");
       $("body").toggleClass("drawer-open");
       var d_img = $(this).find("img").attr("src");
-      var d_title = $(this)
-        .parent(".link-card")
-        .find(".link-card__outer-text span")
-        .text();
-      // console.log(d_img);
+      var d_title = $(this).parent(".link-card").find(".link-card__outer-text span").text();
       $(".notify_add").find(".drawer__body-contents img").attr("src", d_img);
       $(".notify_add").find(".drawer__body-contents img").attr("srcset", d_img);
-      $(".notify_add")
-        .find(".mkt-subscription__body-info .highlighted")
-        .text(d_title);
+      $(".notify_add").find(".mkt-subscription__body-info .highlighted").text(d_title);
     });
   }
   if (($(".notify_close") !== undefined) || ($(".notify_over") !== undefined)) {
@@ -383,8 +370,6 @@ $(document).ready(function() {
     $("#look_drawer .look-drawer").toggleClass("is-visible");
     $("#look_drawer .drawer-backdrop").toggleClass("is-visible");
     $("body").toggleClass("drawer-open");
-    // shop look section render
-
     var col_url = $(this).data("collection");
     let look_url = col_url + "?section_id=collection-product-grid";
     $('.custom-loader-overlay').addClass('loading');
@@ -392,11 +377,9 @@ $(document).ready(function() {
       .then((response) => response.text())
       .then((responseText) => {
         let look_html = new DOMParser().parseFromString(responseText, "text/html");
-        // console.log(look_html,"look_html");
         let look_pro_render = look_html.querySelector("#render_look").innerHTML;
         document.querySelector("#look_drawer .look-drawer__body .slider-container .swiper-wrapper").innerHTML = "";
         document.querySelector("#look_drawer .look-drawer__body .slider-container .swiper-wrapper").innerHTML = look_pro_render;
-        // look drawer slider code
         var contentSlider = new Swiper(".look_drawer_slider", {
           autoHeight: true,
           slidesPerView: 1,
@@ -413,9 +396,7 @@ $(document).ready(function() {
 
 function form_submit() {
   const crtform = document.querySelector(".ajax-cart-form");
-  // Get the form data
   var formData = $(crtform).serialize();
-  // Send an Ajax request
   $.ajax({
     type: "POST",
     url: $(crtform).attr("action"),
@@ -541,7 +522,6 @@ function product_functions() {
     }
   );
   $(document).on("click", ".drawer .drawer__header .drawer__close", function() {
-      console.log("I'm Close Button ");
       $("#swatch_drawer .product-option__drawer").removeClass("is-visible");
       $("#swatch_drawer .drawer-backdrop").removeClass("is-visible");
       $("body").removeClass("drawer-open");
