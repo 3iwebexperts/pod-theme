@@ -86,6 +86,7 @@ function not_rendered_functions() {
       }
     );
   }
+  // quantity code start
   if ($(".quantity-adjuster__increment") !== undefined) {
     $(document).on("click", ".quantity-adjuster__increment", function(e) {
       e.preventDefault();
@@ -106,6 +107,8 @@ function not_rendered_functions() {
       form_submit();
     });
   }
+  // quantity code end
+  // cart drawer remove item start
   if ($(".ajax-cart__item-remove") !== undefined) {
     $(document).on("click", ".ajax-cart__item-remove", function(k) {
       k.preventDefault(); // Prevent the default behavior of the link
@@ -129,6 +132,7 @@ function not_rendered_functions() {
       // return false;
     });
   }
+  // cart drawer remove item end
   if (
     $("#swatch_drawer .drawer-backdrop") !== undefined ||
     $("#swatch_drawer .drawer__close") !== undefined
