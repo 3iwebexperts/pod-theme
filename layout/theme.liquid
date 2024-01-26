@@ -102,7 +102,7 @@
       {% section 'footer' %}
     </div>
 
-    <script src="{{ 'custom.js' | asset_url }}" type="text/javascript"></script>
+    <script src="{{ 'custom.js' | asset_url }}" type="text/javascript" />
 
     {% section 'ajax-cart' %}
 
@@ -117,7 +117,7 @@
     <div class="custom-overlay"></div>
     <div class="custom-loader-overlay"><img src="{{ 'loader.gif' | asset_img_url }}" alt="loader" /></div>
     {%- if template contains 'collection' -%}
-      <script src="{{ 'filter.js' | asset_url  }}"></script>
+      <script src="{{ 'filter.js' | asset_url  }}" />
     {%- endif -%}
   
 {% include 'swymSnippet' %}
