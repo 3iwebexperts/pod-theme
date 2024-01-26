@@ -19,71 +19,84 @@
       class="product-variant-id"
     >
     <div class="product-gallery">
-      <div class="swiper product_large_img">
-        <div class="swiper-wrapper">
-          {%- for media in product.media -%}
-            {%- if selectedThumb == "" -%}
-              {% unless media.id == current_variant.featured_image.id %}{% unless current_variant.featured_image.alt != media.alt and current_variant.featured_image.alt != blank %}{% assign selectedThumb = current_variant.featured_image.id %}{% endunless %}{% endunless %}
-            {%- endif -%}
-            <div
-              class="large_img_slide {% unless media.id == current_variant.featured_image.id %}{% unless current_variant.featured_image.alt != media.alt and current_variant.featured_image.alt != blank %}swiper-slide{% endunless %}{% endunless %} {% if forloop.first %}swiper-slide-active{% endif %}"
-              data-slide=""
-              data-image-url="{{ media.preview_image | img_url: '1024x' }}"
-              style="aspect-ratio: 1680 / 2100; width: 515px; margin-right: 10px;"
-            >
-              <div class="swiper-zoom-container large_slide">
-                <img
-                  alt="{{ media.alt }}"
-                  class="swiper-lazy product-gallery__image swiper-lazy-loaded"
-                  src="{{ media.preview_image | img_url: '1024x' }}"
-                >
+      <div class="pro_main_slider">
+        <div class="swiper product_large_img">
+          <div class="swiper-wrapper">
+            {%- for media in product.media -%}
+              {%- if selectedThumb == '' -%}
+                {% unless media.id == current_variant.featured_image.id -%}
+                  {%- unless current_variant.featured_image.alt != media.alt
+                    and current_variant.featured_image.alt != blank
+                  -%}
+                    {%- assign selectedThumb = current_variant.featured_image.id -%}
+                  {%- endunless -%}
+                {%- endunless %}
+              {%- endif -%}
+              <div
+                class="large_img_slide {% unless media.id == current_variant.featured_image.id %}{% unless current_variant.featured_image.alt != media.alt and current_variant.featured_image.alt != blank %}swiper-slide{% endunless %}{% endunless %} {% if forloop.first %}swiper-slide-active{% endif %}"
+                data-slide=""
+                data-image-url="{{ media.preview_image | img_url: '1024x' }}"
+                style="margin-right: 10px;"
+              >
+                <div class="swiper-zoom-container large_slide">
+                  <img
+                    alt="{{ media.alt }}"
+                    class="swiper-lazy product-gallery__image swiper-lazy-loaded"
+                    src="{{ media.preview_image | img_url: '1024x' }}"
+                  >
+                </div>
               </div>
-            </div>
-          {% endfor %}
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination product-gallery__pagination"></div>
         </div>
-        <div class="swiper-pagination product-gallery__pagination"></div>
-      </div>
-      <div class="product-gallery__arrows-container">
-        <div class="product-gallery__arrow product-gallery__arrow_next">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            role="presentation"
-            class="icon icon-caret"
-            viewBox="0 0 50 50"
-          >
-            <g fill="none" fill-rule="evenodd">
-                <g fill="#121212">
-                    <path d="M6.914 16.556L30 39.642 24.753 44.889 1.667 21.802z"></path>
-                    <path d="M48.333 21.802L25.247 44.889 20 39.642 43.086 16.556z"></path>
-                </g>
-            </g>
-          </svg>
-        </div>
-        <div class="product-gallery__arrow product-gallery__arrow_prev">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            role="presentation"
-            class="icon icon-caret"
-            viewBox="0 0 50 50"
-          >
-            <g fill="none" fill-rule="evenodd">
-                <g fill="#121212">
-                    <path d="M6.914 16.556L30 39.642 24.753 44.889 1.667 21.802z"></path>
-                    <path d="M48.333 21.802L25.247 44.889 20 39.642 43.086 16.556z"></path>
-                </g>
-            </g>
-          </svg>
+        <div class="product-gallery__arrows-container">
+          <div class="product-gallery__arrow product-gallery__arrow_next">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              class="icon icon-caret"
+              viewBox="0 0 50 50"
+            >
+              <g fill="none" fill-rule="evenodd">
+                  <g fill="#121212">
+                      <path d="M6.914 16.556L30 39.642 24.753 44.889 1.667 21.802z"></path>
+                      <path d="M48.333 21.802L25.247 44.889 20 39.642 43.086 16.556z"></path>
+                  </g>
+              </g>
+            </svg>
+          </div>
+          <div class="product-gallery__arrow product-gallery__arrow_prev">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              class="icon icon-caret"
+              viewBox="0 0 50 50"
+            >
+              <g fill="none" fill-rule="evenodd">
+                  <g fill="#121212">
+                      <path d="M6.914 16.556L30 39.642 24.753 44.889 1.667 21.802z"></path>
+                      <path d="M48.333 21.802L25.247 44.889 20 39.642 43.086 16.556z"></path>
+                  </g>
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
       {% for option in product.options %}
         {% if option == 'Color' or option == 'color' %}
           <div class="product-option__header">
             <div class="product-option__header-label p4">{{ option }}:</div>
-            <div class="product-option__selected-option p4" data-selected-option="option1">{{ current_variant.option1 }}</div>
+            <div class="product-option__selected-option p4" data-selected-option="option1">
+              {{ current_variant.option1 }}
+            </div>
           </div>
-          <div thumbsSlider="" class="swiper thumb_slider {% if selectedThumb == variant.image.id %}swiper-slide-active swiper-slide-thumb-active{% endif %}">
+          <div
+            thumbsSlider=""
+            class="swiper thumb_slider {% if selectedThumb == variant.image.id %}swiper-slide-active swiper-slide-thumb-active{% endif %}"
+          >
             <div class="swiper-wrapper">
               {% assign index = forloop.index0 %}
               {%- assign colorlist = '' -%}
@@ -120,8 +133,8 @@
                     >
                     <div class="product-option__ui">
                       <img
-                        src="{{ variant.image | img_url: '112x' }}"
-                        srcset="{{ variant.image | img_url: '112x' }}"
+                        src="{{ variant.image | img_url: '400x' }}"
+                        srcset="{{ variant.image | img_url: '400x' }}"
                         class=""
                         sizes="(max-width: 992px) 20vw, 112px"
                         loading="lazy"
@@ -213,7 +226,15 @@
       </div>
     </div>
 
-    <button type="button" name="add" class="btn btn-primary btn-block product__atc-btn" data-add-to-cart="" {% unless product.has_only_default_variant or has_color == true %}disabled=""{% endunless %}>
+    <button
+      type="button"
+      name="add"
+      class="btn btn-primary btn-block product__atc-btn"
+      data-add-to-cart=""
+      {% unless product.has_only_default_variant or has_color == true %}
+        disabled=""
+      {% endunless %}
+    >
       <span data-add-to-cart-text="">Add to Bag</span>
       <span class="product__atc-price" data-add-to-cart-price="" style="">
         {{- product.price | money | remove: '.00' -}}
