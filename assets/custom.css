@@ -615,9 +615,12 @@ main-search .predictive-search button {
   outline: none;
 }
 /* Pop up search box */
+.popup-search {
+  display: none;
+}
 .search-open {
   z-index: 99999;
-  opacity: 1;
+  display: block;
   overflow: hidden;
 }
 .search-open .bg-overlay {
