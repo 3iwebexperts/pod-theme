@@ -615,6 +615,11 @@ main-search .predictive-search button {
   outline: none;
 }
 /* Pop up search box */
+.search-open {
+  z-index: 99999;
+  opacity: 1;
+  overflow: hidden;
+}
 .search-open .bg-overlay {
   background: rgba(0, 0, 0, 0.6);
   z-index: 99;
