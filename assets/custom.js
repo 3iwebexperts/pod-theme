@@ -300,6 +300,7 @@ function common_functions() {
     });
   }
   // look section slider end
+  // coming soon section click event start
   if ($(".coming_col") !== undefined) {
     $(".coming_col").click(function(e) {
       e.preventDefault();
@@ -321,6 +322,8 @@ function common_functions() {
       $("body").toggleClass("drawer-open");
     });
   }
+  // coming soon section click event end
+  // video code start
   let player = document.getElementById("player"), play = document.getElementById("ply_icn");
   if (player) {
     player.addEventListener("click", function() {
@@ -367,6 +370,8 @@ function common_functions() {
       }
     });
   }
+  // video code end
+  // faq code start
   if ($(".faq_box .accordion__toggle") !== undefined) {
     $(".faq_box .accordion__toggle").click(function() {
       $(this)
@@ -375,7 +380,7 @@ function common_functions() {
         .slideToggle();
       $(this).toggleClass("active");
     });
-  }
+  }  
   if ($(".accordion") !== undefined) {
     $(".accordion").click(function() {
       $(this)
@@ -385,7 +390,9 @@ function common_functions() {
       $(this).toggleClass(" is-open");
     });
   }  
+  // faq code end
 }
+
 $(document).ready(function() {
   if ($(".shop-the-look__slider .shop-the-look__slide") !== undefined) {
     $(".shop-the-look__slider .shop-the-look__slide").click(function() {
