@@ -582,6 +582,7 @@ predictive-search
 header .icon {
   color: #fff;
   width: 30px;
+  cursor: pointer;
 }
 .template-search main-search .search .input-field button {
   border: none;
