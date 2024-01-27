@@ -450,6 +450,10 @@ label.popover__choice-item:has(input:checked):after {
   rotate: -90deg;
 }
 
+.no-js .predictive-search {
+  display: none;
+}
+
 details[open] > .search-modal {
   opacity: 1;
   animation: animateMenuOpen var(--duration-default) ease;
