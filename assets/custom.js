@@ -470,7 +470,7 @@ function render_cart() {
     });
 }
 // render cart function end
-
+// Vardetails function start
 function Vardetails(i) {
   var available = jQuery(i).data("available");
   if (available == false) {
@@ -485,7 +485,8 @@ function Vardetails(i) {
     jQuery(i).parents(".product-card").find(".product-card__add-to-cart-container .item_btn span").text("ADD TO BAG");
   }
 }
-
+// Vardetails function end
+// swatch slider code start
 function swatch_slider(){
   if ($(".product-option__swatch") !== undefined) {
     new Swiper(".product-option__swatch", {
@@ -499,9 +500,11 @@ function swatch_slider(){
     });
   }  
 }
-
+// swatch slider code end
+// product page code start
 function product_functions() {
   swatch_slider();
+  // product page swatch click event start
   if ($(".product-option__swatch label input") !== undefined) {
     $(document).on("click",".product-option__swatch label input", function() {
       var color_name = $(this).data("option-value");
@@ -512,6 +515,8 @@ function product_functions() {
       $(this).parents(".product-card").find(".product-card__gallery-slide img").attr("src", var_img);
     });
   }
+  // product page swatch click event end
+  // Size drawer code start
   if ($(".pro_add_cart.has_size") !== undefined) {
     $(document).on("click", ".pro_add_cart.has_size", function(e) {
       e.preventDefault();
@@ -538,6 +543,8 @@ function product_functions() {
         });
     });
   }
+  // Size drawer code end
+  // des
   $(document).on("click", ".readmore", function(event) {
     event.preventDefault();
     var descriptionFull = document.querySelector(".product-description-full");
@@ -568,6 +575,7 @@ function product_functions() {
     }
   );
 }
+// product page code end
 $(document).ready(function() {
   not_rendered_functions();
   product_functions();
