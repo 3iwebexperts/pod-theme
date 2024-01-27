@@ -629,6 +629,10 @@ main-search .predictive-search button {
   display: block;
   overflow: hidden;
 }
+header predictive-search {
+  width: 50%;
+  padding: 15px;
+}
 header .inner_search {
   position: relative;
   z-index: 999;
