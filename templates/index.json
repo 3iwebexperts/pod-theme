@@ -174,7 +174,7 @@
         "37f649d2-0e9f-4642-852e-b7f64f4f9cdb": {
           "type": "coming_col",
           "settings": {
-            "collection": "new-arrivals",
+            "collection": "frontpage",
             "text": "COMING THIS FALL",
             "notify_text": "Notify Me"
           }
