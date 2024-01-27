@@ -395,6 +395,7 @@ function common_functions() {
 // loook section render start
 $(document).ready(function() {
   if ($(".shop-the-look__slider .shop-the-look__slide") !== undefined) {
+    if ($(".shop-the-look__slider .shop-the-look__slide") !== undefined) {
     $(".shop-the-look__slider .shop-the-look__slide").click(function() {
       $("#look_drawer .look-drawer").toggleClass("is-visible");
       $("#look_drawer .drawer-backdrop").toggleClass("is-visible");
@@ -419,11 +420,14 @@ $(document).ready(function() {
         });
     });
   }
-  $("#look_drawer .drawer__close, #look_drawer .drawer-backdrop").click(function() {
-    $("#look_drawer .look-drawer").toggleClass("is-visible");
-    $("#look_drawer .drawer-backdrop").toggleClass("is-visible");
-    $("body").toggleClass("drawer-open");
-  });
+  }  
+  if (($("#look_drawer .drawer__close") !== undefined) || ($("#look_drawer .drawer-backdrop") !== undefined)) {
+    $("#look_drawer .drawer__close, #look_drawer .drawer-backdrop").click(function() {
+      $("#look_drawer .look-drawer").toggleClass("is-visible");
+      $("#look_drawer .drawer-backdrop").toggleClass("is-visible");
+      $("body").toggleClass("drawer-open");
+    });
+  }
 });
 // loook section render end
 // submit function and cart drawer code start
