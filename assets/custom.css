@@ -578,6 +578,10 @@ predictive-search
   gap: 8px;
   flex-wrap: wrap;
 }
+header .icon {
+  color: #fff;
+  width: 30px;
+}
 .template-search main-search .search .input-field button {
   border: none;
   font-size: 13px;
