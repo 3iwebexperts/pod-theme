@@ -636,7 +636,7 @@ main-search .predictive-search button {
 .popup-search {
   display: none;
   transform: translateY(-20px);
-  transition: all 0.15s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .search-open {
   z-index: 99;
