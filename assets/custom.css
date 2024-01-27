@@ -621,10 +621,13 @@ main-search .predictive-search button {
   transition: opacity 0.15s linear, z-index 0.15;
   z-index: -1;
 }
-.search-open predictive-search {
+.search-open {
   z-index: 99;
   display: block;
   overflow: hidden;
+}
+header predictive-search {
+  z-index: 999;
 }
 .search-open .bg-overlay {
   background: rgba(0, 0, 0, 0.6);
