@@ -501,6 +501,12 @@ predictive-search
   list-style: none;
   padding-left: 0;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
 }
 .predictive-search ul li {
   margin: 5px 0;
