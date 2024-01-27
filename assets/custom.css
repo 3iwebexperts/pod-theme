@@ -459,17 +459,6 @@ predictive-search
   cursor: pointer;
 }
 
-@media screen and (min-width: 990px) {
-  .search-modal__form {
-    max-width: 74.2rem;
-  }
-
-  .search-modal__close-button {
-    position: initial;
-    margin-left: 0.5rem;
-  }
-}
-
 /* Predictive search */
 .predictive-search {
   position: absolute;
