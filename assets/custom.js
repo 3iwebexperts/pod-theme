@@ -544,37 +544,43 @@ function product_functions() {
   }
   // Size drawer code end
   // description code start
-  $(document).on("click", ".readmore", function(event) {
-    event.preventDefault();
-    var descriptionFull = document.querySelector(".product-description-full");
-    descriptionFull.style.display = "block";
-    var descriptionShort = document.querySelector(".product-description-short");
-    descriptionShort.style.display = "none";
-  });
-  $(document).on("click", ".readless", function(event) {
-    event.preventDefault();
-    var descriptionFull = document.querySelector(".product-description-full");
-    descriptionFull.style.display = "none";
-    var descriptionShort = document.querySelector(".product-description-short");
-    descriptionShort.style.display = "block";
-  });
+ if ($(".readmore") !== undefined) {
+    $(document).on("click", ".readmore", function(event) {
+      event.preventDefault();
+      var descriptionFull = document.querySelector(".product-description-full");
+      descriptionFull.style.display = "block";
+      var descriptionShort = document.querySelector(".product-description-short");
+      descriptionShort.style.display = "none";
+    });
+  }
+  if ($(".readless") !== undefined) {
+    $(document).on("click", ".readless", function(event) {
+      event.preventDefault();
+      var descriptionFull = document.querySelector(".product-description-full");
+      descriptionFull.style.display = "none";
+      var descriptionShort = document.querySelector(".product-description-short");
+      descriptionShort.style.display = "block";
+    });
+  }
   // description code end
   // drawer click events start
+  if ($(".product-option .product-option__drawer-btn") !== undefined) {
   $(document).on(
     "click", ".product-option .product-option__drawer-btn",
     function() {
       $("#swatch_drawer .product-option__drawer").toggleClass("is-visible");
       $("#swatch_drawer .drawer-backdrop").toggleClass("is-visible");
       $("body").toggleClass("drawer-open");
-    }
-  );
-  $(document).on("click", ".drawer .drawer__header .drawer__close", function() {
+    } );
+  }  
+  if ($(".drawer .drawer__header .drawer__close") !== undefined) {
+    $(document).on("click", ".drawer .drawer__header .drawer__close", function() {
       $("#swatch_drawer .product-option__drawer").removeClass("is-visible");
       $("#swatch_drawer .drawer-backdrop").removeClass("is-visible");
       $("body").removeClass("drawer-open");
       $(".custom-overlay").removeClass("is-visible");
-    }
-  );
+    });
+  } 
   // drawer click events end
 }
 $(document).ready(function() {
