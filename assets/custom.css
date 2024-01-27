@@ -478,7 +478,7 @@ predictive-search
   border-radius: 5px;
 }
 .header predictive-search form input {
-  width: 50%;
+  width: 90%;
   padding-left: 5px;
   background: transparent;
   border: none;
