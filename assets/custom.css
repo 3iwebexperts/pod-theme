@@ -635,7 +635,6 @@ main-search .predictive-search button {
 /* Pop up search box */
 .popup-search {
   display: none;
-  opacity: 0;
   transform: translateY(-20px);
   transition: all 0.3s ease-in-out;
 }
@@ -644,7 +643,7 @@ main-search .predictive-search button {
   position: relative;
   display: block;
   overflow: hidden;
-  opacity: 1;
+  transform: translateY(0);
   /* transition: display 0.15s ease-in-out; */
 }
 header predictive-search {
