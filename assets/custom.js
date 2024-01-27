@@ -583,8 +583,19 @@ function product_functions() {
   } 
   // drawer click events end
 }
+// Pop up search box start 
+function search_box() {
+    $(".Click-here").on('click', function() {
+      $(".custom-model-main").addClass('model-open');
+    }); 
+    $(".close-btn, .bg-overlay").click(function(){
+      $(".custom-model-main").removeClass('model-open');
+    });
+}
+// pop up search box end 
 $(document).ready(function() {
   not_rendered_functions();
   product_functions();
   common_functions();
+  search_box();
 });
