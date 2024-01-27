@@ -617,6 +617,7 @@ main-search .predictive-search button {
 /* Pop up search box */
 .popup-search {
   display: none;
+  transition: opacity 0.15s linear, z-index 0.15;
 }
 .search-open {
   z-index: 99999;
