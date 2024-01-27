@@ -624,7 +624,7 @@ main-search .predictive-search button {
   display: block;
   overflow: hidden;
 }
-header predictive-search {
+header inner_search predictive-search {
   position: relative;
   z-index: 999;
 }
