@@ -619,6 +619,7 @@ main-search .predictive-search button {
   display: none;
   position: fixed;
   transition: opacity 0.15s linear, z-index 0.15;
+  z-index: -1;
 }
 .search-open {
   z-index: 99;
