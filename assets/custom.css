@@ -637,8 +637,9 @@ main-search .predictive-search button {
   overflow: hidden;
 }
 header predictive-search {
-  width: 50%;
-  padding: 15px;
+  width: 100%;
+  padding-top: 15px;
+  background: #000;
 }
 header predictive-search form {
   width: 100%;
