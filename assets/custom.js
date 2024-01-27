@@ -392,7 +392,7 @@ function common_functions() {
   }  
   // faq code end
 }
-
+// loook section render start
 $(document).ready(function() {
   if ($(".shop-the-look__slider .shop-the-look__slide") !== undefined) {
     $(".shop-the-look__slider .shop-the-look__slide").click(function() {
@@ -425,7 +425,8 @@ $(document).ready(function() {
     $("body").toggleClass("drawer-open");
   });
 });
-
+// loook section render end
+// submit function and cart drawer code start
 function form_submit() {
   const crtform = document.querySelector(".ajax-cart-form");
   var formData = $(crtform).serialize();
@@ -445,7 +446,8 @@ function form_submit() {
   });
   return false;
 }
-
+// submit function and cart drawer code end
+// render cart function start
 function render_cart() {
   let cart_url = window.location.pathname + "?section_id=ajax-cart";
   $('.custom-loader-overlay').addClass('loading');
@@ -463,6 +465,7 @@ function render_cart() {
       closeLoader();
     });
 }
+// render cart function end
 
 function Vardetails(i) {
   var available = jQuery(i).data("available");
