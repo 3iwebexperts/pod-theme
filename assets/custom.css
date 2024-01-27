@@ -417,20 +417,6 @@ label.popover__choice-item:has(input:checked):after {
 }
 /* Search */
 
-.header > .header__search {
-  grid-area: left-icons;
-  justify-self: start;
-}
-
-.header--top-center.drawer-menu > .header__search {
-  margin-left: 3.2rem;
-}
-
-.header__search {
-  display: inline-flex;
-  line-height: 0;
-}
-
 /* Pagination */
 .pagination-wrapper .pagination ul {
   display: flex;
