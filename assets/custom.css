@@ -646,6 +646,7 @@ header predictive-search form {
   display: flex;
   justify-content: center;
   gap: 8px;
+  padding:bottom:15px;
 }
 header .inner_search {
   position: relative;
