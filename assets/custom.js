@@ -403,8 +403,10 @@ $(document).ready(function() {
           document.querySelector("#look_drawer .look-drawer__body .slider-container .swiper-wrapper").innerHTML = "";
           document.querySelector("#look_drawer .look-drawer__body .slider-container .swiper-wrapper").innerHTML = look_pro_render;
           var contentSlider = new Swiper(".look_drawer_slider", {
-            autoHeight: true,
-            slidesPerView: 1,
+         autoHeight: true,
+         slidesPerView: 1,
+          initialSlide: 0, 
+         spaceBetween: 30
           });
           closeLoader();
         });
