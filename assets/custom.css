@@ -636,7 +636,7 @@ main-search .predictive-search button {
 .popup-search {
   display: none;
   opacity: 0;
-  transition: display 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .search-open {
   z-index: 99;
@@ -644,7 +644,7 @@ main-search .predictive-search button {
   display: block;
   overflow: hidden;
   opacity: 1;
-  transition: display 0.15s ease-in-out;
+  /* transition: display 0.15s ease-in-out; */
 }
 header predictive-search {
   width: 100%;
