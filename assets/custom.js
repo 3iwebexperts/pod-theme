@@ -588,7 +588,7 @@ function search_box() {
     $(".search_icon").on('click', function() {
       $(".popup-search").addClass('model-open');
     }); 
-    $(".search_icon, .bg-overlay").click(function(){
+    $(".close-btn, .bg-overlay").click(function(){
       $(".popup-search").removeClass('model-open');
     });
 }
