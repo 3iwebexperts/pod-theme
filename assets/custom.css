@@ -621,6 +621,7 @@ main-search .predictive-search button {
 }
 .search-open {
   z-index: 99;
+  .search-open
   display: block;
   overflow: hidden;
 }
