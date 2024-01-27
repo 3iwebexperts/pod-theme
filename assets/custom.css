@@ -584,6 +584,11 @@ header .icon {
   width: 30px;
   cursor: pointer;
 }
+.close-btn svg {
+  max-height: 30px;
+  max-width: 30px;
+  fill: #fff;
+}
 .template-search main-search .search .input-field button {
   border: none;
   font-size: 13px;
