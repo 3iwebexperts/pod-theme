@@ -501,10 +501,9 @@ function swatch_slider(){
   }  
 }
 // swatch slider code end
-// product page code start
 function product_functions() {
   swatch_slider();
-  // product page swatch click event start
+  // swatch click event start
   if ($(".product-option__swatch label input") !== undefined) {
     $(document).on("click",".product-option__swatch label input", function() {
       var color_name = $(this).data("option-value");
@@ -515,7 +514,7 @@ function product_functions() {
       $(this).parents(".product-card").find(".product-card__gallery-slide img").attr("src", var_img);
     });
   }
-  // product page swatch click event end
+  // swatch click event end
   // Size drawer code start
   if ($(".pro_add_cart.has_size") !== undefined) {
     $(document).on("click", ".pro_add_cart.has_size", function(e) {
@@ -544,7 +543,7 @@ function product_functions() {
     });
   }
   // Size drawer code end
-  // des
+  // description code start
   $(document).on("click", ".readmore", function(event) {
     event.preventDefault();
     var descriptionFull = document.querySelector(".product-description-full");
@@ -559,6 +558,8 @@ function product_functions() {
     var descriptionShort = document.querySelector(".product-description-short");
     descriptionShort.style.display = "block";
   });
+  // description code end
+  
   $(document).on(
     "click", ".product-option .product-option__drawer-btn",
     function() {
@@ -575,7 +576,6 @@ function product_functions() {
     }
   );
 }
-// product page code end
 $(document).ready(function() {
   not_rendered_functions();
   product_functions();
