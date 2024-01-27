@@ -416,9 +416,6 @@ label.popover__choice-item:has(input:checked):after {
   display: none;
 }
 /* Search */
-menu-drawer + .header__search {
-  display: none;
-}
 
 .header > .header__search {
   grid-area: left-icons;
