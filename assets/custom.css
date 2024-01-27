@@ -449,21 +449,6 @@ label.popover__choice-item:has(input:checked):after {
   width: 0.4rem;
   rotate: -90deg;
 }
-@media screen and (min-width: 990px) {
-  .header:not(.header--top-center) * > .header__search,
-  .header--top-center > .header__search {
-    display: inline-flex;
-  }
-
-  .header:not(.header--top-center) > .header__search,
-  .header--top-center * > .header__search {
-    display: none;
-  }
-}
-
-.no-js .predictive-search {
-  display: none;
-}
 
 details[open] > .search-modal {
   opacity: 1;
