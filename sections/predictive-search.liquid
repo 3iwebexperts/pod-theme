@@ -10,7 +10,9 @@
             <a href="{{ product.url }}">
               {{ product | image_url: width: 70 | image_tag }}
             
-              <span>{{ product.title }}</span>
+              <span>{{ product.title }}
+                <sapn>{{ product.price }}</sapn>
+          </span>
             
             </a>
           </li>
