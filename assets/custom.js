@@ -559,7 +559,7 @@ function product_functions() {
     descriptionShort.style.display = "block";
   });
   // description code end
-  
+  // drawer click events start
   $(document).on(
     "click", ".product-option .product-option__drawer-btn",
     function() {
@@ -575,6 +575,7 @@ function product_functions() {
       $(".custom-overlay").removeClass("is-visible");
     }
   );
+  // drawer click events end
 }
 $(document).ready(function() {
   not_rendered_functions();
