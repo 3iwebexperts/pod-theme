@@ -9,6 +9,9 @@
 <div data-section-id="header-logo-center" data-section-type="header">
   <header class="header is-fixed show-on-scroll" role="banner" data-header="">
     <div class="header-container">
+    <div class="popup-search">
+              {% render 'header-search', input_id: 'Search-In-Modal' %}
+              </div>
       <div class="header-nav">
         <div class="header-nav__menu {% if section.settings.logo_position == "left" %}logo_left{% endif %}">
           <div class="header-nav__menu-item">
@@ -36,9 +39,7 @@
               >
             {% endif %}
           </div>
-            <div class="popup-search">
-              {% render 'header-search', input_id: 'Search-In-Modal' %}
-              </div>
+            
           <div>
             <div class="header-nav__menu-item " data-search-open-button="">
               <span class="search_icon">
