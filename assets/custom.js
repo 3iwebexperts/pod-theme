@@ -148,6 +148,7 @@ function not_rendered_functions() {
   // cart drawer remove item end
 }
 function common_functions() {
+  // collection list slider start
   if (($(".featured-categories") !== undefined) && ($(".featured-categories").find('.swiper-slide').length > 0)) {
     new Swiper(".featured-categories", {
       loop: false,
@@ -157,6 +158,8 @@ function common_functions() {
       grabCurso: true,
     });
   }
+  // collection list slider end
+  // megamenu tabs start
   if (($(".navigation-categories") !== undefined) && ($(".navigation-categories").find('.swiper-slide').length > 0)) {
     new Swiper(".navigation-categories", {
       loop: false,
@@ -165,6 +168,8 @@ function common_functions() {
       loop: false,
     });
   }
+  // megamenu tabs end
+  // megamenu slider start
   if (($(".navigation-carousel__slider") !== undefined) && ($(".navigation-carousel__slider").find('.swiper-slide').length > 0)) {
     new Swiper(".navigation-carousel__slider", {
       direction: "horizontal",
@@ -179,6 +184,8 @@ function common_functions() {
       },
     });
   }
+  // megamenu slider end
+  // pro content slider start
   if (($(".cust_swip") !== undefined) && ($(".cust_swip").find('.swiper-slide').length > 0)) {
     new Swiper(".cust_swip", {
       slidesPerView: 1,
@@ -189,7 +196,8 @@ function common_functions() {
       },
     });
   }
-
+  // pro content slider end
+  // feature collection slider start
   if (($(".card-slider__slider") !== undefined) && ($(".card-slider__slider").find('.swiper-slide').length > 0)) {
     new Swiper(".card-slider__slider", {
       loop: false,
@@ -229,6 +237,8 @@ function common_functions() {
       }
     });
   }
+  // feature collection slider end
+  // coming soon section slider start
   if (($(".coming_soon") !== undefined) && ($(".coming_soon").find('.swiper-slide').length > 0)) {
     new Swiper(".coming_soon", {
       loop: false,
@@ -258,6 +268,8 @@ function common_functions() {
       },
     });
   }
+  // coming soon section slider end
+  // look section slider start
   if (($(".shop-the-look__looks-container") !== undefined) && ($(".shop-the-look__looks-container").find('.swiper-slide').length > 0)) {
     new Swiper(".shop-the-look__looks-container", {
       loop: false,
@@ -287,6 +299,7 @@ function common_functions() {
       },
     });
   }
+  // look section slider end
   if ($(".coming_col") !== undefined) {
     $(".coming_col").click(function(e) {
       e.preventDefault();
@@ -374,27 +387,29 @@ function common_functions() {
   }  
 }
 $(document).ready(function() {
-  $(".shop-the-look__slider .shop-the-look__slide").click(function() {
-    $("#look_drawer .look-drawer").toggleClass("is-visible");
-    $("#look_drawer .drawer-backdrop").toggleClass("is-visible");
-    $("body").toggleClass("drawer-open");
-    var col_url = $(this).data("collection");
-    let look_url = col_url + "?section_id=collection-product-grid";
-    $('.custom-loader-overlay').addClass('loading');
-    fetch(look_url)
-      .then((response) => response.text())
-      .then((responseText) => {
-        let look_html = new DOMParser().parseFromString(responseText, "text/html");
-        let look_pro_render = look_html.querySelector("#render_look").innerHTML;
-        document.querySelector("#look_drawer .look-drawer__body .slider-container .swiper-wrapper").innerHTML = "";
-        document.querySelector("#look_drawer .look-drawer__body .slider-container .swiper-wrapper").innerHTML = look_pro_render;
-        var contentSlider = new Swiper(".look_drawer_slider", {
-          autoHeight: true,
-          slidesPerView: 1,
+  if ($(".shop-the-look__slider .shop-the-look__slide") !== undefined) {
+    $(".shop-the-look__slider .shop-the-look__slide").click(function() {
+      $("#look_drawer .look-drawer").toggleClass("is-visible");
+      $("#look_drawer .drawer-backdrop").toggleClass("is-visible");
+      $("body").toggleClass("drawer-open");
+      var col_url = $(this).data("collection");
+      let look_url = col_url + "?section_id=collection-product-grid";
+      $('.custom-loader-overlay').addClass('loading');
+      fetch(look_url)
+        .then((response) => response.text())
+        .then((responseText) => {
+          let look_html = new DOMParser().parseFromString(responseText, "text/html");
+          let look_pro_render = look_html.querySelector("#render_look").innerHTML;
+          document.querySelector("#look_drawer .look-drawer__body .slider-container .swiper-wrapper").innerHTML = "";
+          document.querySelector("#look_drawer .look-drawer__body .slider-container .swiper-wrapper").innerHTML = look_pro_render;
+          var contentSlider = new Swiper(".look_drawer_slider", {
+            autoHeight: true,
+            slidesPerView: 1,
+          });
+          closeLoader();
         });
-        closeLoader();
-      });
-  });
+    });
+  }
   $("#look_drawer .drawer__close, #look_drawer .drawer-backdrop").click(function() {
     $("#look_drawer .look-drawer").toggleClass("is-visible");
     $("#look_drawer .drawer-backdrop").toggleClass("is-visible");
