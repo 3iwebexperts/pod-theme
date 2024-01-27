@@ -586,10 +586,10 @@ function product_functions() {
 // Pop up search box start 
 function search_box() {
     $(".search_icon").on('click', function() {
-      $(".popup-search").addClass('model-open');
+      $(".popup-search").addClass('search-open');
     }); 
     $(".close-btn, .bg-overlay").click(function(){
-      $(".popup-search").removeClass('model-open');
+      $(".popup-search").removeClass('search-open');
     });
 }
 // pop up search box end 
