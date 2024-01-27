@@ -665,7 +665,7 @@ header .inner_search {
 
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
-    width: 180px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 991px) {
