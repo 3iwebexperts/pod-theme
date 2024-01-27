@@ -624,35 +624,7 @@
     </div>
   </div>
 </div>
-{% javascript %}
-  class StickyHeader extends HTMLElement {
-    constructor() {
-      super();
-    }
 
-    connectedCallback() {
-
-      this.currentScrollTop = 0;
-      this.preventReveal = false;
-      this.predictiveSearch = this.querySelector('predictive-search');
-    }
-
-
-
-    onScroll() {
-      if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
-
-    }
-       hide() {
-      this.closeSearchModal();
-    }
-
-    closeSearchModal() {
-      this.searchModal = this.searchModal || this.header.querySelector('details-modal');
-      this.searchModal.close(false);
-    }
-  }
-{% endjavascript %}
 
 {% schema %}
 {
