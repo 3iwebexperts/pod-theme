@@ -627,7 +627,7 @@ main-search .predictive-search button {
   overflow: hidden;
 }
 header predictive-search {
-  position: absolute;
+  position: relative;
   z-index: 999;
 }
 .search-open .bg-overlay {
