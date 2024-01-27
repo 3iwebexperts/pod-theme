@@ -11,7 +11,7 @@
               {{ product | image_url: width: 70 | image_tag }}
             
               <span>{{ product.title }}
-                <div>{{ product.price }}</div>
+                <div>{{ product.price |money_with_currency }}</div>
           </span>
             
             </a>
