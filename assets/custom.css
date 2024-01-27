@@ -544,33 +544,6 @@ predictive-search
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
   cursor: pointer;
 }
-.search-modal__content-bottom {
-  bottom: calc((var(--inputs-margin-offset) / 2));
-}
-
-.search-modal__content-top {
-  top: calc((var(--inputs-margin-offset) / 2));
-}
-
-.search-modal__form {
-  width: 100%;
-}
-
-.search-modal__close-button {
-  position: absolute;
-  right: 0.3rem;
-}
-
-@media screen and (min-width: 750px) {
-  .search-modal__close-button {
-    right: 1rem;
-  }
-
-  .search-modal__content {
-    padding: 0 6rem;
-  }
-}
-
 @media screen and (min-width: 990px) {
   .search-modal__form {
     max-width: 74.2rem;
