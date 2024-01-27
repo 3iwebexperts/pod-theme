@@ -632,6 +632,9 @@ main-search .predictive-search button {
 header .inner_search {
   position: relative;
   z-index: 999;
+  background: #000;
+  display: flex;
+  justify-content: center;
 }
 .search-open .bg-overlay {
   background: rgba(0, 0, 0, 0.6);
