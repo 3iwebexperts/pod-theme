@@ -633,6 +633,9 @@ header predictive-search {
   width: 50%;
   padding: 15px;
 }
+header predictive-search form {
+  width: 100%;
+}
 header .inner_search {
   position: relative;
   z-index: 999;
