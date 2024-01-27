@@ -415,7 +415,6 @@ label.popover__choice-item:has(input:checked):after {
 .template-product .swym-button-bar {
   display: none;
 }
-/* Search */
 
 /* Pagination */
 .pagination-wrapper .pagination ul {
@@ -435,7 +434,7 @@ label.popover__choice-item:has(input:checked):after {
   width: 0.4rem;
   rotate: -90deg;
 }
-
+/* Search */
 .no-js .predictive-search {
   display: none;
 }
