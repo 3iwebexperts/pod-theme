@@ -111,7 +111,7 @@
         "ef481780-420b-4979-8ef6-cbe1f9434013": {
           "type": "collection",
           "settings": {
-            "collection": "new-arrivals",
+            "collection": "frontpage",
             "text": "@twincharlo"
           }
         },
