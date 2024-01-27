@@ -461,7 +461,7 @@ predictive-search
 
 /* Predictive search */
 .predictive-search {
-  position: absolute;
+  /* position: absolute; */
   background: #fff;
   /* right: 1px; */
   max-height: 250px;
