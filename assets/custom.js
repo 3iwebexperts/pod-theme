@@ -585,7 +585,7 @@ function product_functions() {
 }
 // Pop up search box start 
 function search_box() {
-    $(".popup-search").on('click', function() {
+    $(".search_icon").on('click', function() {
       $(".custom-model-main").addClass('model-open');
     }); 
     $(".close-btn, .bg-overlay").click(function(){
