@@ -621,7 +621,7 @@ main-search .predictive-search button {
   transition: opacity 0.15s linear, z-index 0.15;
 }
 .search-open {
-  z-index: 99999;
+  z-index: 99;
   display: block;
   overflow: hidden;
 }
