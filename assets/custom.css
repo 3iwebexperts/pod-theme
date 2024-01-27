@@ -614,6 +614,25 @@ main-search .predictive-search button {
 .template-search main-search .search .input-field .search__input:focus-visible {
   outline: none;
 }
+/* Pop up search box */
+.search-open .bg-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+.bg-overlay {
+  background: rgba(0, 0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-transition: background 0.15s linear;
+  -o-transition: background 0.15s linear;
+  transition: background 0.15s linear;
+}
 
 @media screen and (max-width: 340px) {
   .header predictive-search form input {
