@@ -642,6 +642,7 @@ main-search .predictive-search button {
   position: relative;
   display: block;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 header predictive-search {
   width: 100%;
