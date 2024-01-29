@@ -704,4 +704,7 @@ header .inner_search {
   .header predictive-search form input {
     font-size: 18px;
   }
+  header predictive-search form {
+    width: 90% !important;
+  }
 }
