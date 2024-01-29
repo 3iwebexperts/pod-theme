@@ -34,15 +34,15 @@
       alt=""
     >
   {% else %}
-    {% comment %}<img
+    <img
       src="{{ 'banner_placeholder.png' | asset_url }}"
       srcset="{{ 'banner_placeholder.png' | asset_url }}"
       class="hero__bg hero__bg--desktop"
       sizes="100vw"
       loading="lazy"
       alt=""
-    >{% endcomment %}
-    {{ 'image' | placeholder_svg_tag }}
+    >
+    {% comment %} {{ 'image' | placeholder_svg_tag }}{% endcomment %}
   {% endif %}
   {% if section.settings.image2 != blank %}
     <img
