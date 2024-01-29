@@ -132,11 +132,11 @@
                 {% include 'feature_details_drawer' %}
               </button>
             {% endif %}
-            {% for block in section.blocks  %}
-            {% if  block.type == 'size-chart'  %}
-            {% if block.settings.size_chart != blank and section.settings.size_chart.content != blank %}
+            {%- for block in section.blocks -%}
+            {%- if  block.type == 'size-chart' -%}
+            {%- if block.settings.size_chart != blank and section.settings.size_chart.content != blank -%}
               <button class="pdp-drawer-button" data-fit-guide-toggler="" id="custom_sizing_drwer">
-                <span class="pdp-drawer-button__label"> Sizing </span>
+                {%- if block.settings.chart_title != blank -%}<span class="pdp-drawer-button__label"> {{ block.setting.chart_title }} </span>{%- endif -%}
                 <div class="pdp-drawer-button__icon">
                   <svg
                     aria-hidden="true"
@@ -152,9 +152,9 @@
                 </div>
                 {% include 'size_chart' %}
               </button>
-            {% endif %}
-                {% endif %}
-              {% endfor %}
+            {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
 
             
             <button class="pdp-drawer-button" data-reviews-toggler="" id="custom_reviews_drawer">
