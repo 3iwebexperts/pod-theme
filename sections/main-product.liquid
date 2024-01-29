@@ -133,7 +133,7 @@
               </button>
             {% endif %}
             {% for block in section.blocks  %}
-              {% if  block.type == 'size-chart'  %}
+            {% if  block.type == 'size-chart'  %}
             {% if block.settings.size_chart != blank and section.settings.size_chart.content != blank %}
               <button class="pdp-drawer-button" data-fit-guide-toggler="" id="custom_sizing_drwer">
                 <span class="pdp-drawer-button__label"> Sizing </span>
@@ -335,7 +335,12 @@
             "type": "richtext",
             "id": "size_chart",
             "label": "Select Size Chart "
-        	}
+        	},
+          {
+            "type":"text",
+            "id":"chart_title",
+            "label": "Heading"
+          }
         ]
       }
   ]
