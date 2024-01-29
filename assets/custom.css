@@ -707,4 +707,7 @@ header .inner_search {
   header predictive-search form {
     width: 90% !important;
   }
+  header .icon {
+    width: 20px;
+  }
 }
