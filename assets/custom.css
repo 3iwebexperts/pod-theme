@@ -504,7 +504,7 @@ predictive-search
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 20px;
   margin: 0 auto;
 }
