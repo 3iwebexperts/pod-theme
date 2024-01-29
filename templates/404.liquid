@@ -12,41 +12,31 @@
                   <p>I think you're lost buddy. Let's take you <a href="/" title="/">back home</a></p>
                 </div>
 
-                <div class="four04__search-section">
-                  <form action="{{ routes.search_url }}" method="get" role="search" class="search">
-                    <div class="form-group">
-                      {%- render 'icon' with 'search' -%}
+               <predictive-search>
+                  <form class="container" action="{{ routes.search_url }}" method="get" role="search">
+                    <input
+                      id="Search"
+                      type="search"
+                      name="q"
+                      value="{{ search.terms | escape }}"
+                      role="combobox"
+                      aria-expanded="false"
+                      aria-owns="predictive-search-results"
+                      aria-controls="predictive-search-results"
+                      aria-haspopup="listbox"
+                      aria-autocomplete="list"
+                      placeholder="Search"
+                    >
+                 
+                     <span class="close-btn">{%- render 'icon' with 'close' -%}</span>
+                    <input name="options[prefix]" type="hidden" value="last">
                   
-                      <input
-                        type="search"
-                        name="q"
-                        placeholder="{{ 'general.search.search' | t }}"
-                        class="four04__search-input"
-                        autocomplete="off"
-                        value=""
-                        data-search-input=""
-                      >
-
-                      <button type="submit" class="four04__search-submit">
-                        <svg
-                          aria-hidden="true"
-                          focusable="false"
-                          role="presentation"
-                          class="icon icon-arrow"
-                          viewBox="0 0 90 90"
-                        >
-                          <g fill="none" fill-rule="evenodd">
-                              <path fill="#121212" d="M64.948 19l24.873 25.813L90 45 65.193 71l-6.682-7.003L71.863 50H0V40h71.866L58.511 26.004 64.948 19z"></path>
-                          </g>
-                        </svg>
-
-                        <span class="icon-fallback-text">Search </span>
-                      </button>
-                    </div>
-                      <input name="options[prefix]" type="hidden" value="last">
+                    
                   </form>
-                  <div id="predictive-search" class="predictive-search" tabindex="-1"></div>
-                </div>
+                    <div id="predictive-search" class="predictive-search" tabindex="-1"></div>
+              </predictive-search>
+
+                
               </div>
             </div>
           </div>
