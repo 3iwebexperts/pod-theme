@@ -2,9 +2,6 @@
   <div class="container">
   <div id="predictive-search-results">
     {%- if predictive_search.resources.products.size > 0 -%}
-      <h6 id="predictive-search-products" >
-        Products
-      </h6>
       <ul role="listbox" aria-labelledby="predictive-search-products">
         {%- for product in predictive_search.resources.products -%}
           <li role="option">
