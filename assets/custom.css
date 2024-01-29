@@ -685,11 +685,6 @@ header .inner_search {
   transition: background 0.15s linear;
 }
 
-@media screen and (max-width: 340px) {
-  .header predictive-search form input {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 991px) {
   .predictive-search {
     right: 1px;
