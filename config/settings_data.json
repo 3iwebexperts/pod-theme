@@ -7,6 +7,7 @@
     "social_linkedin_link": "#",
     "social_gmail_link": "#",
     "cart_type": "drawer",
+    "favicon": "shopify:\/\/shop_images\/light-png.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/logo_image_1.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
