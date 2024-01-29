@@ -54,6 +54,8 @@
         width="368"
         height="300"
       >
+    {% else %}
+      {{ section.settings.video.preview_image }}
     {% endif %}
     {% if section.settings.title_cnt != blank %}
       <h1 class="hero__title h1">
