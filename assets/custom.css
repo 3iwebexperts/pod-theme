@@ -533,7 +533,7 @@ input[type="search"]::-webkit-search-cancel-button {
   color: var(--swym-remind-cta-text-color);
 }
 #Search-In-Template::placeholder {
-  font-size: 14px;
+  font-size: 18px;
 }
 .template-search .product-grid-container ul {
   list-style: none;
