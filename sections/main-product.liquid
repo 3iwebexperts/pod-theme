@@ -132,6 +132,7 @@
                 {% include 'feature_details_drawer' %}
               </button>
             {% endif %}
+            {% for block in section.blocks  %}
             {% if section.settings.size_chart != blank and section.settings.size_chart.content != blank %}
               <button class="pdp-drawer-button" data-fit-guide-toggler="" id="custom_sizing_drwer">
                 <span class="pdp-drawer-button__label"> Sizing </span>
@@ -151,7 +152,7 @@
                 {% include 'size_chart' %}
               </button>
             {% endif %}
-
+              {% endfor %}
             <button class="pdp-drawer-button" data-reviews-toggler="" id="custom_reviews_drawer">
               <span class="pdp-drawer-button__label"> Reviews </span>
 
@@ -236,11 +237,6 @@
       "type":"header",
       "content":"Size Chart"
     },
-	{
-      "type": "page",
-      "id": "size_chart",
-      "label": "Select Size Chart Page"
-	},
     {
       "type": "text",
       "id": "dec_title",
@@ -331,12 +327,11 @@
         "type": "Size-chart",
         "name": "Size chart",
         "settings": [
-          {
-          "id": "rich-text",
-          "type": "text",
-          "label": "Text",
-          "default":"<strong>Free Shipping<br></strong>Free standard shipping on all orders over $80"
-          }
+         {
+            "type": "richtext",
+            "id": "size_chart",
+            "label": "Select Size Chart "
+      	}
         ]
       }
   ]
