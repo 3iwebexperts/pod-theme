@@ -589,7 +589,7 @@ function search_box() {
       $(".popup-search").fadeIn(500).addClass('search-open');
     }); 
     $(".close-btn, .bg-overlay").click(function(){
-      $(".popup-search").removeClass('search-open');
+      $(".popup-search").fadeOut(500).removeClass('search-open');
     });
 }
 // pop up search box end 
