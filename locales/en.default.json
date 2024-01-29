@@ -97,7 +97,7 @@
       "title": "Page not found",
       "subtext": "404"
     },
-    "Logo": {
+    "favicon": {
       "form": {
         "title": "Favicon"
       }
