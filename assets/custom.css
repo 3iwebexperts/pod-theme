@@ -459,9 +459,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Predictive search */
 .predictive-search {
-  /* position: absolute; */
-  /* background: #fff; */
-  /* right: 1px; */
   max-height: 250px;
   overflow: auto;
   margin-top: 10px;
