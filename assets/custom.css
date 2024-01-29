@@ -510,7 +510,7 @@ predictive-search
 }
 .predictive-search ul li {
   margin: 5px 0;
-  max-width: 280px;
+  max-width: 270px;
 }
 .predictive-search ul li a {
   display: flex;
