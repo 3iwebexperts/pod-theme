@@ -337,14 +337,32 @@
             "popular_tag": "Spicy Cashews",
             "link": "https:\/\/alcoeats.com\/products\/peri-peri-cashews-single-pack"
           }
+        },
+        "text_8kefrz": {
+          "type": "text",
+          "settings": {
+            "popular_tag": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "9b8d0c9d-9355-4ff8-95f6-b77fd85e02bf",
-        "ac15f706-6ca3-4b7c-8ece-c989be409de9"
+        "ac15f706-6ca3-4b7c-8ece-c989be409de9",
+        "text_8kefrz"
       ],
       "settings": {
         "heading": "popular tags"
+      }
+    },
+    "hero_video_DLX3Wc": {
+      "type": "hero_video",
+      "settings": {
+        "video_sec": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "title_cnt": "",
+        "subtext": "",
+        "button_text": "",
+        "link": ""
       }
     }
   },
@@ -359,6 +377,7 @@
     "1d15a425-f7c8-4a8b-96a6-933b85893480",
     "06b56767-6a7e-41a1-a44b-eb8f447032fc",
     "d1fa8b77-b021-4105-819b-364db70036ec",
-    "f3113dc4-eadf-4fa4-adf7-f288d07c1076"
+    "f3113dc4-eadf-4fa4-adf7-f288d07c1076",
+    "hero_video_DLX3Wc"
   ]
 }
