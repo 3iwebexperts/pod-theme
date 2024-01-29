@@ -520,6 +520,7 @@ predictive-search
 .predictive-search ul li span {
   font-size: 18px;
   color: var(--black);
+  line-height: 1.2;
 }
 .predictive-search button {
   border: none;
