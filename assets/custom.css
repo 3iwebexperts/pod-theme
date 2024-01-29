@@ -571,13 +571,15 @@ input[type="search"]::-webkit-search-cancel-button {
   justify-content: center;
   gap: 2px;
 }
-.template-search main-search .predictive-search,
-.template-404 .predictive-search {
+.template-search main-search .predictive-search {
   background: var(--white);
   width: 90%;
   margin: 0 auto;
   margin-top: 15px;
   border: 1px solid #8080802e;
+}
+.template-404 .predictive-search {
+  background: var(--white);
 }
 .template-search main-search .predictive-search ul li span,
 .template-404 .predictive-search ul li span {
