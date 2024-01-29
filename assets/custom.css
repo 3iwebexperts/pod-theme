@@ -462,7 +462,7 @@ predictive-search
 /* Predictive search */
 .predictive-search {
   /* position: absolute; */
-  background: #fff;
+  /* background: #fff; */
   /* right: 1px; */
   max-height: 250px;
   overflow: auto;
@@ -519,7 +519,7 @@ predictive-search
 }
 .predictive-search ul li span {
   font-size: 18px;
-  color: var(--black);
+  color: var(--white);
   line-height: 1.2;
 }
 .predictive-search button {
