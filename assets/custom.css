@@ -572,12 +572,10 @@ input[type="search"]::-webkit-search-cancel-button {
   gap: 2px;
 }
 .template-search main-search .predictive-search {
-  position: absolute;
   background: var(--white);
-  z-index: 1;
-  width: 50%;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 15px;
-  left: 25%;
 }
 .template-search main-search .predictive-search ul li span {
   color: var(--black);
