@@ -586,7 +586,7 @@ function product_functions() {
 // Pop up search box start 
 function search_box() {
     $(".search_icon").on('click', function() {
-      $(".popup-search").addClass('search-open');
+      $(".popup-search").fadeIn(500).addClass('search-open');
     }); 
     $(".close-btn, .bg-overlay").click(function(){
       $(".popup-search").removeClass('search-open');
