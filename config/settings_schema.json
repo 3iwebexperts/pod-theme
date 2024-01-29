@@ -75,13 +75,13 @@
     ]
   },
   {
-    "name": "t:settings_schema.logo.name",
+    "name": "t:settings_schema.favicon.title",
     "settings": [
       {
         "type": "image_picker",
         "id": "favicon",
-        "label": "Favicon",
-        "info": "Will be scaled down to 32 x 32px"
+        "label": "t:settings_schema.favicon.title",
+        "info": "t:settings_schema.favicon.info"
       }
     ]
   }
