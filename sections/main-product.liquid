@@ -133,7 +133,8 @@
               </button>
             {% endif %}
             {% for block in section.blocks  %}
-            {% if section.settings.size_chart != blank and section.settings.size_chart.content != blank %}
+              {% if  block.type == 'size-chart'  %}
+            {% if block.settings.size_chart != blank and section.settings.size_chart.content != blank %}
               <button class="pdp-drawer-button" data-fit-guide-toggler="" id="custom_sizing_drwer">
                 <span class="pdp-drawer-button__label"> Sizing </span>
                 <div class="pdp-drawer-button__icon">
@@ -152,7 +153,10 @@
                 {% include 'size_chart' %}
               </button>
             {% endif %}
+                {% endif %}
               {% endfor %}
+
+            
             <button class="pdp-drawer-button" data-reviews-toggler="" id="custom_reviews_drawer">
               <span class="pdp-drawer-button__label"> Reviews </span>
 
