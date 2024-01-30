@@ -18,6 +18,9 @@
       value="{{ current_variant.id }}"
       class="product-variant-id"
     >
+    {% for data in product.media %}
+      {{ media.preview_image }} ==<br>
+      {% endfor %}
     <div class="product-gallery">
       <div class="pro_main_slider">
         <div class="swiper product_large_img">
