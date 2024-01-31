@@ -25,7 +25,6 @@
         "size_chart_qctjKm": {
           "type": "size-chart",
           "settings": {
-            "chart_image": "shopify:\/\/shop_images\/9910246871143432949_2048.jpg",
             "chart_title": "Size Chart",
             "sizechart": "<p>{{ product.metafields.custom.size_chart | metafield_tag }}<\/p>"
           }
