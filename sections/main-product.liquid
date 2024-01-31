@@ -55,9 +55,11 @@
                   {% for block in section.blocks %}
                     {% if block.type == 'text' %}
                       <div class="swiper-slide" data-card-slide>
+                      {%- if block.settings.text != blnk -%}
                         <p class="content-slider__body-content">
                           {{ block.settings.text }}
                         </p>
+                        {%- endif -%}
                         <div class="content-slider__button-container">
                           {% if block.settings.button_label != blank and block.settings.button_url != blank %}
                             <a href="{{ block.settings.button_url }}" class="btn btn-white content-slider__button">
