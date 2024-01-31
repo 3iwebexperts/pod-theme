@@ -9,6 +9,7 @@
         <div class="sticky-image col-lg-24" data-sticky-image="">
           <div class="sticky-image__background-container hide-mobile">
             <div class="sticky-image__background-image">
+              {%- if product.featured_image != blank -%}
               <img
                 src="{{ product.featured_image| img_url: 'master' }}"
                 srcset="{{ product.featured_image| img_url: 'master' }}"
@@ -16,6 +17,10 @@
                 loading="eager"
                 alt=""
               >
+              {%- else -%}
+                {{ 'product' | placeholder_svg_tag }}
+              {%- endif -%}
+              {
             </div>
           </div>
           <div class="sticky-image__info-container">
