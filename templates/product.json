@@ -14,7 +14,6 @@
         "61479d58-c95b-4b69-a27e-f413dd5ddfe2": {
           "type": "image_picker",
           "settings": {
-            "content_image": "shopify:\/\/shop_images\/municipal-apparel_customer-service_miles.webp",
             "content_heading": "Got Questions?",
             "content_text": "Hit up our Customer Experience team! They are real people ready to help out.",
             "email_btn_label": "Email Us",
@@ -29,7 +28,7 @@
         "61479d58-c95b-4b69-a27e-f413dd5ddfe2"
       ],
       "settings": {
-        "size_chart": "size-chart"
+        "dec_title": "Size Chart"
       }
     }
   },
