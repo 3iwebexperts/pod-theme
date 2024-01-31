@@ -55,7 +55,7 @@
                   {% for block in section.blocks %}
                     {% if block.type == 'text' %}
                       <div class="swiper-slide" data-card-slide>
-                      {%- if block.settings.text != blnk -%}
+                      {%- if block.settings.text != blank -%}
                         <p class="content-slider__body-content">
                           {{ block.settings.text }}
                         </p>
