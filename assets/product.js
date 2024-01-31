@@ -63,6 +63,8 @@ function product_render_function() {
       swiper: swiper_1,
     },
   });
+  swiper2.controller.control = thumbsswiper_1
+swiper_1.controller.control = swiper2;
   // color variant change code
   $('.thumb_slider input[type="radio"]').on("change", function (params) {
     console.log($(this).data("v_id"),"asdasd");
