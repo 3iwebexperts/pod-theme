@@ -1,19 +1,26 @@
-<div class="product_sizechart drawers-container-child ">
-    <div class="drawer fit-guide__drawer col-lg-10">
-      <div class="drawer__inner fit-guide__inner">
-        <div class="drawer__header fit-guide__header">
-          <div class="drawer__header-title fit-guide__header-title">Size Guide</div>
-          <a href="javascript:void(0);" class="drawer__close fit-guide__close">
-            {%- render 'icon' with 'close-button' -%}
-            <span class="sr-only">Close size guide</span>
-          </a>
-        </div>
-        <div class="drawer__body-contents fit-guide__body">
-          <div class="fit-guide__gallery-container"><img src="https://cdn.shopify.com/s/files/1/0380/4705/6011/t/2/assets/af210819d1b3--municipal-apparel-womens-tomboy-tshirt-fit-6fdedb.jpg?v=1694646170&amp;width=640"></div>
-          <div class="fit-guide__gallery-description-content">{{ block.settings.sizechart }}</div>
-
-        </div>
-      </div>
-    </div>
-    <div class="drawer-backdrop"></div>
-  </div>
+{%- for block in section.blocks -%}
+  {%- if  block.type == 'size-chart' -%}
+    {%- if block.settings.sizechart != blank -%}
+      <div class="product_sizechart drawers-container-child ">
+          <div class="drawer fit-guide__drawer col-lg-10">
+            <div class="drawer__inner fit-guide__inner">
+              <div class="drawer__header fit-guide__header">
+                <div class="drawer__header-title fit-guide__header-title">Size Guide</div>
+                <a href="javascript:void(0);" class="drawer__close fit-guide__close">
+                  {%- render 'icon' with 'close-button' -%}
+                  <span class="sr-only">Close size guide</span>
+                </a>
+              </div>
+            
+              <div class="drawer__body-contents fit-guide__body">
+                <div class="fit-guide__gallery-container"><img src="https://cdn.shopify.com/s/files/1/0380/4705/6011/t/2/assets/af210819d1b3--municipal-apparel-womens-tomboy-tshirt-fit-6fdedb.jpg?v=1694646170&amp;width=640"></div>
+                <div class="fit-guide__gallery-description-content">{{ block.settings.sizechart }}</div>
+      
+              </div>
+            </div>
+          </div>
+          <div class="drawer-backdrop"></div>
+        </div>   
+{%- endif -%}
+  {%- endif -%}
+    {%- endfor -%}
