@@ -1,2 +1,5 @@
-
-<div class="fit-guide__drawer drawers-container-child">{{ product.metafields.custom.size_chart.value }}</div>
+{% for block in  settings.vlock %}
+  {%- if  block.type == 'size-chart' -%}
+<div class="fit-guide__drawer drawers-container-child">{{ block.settings.size_chart }}</div>
+{% endif %}
+{% endfor %}
