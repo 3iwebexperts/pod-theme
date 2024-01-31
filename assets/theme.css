@@ -9470,12 +9470,13 @@ body.ajax-cart-open {
   position: relative;
 }
 .fit-guide__gallery-description-content {
-  border-bottom: 3px solid #121212;
+  border-top: 3px solid #121212;
   font-family: SequelSans Body, sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.5;
   margin-bottom: 30px;
+  margin-top: 30px;
   padding: 25px 0;
   text-align: center;
 }
