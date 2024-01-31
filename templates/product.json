@@ -21,11 +21,19 @@
             "faq_btn_label": "Read FAQ",
             "faq_btn_url": "shopify:\/\/pages\/faqs"
           }
+        },
+        "size_chart_qctjKm": {
+          "type": "size-chart",
+          "settings": {
+            "chart_title": "Size Chart",
+            "sizechart": "<p>Size c<\/p>"
+          }
         }
       },
       "block_order": [
         "542378d7-6bef-4487-9aeb-a52bc91f3ad6",
-        "61479d58-c95b-4b69-a27e-f413dd5ddfe2"
+        "61479d58-c95b-4b69-a27e-f413dd5ddfe2",
+        "size_chart_qctjKm"
       ],
       "settings": {
         "size_chart": "size-chart"
