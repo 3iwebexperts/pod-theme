@@ -135,8 +135,6 @@
             {%- for block in section.blocks -%}
             
             {%- if  block.type == 'size-chart' -%}
-              condition true
-            
             {%- if block.settings.size_chart != blank or product.metafields.custom.size_chart != blank -%}
               <button class="pdp-drawer-button" data-fit-guide-toggler="" id="custom_sizing_drwer">
                 {%- if block.settings.chart_title != blank -%}<span class="pdp-drawer-button__label"> {{ block.setting.chart_title }} </span>{%- endif -%}
@@ -155,7 +153,7 @@
                 </div>
                 
               {{ block.settings.size_chart }}
-              {{ product.metafields.custom.size_chart.value }}
+              {{ product.metafields.custom.size_chart }}
               </button>
             {%- endif -%}
                 {%- endif -%}
