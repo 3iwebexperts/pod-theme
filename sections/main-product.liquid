@@ -107,7 +107,7 @@
                 <div class="pdp-drawer-button__icon">
                   {%- render 'icon' with 'arrow' -%}
                 </div>
-                    {{ product.metafields.custom.size_chart }}
+                    {{ product.metafields.custom.size_chart.value }}
               {% render 'size-chart' %}
               </button>
             {%- endif -%}
