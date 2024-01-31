@@ -1,5 +1,5 @@
 {% for block in  settings.vlock %}
-  {%- if  block.type == 'size-chart' -%}
+  {%- if  block.type = 'size-chart' -%}
 <div class="fit-guide__drawer drawers-container-child">{{ block.settings.size_chart }}</div>
 {% endif %}
 {% endfor %}
