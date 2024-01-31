@@ -145,13 +145,17 @@
                             alt=""
                           >
                         </div>
-                    {%- endif -%}
+                        {%- endif -%}
 
-                        <span class="content-slider__title">{{ block.settings.content_heading }}</span>
+                        {%- if block.settings.content_heading != blank -%}
+                          <span class="content-slider__title">{{ block.settings.content_heading }}</span>
+                        {%- endif -%}
 
-                        <p class="content-slider__body-content">
-                          {{ block.settings.content_text }}
-                        </p>
+                         {%- if block.settings.content_text != blank -%}
+                            <p class="content-slider__body-content">
+                              {{ block.settings.content_text }}
+                            </p>
+                        {%- endif -%}
 
                         <div class="content-slider__button-container">
                           {% if block.settings.email_btn_label != blank and block.settings.email_btn_url != blank %}
