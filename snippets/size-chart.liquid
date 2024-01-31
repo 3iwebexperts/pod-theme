@@ -17,6 +17,7 @@
                   {%- if block.settings.chart_image != blank -%}
                     <img src="{{ block.settings.chart_image | image_url }}">
                   {%- else -%}
+                    {{ 'product-1' | placeholder_svg_tag }}
                   {%- endif -%}
                 </div>
                 <div class="fit-guide__gallery-description-content">{{ block.settings.sizechart }}</div>
