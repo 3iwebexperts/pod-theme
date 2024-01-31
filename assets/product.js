@@ -71,7 +71,7 @@ function product_render_function() {
     $(".sticky-image__background-image img").prop("src", v_image);
     $(".sticky-image__background-image img").prop("srcset", v_image);
     $(".thumb_slider .swiper-wrapper product-option__single-selector").addClass("swiper-slide-active");
-     mySwiper.slideTo( $(v_image).index(),1000,false )
+     swiper2.slideTo( $(v_image).index(),1000,false )
     selectVariant();
   });
   
