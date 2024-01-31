@@ -128,12 +128,11 @@
             {% include 'pro_review' %}
           </div>
 
-          <div id="qs" class="content-slider__container">
-            <div class="content-slider" data-section-type="content-slider">
-            
-                  {% for block in section.blocks %}
-                    {% if block.type == 'image_picker' %}
 
+           {% for block in section.blocks %}
+                    {% if block.type == 'image_picker' %}
+                      <div id="qs" class="content-slider__container">
+                        <div class="content-slider" data-section-type="content-slider">
                         {%- if block.settings.content_image != blank -%}
                         <div class="content-slider__image-container">
                           <img
@@ -173,12 +172,13 @@
                           {% endif %}
                         </div>
              
-                    {% endif %}
-                  {% endfor %}
               
             </div>
             <div class="content-slider__bottom-color"></div>
           </div>
+                      
+                    {% endif %}
+                  {% endfor %}
 
           {% comment %} related code start {% endcomment %}
           {% include 'product-recommendation' %}
