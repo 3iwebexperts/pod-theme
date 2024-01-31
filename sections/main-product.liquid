@@ -135,6 +135,7 @@
                     {% if block.type == 'image_picker' %}
                      
                         <div class="content-slider__image-container">
+                          {%- if block.settings.content_image != blank -%}
                           <img
                             src="{{ block.settings.content_image | img_url :"master" }}"
                             srcset="{{ block.settings.content_image | img_url :"master" }}"
@@ -143,6 +144,7 @@
                             loading="lazy"
                             alt=""
                           >
+                          {%- endif -%}
                         </div>
 
                         <span class="content-slider__title">{{ block.settings.content_heading }}</span>
