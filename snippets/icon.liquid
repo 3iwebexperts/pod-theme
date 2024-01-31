@@ -22,6 +22,18 @@
 
     {%- when 'close-button' -%}
     <svg enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg" fill="currentcolor" class="icon icon-close">
-              <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"></path>
-            </svg>
+      <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"></path>
+    </svg>
+
+    {% when 'arrow' %}
+      <svg aria-hidden="true"
+      focusable="false"
+      role="presentation"
+      class="icon icon-arrow"
+      viewBox="0 0 90 90"
+      >
+      <g fill="none" fill-rule="evenodd">
+      <path fill="#121212" d="M64.948 19l24.873 25.813L90 45 65.193 71l-6.682-7.003L71.863 50H0V40h71.866L58.511 26.004 64.948 19z"></path>
+      </g>
+</svg>
   {%- endcase -%}
