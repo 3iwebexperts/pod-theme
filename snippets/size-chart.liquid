@@ -13,7 +13,12 @@
               </div>
             
               <div class="drawer__body-contents fit-guide__body">
-                <div class="fit-guide__gallery-container"><img src="{{ block.settings.chart_image | image_url }}"></div>
+                <div class="fit-guide__gallery-container">
+                  {%- if block.settings.chart_image != blank -%}
+                    <img src="{{ block.settings.chart_image | image_url }}">
+                  {%- else -%}
+                  {%- endif -%}
+                </div>
                 <div class="fit-guide__gallery-description-content">{{ block.settings.sizechart }}</div>
       
               </div>
