@@ -21,7 +21,7 @@
   border-color: #000;
 }
 .swiper-wrapper .product-option__single-selector:has(input[type="radio"]:checked) {
-  transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px);
 }
 label.pro_selector {
   font-family: Sequel Sans Title, SequelSans Body, sans-serif;
