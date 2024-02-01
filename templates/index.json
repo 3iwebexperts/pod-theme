@@ -112,7 +112,7 @@
           "type": "collection",
           "settings": {
             "collection": "frontpage",
-            "text": "@twincharlo"
+            "text": "Home page Collection"
           }
         },
         "36056e68-2449-4611-941e-55a8e5dcb860": {
@@ -219,6 +219,7 @@
       "type": "hero_video",
       "settings": {
         "video_sec": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7b9f2062325346e59971ec5f32964f57.mp4",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "title_cnt": "",
         "subtext": "We exist to inspire people to make big things happen and earn everything.",
         "button_text": "Read Our Story",
@@ -359,6 +360,7 @@
       "type": "hero_video",
       "settings": {
         "video_sec": "",
+        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "title_cnt": "",
         "subtext": "",
         "button_text": "",
