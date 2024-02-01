@@ -84,13 +84,14 @@
           <div class="value-prop">
             <h2 class="value-prop__title">{{ 'product_settings.description' | t }}</h2>
 
+            {%- if product.description != blank -%}
             <div class="value-prop__body-content">
               <p>
                 {{ product.description }}
               </p>
             </div>
           </div>
-
+          {%- endif -%}
           <div class="pdp-drawer-buttons-container">
             {% if product.metafields.custom.features_details != blank %}
               <button
