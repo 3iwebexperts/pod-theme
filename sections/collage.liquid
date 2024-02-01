@@ -82,15 +82,7 @@
               class="content-over-media__media zoom-image"
             >
             {% else %}
-               <img
-              src="{{  'placeholder.png' | asset_url }}"
-              alt=""
-              srcset="{{  'placeholder.png' | asset_url }}"
-              height="1500"
-              loading="lazy"
-              sizes="(max-width: 699px) 100vw, min(390px, 25vw)"
-              class="content-over-media__media zoom-image"
-            >
+               {{ 'image' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
           {% if section.settings.title_1 != blank %}
             <div
