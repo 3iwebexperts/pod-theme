@@ -53,9 +53,7 @@
   },
   "product": {
     "name": "Product",
-    "settings": {
-      "description": "Description"
-    }
+    "description": "Description"
   },
   "templates": {
     "search": {
