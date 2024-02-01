@@ -67,14 +67,6 @@ function product_render_function() {
 
   // Automatic slide 
       var activeSlideIndex = localStorage.getItem('activeSlideIndex');
-     
-
-  // color variant change code
-  $('.thumb_slider input[type="radio"]').on("change", function (params) {
-    console.log($(this).data("v_id"),"asdasd");
-    let v_image = $(this).data("v_image");
-    $(".sticky-image__background-image img").prop("src", v_image);
-    $(".sticky-image__background-image img").prop("srcset", v_image);
      if (activeSlideIndex !== null) {
        console.log("slide:" ,activeSlideIndex);
         swiper_1.slideTo(parseInt(activeSlideIndex), 0, false);
@@ -84,6 +76,14 @@ function product_render_function() {
         var activeIndex = swiper2.activeIndex;
         localStorage.setItem('activeSlideIndex', activeIndex);
       });
+
+  // color variant change code
+  $('.thumb_slider input[type="radio"]').on("change", function (params) {
+    console.log($(this).data("v_id"),"asdasd");
+    let v_image = $(this).data("v_image");
+    $(".sticky-image__background-image img").prop("src", v_image);
+    $(".sticky-image__background-image img").prop("srcset", v_image);
+     
     selectVariant();
   });
   
