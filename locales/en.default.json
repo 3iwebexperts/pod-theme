@@ -51,7 +51,7 @@
       }
     }
   },
-  "product": {
+  "product_settings": {
     "name": "Product",
     "description": "Description"
   },
