@@ -82,10 +82,6 @@ function product_render_function() {
     let v_image = $(this).data("v_image");
     $(".sticky-image__background-image img").prop("src", v_image);
     $(".sticky-image__background-image img").prop("srcset", v_image);
-    $(".thumb_slider .swiper-wrapper product-option__single-selector").addClass("swiper-slide-active");
-     // swiper2.slideTo( $(".product-option__single-selector").index(),1000,false );
-    swiper_1.slideTo($(".product-option__single-selector").index(5),1000,false);
-    swiper2.slideTo($(".product-option__single-selector").index(5),1000,false);
     selectVariant();
   });
   
