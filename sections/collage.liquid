@@ -105,7 +105,7 @@
         <div
           id="media-grid-1656690285827df07c-2"
           class="custom_img content-over-media rounded bg-custom text-custom"
-          style="--background: 0 0 0; --text-color: 255 255 255;"
+          style="--text-color: 255 255 255;"
         >
           {% if section.settings.image_2 != blank %}
             <img
@@ -141,7 +141,7 @@
         <div
           id="media-grid-71ce7a5d-9eff-4b1a-8897-31b748afbc2b"
           class="custom_img content-over-media rounded bg-custom text-custom"
-          style="--background: 0 0 0; --text-color: 255 255 255;"
+          style=" --text-color: 255 255 255;"
         >
           {% if section.settings.image_3 != blank %}
             <img
@@ -155,16 +155,7 @@
               class="content-over-media__media zoom-image"
             >
           {% else %}
-              <img
-              src="{{ 'placeholder.png' | asset_url  }}"
-              alt=""
-              srcset="{{ 'placeholder.png' | asset_url }}"
-              width="1500"
-              height="1000"
-              loading="lazy"
-              sizes="(max-width: 699px) 100vw, min(780px, 50vw)"
-              class="content-over-media__media zoom-image"
-            > 
+              {{ 'image' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
           {% if section.settings.title_3 != blank %}
             <div
