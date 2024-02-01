@@ -62,7 +62,9 @@ function product_render_function() {
     thumbs: {
       swiper: swiper_1,
     },
-    var activeSlideIndex = localStorage.getItem('activeSlideIndex');
+   
+  });
+ var activeSlideIndex = localStorage.getItem('activeSlideIndex');
       if (activeSlideIndex !== null) {
         swiper2.slideTo(parseInt(activeSlideIndex), 0, false);
       }
@@ -71,8 +73,6 @@ function product_render_function() {
         var activeIndex = swiper2.activeIndex;
         localStorage.setItem('activeSlideIndex', activeIndex);
       });
-  });
-
   // color variant change code
   $('.thumb_slider input[type="radio"]').on("change", function (params) {
     console.log($(this).data("v_id"),"asdasd");
