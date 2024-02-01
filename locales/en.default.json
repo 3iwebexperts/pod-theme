@@ -51,6 +51,12 @@
       }
     }
   },
+  "product": {
+    "name": "Product",
+    "settings": {
+      "description": "Description"
+    }
+  },
   "templates": {
     "search": {
       "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
@@ -102,9 +108,6 @@
         "title": "Favicon",
         "info": "Will be scaled down to 32 x 32px"
       }
-    },
-    "product": {
-      "description": "Description"
     }
   }
 }
