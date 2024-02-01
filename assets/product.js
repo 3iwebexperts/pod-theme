@@ -64,15 +64,7 @@ function product_render_function() {
     },
    
   });
- var activeSlideIndex = localStorage.getItem('activeSlideIndex');
-      if (activeSlideIndex !== null) {
-        swiper2.slideTo(parseInt(activeSlideIndex), 0, false);
-      }
 
-      swiper2.on('slideChange', function () {
-        var activeIndex = swiper2.activeIndex;
-        localStorage.setItem('activeSlideIndex', activeIndex);
-      });
   // color variant change code
   $('.thumb_slider input[type="radio"]').on("change", function (params) {
     console.log($(this).data("v_id"),"asdasd");
@@ -80,7 +72,7 @@ function product_render_function() {
     $(".sticky-image__background-image img").prop("src", v_image);
     $(".sticky-image__background-image img").prop("srcset", v_image);
     $(".thumb_slider .swiper-wrapper product-option__single-selector").addClass("swiper-slide-active");
-     swiper2.slideTo( $(".product-option__single-selector").index(),1000,false )
+     swiper2.slideTo( $(".product-option__single-selector").index(),1000,false );
     selectVariant();
   });
   
