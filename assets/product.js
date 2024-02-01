@@ -64,6 +64,19 @@ function product_render_function() {
     },
    
   });
+  var activeSlideIndex = localStorage.getItem('activeSlideIndex');
+
+      // Set the active slide for both swipers
+      if (activeSlideIndex !== null) {
+        swiper_1.slideTo(parseInt(activeSlideIndex), 0, false);
+        swiper2.slideTo(parseInt(activeSlideIndex), 0, false);
+      }
+
+      // Save the active slide index when the slide changes
+      swiper_1.on('slideChange', function () {
+        var activeIndex = swiper_1.activeIndex;
+        localStorage.setItem('activeSlideIndex', activeIndex);
+      });
 
   // color variant change code
   $('.thumb_slider input[type="radio"]').on("change", function (params) {
