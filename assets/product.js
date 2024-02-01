@@ -62,6 +62,15 @@ function product_render_function() {
     thumbs: {
       swiper: swiper_1,
     },
+    var activeSlideIndex = localStorage.getItem('activeSlideIndex');
+      if (activeSlideIndex !== null) {
+        mySwiper.slideTo(parseInt(activeSlideIndex), 0, false);
+      }
+
+      mySwiper.on('slideChange', function () {
+        var activeIndex = mySwiper.activeIndex;
+        localStorage.setItem('activeSlideIndex', activeIndex);
+      });
   });
 
   // color variant change code
