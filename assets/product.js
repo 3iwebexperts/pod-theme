@@ -73,7 +73,7 @@ function product_render_function() {
     $(".sticky-image__background-image img").prop("srcset", v_image);
     $(".thumb_slider .swiper-wrapper product-option__single-selector").addClass("swiper-slide-active");
      // swiper2.slideTo( $(".product-option__single-selector").index(),1000,false );
-    swiper2.slideTo(.index());
+    swiper2.slideTo(index());
     selectVariant();
   });
   
