@@ -74,6 +74,7 @@ function product_render_function() {
     $(".thumb_slider .swiper-wrapper product-option__single-selector").addClass("swiper-slide-active");
      // swiper2.slideTo( $(".product-option__single-selector").index(),1000,false );
     swiper_1.slideTo($(".product-option__single-selector").index());
+    swiper2.slideTo($(".product-option__single-selector").index());
     selectVariant();
   });
   
