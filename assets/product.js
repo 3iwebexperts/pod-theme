@@ -70,7 +70,6 @@ function product_render_function() {
      if (activeSlideIndex !== null) {
        console.log("slide:" ,activeSlideIndex);
         swiper_1.slideTo(parseInt(activeSlideIndex), 0, false);
-        swiper2.slideTo(parseInt(activeSlideIndex), 0, false);
       }
       swiper_1.on('change', function () {
         var activeIndex = swiper_1.activeIndex;
