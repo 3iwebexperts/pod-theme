@@ -78,13 +78,13 @@ function product_render_function() {
      if (activeSlideIndex !== null) {
         swiper_1.slideTo(parseInt(activeSlideIndex), 1000, true);
       }
-      swiper_1.on('slideChange', function () {
+     
+    selectVariant();
+  });
+   swiper_1.on('slideChange', function () {
         var activeIndex = swiper_1.activeIndex;
         localStorage.setItem('activeSlideIndex', activeIndex);
       });
-    selectVariant();
-  });
-  
 }
 jQuery(document).ready(function () {
   $(document).on("click", "#swatch_drawer .drawer__body-contents .pro_selector input", function (e) {
