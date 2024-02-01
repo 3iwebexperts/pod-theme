@@ -89,7 +89,7 @@
       "settings": {
         "heading": "GET SHMEWWED",
         "content": "Explore our newest arrivals",
-        "feature_collection": "new-arrivals",
+        "feature_collection": "frontpage",
         "products_limit": 6
       }
     },
