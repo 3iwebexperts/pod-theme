@@ -80,7 +80,7 @@ function product_render_function() {
         swiper_1.slideTo(parseInt(activeSlideIndex), 0, false);
         swiper2.slideTo(parseInt(activeSlideIndex), 0, false);
       }
-      swiper2.on('slideChange', function () {
+      swiper2.on('change', function () {
         var activeIndex = swiper2.activeIndex;
         localStorage.setItem('activeSlideIndex', activeIndex);
       });
