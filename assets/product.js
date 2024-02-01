@@ -76,6 +76,7 @@ function product_render_function() {
     $(".sticky-image__background-image img").prop("src", v_image);
     $(".sticky-image__background-image img").prop("srcset", v_image);
      if (activeSlideIndex !== null) {
+       console.log("slide:" ,activeSlideIndex);
         swiper_1.slideTo(parseInt(activeSlideIndex), 0, false);
         swiper2.slideTo(parseInt(activeSlideIndex), 0, false);
       }
