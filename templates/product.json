@@ -26,7 +26,7 @@
           "type": "size-chart",
           "settings": {
             "chart_title": "Size Chart",
-            "sizechart": "<p>lknvlkxcnvkxcn<\/p>{{ product.metafields.custom.size_chart | metafield_tag }}"
+            "sizechart": "{{ product.metafields.custom.size_chart | metafield_tag }}"
           }
         }
       },
