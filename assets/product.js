@@ -69,7 +69,7 @@ function product_render_function() {
       var activeSlideIndex = localStorage.getItem('activeSlideIndex');
      if (activeSlideIndex !== null) {
        console.log("slide:" ,activeSlideIndex);
-        swiper_1.slideTo(parseInt(activeSlideIndex), 0, false);
+        swiper_1.slideTo(parseInt(activeSlideIndex), 1000, false);
       }
       swiper_1.on('slideChange', function () {
         var activeIndex = swiper_1.activeIndex;
