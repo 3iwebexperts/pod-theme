@@ -84,8 +84,7 @@ function product_render_function() {
    swiper_1.on('slideChange', function () {
         var activeIndex = swiper_1.activeIndex;
         localStorage.setItem('activeSlideIndex', activeIndex);
-     activeIndex = 0
-;     
+     activeIndex = 0;     
       });
 }
 jQuery(document).ready(function () {
