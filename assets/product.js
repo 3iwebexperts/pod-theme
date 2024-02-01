@@ -71,7 +71,7 @@ function product_render_function() {
        console.log("slide:" ,activeSlideIndex);
         swiper_1.slideTo(parseInt(activeSlideIndex), 0, false);
       }
-      swiper_1.on('change', function () {
+      swiper_1.on('slideChange', function () {
         var activeIndex = swiper_1.activeIndex;
         localStorage.setItem('activeSlideIndex', activeIndex);
       });
