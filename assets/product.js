@@ -64,11 +64,11 @@ function product_render_function() {
     },
     var activeSlideIndex = localStorage.getItem('activeSlideIndex');
       if (activeSlideIndex !== null) {
-        mySwiper.slideTo(parseInt(activeSlideIndex), 0, false);
+        swiper2.slideTo(parseInt(activeSlideIndex), 0, false);
       }
 
-      mySwiper.on('slideChange', function () {
-        var activeIndex = mySwiper.activeIndex;
+      swiper2.on('slideChange', function () {
+        var activeIndex = swiper2.activeIndex;
         localStorage.setItem('activeSlideIndex', activeIndex);
       });
   });
