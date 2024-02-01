@@ -68,7 +68,7 @@ function product_render_function() {
 
       // Set the active slide for both swipers
       if (activeSlideIndex !== null) {
-        swiper_1.slideTo(parseInt(activeSlideIndex), 0, false);
+        swiper_1.slideTo(parseInt(activeSlideIndex), 100, false);
         swiper2.slideTo(parseInt(activeSlideIndex), 0, false);
       }
 
