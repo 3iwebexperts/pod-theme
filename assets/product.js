@@ -65,10 +65,9 @@ function product_render_function() {
    
   });
 
-  // Automatic slide 
+  // Selected slide 
       var activeSlideIndex = localStorage.getItem('activeSlideIndex');
      if (activeSlideIndex !== null) {
-       console.log("slide:" ,activeSlideIndex);
         swiper_1.slideTo(parseInt(activeSlideIndex), 1000, false);
       }
       swiper_1.on('slideChange', function () {
