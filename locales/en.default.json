@@ -102,6 +102,10 @@
         "title": "Favicon",
         "info": "Will be scaled down to 32 x 32px"
       }
+    },
+    "product": {
+      "description": "Description",
+      "subtext": "404"
     }
   }
 }
