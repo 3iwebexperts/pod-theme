@@ -206,8 +206,8 @@ function common_functions() {
       navigation: {
         nextEl: ".feature_next",
         prevEl: ".feature_prev",
-      }
       },
+  
       pagination: {
         el: ".feature_paginate",
         clickable: true,
