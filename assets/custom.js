@@ -207,16 +207,6 @@ function common_functions() {
         nextEl: ".feature_next",
         prevEl: ".feature_prev",
       },
-      // on: {
-      //   init: function () {
-      //     this.updateAutoHeight();
-      //     this.setEqualHeight();
-      //   },
-      //   slideChange: function () {
-      //     this.updateAutoHeight();
-      //     this.setEqualHeight(); 
-      //   },
-      // },
       pagination: {
         el: ".feature_paginate",
         clickable: true,
