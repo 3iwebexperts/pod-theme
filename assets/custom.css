@@ -415,7 +415,9 @@ label.popover__choice-item:has(input:checked):after {
 .template-product .swym-button-bar {
   display: none;
 }
-
+.variant-placeholder{
+  padding-bottom:0;
+}
 /* Pagination */
 .pagination-wrapper .pagination ul {
   display: flex;
