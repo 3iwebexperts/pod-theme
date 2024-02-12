@@ -62,7 +62,7 @@
                         alt="{{ collection.title }}"
                       >
                     {% else %}
-                      <div>{{ 'image' | placeholder_svg_tag }}</div>
+                      <div class="place_holder_svg">{{ 'image' | placeholder_svg_tag }}</div>
                     {% endif %}
               {% if block.settings.notify_text != blank %}
                     <div class="link-card__bottom-text">
