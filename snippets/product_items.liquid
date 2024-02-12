@@ -79,6 +79,7 @@
                           >
     
                           <div class="product-option__ui ">
+                            {%- if variant.image != blank -%}
                             <img
                               src="{{ variant.image | img_url: "1024x" }}"
                               srcset="{{ variant.image | img_url: "1024x" }}"
@@ -87,6 +88,9 @@
                               loading="lazy"
                               alt="{{ variant.title }}"
                             >
+                            {%- else -%}
+                              {{ 'product-4' | placeholder_svg_tag }}
+                            {%- endif -%}
                           </div>
                         </label>
                   {% capture tempList %}
