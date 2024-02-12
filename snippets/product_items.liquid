@@ -32,12 +32,9 @@
           alt=""
         >
       {% else %}
-        <img
-          src="{{ 'placeholder.png' | asset_url }}"
-          class="product-card__image"
-          loading="lazy"
-          alt=""
-        >
+   
+          
+        {{ 'product-1' | placeholder_svg_tag }}
       {% endif %}
     </div>
   </a>
