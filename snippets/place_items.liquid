@@ -18,12 +18,7 @@
       >
         <div class="discount-badge" data-discount-badge=""></div>
 
-        <img
-          src="{{ "placeholder.png" | asset_url }}"
-          class="product-card__image"
-          loading="lazy"
-          alt=""
-        >
+         {{ 'product-4' | placeholder_svg_tag }}
       </div>
     </a>
     <form target="/cart/add" class="product-card__content text-center">
@@ -54,14 +49,7 @@
               >
 
               <div class="product-option__ui">
-                <img
-                  src="{{ "placeholder.png" | asset_url }}"
-                  srcset="{{ "placeholder.png" | asset_url }}"
-                  class=""
-                  sizes="(max-width: 992px) 15vw, 6vw"
-                  loading="lazy"
-                  alt="White / S"
-                >
+                 {{ 'product-4' | placeholder_svg_tag }}
               </div>
             </label>
 
