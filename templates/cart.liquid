@@ -121,7 +121,7 @@
       <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
     {% endif %}
   <div class="custom_cart_card">
-    <p>{{ 'cart.subtotal' | t }}</p>
+    <p>{{ 'cart.total' | t }}</p>
     <p>{{ cart.total_price | money }}</p>
     {% if cart.total_discounts > 0 %}
       <p>{{ 'cart.savings' }} {{ cart.total_discounts | money }}</p>
