@@ -35,8 +35,8 @@
     {% else %}
        <video-media host="{{ section.settings.external_video_url.type }}">
       <template>
-           <iframe src="https://www.youtube.com/embed/{{ section.settings.external_video_url }}?playsinline=1&{% if section.settings.autoplay %}autoplay=1&controls=0&mute=1&loop=1&{% endif %}playlist={{ section.settings.external_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
-       </template>
+          <iframe src="https://player.vimeo.com/video/{{ section.settings.external_video_url.id }}?autopause=1&{% if section.settings.autoplay %}background=1&autoplay=1&loop=1&muted=1&{% endif %}transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}" allow="autoplay; encrypted-media;" allowfullscreen="allowfullscreen"></iframe>
+      </template>
   </video-media>
     {% endif %}
   </div>
@@ -54,7 +54,9 @@
         width="368"
         height="300"
       >
-     {% endif %}
+    {% else %}
+      {{ 'hero-apparel-1' | placeholder_svg_tag }}
+    {% endif %}
     {% if section.settings.title_cnt != blank %}
       <h1 class="hero__title h1">
         {{ section.settings.title_cnt }}
@@ -82,15 +84,10 @@
      {
         "type": "text",
         "id": "video_sec",
-        "label": "Video Link"
-    },
-   {
-        "type": "video_url",
-        "id": "external_video_url",
-        "accept": ["vimeo", "youtube"],
-        "label": "Video URL",
+        "label": "Video Link",
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-      },
+    },
+
     {
 
             "type": "image_picker",
