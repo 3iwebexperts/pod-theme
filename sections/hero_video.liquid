@@ -43,9 +43,8 @@
   <div class="hero__inner col-20 col-lg-11">
     {%- if section.settings.image != blank -%}
       <img
-        src="{{ section.settings.image | img_url: "368x" }}"
-
-        srcset="{{ section.settings.image | img_url: "368x" }}"
+        src="{{ section.settings.image | image_url: "368x" }}"
+        srcset="{{ section.settings.image | image_url: "368x" }}"
         class="hero__title-image"
         sizes="100vw"
         loading="lazy"
