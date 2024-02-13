@@ -17,28 +17,27 @@
   <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
   <div class="hero__video-container">
     <!-- <iframe src="https://player.vimeo.com/video/883567405?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="4c3a1303-b69a-45b4-af0c-e50f92618fc5"></iframe> -->
-    
-     {% if section.settings.video_sec != blank %}
-       <video
+    <video
       data-background-video
       autoplay
       loop
       muted
       playsinline
     >
+      {% if section.settings.video_sec != blank %}
         <source
           type="video/mp4"
           src="{{ section.settings.video_sec }}"
           data-mp4-video
         >
+      {% else %}
+        <source
+          type="video/mp4"
+          src="{{ section.settings.video_sec }}"
+          data-mp4-video
+        >
+      {% endif %}
     </video>
-    {% else %}
-       <video-media host="{{ section.settings.external_video_url.type }}">
-      <template>
-          <iframe src="https://player.vimeo.com/video/{{ section.settings.external_video_url.id }}?autopause=1&{% if section.settings.autoplay %}background=1&autoplay=1&loop=1&muted=1&{% endif %}transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}" allow="autoplay; encrypted-media;" allowfullscreen="allowfullscreen"></iframe>
-      </template>
-  </video-media>
-    {% endif %}
   </div>
 
   <div class="hero__inner col-20 col-lg-11">
@@ -80,10 +79,10 @@
   "settings": [
 
      {
-        "type": "text",
-        "id": "video_sec",
-        "label": "Video Link",
-        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+
+            "type": "text",
+           "id": "video_sec",
+           "label": "Video Link"
     },
 
     {
