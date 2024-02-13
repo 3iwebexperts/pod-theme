@@ -53,6 +53,8 @@
         width="368"
         height="300"
       >
+    {% else %}
+      {{ 'image'  | placeholder_svg_tag }}
     {% endif %}
     {% if section.settings.title_cnt != blank %}
       <h1 class="hero__title h1">
