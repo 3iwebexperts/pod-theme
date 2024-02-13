@@ -399,8 +399,8 @@ label.popover__choice-item:has(input:checked):after {
   border-bottom: 1px solid;
 }
 .template-cart .custom_cart_card {
-  margin-left: auto;
-  width: 30%;
+  /* margin-left: auto; */
+  width: 50%;
   padding: 25px;
 }
 .template-cart .custom_cart_card p {
