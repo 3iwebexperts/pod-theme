@@ -411,28 +411,28 @@ label.popover__choice-item:has(input:checked):after {
     margin: 0 auto;
     padding: 0 15px;
 }
-.cart .ajax-item__footer{
+.cart .custom-cart-form .ajax-item__footer{
   margin-top:0;
 }
-.cart .ajax-cart__item-info{
+.cart .custom-cart-form .ajax-cart__item-info{
 flex-direction:row;
       justify-content: space-around;
     align-items: center;
 }
-.cart input.quantity-adjuster__input{
+.cart .custom-cart-form input.quantity-adjuster__input{
   min-width: 35px;
       padding-left: 11px;
 }
-.cart .ajax-item__item-controls{
+.cart .custom-cart-form .ajax-item__item-controls{
   flex-direction:column;
 }
-.cart .ajax-cart__item-header{
+.cart .custom-cart-form .ajax-cart__item-header{
   color:var(--black);
 }
-.cart .ajax-cart__item-options{
+.cart .custom-cart-form .ajax-cart__item-options{
   font-size:12px;
 }
-.cart .ajax-cart__footer-top,.cart .ajax-cart__footer-bottom{
+.cart .custom-cart-form .ajax-cart__footer-top,.cart .ajax-cart__footer-bottom{
   max-width:35%;
 }
 .field__input::-webkit-search-cancel-button,
