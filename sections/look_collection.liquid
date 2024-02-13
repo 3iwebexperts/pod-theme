@@ -47,14 +47,10 @@
                     alt="{{ collection.title }}"
                   >
                 {% else %}
-                  <img
-                    src="{{ "placeholder.png" | asset_url }}"
-                    srcset="{{ "placeholder.png" | asset_url }}"
-                    class="look-card__image frame__inner 12 "
-                    sizes="(max-width: 529px) 90vw, (max-width: 992px) 45vw, (max-width: 1399px) 30vw, 25vw"
-                    loading="lazy"
-                    alt="{{ collection.title }}"
-                  >
+    
+                <div class="place_holder_svg">
+                      {{ 'image' | placeholder_svg_tag }}
+                    </div>
                 {% endif %}
               </div>
               <div class="look-card__text-container">
