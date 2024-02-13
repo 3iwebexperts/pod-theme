@@ -426,6 +426,9 @@ flex-direction:row;
 .cart .ajax-item__item-controls{
   flex-direction:column;
 }
+.cart .ajax-cart__footer-top,.cart .ajax-cart__footer-bottom{
+  max-width:35%;
+}
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
