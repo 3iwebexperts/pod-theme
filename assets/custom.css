@@ -421,9 +421,7 @@ label.popover__choice-item:has(input:checked):after {
 .place_holder_svg{
   background:var(--white);
 }
-.place_holder_svg:has(.frame--4x5:before){
-  padding-top:0;
-}
+
 .frame--4x5:has(.place_holder_svg):before{
   padding-top:0;
 }
