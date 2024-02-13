@@ -60,18 +60,18 @@
       <h1 class="hero__title h1">
         {{ section.settings.title_cnt }}
       </h1>
-    {% endif %}
-    {% if section.settings.subtext != blank %}
+    {%- endif -%}
+    {%- if section.settings.subtext != blank -%}
       <p class="hero__text p2">{{ section.settings.subtext }}</p>
-    {% endif %}
+    {%- endif -%}
 
-    {% if section.settings.button_text != blank and section.settings.link != blank %}
+    {%- if section.settings.button_text != blank and section.settings.link != blank -%}
       <div>
         <a href="{{ section.settings.link }}" class="btn btn-white btn-white-m hero__btn">
           {{ section.settings.button_text }}
         </a>
       </div>
-    {% endif %}
+    {%- endif -%}
   </div>
 </div>
 
