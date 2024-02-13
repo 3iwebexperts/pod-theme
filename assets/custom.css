@@ -414,6 +414,10 @@ label.popover__choice-item:has(input:checked):after {
 .cart .ajax-item__footer{
   margin-top:0;
 }
+.cart .ajax-cart__item-info{
+flex-direction:row;
+  
+}
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
