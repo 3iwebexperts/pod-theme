@@ -24,19 +24,19 @@
       muted
       playsinline
     >
-      {% if section.settings.video_sec != blank %}
+      {%- if section.settings.video_sec != blank -%}
         <source
           type="video/mp4"
           src="{{ section.settings.video_sec }}"
           data-mp4-video
         >
-      {% else %}
+      {%- else -%}
         <source
           type="video/mp4"
           src="{{ section.settings.video_sec }}"
           data-mp4-video
         >
-      {% endif %}
+      {%- endif -%}
     </video>
   </div>
 
