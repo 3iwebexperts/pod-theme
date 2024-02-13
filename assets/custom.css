@@ -423,6 +423,9 @@ flex-direction:row;
   min-width: 35px;
       padding-left: 11px;
 }
+.cart .ajax-item__item-controls{
+  flex-direction:column;
+}
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
