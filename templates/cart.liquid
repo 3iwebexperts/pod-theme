@@ -133,7 +133,7 @@
           </div>
           <div class="ajax-cart__footer-row text-center">
             <a href="/collections/all" class="btn btn-link ajax-cart__continue-shopping-btn" data-ajax-cart-close="">
-              Continue Shopping
+              {{ 'cart.continue_to_shopping' | t }}
             </a>
           </div>
         </div>
@@ -146,8 +146,11 @@
   Cart empty state
   {% endcomment %}
   <div class="supports-cookies">
-    <p>{{ 'cart.general.empty' }}</p>
-    <p>{{ 'cart.continue_to_shopping' | t }}</p>
+    <p>{{ 'cart.no_data_cart' | t }}</p>
+    <p>
+      <a href="/collections/all" class="btn btn-link ajax-cart__continue-shopping-btn" data-ajax-cart-close="">
+              {{ 'cart.continue_to_shopping' | t }}
+            </a></p>
   </div>
 
   {% comment %}
