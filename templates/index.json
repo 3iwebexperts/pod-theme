@@ -220,7 +220,6 @@
       "type": "hero_video",
       "settings": {
         "video_sec": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7b9f2062325346e59971ec5f32964f57.mp4",
-        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "title_cnt": "",
         "subtext": "We exist to inspire people to make big things happen and earn everything.",
         "button_text": "Read Our Story",
@@ -360,8 +359,7 @@
     "hero_video_DLX3Wc": {
       "type": "hero_video",
       "settings": {
-        "video_sec": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "external_video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_sec": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7b9f2062325346e59971ec5f32964f57.mp4",
         "title_cnt": "",
         "subtext": "",
         "button_text": "",
