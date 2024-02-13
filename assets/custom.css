@@ -419,6 +419,10 @@ flex-direction:row;
       justify-content: space-around;
     align-items: center;
 }
+.cart input.quantity-adjuster__input{
+  min-width: 35px;
+      padding-left: 11px;
+}
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
