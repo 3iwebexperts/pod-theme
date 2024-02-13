@@ -76,12 +76,36 @@
               {% endif %}
             </td>
             <td class="cart_{{ 'cart.quantity' |t | downcase}}" data-label="{{ 'cart.quantity' }}">
-              <input type="number"
-                     name="updates[]"
-                     id="updates_{{ item.key }}"
-                     value="{{ item.quantity }}"
-                     min="0"
-                     aria-label="{{ 'cart.general.item_quantity' }}">
+                     <div class="ajax-item__quantity-adjuster" data-quantity-adjuster="">
+                        <button
+                          type="button"
+                          class="quantity-adjuster__decrement"
+                          data-decrement=""
+                          {% if line_item.quantity <= 1 %}
+                            disabled
+                          {% endif %}
+                        >
+                          -
+                        </button>
+                        <input
+                          class="quantity-adjuster__input"
+                          name="updates[]"
+                          type="number"
+                          value="{{ line_item.quantity }}"
+                          min="1"
+                          readonly
+                        >
+                        <button
+                          type="button"
+                          class="quantity-adjuster__increment"
+                          data-increment=""
+                          {% if line_item.variant.inventory_quantity <= line_item.quantity %}
+                            disabled
+                          {% endif %}
+                        >
+                          +
+                        </button>
+                      </div>
             </td>
             <td data-label="{{ 'cart.total' }}">
               {{ item.line_price | money }}
