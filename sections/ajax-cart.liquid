@@ -37,12 +37,16 @@
                 data-ajax-item=""
               >
                 <div class="ajax-cart__item-image-wrapper frame frame--1x1">
+              {%- if line_item.image != blank -%}
                   <img
                     src="{{ line_item.image | img_url: "150x" }}"
                     srcset="{{ line_item.image | img_url: "150x" }}"
                     sizes="(max-width: 540px) 100px, 130px"
                     class="ajax-cart__item-image"
                   >
+                {%- else -%}
+                
+                {%- endif -%}
                 </div>
                 <div class="ajax-cart__item-info">
                   <div class="ajax-cart__title-container">
