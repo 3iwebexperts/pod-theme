@@ -81,7 +81,7 @@
                           type="button"
                           class="quantity-adjuster__decrement"
                           data-decrement=""
-                          {% if line_item.quantity <= 1 %}
+                          {% if item.quantity <= 1 %}
                             disabled
                           {% endif %}
                         >
@@ -91,7 +91,7 @@
                           class="quantity-adjuster__input"
                           name="updates[]"
                           type="number"
-                          value="{{ line_item.quantity }}"
+                          value="{{ item.quantity }}"
                           min="1"
                           readonly
                         >
@@ -99,7 +99,7 @@
                           type="button"
                           class="quantity-adjuster__increment"
                           data-increment=""
-                          {% if line_item.variant.inventory_quantity <= line_item.quantity %}
+                          {% if item.variant.inventory_quantity <= item.quantity %}
                             disabled
                           {% endif %}
                         >
