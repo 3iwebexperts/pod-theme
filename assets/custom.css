@@ -391,9 +391,7 @@ label.popover__choice-item:has(input:checked):after {
   margin: auto;
 }
 .template-cart h1 {
-  margin-top: 15px;
-  margin-left: auto;
-  width: 95%;
+  margin: 30px 0;
   text-align:center;
 }
 .template-cart table thead,
