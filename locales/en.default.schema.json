@@ -19,7 +19,9 @@
     "shipping_at_checkout": "shipping at checkout",
     "update": "Update",
     "checkout": "Checkout",
-    "remove": "Remove"
+    "remove": "Remove",
+    "continue_to_shopping": "Continue to shopping",
+    "no_data_cart": "No data in cart"
   },
   "product_settings": {
     "name": "Product",
