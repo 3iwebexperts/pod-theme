@@ -407,7 +407,11 @@ label.popover__choice-item:has(input:checked):after {
 .template-cart .custom_cart_card p {
   margin-bottom: 10px;
 }
-
+.cart .layout-main-content{
+  max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
