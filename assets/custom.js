@@ -445,22 +445,40 @@ function form_submit() {
 // submit function and cart drawer code end
 // render ajax cart function start
 function render_cart() {
-  let cart_url = window.location.pathname + "?section_id=ajax-cart";
-  console.log(cart_url);
-  $('.custom-loader-overlay').addClass('loading');
-  fetch(cart_url)
+  if( window.location.pathname == "/cart"){
+    let cart_url = window.location.pathname + "?section_id=main-cart";
+    $('.custom-loader-overlay').addClass('loading');
+    fetch(cart_url)
     .then((response) => response.text())
     .then((responseText) => {
       let cart_html = new DOMParser().parseFromString(
         responseText, "text/html"
       );
-      let ajax_cart_render = document.querySelector(".ajax-cart-container");
-      ajax_cart_render.innerHTML = " ";
+      let ajax_cart_render = document.querySelector(".main-cart-container");
+      ajax_cart_render.innerHTML = "";
       ajax_cart_render.insertAdjacentHTML(
-        "beforeend", cart_html.body.querySelector(".ajax-cart-container").innerHTML
+        "beforeend", cart_html.body.querySelector(".main-cart-container").innerHTML
       );
       closeLoader();
     });
+  }
+  else{
+      let cart_url = window.location.pathname + "?section_id=ajax-cart";
+      $('.custom-loader-overlay').addClass('loading');
+      fetch(cart_url)
+        .then((response) => response.text())
+        .then((responseText) => {
+          let cart_html = new DOMParser().parseFromString(
+            responseText, "text/html"
+          );
+          let ajax_cart_render = document.querySelector(".ajax-cart-container");
+          ajax_cart_render.innerHTML = " ";
+          ajax_cart_render.insertAdjacentHTML(
+            "beforeend", cart_html.body.querySelector(".ajax-cart-container").innerHTML
+          );
+          closeLoader();
+        });
+    }
 }
 // render ajax cart function end
 
