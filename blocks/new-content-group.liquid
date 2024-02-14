@@ -1,3 +1,23 @@
+ <style>
+     .card-slider__title {
+      color: {{block.settings.heading_color}};
+    }
+      card-slider__content  {
+        color: {{section.settings.highlight_color}};
+      }
+
+      @media (max-width: 992px) {
+
+
+        #hero-{{ section.id }} .hero__title {
+          color:{{section.settings.text_color}} ;
+        }
+
+        #hero-{{ section.id }} .hero__highlight-text {
+          color:{{section.settings.highlight_color}} ;
+        }
+      }
+</style>
 <div class="row">
   <div class="card-slider__heading">
     <div class="card-slider__info-container">
@@ -5,7 +25,7 @@
         <h2 class="card-slider__title h2">{{ block.settings.heading }}</h2>
       {% endif %}
       {% if block.settings.content != blank %}
-        <p class="card-slider__copy p3">{{ block.settings.content }}</p>
+        <p class="card-slider__content p3">{{ block.settings.content }}</p>
       {% endif %}
     </div>
     <div class="card-slider__cta-container">
