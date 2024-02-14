@@ -1,10 +1,10 @@
-  {% if section.settings.image != blank %}
+  {% if block.settings.image != blank %}
     <img
-      src="{{ section.settings.image | img_url:"1920x" }}"
+      src="{{ block.settings.image | img_url:"1920x" }}"
       srcset="{{ section.settings.image | img_url:"1920x" }}"
       class="hero__bg hero__bg--desktop"
       sizes="100vw"
-      loading="lazy"
+      loading="lazy"block
       alt=""
     >
   {% else %}
@@ -18,7 +18,7 @@
     >
     {% comment %} {{ 'image' | placeholder_svg_tag }}{% endcomment %}
   {% endif %}
-  {% if section.settings.image2 != blank %}
+  {% if block.settings.image2 != blank %}
     <img
       src="{{ section.settings.image2 | img_url:"856x" }}"
       srcset="{{ section.settings.image2 | img_url:"856x" }}"
