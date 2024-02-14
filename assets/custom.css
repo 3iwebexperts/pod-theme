@@ -727,6 +727,9 @@ header .inner_search {
 .cart .custom-cart-form .cart-foote_inner{
   width:100%
 }
+.cart-total-price{
+  font-size:18px;
+}
 @media only screen and (min-width: 990px){
   .cart .custom-cart-form .ajax-item__footer{
   margin-top:0;
