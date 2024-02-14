@@ -720,6 +720,8 @@ header .inner_search {
   font-size:18px;
   margin-bottom:20px;
   line-height:20px;
+  text-align:center;
+  
 }
  .cart .custom-cart-form .ajax-cart__footer{
    display:flex;
