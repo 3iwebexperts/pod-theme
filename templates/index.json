@@ -370,10 +370,10 @@
           "type": "new-content-group",
           "settings": {
             "heading": "NEW DROPS",
+            "select_heding": "h2",
             "content": "The latest Sport Utility Gear to hit the site.",
             "button_text": "Shop All",
             "button_url": "shopify:\/\/collections",
-            "select_heding": "h2",
             "heading_color": "",
             "text_color": "#000000"
           }
@@ -392,6 +392,11 @@
       ],
       "settings": {
       }
+    },
+    "new_hero_banner_3F7aJ8": {
+      "type": "NEW-hero-banner",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -407,6 +412,7 @@
     "d1fa8b77-b021-4105-819b-364db70036ec",
     "f3113dc4-eadf-4fa4-adf7-f288d07c1076",
     "hero_video_DLX3Wc",
-    "new_featured_collection_m4qRzM"
+    "new_featured_collection_m4qRzM",
+    "new_hero_banner_3F7aJ8"
   ]
 }
