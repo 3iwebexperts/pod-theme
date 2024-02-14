@@ -473,10 +473,10 @@ function render_cart() {
       let cart_html = new DOMParser().parseFromString(
         responseText, "text/html"
       );
-      let ajax_cart_render = document.querySelector(".ajax-cart-container");
+      let ajax_cart_render = document.querySelector(".main-cart-container");
       ajax_cart_render.innerHTML = "";
       ajax_cart_render.insertAdjacentHTML(
-        "beforeend", cart_html.body.querySelector(".ajax-cart-container").innerHTML
+        "beforeend", cart_html.body.querySelector(".main-cart-container").innerHTML
       );
       closeLoader();
     });
