@@ -446,6 +446,7 @@ function form_submit() {
 // render ajax cart function start
 function render_cart() {
   let cart_url = window.location.pathname + "?section_id=ajax-cart";
+  console.log("ajax-cart", cart_url);
   $('.custom-loader-overlay').addClass('loading');
   fetch(cart_url)
     .then((response) => response.text())
