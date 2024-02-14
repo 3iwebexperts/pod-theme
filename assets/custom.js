@@ -95,7 +95,7 @@ function not_rendered_functions() {
       var input = $(this).siblings(".quantity-adjuster__input");
       var currentValue = parseInt(input.val());
       input.val(currentValue + 1);
-       let calcPrice = $(".ajax-cart__item-price");
+       let calcPrice =$(this).siblings(".quantity-adjuster__input").val();
         console.log(calcPrice);
       form_submit();
     });
@@ -108,7 +108,7 @@ function not_rendered_functions() {
       if (currentValue > 1) {
         input.val(currentValue - 1);
       }
-      let calcPrice = $(".ajax-cart__item-price");
+      let calcPrice = $(this).siblings(".quantity-adjuster__input").val();
         console.log(calcPrice);
       form_submit();
     });
