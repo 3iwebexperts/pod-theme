@@ -36,22 +36,6 @@
         </div>
       </div>
     </div>
-    <div class="row card-slider__slider feature_card_slider" data-card-slider>
-      <div class="swiper-wrapper">
-        {% if collection != blank %}
-          {% for product in collection.products limit: section.settings.products_limit %}
-            <div class="swiper-slide" data-card-slide>
-              {% include 'product_items', product: product %}
-            </div>
-          {% endfor %}
-        {% else %}
-          {% include 'place_items' %}
-        {% endif %}
-      </div>
-    </div>
-    <div class="feature_paginate swiper-pagination" data-scrollbar></div>
-    <div class="card-slider__arrow swiper-button-prev feature_prev" data-slider-arrow-prev></div>
-    <div class="card-slider__arrow swiper-button-next feature_next" data-slider-arrow-next></div>
   </div>
 </div>
 {% schema %}
