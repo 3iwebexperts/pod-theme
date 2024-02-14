@@ -97,7 +97,7 @@ function not_rendered_functions() {
       input.val(currentValue + 1);
       let valueinc = currentValue + 1;
        let calcPriceinc =$(this).siblings(".update_price").val();
-        console.log(calcPrice * valueinc);
+        console.log(calcPriceinc * valueinc);
       form_submit();
     });
   }
