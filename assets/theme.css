@@ -7597,6 +7597,9 @@ body.ajax-cart-open {
   .ajax-cart__item-info {
     padding-left: 35px;
   }
+   .cart .custom-cart-form .ajax-cart__item-info {
+      padding-left: 20px;
+   }
 }
 .ajax-cart__item-message {
   color: #0036eb;
