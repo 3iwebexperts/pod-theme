@@ -395,6 +395,16 @@
     },
     "new_hero_banner_3F7aJ8": {
       "type": "NEW-hero-banner",
+      "blocks": {
+        "new_banner_image_gk38cM": {
+          "type": "new-banner-image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "new_banner_image_gk38cM"
+      ],
       "settings": {
       }
     }
