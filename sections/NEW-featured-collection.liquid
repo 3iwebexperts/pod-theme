@@ -1,3 +1,4 @@
+{% if section.blocks.size > 0 %}
 <div
   id="link-card-slider-{{ section.id }}"
   class="card-slider "
@@ -23,6 +24,7 @@
     </div>
   </div>
 </div>
+{% endif %}
 {% schema %}
   {
     "name": "NEW - Featured Collection",
