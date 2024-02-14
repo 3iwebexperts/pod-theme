@@ -125,12 +125,7 @@
         <label for="CartSpecialInstructions">{{ 'cart.general.note' }}</label>
         <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
       {% endif %}
-  
-      <p>{{ 'cart.subtotal' | t }}</p>
-      <p>{{ cart.total_price | money }}</p>
-      {% if cart.total_discounts > 0 %}
-        <p>{{ 'cart.savings' }} {{ cart.total_discounts | money }}</p>
-      {% endif %}
+
     <p>{{ 'cart.shipping_at_checkout' | t }}</p>
         <div class="ajax-cart__footer-bottom">
           <div class="ajax-cart__footer-row">
