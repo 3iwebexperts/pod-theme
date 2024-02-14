@@ -725,6 +725,7 @@ header .inner_search {
 }
  .cart .custom-cart-form .ajax-cart__footer{
    display:flex;
+   justify-content: space-between;
  }
 .cart .custom-cart-form .cart-foote_inner{
   width:100%
