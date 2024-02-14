@@ -746,6 +746,9 @@ header .inner_search {
  .cart .custom-cart-form .ajax-cart__item-header{
     color:var(--black);
   }
+.cart-total-price{
+    display:none;
+  }
 @media only screen and (min-width: 990px){
   .cart .custom-cart-form .ajax-item__footer{
   margin-top:0;
@@ -786,6 +789,9 @@ header .inner_search {
   }
   .cart .custom-cart-form .cart-foote_inner{
     width:35%;
+  }
+  .cart-total-price{
+    display:block;
   }
 }
 @media only screen and (max-width: 991px) {
