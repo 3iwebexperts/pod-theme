@@ -789,7 +789,7 @@ header .inner_search {
   }
   .cart-footer-note{
     font-size:18px;
-    align-items: left;
+    align-items: flex-start;
 
   }
   .cart .custom-cart-form .cart-foote_inner{
