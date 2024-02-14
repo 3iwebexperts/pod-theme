@@ -9,13 +9,13 @@
           
           <ul class="ajax-cart__list">
             <div class="cart-header">
-            <li >Product</li>
+            <li >{{- 'cart.prdouct' | t -}}</li>
                 <li></li>
               <li></li>
   
-              <li >Price</li>
-              <li >quantity</li>
-               <li>Total</li>
+              <li >{{- 'cart.price' | t -}}</li>
+              <li >{{- 'cart.quantity' | t -}}</li>
+               <li>{{- 'cart.total' | t -}}</li>
               </div>
             {% for line_item in cart.items %}
               <li
