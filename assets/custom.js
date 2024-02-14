@@ -95,8 +95,8 @@ function not_rendered_functions() {
       var input = $(this).siblings(".quantity-adjuster__input");
       var currentValue = parseInt(input.val());
       input.val(currentValue + 1);
-       let newPrice = $(".ajax-cart__item-price").text();
-        console.log(newPrice);
+       let calcPrice = $(".ajax-cart__item-price").text();
+        console.log(calcPrice);
       form_submit();
     });
   }
@@ -108,8 +108,8 @@ function not_rendered_functions() {
       if (currentValue > 1) {
         input.val(currentValue - 1);
       }
-      let newPrice = $(this).siblings(".ajax-cart__item-price");
-        console.log(newPrice);
+      let calcPrice = $(this).siblings(".ajax-cart__item-price");
+        console.log(calcPrice);
       form_submit();
     });
   }
