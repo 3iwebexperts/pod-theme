@@ -111,7 +111,7 @@
                     </div>
                   </div>
                 </div>
-              <div >{{ line_item.quantity | plus :line_item.original_total_price }}</div>
+              <div >{{ line_item.quantity | times :line_item.original_total_price }}</div>
               
               </li>
             {% endfor %}
