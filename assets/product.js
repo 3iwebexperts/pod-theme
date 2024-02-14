@@ -86,7 +86,7 @@ function product_render_function() {
   });
   
 }
-jQuery(document).ready(function () {
+$(document).ready(function () {
   $(document).on("click", "#swatch_drawer .drawer__body-contents .pro_selector input", function (e) {
       let var_id = $(this).data("variant-id");
       let var_val = $(this).val();
