@@ -735,6 +735,7 @@ header .inner_search {
 }
 .cart-footer-note{
   font-size:12px;
+  display:flex;
 }
 .cart .custom-cart-form .ajax-cart__footer-subtotal{
   gap: 10px;
@@ -777,7 +778,6 @@ header .inner_search {
   }
   .cart-footer-note{
     font-size:18px;
-    display:flex;
     flex-direction: column;
   }
   .cart .custom-cart-form .cart-foote_inner{
@@ -796,6 +796,7 @@ header .inner_search {
      flex-direction:column-reverse;
      gap:20px;
 }
+  
 }
 @media only screen and (max-width: 750px) {
   .template-search main-search .predictive-search {
