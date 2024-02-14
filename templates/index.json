@@ -371,10 +371,17 @@
           "settings": {
             "heading": "NEW DROPS"
           }
+        },
+        "heading_4wMNNj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hello world"
+          }
         }
       },
       "block_order": [
-        "heading_MJNxd4"
+        "heading_MJNxd4",
+        "heading_4wMNNj"
       ],
       "settings": {
       }
