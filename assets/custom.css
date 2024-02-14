@@ -752,6 +752,7 @@ header .inner_search {
  .cart .custom-cart-form  .ajax-cart__item:last-child{
    margin-bottom:unset;
    border-bottom: 1px solid;
+   border-radius:0;
  }
 @media only screen and (min-width: 990px){
   .cart .custom-cart-form .ajax-item__footer{
