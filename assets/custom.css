@@ -752,7 +752,7 @@ header .inner_search {
   .cart .custom-cart-form .ajax-cart__item-options{
     font-size:12px;
   }
-  .cart .custom-cart-form .ajax-cart__footer-top,.cart .ajax-cart__footer-bottom{
+  .cart .custom-cart-form .ajax-cart__footer-top,.cart .custom-cart-form . .ajax-cart__footer-bottom{
     max-width:35%;
   }
   .cart .custom-cart-form .ajax-cart__footer{
