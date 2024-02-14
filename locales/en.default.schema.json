@@ -21,7 +21,8 @@
     "checkout": "Checkout",
     "remove": "Remove",
     "continue_to_shopping": "Continue to shopping",
-    "no_data_cart": "No data in cart"
+    "no_data_cart": "No data in cart",
+    "cart_note": "Add Order Note"
   },
   "product_settings": {
     "name": "Product",
