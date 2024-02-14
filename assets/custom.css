@@ -770,6 +770,8 @@ header .inner_search {
   }
   .cart-footer-note{
     font-size:18px;
+    display:flex;
+    
   }
   .cart .custom-cart-form .cart-foote_inner{
     width:50%;
