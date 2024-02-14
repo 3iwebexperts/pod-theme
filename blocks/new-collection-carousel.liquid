@@ -1,8 +1,8 @@
-{%- assign collection = collections[section.settings.feature_collection] -%}
+{%- assign collection = collections[block.settings.feature_collection] -%}
 <div class="row card-slider__slider feature_card_slider" data-card-slider>
   <div class="swiper-wrapper">
     {% if collection != blank %}
-      {% for product in collection.products limit: section.settings.products_limit %}
+      {% for product in collection.products limit: block.settings.products_limit %}
         <div class="swiper-slide" data-card-slide>
           {% include 'product_items', product: product %}
         </div>
