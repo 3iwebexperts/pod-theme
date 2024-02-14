@@ -75,7 +75,6 @@
     "0e5b9ff2-faef-4ccc-a78c-04c8577f97e7": {
       "type": "hero_banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/woman-in-the-city_925x_5bca1aa1-1625-4ea1-adc3-d709b243e190.jpg",
         "heading": "Fashion, Without Limits",
         "text_color": "#a3ff00",
         "highlight_color": "#ffffff",
@@ -96,7 +95,6 @@
     "e623e5d7-4c52-4909-badc-b8e634abee1e": {
       "type": "hero_banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/striped-blouse-fashion_925x_9a6d27e1-d1df-45e3-bb93-b67b76511cbf.jpg",
         "heading": "Beyond <span> Comfort:<\/span> Discover <span> Clothing <\/span> That Feels Like a Dream.",
         "text_color": "#ffffff",
         "highlight_color": "#ff00ff",
@@ -160,7 +158,6 @@
       "type": "collage",
       "settings": {
         "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8b8d69979aaa46879e49b086d3789030.mp4",
-        "image_1": "shopify:\/\/shop_images\/14022145750889706611_2048_0a3c9363-c8f3-4fe9-b0d4-19d1a2cb5c88.jpg",
         "title_1": "",
         "link_1": "",
         "title_2": "",
@@ -365,6 +362,22 @@
         "button_text": "",
         "link": ""
       }
+    },
+    "new_featured_collection_m4qRzM": {
+      "type": "NEW-featured-collection",
+      "blocks": {
+        "heading_MJNxd4": {
+          "type": "heading",
+          "settings": {
+            "heading": "NEW DROPS"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MJNxd4"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -379,6 +392,7 @@
     "06b56767-6a7e-41a1-a44b-eb8f447032fc",
     "d1fa8b77-b021-4105-819b-364db70036ec",
     "f3113dc4-eadf-4fa4-adf7-f288d07c1076",
-    "hero_video_DLX3Wc"
+    "hero_video_DLX3Wc",
+    "new_featured_collection_m4qRzM"
   ]
 }
