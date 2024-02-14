@@ -16,7 +16,7 @@
     "total": "Total",
     "subtotal": "Subtotal",
     "savings": "Savings",
-    "shipping_at_checkout": "shipping at checkout",
+    "shipping_at_checkout": "shipping calculate at checkout",
     "update": "Update",
     "checkout": "Checkout",
     "remove": "Remove",
