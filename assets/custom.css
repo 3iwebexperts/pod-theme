@@ -755,6 +755,9 @@ header .inner_search {
   .cart .custom-cart-form .ajax-cart__footer-top,.cart .ajax-cart__footer-bottom{
     max-width:35%;
   }
+  .cart .custom-cart-form .ajax-cart__footer{
+    padding: 30px 60px;
+  }
   .cart .custom-cart-form .ajax-cart__list{
     padding:0 15px;
   }
