@@ -20,7 +20,7 @@
       <div class="card-slider__heading">
         <div class="card-slider__info-container">
           {% for block in section.blocks %}
-            {{ block.type }}<br/>
+            {{ block.id }}<br/>
           {% endfor %}
           {% if section.settings.heading != blank %}
             <h2 class="card-slider__title h2">{{ section.settings.heading }}</h2>
