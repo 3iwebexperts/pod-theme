@@ -1,6 +1,47 @@
+  {% if section.settings.image != blank %}
+    <img
+      src="{{ section.settings.image | img_url:"1920x" }}"
+      srcset="{{ section.settings.image | img_url:"1920x" }}"
+      class="hero__bg hero__bg--desktop"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+    >
+  {% else %}
+    <img
+      src="{{ 'banner_placeholder.png' | asset_url }}"
+      srcset="{{ 'banner_placeholder.png' | asset_url }}"
+      class="hero__bg hero__bg--desktop"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+    >
+    {% comment %} {{ 'image' | placeholder_svg_tag }}{% endcomment %}
+  {% endif %}
+  {% if section.settings.image2 != blank %}
+    <img
+      src="{{ section.settings.image2 | img_url:"856x" }}"
+      srcset="{{ section.settings.image2 | img_url:"856x" }}"
+      class="hero__bg hero__bg--mobile"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+    >
+  {% else %}
+    <img
+      src="{{ 'dummy_856x1200_ffffff_cccccc.png' | asset_url }}"
+      srcset="{{ 'dummy_856x1200_ffffff_cccccc.png' |  asset_url }}"
+      class="hero__bg hero__bg--mobile"
+      sizes="100vw"
+      loading="lazy"
+      alt=""
+    >
+  {% endif %}
+ 
+ 
  {% schema %}
   {
-    "name": "Block name",
+    "name": "New Banner image",
     "settings": []
   }
 {% endschema %}
