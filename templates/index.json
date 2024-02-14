@@ -366,6 +366,12 @@
     "new_featured_collection_m4qRzM": {
       "type": "NEW-featured-collection",
       "blocks": {
+        "new_heading_pe4dEq": {
+          "type": "new-heading",
+          "settings": {
+            "heading": "NEW DROPS"
+          }
+        },
         "new_collection_carousel_D8wmHA": {
           "type": "new-collection-carousel",
           "settings": {
@@ -375,6 +381,7 @@
         }
       },
       "block_order": [
+        "new_heading_pe4dEq",
         "new_collection_carousel_D8wmHA"
       ],
       "settings": {
