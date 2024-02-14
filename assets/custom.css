@@ -429,9 +429,7 @@ label.popover__choice-item:has(input:checked):after {
   margin-bottom:20px;
   line-height:20px;
 }
-.cart-header {
-    display: none;
-}
+
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
@@ -754,11 +752,14 @@ flex-direction:row;
     font-size: 24px;
 }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
   .predictive-search {
     right: 1px;
     margin-left: 1px;
   }
+  .cart-header {
+    display: none;
+}
 }
 @media only screen and (max-width: 750px) {
   .template-search main-search .predictive-search {
