@@ -108,7 +108,7 @@ function not_rendered_functions() {
       if (currentValue > 1) {
         input.val(currentValue - 1);
       }
-      let newPrice = $(this).(".ajax-cart__item-price").text();
+      let newPrice = $(this).siblings(".ajax-cart__item-price").text();
         console.log(newPrice);
       form_submit();
     });
