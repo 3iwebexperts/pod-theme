@@ -96,7 +96,7 @@ function not_rendered_functions() {
       var currentValue = parseInt(input.val());
       input.val(currentValue + 1);
        let calcPrice =$(this).siblings(".update_price").val();
-        console.log(calcPrice);
+        console.log(calcPrice * (currentValue+1));
       form_submit();
     });
   }
@@ -109,7 +109,7 @@ function not_rendered_functions() {
         input.val(currentValue - 1);
       }
       let calcPrice = $(this).siblings(".update_price").val();
-        console.log(calcPrice);
+        console.log(calcPrice * (currentValue+1));
       form_submit();
     });
   }
