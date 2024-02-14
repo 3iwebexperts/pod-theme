@@ -95,7 +95,7 @@ function not_rendered_functions() {
       var input = $(this).siblings(".quantity-adjuster__input");
       var currentValue = parseInt(input.val());
       input.val(currentValue + 1);
-       let newPrice = (".ajax-cart__item-price");
+       let newPrice = (".ajax-cart__item-price").text();
         console.log(newPrice);
       form_submit();
     });
