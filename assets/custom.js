@@ -443,6 +443,26 @@ function form_submit() {
   return false;
 }
 // submit function and cart drawer code end
+// render ajax cart function start
+function render_cart() {
+  let cart_url = window.location.pathname + "?section_id=ajax-cart";
+  $('.custom-loader-overlay').addClass('loading');
+  fetch(cart_url)
+    .then((response) => response.text())
+    .then((responseText) => {
+      let cart_html = new DOMParser().parseFromString(
+        responseText, "text/html"
+      );
+      let ajax_cart_render = document.querySelector(".ajax-cart-container");
+      ajax_cart_render.innerHTML = "";
+      ajax_cart_render.insertAdjacentHTML(
+        "beforeend", cart_html.body.querySelector(".ajax-cart-container").innerHTML
+      );
+      closeLoader();
+    });
+}
+// render ajax cart function end
+
 // render cart function start
 function render_cart() {
   let cart_url = window.location.pathname + "?section_id=ajax-cart";
