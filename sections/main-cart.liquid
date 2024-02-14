@@ -128,6 +128,10 @@
       </div>
       {% endcomment %}
       <div class="ajax-cart__footer" data-ajax-cart-footer="">
+        <div class="cart-footer-note">
+          <label for="CartSpecialInstructions">{{ 'cart.cart_note'| t }}</label>
+          <textarea name="note" id="CartSpecialInstructions" rows="2" cols="30" placeholder="{{ "cart.cart_note" |t }}" ></textarea>
+        </div>
         <div class="cart-foote_inner">
         <div class="ajax-cart__footer-top" data-ajax-cart-footer-top="">
           <div class="ajax-cart__footer-row">
@@ -150,10 +154,7 @@
           </div>
         </div>
           </div>
-         <div class="cart-footer-note">
-          <label for="CartSpecialInstructions">{{ 'cart.cart_note'| t }}</label>
-          <textarea name="note" id="CartSpecialInstructions" rows="2" cols="30" placeholder="{{ "cart.cart_note" |t }}" ></textarea>
-        </div>
+         
       </div>
     </form>
 {% else %}
