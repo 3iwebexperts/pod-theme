@@ -1,10 +1,10 @@
-  {% if blockblock.settings.image != blank %}
+  {% if block.settings.image != blank %}
     <img
       src="{{ blockblock.settings.image | img_url:"1920x" }}"
       srcset="{{ block.settings.image | img_url:"1920x" }}"
       class="hero__bg hero__bg--desktop"
       sizes="100vw"
-      loading="lazy"blockblock
+      loading="lazy"
       alt=""
     >
   {% else %}
