@@ -720,7 +720,7 @@ header .inner_search {
   -o-transition: background 0.15s linear;
   transition: background 0.15s linear;
 }
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: 990px){
   .cart .custom-cart-form .ajax-item__footer{
   margin-top:0;
 }
@@ -752,7 +752,7 @@ flex-direction:row;
     font-size: 24px;
 }
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 991px) {
   .predictive-search {
     right: 1px;
     margin-left: 1px;
