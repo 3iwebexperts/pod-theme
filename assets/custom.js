@@ -96,7 +96,6 @@ function not_rendered_functions() {
       var currentValue = parseInt(input.val());
       input.val(currentValue + 1);
       let valueinc = currentValue + 1;
-     
       form_submit();
     });
   }
