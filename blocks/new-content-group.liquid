@@ -1,6 +1,43 @@
- {% schema %}
-  {
-    "name": "Block name",
-    "settings": []
-  }
+<div class="card-slider__info-container">
+  {% for block in section.blocks %}
+    {{ block.id }}<br/>
+  {% endfor %}
+  {% if section.settings.heading != blank %}
+    <h2 class="card-slider__title h2">{{ section.settings.heading }}</h2>
+  {% endif %}
+  {% if section.settings.content != blank %}
+    <p class="card-slider__copy p3">{{ section.settings.content }}</p>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "NEW - Content Group",
+  "blocks":[{"type":"@theme"}],
+  "presets": [
+    {
+      "name": "NEW - Content Group",
+      "blocks": [
+        {
+          "type": "heading",
+          "settings": {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default":"NEW DROPS"
+          }
+        },
+        {
+          "type": "content",
+          "settings": {
+            "type": "text",
+            "id": "content",
+            "label": "Content",
+            "default":"The latest Sport Utility Gear to hit the site."
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
