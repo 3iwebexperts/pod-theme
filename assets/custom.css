@@ -771,7 +771,7 @@ header .inner_search {
   .cart-footer-note{
     font-size:18px;
     display:flex;
-    
+    flex-direction: column;
   }
   .cart .custom-cart-form .cart-foote_inner{
     width:50%;
