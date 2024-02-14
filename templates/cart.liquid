@@ -8,6 +8,11 @@
         <div class="ajax-cart-inner">
           
           <ul class="ajax-cart__list">
+            <li>Product</li>
+            <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
             {% for line_item in cart.items %}
               <li
                 class="ajax-cart__item "
@@ -32,8 +37,7 @@
                     <a href="{{ line_item.url }}" class="ajax-cart__item-header">
                       {{ line_item.product.title }}
                     </a>
-                  </div>
-                  <ul class="ajax-cart__item-options">
+                         <ul class="ajax-cart__item-options">
                     <li class="ajax-cart__item-option">
                       {{ line_item.variant.title }}
                     </li>
@@ -54,6 +58,8 @@
                       {% endfor %}
                     {% endif %}
                   </ul>
+                  </div>
+             
                    <div class="ajax-cart__item-price">
                       <span class="ajax-cart__item-price">{{ line_item.original_line_price | money }}</span>
                     </div>
