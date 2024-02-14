@@ -429,7 +429,12 @@ label.popover__choice-item:has(input:checked):after {
   margin-bottom:20px;
   line-height:20px;
 }
-
+ .cart .custom-cart-form .ajax-cart__footer{
+   display:flex;
+ }
+.cart .custom-cart-form .cart-foote_inner{
+  width:100%
+}
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
@@ -745,12 +750,7 @@ header .inner_search {
   .cart .custom-cart-form .ajax-cart__footer-top,.cart .ajax-cart__footer-bottom{
     max-width:35%;
   }
-   .cart .custom-cart-form .ajax-cart__footer{
-     display:flex;
-   }
-  .cart .custom-cart-form .cart-foote_inner{
-    width:100%
-  }
+  
   .cart-header {
   display: flex;
   align-items: center;
