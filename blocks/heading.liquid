@@ -1,4 +1,7 @@
- {% schema %}
+{% if block.settings.heading != blank %}
+<h2 class="card-slider__title h2">{{ block.settings.heading }}</h2>
+{% endif %}
+{% schema %}
   {
     "name": "Heading",
     "settings": [
