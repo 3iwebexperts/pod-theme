@@ -465,24 +465,24 @@ function render_cart() {
 // render ajax cart function end
 
 // render cart function start
-function render_cart() {
-  let cart_url = window.location.pathname + "?section_id=main-cart";
+// function render_cart() {
+//   let cart_url = window.location.pathname + "?section_id=main-cart";
 
-  $('.custom-loader-overlay').addClass('loading');
-  fetch(cart_url)
-    .then((response) => response.text())
-    .then((responseText) => {
-      let cart_html = new DOMParser().parseFromString(
-        responseText, "text/html"
-      );
-      let ajax_cart_render = document.querySelector(".main-cart-container");
-      ajax_cart_render.innerHTML = "";
-      ajax_cart_render.insertAdjacentHTML(
-        "beforeend", cart_html.body.querySelector(".main-cart-container").innerHTML
-      );
-      closeLoader();
-    });
-}
+//   $('.custom-loader-overlay').addClass('loading');
+//   fetch(cart_url)
+//     .then((response) => response.text())
+//     .then((responseText) => {
+//       let cart_html = new DOMParser().parseFromString(
+//         responseText, "text/html"
+//       );
+//       let ajax_cart_render = document.querySelector(".main-cart-container");
+//       ajax_cart_render.innerHTML = "";
+//       ajax_cart_render.insertAdjacentHTML(
+//         "beforeend", cart_html.body.querySelector(".main-cart-container").innerHTML
+//       );
+//       closeLoader();
+//     });
+// }
 // render cart function end
 // Vardetails function start
 function Vardetails(i) {
