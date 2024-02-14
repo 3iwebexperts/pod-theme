@@ -745,9 +745,12 @@ header .inner_search {
   .cart .custom-cart-form .ajax-cart__footer-top,.cart .ajax-cart__footer-bottom{
     max-width:35%;
   }
-   .cart .custom-cart-form  .ajax-cart__footer{
+   .cart .custom-cart-form .ajax-cart__footer{
      display:flex;
    }
+  .cart .custom-cart-form .cart-foote_inner{
+    width:100%
+  }
   .cart-header {
   display: flex;
   align-items: center;
@@ -762,6 +765,9 @@ header .inner_search {
   }
   .cart-header {
     display: none;
+}
+   .cart .custom-cart-form .ajax-cart__footer{
+     flex-direction:column-reverse;
 }
 }
 @media only screen and (max-width: 750px) {
