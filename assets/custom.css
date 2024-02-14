@@ -774,7 +774,7 @@ header .inner_search {
     flex-direction: column;
   }
   .cart .custom-cart-form .cart-foote_inner{
-    width:50%;
+    width:35%;
   }
 }
 @media only screen and (max-width: 991px) {
