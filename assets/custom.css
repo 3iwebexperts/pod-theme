@@ -430,10 +430,7 @@ label.popover__choice-item:has(input:checked):after {
   line-height:20px;
 }
 .cart-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 24px;
+    display: none;
 }
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
@@ -749,6 +746,12 @@ flex-direction:row;
 }
 .cart .custom-cart-form .ajax-cart__footer-top,.cart .ajax-cart__footer-bottom{
   max-width:35%;
+}
+  .cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
 }
 }
 @media only screen and (max-width: 991px) {
