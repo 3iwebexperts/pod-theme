@@ -75,9 +75,7 @@
                           type="button"
                           class="quantity-adjuster__decrement"
                           data-decrement=""
-                          {% if line_item.quantity <= 1 %}
-                            disabled
-                          {% endif %}
+                         
                         >
                           -
                         </button>
@@ -94,9 +92,7 @@
                           type="button"
                           class="quantity-adjuster__increment"
                           data-increment=""
-                          {% if line_item.variant.inventory_quantity <= line_item.quantity %}
-                            disabled
-                          {% endif %}
+                         
                         >
                           +
                         </button>
