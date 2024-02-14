@@ -109,8 +109,7 @@ function not_rendered_functions() {
       if (currentValue > 1) {
         input.val(currentValue - 1);
       }
-      let calcPricedec = $(this).siblings(".update_price").val();
-        console.log(calcPrice * (currentValue-1));
+     
       form_submit();
     });
   }
