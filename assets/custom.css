@@ -414,7 +414,16 @@ label.popover__choice-item:has(input:checked):after {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.cart-remove-link{
+  background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    color: #121212;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-left: 10px;
+    padding-right: 0;
+}
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
