@@ -366,22 +366,16 @@
     "new_featured_collection_m4qRzM": {
       "type": "NEW-featured-collection",
       "blocks": {
-        "heading_MJNxd4": {
-          "type": "heading",
+        "new_collection_carousel_D8wmHA": {
+          "type": "new-collection-carousel",
           "settings": {
-            "heading": "NEW DROPS"
-          }
-        },
-        "heading_4wMNNj": {
-          "type": "heading",
-          "settings": {
-            "heading": "Hello world"
+            "feature_collection": "frontpage",
+            "products_limit": 6
           }
         }
       },
       "block_order": [
-        "heading_MJNxd4",
-        "heading_4wMNNj"
+        "new_collection_carousel_D8wmHA"
       ],
       "settings": {
       }
