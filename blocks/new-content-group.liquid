@@ -2,9 +2,11 @@
      .card-slider__title {
       color: {{ block.settings.heading_color }};
     }
-      .card-slider__content  {
-        color: {% if block.settings.text_color != blank %}{{ block.settings.text_color }}{% endif %};
+   {% if block.settings.text_color != blank %}  
+   .card-slider__content  {
+        color: {{ block.settings.text_color }};
       }
+   {% endif %}
 </style>
 <div class="row">
   <div class="card-slider__heading">
