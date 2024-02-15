@@ -3,7 +3,7 @@
       color: {{ block.settings.heading_color }};
     }
       .card-slider__content  {
-        color: {{ block.settings.text_color }};
+        color: {% if block.settings.text_color != blank %}{{ block.settings.text_color }}{% endif %};
       }
 </style>
 <div class="row">
