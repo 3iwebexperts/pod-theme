@@ -8651,6 +8651,9 @@ body.ajax-cart-open {
 .hero--vertical-bottom {
   align-items: flex-end;
 }
+.hero--direction-column{
+  flex-direction:column;
+}
 .hero--horizontal-left {
   justify-content: flex-start;
 }
