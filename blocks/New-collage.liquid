@@ -172,6 +172,87 @@
  {% schema %}
   {
     "name": "New - Collage",
-    "settings": []
+    "settings": [
+       {
+       "type": "header",
+       "content": "Video"
+     },
+     {
+       "type": "text",
+       "id":"video_link",
+       "label": "Video Link",
+       "info": "Upload Video in content > files and paste URL here",
+       "default": "https://cdn.shopify.com/videos/c/vp/64f5e0c914284bc99dab99bcb9919e3b/64f5e0c914284bc99dab99bcb9919e3b.HD-720p-1.6Mbps-9182920.mp4"
+     },
+     {
+       "type": "image_picker",
+       "id":"thumbnail",
+       "label": "Video Thumbnail"
+     },
+     {
+       "type": "header",
+       "content": "Top Images"
+     },
+     {
+       "type": "image_picker",
+       "id":"image_1",
+       "label": "Image 1",
+       "info":"1000 X 1000"
+     },
+          {
+           "type": "text",
+           "id":"title_1",
+           "label": "Title 1",
+           "default":"MW08 Sport"
+         },
+          {
+           "type": "url",
+           "id":"link_1",
+           "label": "Link 1"
+         },
+     {
+       "type": "image_picker",
+       "id":"image_2",
+       "label": "Image 2",
+       "info":"1000 X 1000"
+     },
+          {
+           "type": "text",
+           "id":"title_2",
+           "label": "Title 2",
+           "default":"Accessories"
+         },
+              {
+           "type": "url",
+           "id":"link_2",
+           "label": "Link 2"
+         },
+     {
+       "type": "header",
+       "content": "Bottom Image"
+     },
+     {
+       "type": "image_picker",
+       "id":"image_3",
+       "label": "Image 3",
+       "info":"1000 X 667"
+     },
+        {
+           "type": "text",
+           "id":"title_3",
+           "label": "Title 3",
+           "default":"Wireless"
+         },
+              {
+           "type": "url",
+           "id":"link_3",
+           "label": "Link 3"
+         }
+    ],
+    "presets":[
+      {
+        "name":"New - Collage"
+      }
+    ]
   }
 {% endschema %}
