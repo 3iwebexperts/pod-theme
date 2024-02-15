@@ -23,6 +23,20 @@
     </video>
     
   </div>
+    <div class="hero__inner col-20 col-lg-11">
+    {%- if section.settings.image != blank -%}
+      <img
+        src="{{ section.settings.image | image_url: "368x" }}"
+        srcset="{{ section.settings.image | image_url: "368x" }}"
+        class="hero__title-image"
+        sizes="100vw"
+        loading="lazy"
+        alt="Video image"
+        width="368"
+        height="300"
+      >
+    {%- endif -%}
+    </div>
  
  {% schema %}
   {
