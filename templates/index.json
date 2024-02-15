@@ -462,7 +462,7 @@
           "type": "new-hero-video",
           "settings": {
             "video_sec": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dca3da5ba23f4dc4a4bbec7fb73f778d.mp4",
-            "image": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg"
+            "image": "shopify:\/\/shop_images\/theme_cover_image.jpg"
           }
         }
       },
