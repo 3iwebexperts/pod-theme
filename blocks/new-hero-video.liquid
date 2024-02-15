@@ -1,3 +1,31 @@
+   <div class="hero__video-container">
+    <!-- <iframe src="https://player.vimeo.com/video/821281577?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="4c3a1303-b69a-45b4-af0c-e50f92618fc5"></iframe>
+    <!-- <iframe src="https://player.vimeo.com/video/821281577?h=021b289357" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+ -->
+    <video
+      data-background-video
+      autoplay
+      loop
+      muted
+      playsinline
+    >
+      {%- if section.settings.video_sec != blank -%}
+        <source
+          type="video/mp4"
+          src="{{ section.settings.video_sec }}"
+          data-mp4-video
+        >
+      {%- else -%}
+        <source
+          type="video/mp4"
+          src="https://cdn.shopify.com/videos/c/o/v/dca3da5ba23f4dc4a4bbec7fb73f778d.mp4"
+          data-mp4-video
+        >
+      {%- endif -%}
+    </video>
+    
+  </div>
+ 
  {% schema %}
   {
     "name": "Block name",
