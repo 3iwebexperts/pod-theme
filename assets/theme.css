@@ -2637,6 +2637,9 @@ a.btn.disabled {
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
   box-shadow: 0 0 0 0.2rem #42444680;
 }
+.btn-link{
+  font-size:17px;
+}
 .ajax-cart__item-remove,
 .btn--underlined,
 .btn-link,
