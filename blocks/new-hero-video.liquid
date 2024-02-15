@@ -28,8 +28,8 @@
     <div class="hero__inner col-20 col-lg-11">
     {%- if block.settings.image != blank -%}
       <img
-        src="{{ block.settings.image | img_url: "1200x" }}"
-        srcset="{{ block.settings.image | img_url: "1200x" }}"
+        src="{{ block.settings.image | image_url: "1200x" }}"
+        srcset="{{ block.settings.image | image_url: "1200x" }}"
         class="hero__title-image"
         sizes="100vw"
         loading="lazy"
