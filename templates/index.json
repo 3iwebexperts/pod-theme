@@ -435,23 +435,6 @@
     },
     "new_collage_wLkxtQ": {
       "type": "New-collage",
-      "blocks": {
-        "new_collage_VxajTQ": {
-          "type": "New-collage",
-          "settings": {
-            "video_link": "",
-            "title_1": "MW08 Sport",
-            "link_1": "",
-            "title_2": "Accessories",
-            "link_2": "",
-            "title_3": "Wireless",
-            "link_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "new_collage_VxajTQ"
-      ],
       "settings": {
       }
     }
