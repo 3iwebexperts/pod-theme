@@ -461,8 +461,7 @@
         "new_hero_video_gKpx8b": {
           "type": "new-hero-video",
           "settings": {
-            "video_sec": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dca3da5ba23f4dc4a4bbec7fb73f778d.mp4",
-            "image": "shopify:\/\/shop_images\/theme_cover_image.jpg"
+            "video_sec": ""
           }
         }
       },
