@@ -448,14 +448,14 @@ input[type="search"]::-webkit-search-cancel-button {
   background: transparent;
   border: none;
   font-size: 20px;
-  border-bottom: 1px solid var(--swym-remind-cta-text-color);
-  color: var(--swym-remind-cta-text-color);
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
 }
 .header predictive-search form input:focus-visible {
   border: none;
   outline: none;
   outline-offset: none;
-  border-bottom: 2px solid var(--swym-remind-cta-text-color);
+  border-bottom: 2px solid var(--white);
 }
 
 .predictive-search h6 {
@@ -500,7 +500,7 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 100%;
 }
 #Search::placeholder {
-  color: var(--swym-remind-cta-text-color);
+  color: var(--white);
 }
 #Search-In-Template::placeholder {
   font-size: 24px;
