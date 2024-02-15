@@ -1,4 +1,5 @@
 {%- if section.blocks.size > 0 -%}
+  <link href="{{ 'faq_box.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
 <div class="section section-boxed bg-custom faq_box collapsible-tab">
   <div class="section-stack section-stack--horizontal ">
     {%- content_for 'blocks' -%}
