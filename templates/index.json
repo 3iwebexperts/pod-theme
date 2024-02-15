@@ -396,6 +396,11 @@
     "new_hero_banner_3F7aJ8": {
       "type": "NEW-hero-banner",
       "blocks": {
+        "new_banner_image_gk38cM": {
+          "type": "new-banner-image",
+          "settings": {
+          }
+        },
         "new_content_group_VTCPTg": {
           "type": "new-content-group",
           "settings": {
@@ -406,11 +411,6 @@
             "button_url": "",
             "heading_color": "#000000",
             "text_color": "#000000"
-          }
-        },
-        "new_banner_image_gk38cM": {
-          "type": "new-banner-image",
-          "settings": {
           }
         },
         "new_button_CWnfaJ": {
@@ -425,8 +425,8 @@
         }
       },
       "block_order": [
-        "new_content_group_VTCPTg",
         "new_banner_image_gk38cM",
+        "new_content_group_VTCPTg",
         "new_button_CWnfaJ"
       ],
       "settings": {
