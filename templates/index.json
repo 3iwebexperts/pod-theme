@@ -463,10 +463,23 @@
           "settings": {
             "video_sec": ""
           }
+        },
+        "new_content_group_jQgBmL": {
+          "type": "new-content-group",
+          "settings": {
+            "heading": "NEW DROPS",
+            "select_heding": "h1",
+            "content": "The latest Sport Utility Gear to hit the site.",
+            "button_text": "",
+            "button_url": "#",
+            "heading_color": "#000",
+            "text_color": "#000"
+          }
         }
       },
       "block_order": [
-        "new_hero_video_gKpx8b"
+        "new_hero_video_gKpx8b",
+        "new_content_group_jQgBmL"
       ],
       "settings": {
       }
