@@ -13,7 +13,7 @@
           src="{{ block.settings.video_sec }}"
           data-mp4-video
            {% if block.settings.image != blank %}
-                poster="{{ block.settings.image | img_url: "1200x" }}"
+                poster="{{ block.settings.image | image_url: "1200x" }}"
               {% endif %}
         >
       {%- else -%}
