@@ -7,7 +7,7 @@
       muted
       playsinline
         {% if block.settings.image != blank %}
-                poster="{{ block.settings.image | image_url: "1200x" }}"
+                poster="{{ block.settings.image | img_url: "1200x" }}"
               {% endif %}
     >
       {%- if block.settings.video_sec != blank -%}
