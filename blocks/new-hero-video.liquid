@@ -6,15 +6,16 @@
       loop
       muted
       playsinline
+        {% if block.settings.image != blank %}
+                poster="{{ block.settings.image | image_url: "1200x" }}"
+              {% endif %}
     >
       {%- if block.settings.video_sec != blank -%}
         <source
           type="video/mp4"
           src="{{ block.settings.video_sec }}"
           data-mp4-video
-           {% if block.settings.image != blank %}
-                poster="{{ block.settings.image | image_url: "1200x" }}"
-              {% endif %}
+         
         >
       {%- else -%}
         <source
