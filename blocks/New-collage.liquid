@@ -14,13 +14,13 @@
               id="player"
               class="bvideo"
               autoplay
-              {% if section.settings.thumbnail != blank %}
-                poster="{{ section.settings.thumbnail | image_url: "1200x" }}"
+              {% if block.settings.thumbnail != blank %}
+                poster="{{ block.settings.thumbnail | image_url: "1200x" }}"
               {% endif %}
             >
-              {% if section.settings.video_link != blank %}
+              {% if block.settings.video_link != blank %}
                 <source
-                  src="{{ section.settings.video_link }}"
+                  src="{{ block.settings.video_link }}"
                   type="video/mp4"
                 >
               {% else %}
@@ -49,12 +49,12 @@
           id="media-grid-1656690285827df07c-1"
           class="custom_img content-over-media rounded bg-custom text-custom"
           style=" --text-color: 255 255 255;"
-        >
-          {% if section.settings.image_1 != blank %}
+        >block
+          {% if block.settings.image_1 != blank %}
             <img
-              src="{{ section.settings.image_1 | img_url:"699x" }}"
+              src="{{ block.settings.image_1 | img_url:"699x" }}"
               alt=""
-              srcset="{{ section.settings.image_1 | img_url:"699x" }}"
+              srcset="{{ block.settings.image_1 | img_url:"699x" }}"
               height="1500"
               loading="lazy"
               sizes="(max-width: 699px) 100vw, min(390px, 25vw)"
@@ -63,13 +63,13 @@
             {% else %}
                {{ 'image' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
-          {% if section.settings.title_1 != blank %}
+          {% if block.settings.title_1 != blank %}
             <div
               class="custom_txt place-self-end-start text-start sm:place-self-end-start sm:text-start"
               style="opacity: 1;"
             >
               <div class="prose">
-                <p class="h5">{{ section.settings.title_1 }}</p>
+                <p class="h5">{{ block.settings.title_1 }}</p>
               </div>
             </div>
           {% endif %}
@@ -85,11 +85,11 @@
           class="custom_img content-over-media rounded bg-custom text-custom"
           style="--text-color: 255 255 255;"
         >
-          {% if section.settings.image_2 != blank %}
+          {% if block.settings.image_2 != blank %}
             <img
-              src="{{  section.settings.image_2 | image_url:"699x" }}"
+              src="{{  block.settings.image_2 | image_url:"699x" }}"
               alt=""
-              srcset="{{ section.settings.image_2 | image_url:"699x" }}"
+              srcset="{{ block.settings.image_2 | image_url:"699x" }}"
               width="1500"
               height="1500"
               loading="lazy"
@@ -99,13 +99,13 @@
             {% else %}
                 {{ 'image' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
-          {% if section.settings.title_2 != blank %}
+          {% if block.settings.title_2 != blank %}
             <div
               class="custom_txt place-self-end-start text-start sm:place-self-end-start sm:text-start"
               style="opacity: 1;"
             >
               <div class="prose">
-                <p class="h5">{{ section.settings.title_2 }}</p>
+                <p class="h5">{{ block.settings.title_2 }}</p>
               </div>
             </div>
           {% endif %}
@@ -122,11 +122,11 @@
           class="custom_img content-over-media rounded bg-custom text-custom"
           style=" --text-color: 255 255 255;"
         >
-          {% if section.settings.image_3 != blank %}
+          {% if block.settings.image_3 != blank %}
             <img
-              src="{{  section.settings.image_3 | img_url:"1000x"  }}"
+              src="{{  block.settings.image_3 | img_url:"1000x"  }}"
               alt=""
-              srcset="{{  section.settings.image_3 | img_url:"1000x"  }}"
+              srcset="{{  block.settings.image_3 | img_url:"1000x"  }}"
               width="1500"
               height="1000"
               loading="lazy"
@@ -136,13 +136,13 @@
           {% else %}
               {{ 'image' | placeholder_svg_tag: 'my-custom-class' }}
           {% endif %}
-          {% if section.settings.title_3 != blank %}
+          {% if block.settings.title_3 != blank %}
             <div
               class="custom_txt place-self-end-start text-start sm:place-self-end-start sm:text-start"
               style="opacity: 1;"
             >
               <div class="prose">
-                <p class="h3">{{ section.settings.title_3 }}</p>
+                <p class="h3">{{ block.settings.title_3 }}</p>
               </div>
             </div>
           {% endif %}
