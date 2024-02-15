@@ -418,8 +418,9 @@
           "settings": {
             "button_text": "Button",
             "button_link": "#",
-            "background_color": "#fff",
-            "text_color": "#000",
+            "link_button": false,
+            "background_color": "#ffffff",
+            "text_color": "#000000",
             "border_radius": 90
           }
         }
@@ -428,6 +429,28 @@
         "new_banner_image_gk38cM",
         "new_content_group_VTCPTg",
         "new_button_CWnfaJ"
+      ],
+      "settings": {
+      }
+    },
+    "new_collage_wLkxtQ": {
+      "type": "New-collage",
+      "blocks": {
+        "new_collage_GiWL9D": {
+          "type": "New-collage",
+          "settings": {
+            "video_link": "",
+            "title_1": "MW08 Sport",
+            "link_1": "",
+            "title_2": "Accessories",
+            "link_2": "",
+            "title_3": "Wireless",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "new_collage_GiWL9D"
       ],
       "settings": {
       }
@@ -447,6 +470,7 @@
     "f3113dc4-eadf-4fa4-adf7-f288d07c1076",
     "hero_video_DLX3Wc",
     "new_featured_collection_m4qRzM",
-    "new_hero_banner_3F7aJ8"
+    "new_hero_banner_3F7aJ8",
+    "new_collage_wLkxtQ"
   ]
 }
