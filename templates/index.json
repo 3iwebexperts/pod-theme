@@ -358,16 +358,16 @@
     "new_featured_collection_m4qRzM": {
       "type": "NEW-featured-collection",
       "blocks": {
-        "new_content_group_V4DppN": {
+        "new_content_group_9EmA6C": {
           "type": "new-content-group",
           "settings": {
             "heading": "NEW DROPS",
-            "select_heding": "h2",
+            "select_heding": "h1",
             "content": "The latest Sport Utility Gear to hit the site.",
-            "button_text": "Shop All",
-            "button_url": "shopify:\/\/collections",
-            "heading_color": "",
-            "text_color": "#e13b3b"
+            "button_text": "Shop all",
+            "button_url": "#",
+            "heading_color": "#e12525",
+            "text_color": "#f93939"
           }
         },
         "new_collection_carousel_D8wmHA": {
@@ -379,7 +379,7 @@
         }
       },
       "block_order": [
-        "new_content_group_V4DppN",
+        "new_content_group_9EmA6C",
         "new_collection_carousel_D8wmHA"
       ],
       "settings": {
