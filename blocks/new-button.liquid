@@ -1,4 +1,8 @@
-
+<style>
+  .block-btn{
+    color:
+  }
+</style>
 
 {%- if block.settings.button_text != blank and block.settings.button_link != blank -%}
   <div>
@@ -20,6 +24,18 @@
       "type": "url",
       "id": "button_link",
       "label": "Button Url"
+    },
+     {
+       "type": "color",
+        "id": "heading_color",
+        "label": "Heading Color",
+        "default":"#000"
+    },
+    {
+       "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default":"#000"
     }
     ],
     "presets" : [
