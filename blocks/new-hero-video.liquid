@@ -3,9 +3,9 @@
     <video
       data-background-video
       autoplay
-      loop
-      muted
-      playsinline
+       {% if section.settings.thumbnail != blank %}
+                poster="{{ section.settings.thumbnail | img_url: "1200x" }}"
+              {% endif %}
         
     >
       {%- if block.settings.video_sec != blank -%}
