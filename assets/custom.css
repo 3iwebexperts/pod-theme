@@ -791,6 +791,7 @@ header .inner_search {
    .cart .custom-cart-form  .ajax-cart__title-container .ajax-cart__item-header{
      text-overflow:unset;
      white-space: wrap;
+     overflow:unset;
 }
   .cart-header {
   display: flex;
