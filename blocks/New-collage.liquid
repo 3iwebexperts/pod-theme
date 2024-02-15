@@ -75,8 +75,7 @@
           {% endif %}
         </div>
       </a>
-      <a
-        href="{{ block.settings.link_2 }}"
+      <a href="{{ block.settings.link_2 }}"
         class="media-grid__item shadow group"
         reveal-js=""
         style="--media-grid-column-span: 1; --media-grid-row-span: 1; opacity: 1; transform: translateY(0px);"
@@ -88,9 +87,9 @@
         >
           {% if section.settings.image_2 != blank %}
             <img
-              src="{{  section.settings.image_2 | img_url:"699x" }}"
+              src="{{  section.settings.image_2 | image_url:"699x" }}"
               alt=""
-              srcset="{{ section.settings.image_2 | img_url:"699x" }}"
+              srcset="{{ section.settings.image_2 | image_url:"699x" }}"
               width="1500"
               height="1500"
               loading="lazy"
