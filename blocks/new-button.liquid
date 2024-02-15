@@ -7,7 +7,7 @@
 </style>
 
 {%- if block.settings.button_text != blank and block.settings.button_link != blank -%}
-  <div>
+  <div class="p3">
         <a href="{{ block.settings.button_link }}" class="btn block-btn btn-white-m hero__btn">
           {{ block.settings.button_text }}
         </a>
@@ -42,7 +42,7 @@
     {
           "type": "range",
           "id": "border_radius",
-          "label": "t:sections.slideshow.blocks.image.content_maximum_width",
+          "label": "Border Radius",
           "min": 0,
           "max": 100,
           "step": 1,
