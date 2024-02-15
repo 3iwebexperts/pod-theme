@@ -420,7 +420,7 @@
             "button_link": "#",
             "background_color": "#fff",
             "text_color": "#000",
-            "border_radius": 0
+            "border_radius": 90
           }
         }
       },
