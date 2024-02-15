@@ -52,10 +52,11 @@
         >block
           {% if block.settings.image_1 != blank %}
             <img
-              src="{{ block.settings.image_1 | img_url:"699x" }}"
+              src="{{ block.settings.image_1 | image_url:"699x" }}"
               alt=""
-              srcset="{{ block.settings.image_1 | img_url:"699x" }}"
+              srcset="{{ block.settings.image_1 | image_url:"699x" }}"
               height="1500"
+               width="1500"
               loading="lazy"
               sizes="(max-width: 699px) 100vw, min(390px, 25vw)"
               class="content-over-media__media zoom-image"
@@ -124,9 +125,9 @@
         >
           {% if block.settings.image_3 != blank %}
             <img
-              src="{{  block.settings.image_3 | img_url:"1000x"  }}"
+              src="{{  block.settings.image_3 | image_url:"1000x"  }}"
               alt=""
-              srcset="{{  block.settings.image_3 | img_url:"1000x"  }}"
+              srcset="{{  block.settings.image_3 | image_url:"1000x"  }}"
               width="1500"
               height="1000"
               loading="lazy"
