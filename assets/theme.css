@@ -8657,6 +8657,9 @@ body.ajax-cart-open {
 .hero--direction-column{
   flex-direction:column;
 }
+.hero--direction-column-reverse{
+  flex-direction:column-reverse;
+}
 .hero--horizontal-left {
   justify-content: flex-start;
 }
