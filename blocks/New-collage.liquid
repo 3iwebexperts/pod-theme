@@ -40,7 +40,7 @@
       </div>
 
       <a
-        href="{{ block.settings.link_1 }}"
+        href="{%- if block.settings.thumbnail != blank -%}{{ block.settings.link_1 }}{%- endif -%}"
         class="media-grid__item shadow group"
         reveal-js=""
         style="--media-grid-column-span: 1; --media-grid-row-span: 1; opacity: 1; transform: translateY(0px);"
