@@ -396,13 +396,6 @@
     "new_hero_banner_3F7aJ8": {
       "type": "NEW-hero-banner",
       "blocks": {
-        "new_button_CWnfaJ": {
-          "type": "new-button",
-          "settings": {
-            "button_text": "Button",
-            "button_link": "#"
-          }
-        },
         "new_content_group_VTCPTg": {
           "type": "new-content-group",
           "settings": {
@@ -419,12 +412,19 @@
           "type": "new-banner-image",
           "settings": {
           }
+        },
+        "new_button_CWnfaJ": {
+          "type": "new-button",
+          "settings": {
+            "button_text": "Button",
+            "button_link": "#"
+          }
         }
       },
       "block_order": [
-        "new_button_CWnfaJ",
         "new_content_group_VTCPTg",
-        "new_banner_image_gk38cM"
+        "new_banner_image_gk38cM",
+        "new_button_CWnfaJ"
       ],
       "settings": {
       }
