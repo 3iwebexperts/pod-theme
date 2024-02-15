@@ -1,6 +1,35 @@
+    <div class="section-stack__main">
+      <div class="accordion-box rounded bg-secondary">
+        {% for block in section.blocks %}
+          <div class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            {% if block.settings.que != blank %}
+              <div class="accordion__toggle bold">
+                <span> {{ block.settings.que }}</span
+                ><span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </span>
+              </div>
+            {% endif %}
+
+            <div class="accordion__content" style="display:none;">
+              {% if block.settings.ans != blank %}
+                <div class="prose">
+                  <p>
+                    {{ block.settings.ans }}
+                  </p>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    
+ 
  {% schema %}
   {
-    "name": "Block name",
+    "name": "New - Faq Box",
     "settings": []
   }
 {% endschema %}
