@@ -487,6 +487,23 @@
       ],
       "settings": {
       }
+    },
+    "new_faq_box_zFDJ9W": {
+      "type": "New-Faq-box",
+      "blocks": {
+        "new_faq_box_DUqpgA": {
+          "type": "new-faq-box",
+          "settings": {
+            "que": "sjkdfbkjsdfdshfufhsjdkbhdsrhdjsfhb",
+            "ans": "Askdjlashkasjhsjkjkjkjkjkjkjkjkjkjkrtgtgtgtgtgtgfgggggggfhhhhgfgb"
+          }
+        }
+      },
+      "block_order": [
+        "new_faq_box_DUqpgA"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -505,6 +522,7 @@
     "new_featured_collection_m4qRzM",
     "new_hero_banner_3F7aJ8",
     "new_collage_wLkxtQ",
-    "new_hero_video_qGqfax"
+    "new_hero_video_qGqfax",
+    "new_faq_box_zFDJ9W"
   ]
 }
