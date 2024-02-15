@@ -387,7 +387,8 @@ label.popover__choice-item:has(input:checked):after {
   padding-top:0;
 }
 
-.product-card__gallery-slide:has(.product-placeholder):before{
+.product-card__gallery-slide:has(.product-placeholder):before, 
+.product-option__ui:has(.product-placeholder):before{
   padding-bottom:0;
 }
 /* Pagination */
