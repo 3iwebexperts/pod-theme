@@ -788,6 +788,10 @@ header .inner_search {
   .cart .custom-cart-form  .ajax-cart__title-container{
     max-width:175px;
   }
+   .cart .custom-cart-form  .ajax-cart__title-container .ajax-cart__item-header{
+     text-overflow:unset;
+     white-space: wrap;
+}
   .cart-header {
   display: flex;
   align-items: center;
