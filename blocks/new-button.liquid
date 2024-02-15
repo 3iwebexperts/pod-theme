@@ -12,7 +12,9 @@
 
 {%- if block.settings.button_text != blank and block.settings.button_link != blank -%}
   <div>
-        <a href="{{ block.settings.button_link }}" class="{%- if block.settings.link_button -%} btn-link {%- else -%}btn block-btn btn-white-m hero__btn{%- endif -%}">
+        <a href="{{ block.settings.button_link }}" 
+          class="{%- if block.settings.link_button -%} btn-link {%- else -%}btn block-btn btn-white-m hero__btn{%- endif -%}"
+          style="{%- if block.settings.link_button -%}color:{{- block.settings.text_color -}}{%- endif -%}">
           {{ block.settings.button_text }}
         </a>
 </div>
