@@ -14,7 +14,7 @@
   <div>
         <a href="{{ block.settings.button_link }}" 
           class="{%- if block.settings.link_button -%} btn-link {%- else -%}btn block-btn btn-white-m hero__btn{%- endif -%}"
-          style="{%- if block.settings.link_button -%}color:{{- block.settings.text_color -}}{%- endif -%}">
+          style="{%- if block.settings.link_button -%}color:{{- block.settings.text_color -}}{%- else -%}   background: {{- block.settings.background_color -}};  color: {{- block.settings.text_color -}};  border-radius: {{- block.settings.border_radius -}}px;{%- endif -%}">
           {{ block.settings.button_text }}
         </a>
 </div>
