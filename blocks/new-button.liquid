@@ -1,7 +1,7 @@
 {%- if block.settings.button != blank and block.settings.button_link != blank -%}
   <div>
         <a href="{{ block.settings.button_link }}" class="btn btn-white btn-white-m hero__btn">
-          {{ block.settings.button }}
+          {{ block.settings.button_text }}
         </a>
 </div>
 {%- endif -%}
@@ -16,7 +16,7 @@
     },
     {
       "type": "url",
-      "id": "button_url",
+      "id": "button_link",
       "label": "Button Url"
     }
     ],
