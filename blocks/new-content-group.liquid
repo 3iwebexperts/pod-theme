@@ -1,11 +1,4 @@
- <style>
 
-   {% if block.settings.text_color != blank %}  
-   .card-slider__content  {
-        color: {{ block.settings.text_color }};
-      }
-   {% endif %}
-</style>
 <div class="row">
   <div class="card-slider__heading">
     <div class="card-slider__info-container">
@@ -13,7 +6,7 @@
         <h2 class="card-slider__title  {{ block.settings.select_heding }}" style="color:{{ block.settings.heading_color }}">{{ block.settings.heading }}</h2>
       {% endif %}
       {% if block.settings.content != blank %}
-        <p class="card-slider__content p3">{{ block.settings.content }}</p>
+        <p class="card-slider__content p3" style="color:{{ block.settings.text_color }}">{{ block.settings.content }}</p>
       {% endif %}
     </div>
     {% if block.settings.button_url != blank and block.settings.button_text != blank %}
