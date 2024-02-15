@@ -1,7 +1,9 @@
  <style>
+      {% if block.settings.heading_color != blank %}
      .card-slider__title {
       color: {{ block.settings.heading_color }};
     }
+   {% endif %}
    {% if block.settings.text_color != blank %}  
    .card-slider__content  {
         color: {{ block.settings.text_color }};
