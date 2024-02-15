@@ -464,6 +464,17 @@
             "video_sec": ""
           }
         },
+        "new_button_chdwnr": {
+          "type": "new-button",
+          "settings": {
+            "button_text": "Button",
+            "button_link": "#",
+            "link_button": false,
+            "background_color": "#fff",
+            "text_color": "#000",
+            "border_radius": 90
+          }
+        },
         "new_content_group_jQgBmL": {
           "type": "new-content-group",
           "settings": {
@@ -479,6 +490,7 @@
       },
       "block_order": [
         "new_hero_video_gKpx8b",
+        "new_button_chdwnr",
         "new_content_group_jQgBmL"
       ],
       "settings": {
