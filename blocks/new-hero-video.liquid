@@ -7,10 +7,10 @@
       muted
       playsinline
     >
-      {%- if section.settings.video_sec != blank -%}
+      {%- if block.settings.video_sec != blank -%}
         <source
           type="video/mp4"
-          src="{{ section.settings.video_sec }}"
+          src="{{ block.settings.video_sec }}"
           data-mp4-video
         >
       {%- else -%}
@@ -24,10 +24,10 @@
     
   </div>
     <div class="hero__inner col-20 col-lg-11">
-    {%- if section.settings.image != blank -%}
+    {%- if block.settings.image != blank -%}
       <img
-        src="{{ section.settings.image | image_url: "368x" }}"
-        srcset="{{ section.settings.image | image_url: "368x" }}"
+        src="{{ block.settings.image | image_url: "368x" }}"
+        srcset="{{ block.settings.image | image_url: "368x" }}"
         class="hero__title-image"
         sizes="100vw"
         loading="lazy"
