@@ -50,6 +50,9 @@
   .section-stack__main {
     width: 50%;
   }
+  .collapsible-tab .section-stack__main{
+    width:100%;
+  }
 }
 .faq_box p {
   font-size: 15px;
