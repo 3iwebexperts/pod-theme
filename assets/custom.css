@@ -295,7 +295,7 @@ label.popover__choice-item:has(input:checked):after {
 }
 
 .scroll_section {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(100px);
   transition: all 0.5s ease 1s;
 }
