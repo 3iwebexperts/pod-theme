@@ -40,7 +40,7 @@
       </div>
 
       <a
-        href="{%- if block.settings.thumbnail != blank -%}{{ block.settings.link_1 }}{%- else -%}#{%- endif -%}"
+        href="{%- if block.settings.link_1 != blank -%}{{ block.settings.link_1 }}{%- else -%}#{%- endif -%}"
         class="media-grid__item shadow group"
         reveal-js=""
         style="--media-grid-column-span: 1; --media-grid-row-span: 1; opacity: 1; transform: translateY(0px);"
@@ -76,7 +76,7 @@
           {% endif %}
         </div>
       </a>
-      <a href="{{ block.settings.link_2 }}"
+      <a href="{%- if block.settings.link_2 != blank -%}{{ block.settings.link_2 }}{%- else -%}#{%- endif -%}"
         class="media-grid__item shadow group"
         reveal-js=""
         style="--media-grid-column-span: 1; --media-grid-row-span: 1; opacity: 1; transform: translateY(0px);"
@@ -113,7 +113,7 @@
         </div>
         </a>
       <a
-        href="{{ block.settings.link_3 }}"
+        href="{%- if block.settings.link_3 != blank -%}{{ block.settings.link_3 }}{%- else -%}#{%- endif -%}"
         class="media-grid__item shadow group"
         reveal-js=""
         style="--media-grid-column-span: 2; --media-grid-row-span: 1; opacity: 1; transform: translateY(0px);"
