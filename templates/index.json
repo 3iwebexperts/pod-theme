@@ -454,6 +454,23 @@
       ],
       "settings": {
       }
+    },
+    "new_hero_video_qGqfax": {
+      "type": "New-hero-video",
+      "blocks": {
+        "new_hero_video_gKpx8b": {
+          "type": "new-hero-video",
+          "settings": {
+            "video_sec": "",
+            "image": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "new_hero_video_gKpx8b"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -471,6 +488,7 @@
     "hero_video_DLX3Wc",
     "new_featured_collection_m4qRzM",
     "new_hero_banner_3F7aJ8",
-    "new_collage_wLkxtQ"
+    "new_collage_wLkxtQ",
+    "new_hero_video_qGqfax"
   ]
 }
