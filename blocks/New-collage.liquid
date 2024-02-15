@@ -15,7 +15,7 @@
               class="bvideo"
               autoplay
               {% if section.settings.thumbnail != blank %}
-                poster="{{ section.settings.thumbnail | img_url: "1200x" }}"
+                poster="{{ section.settings.thumbnail | image_url: "1200x" }}"
               {% endif %}
             >
               {% if section.settings.video_link != blank %}
