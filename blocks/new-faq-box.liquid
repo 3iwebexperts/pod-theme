@@ -30,22 +30,19 @@
  {% schema %}
   {
     "name": "New - collapsible tab",
-    "settings": [
-      {
-           "type": "text",
-           "id": "que",
-           "label": "Question"
-         },
-         {
-           "type": "text",
-           "id": "ans",
-           "label": "Answer"
-         }
-      
-    ],
+    "settings": [],
+     "blocks": [{"type": "@theme"}],
     "presets": [
       {
-        "name": "New - collapsible tab"
+        "name": "New - collapsible tab",
+         "blocks": [
+        {
+          "type": "text",
+          "settings": {
+            "text": "This is a text block inside a group block!"
+          }
+        }
+      ]
       }
     ]
   }
