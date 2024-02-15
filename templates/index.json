@@ -281,13 +281,6 @@
     "d1fa8b77-b021-4105-819b-364db70036ec": {
       "type": "icon_text",
       "blocks": {
-        "5840e64f-f883-4292-8280-9bb3c797e469": {
-          "type": "Icon_text",
-          "settings": {
-            "heading": "Designed in NYC",
-            "subtext": "Products designed and developed in New York City."
-          }
-        },
         "54889b86-d7c4-44a0-a201-dda972105e86": {
           "type": "Icon_text",
           "settings": {
@@ -311,7 +304,6 @@
         }
       },
       "block_order": [
-        "5840e64f-f883-4292-8280-9bb3c797e469",
         "54889b86-d7c4-44a0-a201-dda972105e86",
         "4bff7bce-3a18-401c-8c08-371f1a96ae78",
         "9a28cb27-e751-450e-a1e4-abfa56777bed"
