@@ -366,19 +366,7 @@
             "content": "The latest Sport Utility Gear to hit the site.",
             "button_text": "",
             "button_url": "",
-            "heading_color": "#780c0c",
-            "text_color": ""
-          }
-        },
-        "new_content_group_jaxUJN": {
-          "type": "new-content-group",
-          "settings": {
-            "heading": "NEW DROPS",
-            "select_heding": "h1",
-            "content": "The latest Sport Utility Gear to hit the site.",
-            "button_text": "",
-            "button_url": "",
-            "heading_color": "#d42929",
+            "heading_color": "#000000",
             "text_color": ""
           }
         },
@@ -392,7 +380,6 @@
       },
       "block_order": [
         "new_content_group_FcJPhJ",
-        "new_content_group_jaxUJN",
         "new_collection_carousel_D8wmHA"
       ],
       "settings": {
