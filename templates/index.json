@@ -491,6 +491,13 @@
     "new_faq_box_zFDJ9W": {
       "type": "New-Faq-box",
       "blocks": {
+        "new_faq_box_8RcD6m": {
+          "type": "new-faq-box",
+          "settings": {
+            "que": "this is demo question",
+            "ans": "This is demo ans"
+          }
+        },
         "new_faq_box_DUqpgA": {
           "type": "new-faq-box",
           "settings": {
@@ -500,6 +507,7 @@
         }
       },
       "block_order": [
+        "new_faq_box_8RcD6m",
         "new_faq_box_DUqpgA"
       ],
       "settings": {
