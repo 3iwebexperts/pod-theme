@@ -785,6 +785,9 @@ header .inner_search {
   .cart .custom-cart-form .ajax-cart__list{
     padding:0 15px;
   }
+  .cart .custom-cart-form  .ajax-cart__title-container{
+    max-width:175px;
+  }
   .cart-header {
   display: flex;
   align-items: center;
