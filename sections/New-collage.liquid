@@ -1,6 +1,17 @@
+{%- if section.blocks.size > 0 -%}
+  <section id="collage_custom" class="card-slider container-fluid shopify-section shopify-section--media-grid">
+        {%- content_for 'blocks' -%}
+  </section>
+{%- endif -%}
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "New - Collage",
+    "settings": [],
+    "blocks": [{"type": "@theme"}],
+    "presets":[
+      {
+        "name": "New - Collage"
+      }
+    ]
   }
 {% endschema %}
