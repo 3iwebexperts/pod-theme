@@ -411,8 +411,8 @@
             "button_text": "Button",
             "button_link": "#",
             "link_button": false,
-            "background_color": "#ffffff",
-            "text_color": "#000000",
+            "background_color": "#bf3737",
+            "text_color": "#be4949",
             "border_radius": 90
           }
         }
