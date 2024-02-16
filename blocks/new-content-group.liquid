@@ -1,4 +1,17 @@
 {%- assign block_id =  block.id | split : "__"  -%}
+{%- assign render_block = true -%}
+{%- liquid
+   # This function helps in verifying the block isn't nested inside group.
+   for id in block_id
+     unless forloop.last
+       if id contains 'group'
+         assign render_block = false
+       endif
+      endunless
+   endfor
+-%}
+{%- if render_block == true -%}
+{%- assign block_id =  block.id | split : "__"  -%}
 {%- if block_id[1] contains 'faq' -%}
   <div class="section-stack__intro" {{ block.shopify_attributes }}>
     <div class="v-stack gap-10">
@@ -35,9 +48,7 @@
     </div>
   </div>
 {%- endif -%}
-
-
-
+{%- endif -%}
 
 {% schema %}
 {
