@@ -1,6 +1,7 @@
 {%- assign block_id =  block.id | split : "__"  -%}
 {{ block_id[1] }}
 {%- if block_id[1] contains 'faq_box' -%}
+  {{ block_id[1] }}
   <div class="section-stack__intro">
     <div class="v-stack gap-10">
       <div class="prose ">
