@@ -13340,6 +13340,7 @@ body.light-theme .header-nav__menu-item .hamburger-inner:after,
 body.light-theme .header-nav__menu-item .hamburger-inner:before,
 body.light-theme .header-nav__menu-item .hamburger{
   color:var(--black);
+  background-color:bar(--blak);
 }
 body.light-theme .header-container{
   background:var(--white);
