@@ -7,16 +7,15 @@
       </span>
     </div>
   {% endif %}
-
-  <div class="accordion__content" style="display:none;">
-    {% if block.settings.ans != blank %}
+  {% if block.settings.ans != blank %}
+    <div class="accordion__content" style="display:none;">
       <div class="prose">
         <p>
           {{ block.settings.ans }}
         </p>
       </div>
-    {% endif %}
-  </div>
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}
