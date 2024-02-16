@@ -13339,7 +13339,7 @@ body.light-theme{
 body.light-theme .header-nav__menu-item .hamburger-inner:after,
 body.light-theme .header-nav__menu-item .hamburger-inner:before,
 body.light-theme .header-nav__menu-item .hamburger{
-  color:var(--white);
+  color:var(--black);
 }
 body.light-theme .header-container{
   background:var(--white);
