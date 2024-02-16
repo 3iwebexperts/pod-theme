@@ -1,3 +1,7 @@
+{%- assign block_id =  block.id | split : "__"  -%}
+{%- for id in block_id -%}
+  {{ id }}
+{%- endfor -%}
 <div class="accordion group" aria-expanded="false" is="accordion-disclosure" {{ block.shopify_attributes }}>
   {% if block.settings.que != blank %}
     <div class="accordion__toggle bold">
