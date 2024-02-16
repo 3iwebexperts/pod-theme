@@ -13349,4 +13349,9 @@ body.light-theme .header-container,body.light-theme .header-nav__menu-item .hamb
 body.light-theme .header-container svg{
   fill:var(--black);
 }
+
  /* Dark theme  */
+body.dark-theme{
+  background:var(--black);
+  color:var(--white);
+}
