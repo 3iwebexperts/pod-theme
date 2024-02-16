@@ -88,7 +88,7 @@
     {%- endif -%}
   </head>
 
-  <body class="template-{{ request.page_type | handle }} {{ template.name }}">
+  <body class="template-{{ request.page_type | handle }} {{ template.name }} {{ settings.theme_type }}" >
     <div class="layout-wrapper">
       {% section 'header' %}
 
