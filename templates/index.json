@@ -315,28 +315,28 @@
               "type": "new-faq-content",
               "settings": {
                 "que": "Lorem ipsum dolor sit amet",
-                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
+                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
               }
             },
             "new_faq_content_dwqkCr": {
               "type": "new-faq-content",
               "settings": {
                 "que": "Lorem ipsum dolor sit amet",
-                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
+                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
               }
             },
             "new_faq_content_GkzMnN": {
               "type": "new-faq-content",
               "settings": {
                 "que": "Lorem ipsum dolor sit amet",
-                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
+                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
               }
             },
             "new_faq_content_Ewq6H7": {
               "type": "new-faq-content",
               "settings": {
                 "que": "Lorem ipsum dolor sit amet",
-                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
+                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
               }
             }
           },
@@ -494,7 +494,8 @@
           "settings": {
             "button_text": "Button",
             "button_link": "#",
-            "link_button": false
+            "link_button": false,
+            "button_type": "block-button"
           }
         }
       },
@@ -568,7 +569,8 @@
           "settings": {
             "button_text": "Button",
             "button_link": "#",
-            "link_button": false
+            "link_button": false,
+            "button_type": "ovel-button"
           }
         }
       },
