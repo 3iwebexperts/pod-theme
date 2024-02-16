@@ -15,14 +15,7 @@
     <div class="section-stack__intro" {{ block.shopify_attributes }}>
       <div class="v-stack gap-10">
         <div class="prose ">
-          {% if block.settings.heading != blank %}
-            <{{ block.settings.tag }} class="{{ block.settings.tag }}">{{ block.settings.heading }}</{{ block.settings.tag }}>
-          {% endif %}
-          {% if block.settings.content != blank %}
-            <p>
-              {{ block.settings.content }}
-            </p>
-          {% endif %}
+          {%- content_for 'blocks' -%}
         </div>
       </div>
     </div>
@@ -30,20 +23,8 @@
     <div class="row" {{ block.shopify_attributes }}>
       <div class="card-slider__heading">
         <div class="card-slider__info-container">
-          {% if block.settings.heading != blank %}
-            <{{ block.settings.tag }} class="card-slider__title  {{ block.settings.tag }}" style="color:{{ block.settings.heading_color }}">{{ block.settings.heading }}</{{ block.settings.tag }}>
-          {% endif %}
-          {% if block.settings.content != blank %}
-            <p class="card-slider__content p3" style="color:{{ block.settings.text_color }}">{{ block.settings.content }}</p>
-          {% endif %}
+          {%- content_for 'blocks' -%}
         </div>
-        {% if block.settings.button_url != blank and block.settings.button_text != blank %}
-        <div class="card-slider__cta-container">
-          <a class="btn-link card-slider__button" href="{{ block.settings.button_url }}">
-          {{ block.settings.button_text }}
-          </a>
-        </div>
-        {% endif %}
       </div>
     </div>
   {%- endif -%}
@@ -54,71 +35,7 @@
   "name": "NEW - Content Group",
   "tag": null,
   "blocks": [{"type": "@theme"}],
-  "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default":"NEW DROPS"
-    },
-    {
-      "type": "select",
-      "id": "tag",
-      "label": "Select Heading",
-      "options": [
-          {
-            "value": "h1",
-            "label": "H1"
-          },
-          {
-            "value": "h2",
-            "label": "H2"
-          },
-          {
-            "value": "h3",
-            "label": "H3"
-          },
-          {
-            "value": "h4",
-            "label": "H4"
-          },
-          {
-            "value": "h5",
-            "label": "H5"
-          },
-          {
-            "value": "h6",
-            "label": "H6"
-          }
-        ]
-    },
-    {
-      "type": "text",
-      "id": "content",
-      "label": "Content",
-      "default":"The latest Sport Utility Gear to hit the site."
-    },
-     {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text"
-    },
-    {
-      "type": "url",
-      "id": "button_url",
-      "label": "Button Url"
-    },
-    {
-       "type": "color",
-        "id": "heading_color",
-        "label": "Heading Color"
-    },
-    {
-       "type": "color",
-        "id": "text_color",
-        "label": "Text Color"
-    }
-  ],
+  "settings": [],
   "presets": [
     {
       "name": "NEW - Content Group"
