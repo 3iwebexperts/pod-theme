@@ -1,3 +1,6 @@
+{% for bl in block.blocks %}
+  {{ bl.id }}
+{% endfor %}
 <div class="section-stack__main" {{ block.shopify_attributes }}>
   <div class="accordion-box rounded bg-secondary">
     {%- content_for "blocks" -%}
