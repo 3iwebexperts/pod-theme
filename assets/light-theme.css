@@ -1,0 +1,29 @@
+ /* Light theme  */
+body.light-theme{
+  background:var(--white);
+  color:var(--black);
+}
+body.light-theme .header-nav__menu-item .hamburger-inner:after,
+body.light-theme .header-nav__menu-item .hamburger-inner:before{
+
+  background-color:var(--black);
+}
+body.light-theme .header-container,body.light-theme .header-nav__menu-item .hamburger{
+  background:var(--white);
+  color:var(--black);
+}
+
+body.light-theme .header-container svg{
+  fill:var(--black);
+}
+body.light-theme .footer{
+   background:var(--white);
+   color:var(--black);
+}
+body.light-theme .footer a, body.light-theme .footer input::placeholder{
+   color:var(--black);
+}
+ body.light-theme .footer input{
+    color:var(--black);
+   border-bottom: 2px solid var(--black-light);
+ }

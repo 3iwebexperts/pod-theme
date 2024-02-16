@@ -13331,49 +13331,4 @@ h1.collection-banner__title.text-left.h1 {
 .shop_name {
   color: #00ff00;
 }
- /* Light theme  */
-body.light-theme{
-  background:var(--white);
-  color:var(--black);
-}
-body.light-theme .header-nav__menu-item .hamburger-inner:after,
-body.light-theme .header-nav__menu-item .hamburger-inner:before{
 
-  background-color:var(--black);
-}
-body.light-theme .header-container,body.light-theme .header-nav__menu-item .hamburger{
-  background:var(--white);
-  color:var(--black);
-}
-
-body.light-theme .header-container svg{
-  fill:var(--black);
-}
-body.light-theme .footer{
-   background:var(--white);
-   color:var(--black);
-}
-body.light-theme .footer a, body.light-theme .footer input::placeholder{
-   color:var(--black);
-}
- body.light-theme .footer input{
-    color:var(--black);
-   border-bottom: 2px solid var(--black-light);
- }
-/* Dark theme  */
-body.dark-theme{
-  background:var(--black);
-  color:var(--white);
-}
-body.dark-theme .header-nav__menu-item .hamburger-inner:after,
-body.dark-theme .header-nav__menu-item .hamburger-inner:before{
-
-  background-color:var(--white);
-}
-body.dark-theme .header-container,body.dark-theme .header-nav__menu-item .hamburger{
-  background:var(--black);
-  color:var(--white);
-}
-body.dark-theme .header-container svg{
-  fill:var(--white);
-}
