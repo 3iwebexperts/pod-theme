@@ -14,8 +14,7 @@
       <div class="v-stack gap-10">
         {{ section.blocks.size }} ==========
         {% for block in section.blocks %}
-          {{ block.id }}
-          {% if block.shopify_attributes['id'] contains 'heading' %}
+          {% if block.id contains 'new_content_group' and block.type == "@theme" %}
             {{ block.shopify_attributes['id'] }} <br/>
           {% endif %}
         {% endfor %}
