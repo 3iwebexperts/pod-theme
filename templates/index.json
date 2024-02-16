@@ -510,32 +510,32 @@
           "settings": {
           },
           "blocks": {
-            "new_faq_content_9cWVWi": {
+            "new_faq_content_Net9cw": {
               "type": "new-faq-content",
               "settings": {
-                "que": "",
-                "ans": ""
+                "que": "Lorem ipsum dolor sit amet",
+                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
               }
             },
-            "new_faq_content_qe6LND": {
+            "new_faq_content_qqpnUF": {
               "type": "new-faq-content",
               "settings": {
-                "que": "",
-                "ans": ""
+                "que": "Lorem ipsum dolor sit amet",
+                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
               }
             },
-            "new_faq_content_6czKdB": {
+            "new_faq_content_9BGR3E": {
               "type": "new-faq-content",
               "settings": {
-                "que": "",
-                "ans": ""
+                "que": "Lorem ipsum dolor sit amet",
+                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
               }
             }
           },
           "block_order": [
-            "new_faq_content_9cWVWi",
-            "new_faq_content_qe6LND",
-            "new_faq_content_6czKdB"
+            "new_faq_content_Net9cw",
+            "new_faq_content_qqpnUF",
+            "new_faq_content_9BGR3E"
           ]
         }
       },
