@@ -4,11 +4,11 @@
     <div class="v-stack gap-10">
       <div class="prose ">
         {% if block.settings.heading != blank %}
-          <h2 class="h2">{{ section.settings.que_heading }}</h2>
+          <h2 class="h2">{{ block.settings.heading }}</h2>
         {% endif %}
-        {% if section.settings.subtext != blank %}
+        {% if block.settings.content != blank %}
           <p>
-            {{ section.settings.subtext }}
+            {{ block.settings.content }}
           </p>
         {% endif %}
       </div>
