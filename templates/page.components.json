@@ -4,9 +4,79 @@
       "type": "main-cart",
       "settings": {
       }
+    },
+    "new_faq_NrM7py": {
+      "type": "NEW-faq",
+      "blocks": {
+        "new_faqs_group_gXT7j7": {
+          "type": "new-faqs-group",
+          "settings": {
+          },
+          "blocks": {
+            "new_heading_9jqQaa": {
+              "type": "new-heading",
+              "settings": {
+                "heading": "NEW DROPS",
+                "tag": "h1"
+              }
+            },
+            "new_content_rK9LPD": {
+              "type": "new-content",
+              "settings": {
+                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
+                "tag": "p3"
+              }
+            }
+          },
+          "block_order": [
+            "new_heading_9jqQaa",
+            "new_content_rK9LPD"
+          ]
+        },
+        "new_content_group_gLE668": {
+          "type": "new-content-group",
+          "settings": {
+          },
+          "blocks": {
+            "new_faq_content_RbWaRi": {
+              "type": "new-faq-content",
+              "settings": {
+                "que": "Lorem ipsum dolor sit amet",
+                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
+              }
+            },
+            "new_faq_content_QXgEMD": {
+              "type": "new-faq-content",
+              "settings": {
+                "que": "Lorem ipsum dolor sit amet",
+                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
+              }
+            },
+            "new_faq_content_EnwQnJ": {
+              "type": "new-faq-content",
+              "settings": {
+                "que": "Lorem ipsum dolor sit amet",
+                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "new_faq_content_RbWaRi",
+            "new_faq_content_QXgEMD",
+            "new_faq_content_EnwQnJ"
+          ]
+        }
+      },
+      "block_order": [
+        "new_faqs_group_gXT7j7",
+        "new_content_group_gLE668"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "cart"
+    "cart",
+    "new_faq_NrM7py"
   ]
 }
