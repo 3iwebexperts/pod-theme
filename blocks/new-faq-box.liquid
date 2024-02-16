@@ -35,8 +35,28 @@
  {% schema %}
   {
     "name": "New - collapsible tab",
-    "settings": [],
     "tag": null,
+    "settings": [
+      {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "Small"
+        },
+        {
+          "value": "h2",
+          "label": "Medium"
+        },
+        {
+          "value": "h1",
+          "label": "Large"
+        }
+      ]
+    }
+    ],
     "blocks": [{"type": "@theme"}],
     "presets": [
       {
