@@ -373,7 +373,8 @@
             "new_content_FyVMhG": {
               "type": "new-content",
               "settings": {
-                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>"
+                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
+                "tag": "p3"
               }
             }
           },
@@ -478,7 +479,8 @@
             "new_content_cQPDhb": {
               "type": "new-content",
               "settings": {
-                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>"
+                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
+                "tag": "p3"
               }
             }
           },
@@ -513,7 +515,39 @@
         "new_content_group_PRmDV8": {
           "type": "new-content-group",
           "settings": {
-          }
+          },
+          "blocks": {
+            "new_heading_4Gdi4x": {
+              "type": "new-heading",
+              "settings": {
+                "heading": "NEW DROPS",
+                "tag": "h1"
+              }
+            },
+            "new_content_GxfcAX": {
+              "type": "new-content",
+              "settings": {
+                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
+                "tag": "p3"
+              }
+            },
+            "new_button_aNRtYF": {
+              "type": "new-button",
+              "settings": {
+                "button_text": "",
+                "button_link": "",
+                "link_button": false,
+                "background_color": "#fff",
+                "text_color": "#000",
+                "border_radius": 90
+              }
+            }
+          },
+          "block_order": [
+            "new_heading_4Gdi4x",
+            "new_content_GxfcAX",
+            "new_button_aNRtYF"
+          ]
         },
         "new_faqs_group_7Drnjr": {
           "type": "new-faqs-group",
