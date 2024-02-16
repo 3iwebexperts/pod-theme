@@ -383,6 +383,7 @@
         "new_collection_carousel_D8wmHA"
       ],
       "settings": {
+        "backgrond_color": "#ffffff"
       }
     },
     "new_hero_banner_3F7aJ8": {
@@ -506,15 +507,11 @@
         "new_faq_box_8RcD6m": {
           "type": "new-faq-box",
           "settings": {
-            "que": "this is demo question",
-            "ans": "This is demo ans"
           }
         },
         "new_faq_box_DUqpgA": {
           "type": "new-faq-box",
           "settings": {
-            "que": "this is demo question",
-            "ans": "this is demo ans"
           }
         }
       },
