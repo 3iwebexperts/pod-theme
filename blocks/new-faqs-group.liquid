@@ -1,7 +1,7 @@
 {%- assign block_id =  block.id | split : "__"  -%}
 {%- assign render_block = true -%}
 {%- liquid
-   # Verify the group isn't nested
+   # This function helps in verifying the block isn't nested inside group.
    for id in block_id
      unless forloop.last
        if id contains 'group'
