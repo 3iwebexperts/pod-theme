@@ -510,39 +510,6 @@
           "settings": {
           },
           "blocks": {
-            "group_hQz83D": {
-              "type": "group",
-              "settings": {
-              },
-              "blocks": {
-                "group_GgKK7P": {
-                  "type": "group",
-                  "settings": {
-                  },
-                  "blocks": {
-                    "text_Ghzipp": {
-                      "type": "text",
-                      "settings": {
-                        "text": "This is a text block inside a group block!"
-                      }
-                    }
-                  },
-                  "block_order": [
-                    "text_Ghzipp"
-                  ]
-                },
-                "text_iHLrTL": {
-                  "type": "text",
-                  "settings": {
-                    "text": "This is a text block inside a group block!"
-                  }
-                }
-              },
-              "block_order": [
-                "group_GgKK7P",
-                "text_iHLrTL"
-              ]
-            },
             "new_faq_content_Net9cw": {
               "type": "new-faq-content",
               "settings": {
@@ -566,7 +533,6 @@
             }
           },
           "block_order": [
-            "group_hQz83D",
             "new_faq_content_Net9cw",
             "new_faq_content_qqpnUF",
             "new_faq_content_9BGR3E"
