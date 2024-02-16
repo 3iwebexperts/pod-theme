@@ -1,70 +1,71 @@
-{%- assign heading =  block.id | split : "__"  -%}
-{{ heading[0] }} <br/>
-{{ heading[1] }} <br/>
-{{ heading[2] }} <br/>
-<div class="row" {{ block.shopify_attributes }}>
-  <div class="card-slider__heading">
-    <div class="card-slider__info-container">
-      {% if block.settings.heading != blank %}
-        <h2 class="card-slider__title  {{ block.settings.select_heding }}" style="color:{{ block.settings.heading_color }}">{{ block.settings.heading }}</h2>
-      {% endif %}
-      {% if block.settings.content != blank %}
-        <p class="card-slider__content p3" style="color:{{ block.settings.text_color }}">{{ block.settings.content }}</p>
-      {% endif %}
-    </div>
-    {% if block.settings.button_url != blank and block.settings.button_text != blank %}
-    <div class="card-slider__cta-container">
-      <a class="btn-link card-slider__button" href="{{ block.settings.button_url }}">
-      {{ block.settings.button_text }}
-      </a>
-    </div>
-    {% endif %}
-  </div>
-</div>
-
-<div class="section-stack__intro">
-  <div class="v-stack gap-10">
-    <div class="prose ">
-      {% if section.settings.que_heading != blank %}
-        <h2 class="h2">{{ section.settings.que_heading }}</h2>
-      {% endif %}
-      {% if section.settings.subtext != blank %}
-        <p>
-          {{ section.settings.subtext }}
-        </p>
-      {% endif %}
-    </div>
-    <div class="icon_text desk">
-      <div class="faq-availability">
-        <div class="v-stack gap-4">
-          {% if section.settings.image != blank %}
-            <img
-              src="{{ section.settings.image | img_url: "346x" }}"
-              alt=""
-              srcset="{{ section.settings.image | img_url: "346x" }}"
-              width="346"
-              height="96"
-              loading="lazy"
-              style="max-width: 160px"
-              sizes="160px"
-            >
-          {% endif %}
-          {% if section.settings.bottomtext != blank %}
-            <div class="v-stack">
-              <p>
-                {{ section.settings.bottomtext -}}
-                <br>
-                {% if section.settings.time != blank %}
-                  <span class="text-subdued">{{ section.settings.time }}</span>
-                {% endif %}
-              </p>
-            </div>
-          {% endif %}
+{%- assign block_id =  block.id | split : "__"  -%}
+{%- if block_id[1] contains 'faq_box' -%}
+  <div class="section-stack__intro">
+    <div class="v-stack gap-10">
+      <div class="prose ">
+        {% if section.settings.que_heading != blank %}
+          <h2 class="h2">{{ section.settings.que_heading }}</h2>
+        {% endif %}
+        {% if section.settings.subtext != blank %}
+          <p>
+            {{ section.settings.subtext }}
+          </p>
+        {% endif %}
+      </div>
+      <div class="icon_text desk">
+        <div class="faq-availability">
+          <div class="v-stack gap-4">
+            {% if section.settings.image != blank %}
+              <img
+                src="{{ section.settings.image | img_url: "346x" }}"
+                alt=""
+                srcset="{{ section.settings.image | img_url: "346x" }}"
+                width="346"
+                height="96"
+                loading="lazy"
+                style="max-width: 160px"
+                sizes="160px"
+              >
+            {% endif %}
+            {% if section.settings.bottomtext != blank %}
+              <div class="v-stack">
+                <p>
+                  {{ section.settings.bottomtext -}}
+                  <br>
+                  {% if section.settings.time != blank %}
+                    <span class="text-subdued">{{ section.settings.time }}</span>
+                  {% endif %}
+                </p>
+              </div>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+{%- else -%}
+  <div class="row" {{ block.shopify_attributes }}>
+    <div class="card-slider__heading">
+      <div class="card-slider__info-container">
+        {% if block.settings.heading != blank %}
+          <h2 class="card-slider__title  {{ block.settings.select_heding }}" style="color:{{ block.settings.heading_color }}">{{ block.settings.heading }}</h2>
+        {% endif %}
+        {% if block.settings.content != blank %}
+          <p class="card-slider__content p3" style="color:{{ block.settings.text_color }}">{{ block.settings.content }}</p>
+        {% endif %}
+      </div>
+      {% if block.settings.button_url != blank and block.settings.button_text != blank %}
+      <div class="card-slider__cta-container">
+        <a class="btn-link card-slider__button" href="{{ block.settings.button_url }}">
+        {{ block.settings.button_text }}
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+{%- endif -%}
+
+
 
 
 {% schema %}
