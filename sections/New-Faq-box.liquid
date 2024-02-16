@@ -12,7 +12,7 @@
   <div class="section-stack section-stack--horizontal ">
     <div class="section-stack__intro">
       <div class="v-stack gap-10">
-        {{ section.blocks.size }}
+        {{ section.blocks.size }} ==========
         {% for block in section.blocks %}
           {{ block.shopify_attributes }}
           {% if block.shopify_attributes['id'] contains 'heading' %}
