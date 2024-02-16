@@ -13353,7 +13353,7 @@ body.light-theme .footer{
    background:var(--white);
    color:var(--black);
 }
-body.light-theme .footer a{
+body.light-theme .footer a, body.light-theme .footer input{
    color:var(--black);
 }
 /* Dark theme  */
