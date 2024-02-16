@@ -502,84 +502,6 @@
       ],
       "settings": {
       }
-    },
-    "new_faq_zmpF36": {
-      "type": "NEW-faq",
-      "blocks": {
-        "new_content_group_PRmDV8": {
-          "type": "new-content-group",
-          "settings": {
-          },
-          "blocks": {
-            "new_heading_4Gdi4x": {
-              "type": "new-heading",
-              "settings": {
-                "heading": "NEW DROPS",
-                "tag": "h1"
-              }
-            },
-            "new_content_GxfcAX": {
-              "type": "new-content",
-              "settings": {
-                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
-                "tag": "p3"
-              }
-            },
-            "new_button_aNRtYF": {
-              "type": "new-button",
-              "settings": {
-                "button_text": "Button",
-                "button_link": "#",
-                "link_button": true
-              }
-            }
-          },
-          "block_order": [
-            "new_heading_4Gdi4x",
-            "new_content_GxfcAX",
-            "new_button_aNRtYF"
-          ]
-        },
-        "new_faqs_group_7Drnjr": {
-          "type": "new-faqs-group",
-          "settings": {
-          },
-          "blocks": {
-            "new_faq_content_Net9cw": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
-              }
-            },
-            "new_faq_content_qqpnUF": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
-              }
-            },
-            "new_faq_content_9BGR3E": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
-              }
-            }
-          },
-          "block_order": [
-            "new_faq_content_Net9cw",
-            "new_faq_content_qqpnUF",
-            "new_faq_content_9BGR3E"
-          ]
-        }
-      },
-      "block_order": [
-        "new_content_group_PRmDV8",
-        "new_faqs_group_7Drnjr"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -598,7 +520,6 @@
     "new_featured_collection_m4qRzM",
     "new_hero_banner_3F7aJ8",
     "new_collage_wLkxtQ",
-    "new_hero_video_qGqfax",
-    "new_faq_zmpF36"
+    "new_hero_video_qGqfax"
   ]
 }
