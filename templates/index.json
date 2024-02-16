@@ -510,31 +510,6 @@
           "settings": {
           },
           "blocks": {
-            "new_faqs_group_kMqRVj": {
-              "type": "new-faqs-group",
-              "settings": {
-              },
-              "blocks": {
-                "new_faqs_group_e6iw43": {
-                  "type": "new-faqs-group",
-                  "settings": {
-                  },
-                  "blocks": {
-                    "new_faqs_group_gW7VHg": {
-                      "type": "new-faqs-group",
-                      "settings": {
-                      }
-                    }
-                  },
-                  "block_order": [
-                    "new_faqs_group_gW7VHg"
-                  ]
-                }
-              },
-              "block_order": [
-                "new_faqs_group_e6iw43"
-              ]
-            },
             "new_heading_FMqx8m": {
               "type": "new-heading",
               "settings": {
@@ -546,17 +521,6 @@
               "settings": {
                 "que": "Lorem ipsum dolor sit amet",
                 "ans": "Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor."
-              }
-            },
-            "new_button_HXaDci": {
-              "type": "new-button",
-              "settings": {
-                "button_text": "",
-                "button_link": "",
-                "link_button": false,
-                "background_color": "#ffffff",
-                "text_color": "#000000",
-                "border_radius": 90
               }
             },
             "new_faq_content_qqpnUF": {
@@ -575,10 +539,8 @@
             }
           },
           "block_order": [
-            "new_faqs_group_kMqRVj",
             "new_heading_FMqx8m",
             "new_faq_content_Net9cw",
-            "new_button_HXaDci",
             "new_faq_content_qqpnUF",
             "new_faq_content_9BGR3E"
           ]
