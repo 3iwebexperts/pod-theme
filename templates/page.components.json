@@ -23,8 +23,8 @@
             "new_content_xXhknK": {
               "type": "new-content",
               "settings": {
-                "content": "<p>Check out the most common questions our customers asked. Still have questions ? Contact our customer support.<br\/><br\/>Our customer support is available monday to friday: 8am-8:30pm.<br\/>Average answer time: 24h<\/p>",
-                "tag": "p4"
+                "content": "<p>Check out the most common questions our customers asked. Still have questions ? Contact our customer support.<\/p><p>Our customer support is available monday to friday: 8am-8:30pm.<br\/>Average answer time: 24h<\/p>",
+                "tag": "p6"
               }
             }
           },
