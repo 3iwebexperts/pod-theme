@@ -13337,7 +13337,7 @@ body.light-theme{
   color:var(--black);
 }
 
-body.light-theme .header-container{
+body.light-theme .header-container,body.light-theme .header-nav__menu-item .hamburger{
   background:var(--white);
   color:var(--black);
 }
