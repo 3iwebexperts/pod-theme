@@ -1,5 +1,6 @@
 {
   "current": {
+    "theme_type": "light",
     "social_twitter_link": "#",
     "social_facebook_link": "#",
     "social_instagram_link": "#",
@@ -151,7 +152,6 @@
           "4ce9e05e-ae58-48f5-876d-1e5abb121dfa"
         ],
         "settings": {
-          "image": "shopify:\/\/shop_images\/light-png.png",
           "logo_position": "left",
           "tab_title_1": "ShmewW",
           "tab_grid_title_1": "SHOP BY CATEGORY",
@@ -203,6 +203,11 @@
       },
       "ajax-cart": {
         "type": "ajax-cart",
+        "settings": {
+        }
+      },
+      "test": {
+        "type": "test",
         "settings": {
         }
       }
