@@ -522,6 +522,28 @@
                 "text_color": ""
               }
             },
+            "new_faqs_group_YXdcya": {
+              "type": "new-faqs-group",
+              "settings": {
+              },
+              "blocks": {
+                "new_content_group_rqt3L4": {
+                  "type": "new-content-group",
+                  "settings": {
+                    "heading": "NEW DROPS",
+                    "tag": "h1",
+                    "content": "The latest Sport Utility Gear to hit the site.",
+                    "button_text": "",
+                    "button_url": "",
+                    "heading_color": "",
+                    "text_color": ""
+                  }
+                }
+              },
+              "block_order": [
+                "new_content_group_rqt3L4"
+              ]
+            },
             "new_faq_content_Net9cw": {
               "type": "new-faq-content",
               "settings": {
@@ -546,6 +568,7 @@
           },
           "block_order": [
             "new_content_group_KJqzr4",
+            "new_faqs_group_YXdcya",
             "new_faq_content_Net9cw",
             "new_faq_content_qqpnUF",
             "new_faq_content_9BGR3E"
