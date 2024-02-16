@@ -1,12 +1,15 @@
 {%- assign block_id =  block.id | split : "__"  -%}
 {%- assign render_block = true -%}
-{%- for id in block_id  -%}
-  {%- unless forloop.last -%}
-    {%- if id contains 'group' -%}
-      {%- assign render_block = false -%}
-    {%- endif -%}
-  {%- endunless -%}
-{%- endfor -%}
+{%- liquid
+   # asdsadadasda
+   for id in block_id
+     unless forloop.last
+       if id contains 'group'
+         assign render_block = false
+       endif
+      endunless
+   endfor
+-%}
 {%- if render_block == true -%}
 <div class="section-stack__main" {{ block.shopify_attributes }}>
   <div class="accordion-box rounded bg-secondary">
