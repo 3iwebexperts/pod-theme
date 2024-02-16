@@ -45,6 +45,24 @@ a:hover{
 .btn-link{
   font-size:17px;
 }
+.btn{
+  background-color:#121212;
+  border:1.2px solid transparent;
+  border-radius:90px;
+  color:#fff;
+  display:inline-block;
+  font-family:Sequel Sans Small Title,sans-serif;
+  font-size:13px;
+  line-height:20px;
+  padding:12px 32px;
+  position:relative;
+  text-align:center;
+  transition:.15s cubic-bezier(.42,0,.13,1.04);
+  transition-property:background-color transform;
+  -webkit-user-select:none;
+  user-select:none;
+  vertical-align:middle;
+}
 .btn-link{
   background:none;
   border:none;
@@ -75,6 +93,25 @@ a:hover{
 .card-slider__button{color:currentcolor;display:inline-block;font-size:18px;line-height:1.5;}
 .card-slider__button:hover{color:currentcolor;}
 
+
+
+
+@media (min-width: 768px){
+.btn{font-size:16px;line-height:1;padding:14px 42px;}
+}
+@media (min-width: 992px){
+.btn{line-height:1;padding:15px 53px;}
+.btn:not([disabled]):hover{color:#121212;text-decoration:none;transform:scale(.98);}
+}
+.btn:disabled{opacity:.65;}
+.btn-white{background-color:#fff;color:#121212;}
+@media (max-width: 991.98px){
+.btn-white-m{background-color:#fff;color:#121212;}
+}
+.hero__btn{font-size:17px;padding:15px 58px;}
+@media (max-width: 991.98px){
+.hero__btn{font-size:14px;padding:8px 48px;}
+}
 /* BLOCKS : Button end */
 
 
