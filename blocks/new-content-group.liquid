@@ -1,4 +1,6 @@
-{{ block.id }}
+{%- assign heading =  block.id | split : "__"  -%}
+{{ heading | first }} <br/>
+{{ heading | last }} <br/>
 <div class="row" {{ block.shopify_attributes }}>
   <div class="card-slider__heading">
     <div class="card-slider__info-container">
