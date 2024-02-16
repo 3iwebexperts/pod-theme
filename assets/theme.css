@@ -2477,6 +2477,9 @@ button:focus {
   user-select: none;
   vertical-align: middle;
 }
+.ovel-button{
+    border-radius: 3px;
+}
 .btn span {
   transform: scale(1);
   transition: transform 0.15s cubic-bezier(0.42, 0, 0.13, 1.04);
