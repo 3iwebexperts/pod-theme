@@ -28,34 +28,6 @@
           {% endfor %}
         </div>
       </div>
-      <div class="icon_text mob">
-        <div class="faq-availability">
-          <div class="v-stack gap-4">
-          {% if section.settings.mobileicon != blank %}
-            <img
-              src="{{ section.settings.mobileicon | img_url:"346x" }}"
-              alt=""
-              srcset="{{section.settings.mobileicon | img_url:"346x" }}"
-              width="346"
-              height="96"
-              loading="lazy"
-              style="max-width: 160px"
-              sizes="160px"
-            >
-            {% endif %} 
-            {% if section.settings.mobile_text != blank %}
-            <div class="v-stack">
-              <p>
-                {{ section.settings.mobile_text }}<br>
-                {% if section.settings.mobile_time != blank %}
-                <span class="text-subdued">{{ section.settings.mobile_time }}</span>
-                  {% endif %}
-              </p>
-            </div>
-              {% endif %}
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 {%- endif -%}
