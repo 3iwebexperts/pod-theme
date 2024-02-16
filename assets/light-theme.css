@@ -1,5 +1,5 @@
  /* Light theme  */
-body.light-theme{
+/* body.light-theme{
   background:var(--white);
   color:var(--black);
 }
@@ -26,4 +26,4 @@ body.light-theme .footer a, body.light-theme .footer input::placeholder{
  body.light-theme .footer input{
     color:var(--black);
    border-bottom: 2px solid var(--black-light);
- }
+ } */
