@@ -1018,6 +1018,7 @@ button.swiper-pagination-bullet {
 }
 :root {
   --white: #fff;
+  --black: #000;
   --gray-lighter: #f1f1f1;
   --gray-light: #e9ecef;
   --gray: #424446;
