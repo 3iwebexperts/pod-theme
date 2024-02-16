@@ -15,4 +15,7 @@ body.dark-theme .header-container,body.dark-theme .header-nav__menu-item .hambur
 body.dark-theme .header-container svg{
   fill:var(--white);
 }
-media-grid__item
+body.dark-theme .media-grid__item svg{
+  fill: var(--white);
+  border: 1px solid var(--white);
+}
