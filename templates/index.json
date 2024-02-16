@@ -361,13 +361,6 @@
         "new_content_group_FcJPhJ": {
           "type": "new-content-group",
           "settings": {
-            "heading": "NEW DROPS",
-            "tag": "h1",
-            "content": "The latest Sport Utility Gear to hit the site.",
-            "button_text": "",
-            "button_url": "",
-            "heading_color": "#000000",
-            "text_color": ""
           }
         },
         "new_collection_carousel_D8wmHA": {
@@ -397,13 +390,6 @@
         "new_content_group_VTCPTg": {
           "type": "new-content-group",
           "settings": {
-            "heading": "NEW DROPS",
-            "tag": "h1",
-            "content": "The latest Sport Utility Gear to hit the site.",
-            "button_text": "",
-            "button_url": "",
-            "heading_color": "#000000",
-            "text_color": "#000000"
           }
         },
         "new_button_CWnfaJ": {
@@ -461,14 +447,38 @@
         "new_content_group_jQgBmL": {
           "type": "new-content-group",
           "settings": {
-            "heading": "NEW DROPS",
-            "tag": "h1",
-            "content": "The latest Sport Utility Gear to hit the site.",
-            "button_text": "",
-            "button_url": "#",
-            "heading_color": "#000000",
-            "text_color": "#000000"
-          }
+          },
+          "blocks": {
+            "new_heading_DwHhjT": {
+              "type": "new-heading",
+              "settings": {
+                "heading": "NEW DROPS",
+                "tag": "h1"
+              }
+            },
+            "new_content_cQPDhb": {
+              "type": "new-content",
+              "settings": {
+                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>"
+              }
+            },
+            "new_button_Vg3GPE": {
+              "type": "new-button",
+              "settings": {
+                "button_text": "",
+                "button_link": "",
+                "link_button": false,
+                "background_color": "#fff",
+                "text_color": "#000",
+                "border_radius": 90
+              }
+            }
+          },
+          "block_order": [
+            "new_heading_DwHhjT",
+            "new_content_cQPDhb",
+            "new_button_Vg3GPE"
+          ]
         },
         "new_button_chdwnr": {
           "type": "new-button",
@@ -496,13 +506,6 @@
         "new_content_group_PRmDV8": {
           "type": "new-content-group",
           "settings": {
-            "heading": "NEW DROPS",
-            "tag": "h1",
-            "content": "The latest Sport Utility Gear to hit the site.",
-            "button_text": "",
-            "button_url": "",
-            "heading_color": "",
-            "text_color": ""
           }
         },
         "new_faqs_group_7Drnjr": {
