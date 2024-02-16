@@ -63,11 +63,16 @@
               font-display: swap;
             }
     </style>
-    <link href="{{ 'theme.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{ 'custom.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{ 'dark-theme.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{ 'light-theme.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{ 'vendor.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+    {% if template.suffix contains 'components' %}
+      <link href="{{ 'roots.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+      <link href="{{ 'blocks.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+    {% else %}
+      <link href="{{ 'theme.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+      <link href="{{ 'custom.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+      <link href="{{ 'dark-theme.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+      <link href="{{ 'light-theme.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+      <link href="{{ 'vendor.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+    {% endif %}
     {{ content_for_header }}
 
     
