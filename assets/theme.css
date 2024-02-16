@@ -13358,13 +13358,13 @@ body.dark-theme{
 body.dark-theme .header-nav__menu-item .hamburger-inner:after,
 body.dark-theme .header-nav__menu-item .hamburger-inner:before{
 
-  background-color:var(--black);
+  background-color:var(--white);
 }
 body.dark-theme .header-container,body.dark-theme .header-nav__menu-item .hamburger{
-  background:var(--white);
-  color:var(--black);
+  background:var(--black);
+  color:var(--white);
 }
 
 body.dark-theme .header-container svg{
-  fill:var(--black);
+  fill:var(--white);
 }
