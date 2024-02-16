@@ -513,7 +513,27 @@
             "new_faqs_group_kMqRVj": {
               "type": "new-faqs-group",
               "settings": {
-              }
+              },
+              "blocks": {
+                "new_faqs_group_e6iw43": {
+                  "type": "new-faqs-group",
+                  "settings": {
+                  },
+                  "blocks": {
+                    "new_faqs_group_gW7VHg": {
+                      "type": "new-faqs-group",
+                      "settings": {
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "new_faqs_group_gW7VHg"
+                  ]
+                }
+              },
+              "block_order": [
+                "new_faqs_group_e6iw43"
+              ]
             },
             "new_heading_FMqx8m": {
               "type": "new-heading",
@@ -534,8 +554,8 @@
                 "button_text": "",
                 "button_link": "",
                 "link_button": false,
-                "background_color": "#fff",
-                "text_color": "#000",
+                "background_color": "#ffffff",
+                "text_color": "#000000",
                 "border_radius": 90
               }
             },
