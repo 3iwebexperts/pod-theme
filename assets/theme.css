@@ -13337,3 +13337,8 @@ body.light-theme{
   color:var(--black);
 }
 
+body.light-theme .header-container{
+  background:var(--white);
+  color:var(--black);
+}
+
