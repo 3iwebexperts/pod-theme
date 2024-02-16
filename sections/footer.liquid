@@ -38,7 +38,7 @@
                 placeholder="Enter your email"
                 required="required"
               >
-              <button type="submit" class="btn {%- unless settings.theme_type == "light" -%}btn-white"{%- endunless -%}>Sign Me Up</button>
+              <button type="submit" class="btn {%- if settings.theme_type == "dark" -%}btn-white"{%- endif -%}>Sign Me Up</button>
             </div>
             {%- if form.errors -%}
               <small class="newsletter-form__message form__message" id="ContactFooter-error">
