@@ -1,3 +1,8 @@
+{%- assign block_id =  block.id | split : "__"  -%}
+{%- assign render_block = true -%}
+{%- for id in block_id -%}
+  {{ id }}
+{%- endfor -%}
 <div class="section-stack__main" {{ block.shopify_attributes }}>
   <div class="accordion-box rounded bg-secondary">
     {%- content_for "blocks" -%}
