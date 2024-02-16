@@ -13342,3 +13342,6 @@ body.light-theme .header-container{
   color:var(--black);
 }
 
+body.light-theme .header-container svg{
+  fill:var(--white);
+}
