@@ -10,7 +10,40 @@
   {
     "name": "NEW - FAQ",
     "class": "faq_box card-slider",
-    "settings": [],
+    "settings": [
+      {
+        "type": "select",
+        "id": "section-type",
+        "label": "Section type",
+        "options": [
+          {
+            "value": "boxed",
+            "label": "Boxed"
+          },
+          {
+            "value": "full-width",
+            "label": "Full width"
+          }
+        ],
+        "default": "boxed"
+      },
+      {
+        "type": "select",
+        "id": "section-color",
+        "label": "Section background",
+        "options": [
+          {
+            "value": "dark",
+            "label": "Dark"
+          },
+          {
+            "value": "light",
+            "label": "Light"
+          }
+        ],
+        "default": "dark"
+      }
+    ],
     "tag": "div",
     "blocks": [{"type": "@theme"}],
     "presets":[
