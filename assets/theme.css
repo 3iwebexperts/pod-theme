@@ -13351,6 +13351,7 @@ body.light-theme .header-container svg{
 }
 body.light-theme .footer{
    /* background:var(--white); */
+   color:var(--black);
 }
 /* Dark theme  */
 body.dark-theme{
