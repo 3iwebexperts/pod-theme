@@ -1,6 +1,17 @@
- {% schema %}
+{% if block.settings.content != blank %}
+  <div class="card-slider__content p3" {{ block.shopify_attributes }}>{{ block.settings.content }}</div>
+{% endif %}
+
+{% schema %}
   {
-    "name": "Block name",
-    "settings": []
+    "name": "NEW - Content",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default":"<p>The latest Sport Utility Gear to hit the site.</p>"
+      }
+    ]
   }
 {% endschema %}
