@@ -13,24 +13,24 @@
           "settings": {
           },
           "blocks": {
-            "new_heading_pLymAU": {
+            "new_heading_MXUYLw": {
               "type": "new-heading",
               "settings": {
-                "heading": "NEW DROPS",
-                "tag": "h1"
+                "heading": "Have a question ? We are here to help.",
+                "tag": "h3"
               }
             },
-            "new_content_We63mn": {
+            "new_content_xXhknK": {
               "type": "new-content",
               "settings": {
-                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
-                "tag": "p3"
+                "content": "<p>Check out the most common questions our customers asked. Still have questions ? Contact our customer support.<br\/><br\/>Our customer support is available monday to friday: 8am-8:30pm.<br\/>Average answer time: 24h<\/p>",
+                "tag": "p1"
               }
             }
           },
           "block_order": [
-            "new_heading_pLymAU",
-            "new_content_We63mn"
+            "new_heading_MXUYLw",
+            "new_content_xXhknK"
           ]
         },
         "new_faqs_group_RLnjhF": {
