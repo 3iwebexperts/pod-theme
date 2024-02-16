@@ -1,5 +1,21 @@
 [
   {
+    "name": "Theme Setting",
+    "settings": [
+      {
+        "type": "radio",
+        "id": "theme_type",
+        "label": "Theme type",
+        "options": [
+          {
+            "value": "black",
+            "label": "Dark"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Social Links",
     "settings": [
       {
