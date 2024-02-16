@@ -465,11 +465,11 @@
             "new_button_Vg3GPE": {
               "type": "new-button",
               "settings": {
-                "button_text": "",
-                "button_link": "",
+                "button_text": "TEST",
+                "button_link": "#",
                 "link_button": false,
-                "background_color": "#fff",
-                "text_color": "#000",
+                "background_color": "#ffffff",
+                "text_color": "#000000",
                 "border_radius": 90
               }
             }
