@@ -58,10 +58,10 @@ a:hover {
   font-size: 17px;
 }
 .btn {
-  background-color: #121212;
+  background-color: var(--btn-bg-color);
   border: 1.2px solid transparent;
   border-radius: 90px;
-  color: #fff;
+  color: var(--btn-color);
   display: inline-block;
   font-family: var(--btn-font);
   position: relative;
@@ -73,11 +73,11 @@ a:hover {
   vertical-align: middle;
 }
 .btn-link {
-  background: none;
+  background: var(--link-bg-color);
   border: none;
   border-bottom: 2px solid;
   border-radius: 0;
-  color: #121212;
+  color: var(--link-color);
   display: inline-block;
   line-height: 1.5;
   padding: 0;
@@ -109,43 +109,24 @@ a:hover {
   pointer-events: none;
 }
 .card-slider__button {
-  color: currentcolor;
+  color: var(--link-color);
   display: inline-block;
   font-size: 18px;
   line-height: 1.5;
 }
 .card-slider__button:hover {
-  color: currentcolor;
-}
-
-@media (min-width: 768px) {
-  
-}
-@media (min-width: 992px) {
-  
+  color: var(--link-color);
 }
 .btn:disabled {
   opacity: 0.65;
 }
-.btn-white {
-  background-color: #fff;
-  color: #121212;
-}
-@media (max-width: 991.98px) {
-  .btn-white-m {
-    background-color: #fff;
-    color: #121212;
-  }
+.btn-white, .btn-white-m {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-color);
 }
 .hero__btn {
   font-size: 17px;
   padding: 15px 58px;
-}
-@media (max-width: 991.98px) {
-  .hero__btn {
-    font-size: 14px;
-    padding: 8px 48px;
-  }
 }
 /* BLOCKS : Button end */
 
@@ -211,6 +192,10 @@ a:hover {
     font-size: 13px;
     line-height: 20px;
     padding: 12px 32px;
+  }
+  .hero__btn {
+    font-size: 14px;
+    padding: 8px 48px;
   }
   /* BLOCKS : Button end */
 }
