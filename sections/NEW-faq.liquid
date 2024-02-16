@@ -2,6 +2,7 @@
   <div class="section section-boxed bg-custom">
     <div class="section-stack section-stack--horizontal ">
       {%- content_for 'blocks' -%}
+      {% comment %}
       <div class="section-stack__main">
         <div class="accordion-box rounded bg-secondary">
           {% for block in section.blocks %}
@@ -28,6 +29,7 @@
           {% endfor %}
         </div>
       </div>
+      {% endcomment %}
     </div>
   </div>
 {%- endif -%}
