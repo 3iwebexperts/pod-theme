@@ -510,6 +510,11 @@
           "settings": {
           },
           "blocks": {
+            "new_faqs_group_kMqRVj": {
+              "type": "new-faqs-group",
+              "settings": {
+              }
+            },
             "new_heading_FMqx8m": {
               "type": "new-heading",
               "settings": {
@@ -550,6 +555,7 @@
             }
           },
           "block_order": [
+            "new_faqs_group_kMqRVj",
             "new_heading_FMqx8m",
             "new_faq_content_Net9cw",
             "new_button_HXaDci",
