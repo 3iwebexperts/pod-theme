@@ -532,6 +532,22 @@
                   "settings": {
                   },
                   "blocks": {
+                    "group_epHmgt": {
+                      "type": "group",
+                      "settings": {
+                      },
+                      "blocks": {
+                        "text_K48RAg": {
+                          "type": "text",
+                          "settings": {
+                            "text": "This is a text block inside a group block!"
+                          }
+                        }
+                      },
+                      "block_order": [
+                        "text_K48RAg"
+                      ]
+                    },
                     "text_kXCtyy": {
                       "type": "text",
                       "settings": {
@@ -540,6 +556,7 @@
                     }
                   },
                   "block_order": [
+                    "group_epHmgt",
                     "text_kXCtyy"
                   ]
                 }
