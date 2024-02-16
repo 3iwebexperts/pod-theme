@@ -7013,7 +7013,7 @@ symbol.icon:not(.icon--full-color) rect {
   }
 }
 .marketing-morsel {
-  color: #fff;
+  /* color: #fff; */
   padding-left: 24px;
   position: relative;
 }
@@ -7047,7 +7047,7 @@ symbol.icon:not(.icon--full-color) rect {
   }
 }
 .footer-signup__title {
-  color: #fff;
+  /* color: #fff; */
   margin-bottom: 70px;
   margin-top: 60px;
   text-transform: uppercase;
@@ -7072,7 +7072,7 @@ symbol.icon:not(.icon--full-color) rect {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #f5f5f6;
-  color: #fff;
+  /* color: #fff; */
   display: block;
   font-size: 20px;
   line-height: 1;
@@ -12949,7 +12949,7 @@ ul.social-media {
   text-decoration: inherit;
 }
 .social-media a {
-  color: #fff;
+  /* color: #fff; */
 }
 .btags_list .btag_item {
   display: inline-block;
@@ -13354,7 +13354,7 @@ body.light-theme .footer{
    color:var(--black);
 }
 body.light-theme .footer a{
-  
+   color:var(--black);
 }
 /* Dark theme  */
 body.dark-theme{
