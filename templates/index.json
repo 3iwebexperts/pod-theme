@@ -504,10 +504,16 @@
             "heading_color": "",
             "text_color": ""
           }
+        },
+        "new_faqs_group_7Drnjr": {
+          "type": "new-faqs-group",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "new_content_group_PRmDV8"
+        "new_content_group_PRmDV8",
+        "new_faqs_group_7Drnjr"
       ],
       "settings": {
       }
