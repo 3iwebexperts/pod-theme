@@ -10,6 +10,10 @@
           {
             "value": "black",
             "label": "Dark"
+          },
+          {
+            "value": "white",
+            "label": "Light"
           }
         ]
       }
