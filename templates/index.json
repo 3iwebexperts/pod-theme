@@ -508,7 +508,35 @@
         "new_faqs_group_7Drnjr": {
           "type": "new-faqs-group",
           "settings": {
-          }
+          },
+          "blocks": {
+            "new_faq_content_9cWVWi": {
+              "type": "new-faq-content",
+              "settings": {
+                "que": "",
+                "ans": ""
+              }
+            },
+            "new_faq_content_qe6LND": {
+              "type": "new-faq-content",
+              "settings": {
+                "que": "",
+                "ans": ""
+              }
+            },
+            "new_faq_content_6czKdB": {
+              "type": "new-faq-content",
+              "settings": {
+                "que": "",
+                "ans": ""
+              }
+            }
+          },
+          "block_order": [
+            "new_faq_content_9cWVWi",
+            "new_faq_content_qe6LND",
+            "new_faq_content_6czKdB"
+          ]
         }
       },
       "block_order": [
