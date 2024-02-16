@@ -1,10 +1,5 @@
 {% if section.blocks.size > 0 %}
-<div
-  id="link-card-slider-{{ section.id }}"
-  class="card-slider "
-  data-section-type="product-card-slider"
-  data-section-id="{{ section.id }}"
->
+<div id="link-card-slider-{{ section.id }}" class="card-slider " data-section-type="product-card-slider" data-section-id="{{ section.id }}">
   <div class="container-fluid">
     {% content_for 'blocks' %}
   </div>
@@ -13,13 +8,7 @@
 {% schema %}
   {
     "name": "NEW - Featured Collection",
-    "settings": [
-      {
-       "type": "color",
-        "id": "backgrond_color",
-        "label": "Background Color"
-    }
-    ],
+    "settings": [],
     "blocks": [{"type": "@theme"}],
     "presets": [
       {
