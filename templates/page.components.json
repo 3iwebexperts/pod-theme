@@ -17,14 +17,14 @@
               "type": "new-heading",
               "settings": {
                 "heading": "NEW DROPS",
-                "tag": "h1"
+                "tag": "h2"
               }
             },
             "new_content_rK9LPD": {
               "type": "new-content",
               "settings": {
                 "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
-                "tag": "p3"
+                "tag": "p1"
               }
             }
           },
