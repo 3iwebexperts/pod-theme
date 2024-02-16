@@ -13349,8 +13349,10 @@ body.light-theme .header-container,body.light-theme .header-nav__menu-item .hamb
 body.light-theme .header-container svg{
   fill:var(--black);
 }
-
- /* Dark theme  */
+body.light-theme .footer{
+   background:var(--white);
+}
+/* Dark theme  */
 body.dark-theme{
   background:var(--black);
   color:var(--white);
@@ -13364,7 +13366,6 @@ body.dark-theme .header-container,body.dark-theme .header-nav__menu-item .hambur
   background:var(--black);
   color:var(--white);
 }
-
 body.dark-theme .header-container svg{
   fill:var(--white);
 }
