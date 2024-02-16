@@ -13332,5 +13332,8 @@ h1.collection-banner__title.text-left.h1 {
   color: #00ff00;
 }
  /* Light theme  */
-
+body.light-theme{
+  background:var(--white);
+  color:var(--black);
+}
 
