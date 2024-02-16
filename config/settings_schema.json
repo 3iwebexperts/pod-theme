@@ -8,11 +8,11 @@
         "label": "Theme type",
         "options": [
           {
-            "value": "black",
+            "value": "dark",
             "label": "Dark"
           },
           {
-            "value": "white",
+            "value": "light",
             "label": "Light"
           }
         ]
