@@ -64,12 +64,9 @@ a:hover {
   color: #fff;
   display: inline-block;
   font-family: var(--btn-font);
-  font-size: 13px;
-  line-height: 20px;
-  padding: 12px 32px;
   position: relative;
   text-align: center;
-  transition: 0.15s cubic-bezier(0.42, 0, 0.13, 1.04);
+  transition: var(--btn-transaction));
   transition-property: background-color transform;
   -webkit-user-select: none;
   user-select: none;
@@ -96,7 +93,7 @@ a:hover {
   position: absolute;
   right: 0;
   top: 100%;
-  transition: width 0.15s cubic-bezier(0.42, 0, 0.13, 1.04);
+  transition: var(--btn-transaction);
   width: 0;
 }
 .btn-link:hover:before {
@@ -122,11 +119,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .btn {
-    font-size: 16px;
-    line-height: 1;
-    padding: 14px 42px;
-  }
+  
 }
 @media (min-width: 992px) {
   
@@ -213,6 +206,11 @@ a:hover {
   .card-slider__button {
     font-size: 12px;
     line-height: 1.5;
+  }
+  .btn {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 12px 32px;
   }
   /* BLOCKS : Button end */
 }
