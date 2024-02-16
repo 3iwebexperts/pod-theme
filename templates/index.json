@@ -510,12 +510,6 @@
           "settings": {
           },
           "blocks": {
-            "new_heading_FMqx8m": {
-              "type": "new-heading",
-              "settings": {
-                "heading": "NEW DROPS"
-              }
-            },
             "new_faq_content_Net9cw": {
               "type": "new-faq-content",
               "settings": {
@@ -539,7 +533,6 @@
             }
           },
           "block_order": [
-            "new_heading_FMqx8m",
             "new_faq_content_Net9cw",
             "new_faq_content_qqpnUF",
             "new_faq_content_9BGR3E"
