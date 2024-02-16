@@ -558,7 +558,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .template-search main-search .predictive-search ul li span,
 .template-404 .predictive-search ul li span {
-  color: var(--black);
+  color: var(--black-light);
 }
 .template-search main-search input {
   font-size: 28px;
@@ -749,7 +749,7 @@ header .inner_search {
     justify-content: center;
 }
  .cart .custom-cart-form .ajax-cart__item-header{
-    color:var(--black);
+    color:var(--black-light);
   }
 .cart-total-price{
     display:none;
