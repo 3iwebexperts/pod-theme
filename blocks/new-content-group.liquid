@@ -11,43 +11,42 @@
    endfor
 -%}
 {%- if render_block == true -%}
-{%- assign block_id =  block.id | split : "__"  -%}
-{%- if block_id[1] contains 'faq' -%}
-  <div class="section-stack__intro" {{ block.shopify_attributes }}>
-    <div class="v-stack gap-10">
-      <div class="prose ">
-        {% if block.settings.heading != blank %}
-          <{{ block.settings.tag }} class="{{ block.settings.tag }}">{{ block.settings.heading }}</{{ block.settings.tag }}>
-        {% endif %}
-        {% if block.settings.content != blank %}
-          <p>
-            {{ block.settings.content }}
-          </p>
+  {%- if block_id[1] contains 'faq' -%}
+    <div class="section-stack__intro" {{ block.shopify_attributes }}>
+      <div class="v-stack gap-10">
+        <div class="prose ">
+          {% if block.settings.heading != blank %}
+            <{{ block.settings.tag }} class="{{ block.settings.tag }}">{{ block.settings.heading }}</{{ block.settings.tag }}>
+          {% endif %}
+          {% if block.settings.content != blank %}
+            <p>
+              {{ block.settings.content }}
+            </p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {%- else -%}
+    <div class="row" {{ block.shopify_attributes }}>
+      <div class="card-slider__heading">
+        <div class="card-slider__info-container">
+          {% if block.settings.heading != blank %}
+            <{{ block.settings.tag }} class="card-slider__title  {{ block.settings.tag }}" style="color:{{ block.settings.heading_color }}">{{ block.settings.heading }}</{{ block.settings.tag }}>
+          {% endif %}
+          {% if block.settings.content != blank %}
+            <p class="card-slider__content p3" style="color:{{ block.settings.text_color }}">{{ block.settings.content }}</p>
+          {% endif %}
+        </div>
+        {% if block.settings.button_url != blank and block.settings.button_text != blank %}
+        <div class="card-slider__cta-container">
+          <a class="btn-link card-slider__button" href="{{ block.settings.button_url }}">
+          {{ block.settings.button_text }}
+          </a>
+        </div>
         {% endif %}
       </div>
     </div>
-  </div>
-{%- else -%}
-  <div class="row" {{ block.shopify_attributes }}>
-    <div class="card-slider__heading">
-      <div class="card-slider__info-container">
-        {% if block.settings.heading != blank %}
-          <{{ block.settings.tag }} class="card-slider__title  {{ block.settings.tag }}" style="color:{{ block.settings.heading_color }}">{{ block.settings.heading }}</{{ block.settings.tag }}>
-        {% endif %}
-        {% if block.settings.content != blank %}
-          <p class="card-slider__content p3" style="color:{{ block.settings.text_color }}">{{ block.settings.content }}</p>
-        {% endif %}
-      </div>
-      {% if block.settings.button_url != blank and block.settings.button_text != blank %}
-      <div class="card-slider__cta-container">
-        <a class="btn-link card-slider__button" href="{{ block.settings.button_url }}">
-        {{ block.settings.button_text }}
-        </a>
-      </div>
-      {% endif %}
-    </div>
-  </div>
-{%- endif -%}
+  {%- endif -%}
 {%- endif -%}
 
 {% schema %}
