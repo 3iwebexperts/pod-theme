@@ -25,12 +25,18 @@
       </div>
     </div>
 
+<{{ block.settings.tag }} class=”heading” {{ block.shopify_attributes }}>
+  ...
+</{{ block.settings.tag }}>
+
+
     
  
  {% schema %}
   {
     "name": "New - collapsible tab",
     "settings": [],
+    "tag": null,
     "blocks": [{"type": "@theme"}],
     "presets": [
       {
