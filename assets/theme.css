@@ -13338,7 +13338,7 @@ body.light-theme{
 }
 body.light-theme .header-nav__menu-item .hamburger-inner:after,
 body.light-theme .header-nav__menu-item .hamburger-inner:before{
-  color:var(--black);
+
   background-color:var(--black);
 }
 body.light-theme .header-container,body.light-theme .header-nav__menu-item .hamburger{
