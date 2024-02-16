@@ -2,53 +2,10 @@
   <div class="section section-boxed bg-custom">
     <div class="section-stack section-stack--horizontal ">
       {%- content_for 'blocks' -%}
-      <div class="section-stack__intro">
-        <div class="v-stack gap-10">
-          <div class="prose ">
-            {% if section.settings.que_heading != blank %}
-              <h2 class="h2">{{ section.settings.que_heading }}</h2>
-            {% endif %}
-            {% if section.settings.subtext != blank %}
-              <p>
-                {{ section.settings.subtext }}
-              </p>
-            {% endif %}
-          </div>
-          <div class="icon_text desk">
-            <div class="faq-availability">
-              <div class="v-stack gap-4">
-                {% if section.settings.image != blank %}
-                  <img
-                    src="{{ section.settings.image | img_url: "346x" }}"
-                    alt=""
-                    srcset="{{ section.settings.image | img_url: "346x" }}"
-                    width="346"
-                    height="96"
-                    loading="lazy"
-                    style="max-width: 160px"
-                    sizes="160px"
-                  >
-                {% endif %}
-                {% if section.settings.bottomtext != blank %}
-                  <div class="v-stack">
-                    <p>
-                      {{ section.settings.bottomtext -}}
-                      <br>
-                      {% if section.settings.time != blank %}
-                        <span class="text-subdued">{{ section.settings.time }}</span>
-                      {% endif %}
-                    </p>
-                  </div>
-                {% endif %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="section-stack__main">
         <div class="accordion-box rounded bg-secondary">
           {% for block in section.blocks %}
-            <div class=" accordion  group" aria-expanded="false" is="accordion-disclosure">
+            <div class="accordion group" aria-expanded="false" is="accordion-disclosure">
               {% if block.settings.que != blank %}
                 <div class="accordion__toggle bold">
                   <span> {{ block.settings.que }}</span
