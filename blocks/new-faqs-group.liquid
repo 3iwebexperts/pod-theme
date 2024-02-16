@@ -11,11 +11,11 @@
    endfor
 -%}
 {%- if render_block == true -%}
-<div class="section-stack__main" {{ block.shopify_attributes }}>
-  <div class="accordion-box rounded bg-secondary">
-    {%- content_for "blocks" -%}
+  <div class="section-stack__main" {{ block.shopify_attributes }}>
+    <div class="accordion-box rounded bg-secondary">
+      {%- content_for "blocks" -%}
+    </div>
   </div>
-</div>
 {%- endif -%}
 {% schema %}
   {
