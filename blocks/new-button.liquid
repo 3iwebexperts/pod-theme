@@ -1,13 +1,20 @@
 {%- if block.settings.button_text != blank and block.settings.button_link != blank -%}
-<div {{ block.shopify_attributes }}>
-  <a href="{{ block.settings.button_link }}" class="btn {{ block.settings.button_type }}">
-    {{ block.settings.button_text }} 
-  </a>
-</div>
-<button class="pro_add_cart " data-variant-id="48034888253741" data-option-drawer-trigger="">
-  <img loading="lazy" src="{{ 'bag.svg' | asset_url }}" />
-  <span>ADD TO BAG</span>
-</button>
+{%- case block.settings.button_type -%}
+  {%- when "block-button" -%}
+    <div {{ block.shopify_attributes }}>
+      <a href="{{ block.settings.button_link }}" class="btn {{ block.settings.button_type }}">
+        {{ block.settings.button_text }}
+      </a>
+    </div>
+  {%- when "oval-button" -%}
+    <a class="btn-link card-slider__button" href="{{ block.settings.button_link }}" contenteditable="false" >
+      {{ block.settings.button_text }}
+    </a>
+  {%- else -%}
+    <a class="btn-link" href="{{ block.settings.button_link }}" contenteditable="false" >
+      {{ block.settings.button_text }}
+    </a>
+{%- endcase -%}
 {%- endif -%}
 
 
