@@ -1078,7 +1078,7 @@ section {
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  background-color: #fff;
+  background-color:var(--white);
   color: #121212;
   font-family: SequelSans Body, sans-serif;
   font-size: 1rem;
@@ -1630,7 +1630,7 @@ html.supports-no-cookies .supports-cookies {
 }
 .skip-link:focus {
   clip: auto;
-  background-color: #fff;
+  background-color: var(--white);
   color: #121212;
   height: auto;
   margin: 0;
