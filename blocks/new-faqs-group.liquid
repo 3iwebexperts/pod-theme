@@ -1,13 +1,16 @@
+{%- assign block_id =  block.id | split : "__"  -%}
+{%- assign render_block = true -%}
+{%- assign id = block_id | last -%}
+{%- if id contains 'faqs_group' -%}
+  {%- assign render_block = false -%}
+{%- endif -%}
+{%- if render_block == true -%}
 <div class="section-stack__main" {{ block.shopify_attributes }}>
   <div class="accordion-box rounded bg-secondary">
-    {%- assign block_id =  block.id | split : "__"  -%}
-    {%- assign render_block = true -%}
-    {%- for id in block_id -%}
-      {{ id }}
-    {%- endfor -%}
     {%- content_for "blocks" -%}
   </div>
 </div>
+{%- endif -%}
 {% schema %}
   {
     "name": "NEW - FAQs Group",
