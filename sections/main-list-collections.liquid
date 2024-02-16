@@ -144,7 +144,7 @@
                 class="row content-grid content-grid--1-col content-grid--md-2-col content-grid--lg-3-col content-grid--xl-4-col"
                 data-card-slider
               >
-                {% for product in collection.products limit: 20 %}
+                {% for product in collection.products limit: 4 %}
                   <div class="content-grid__item">
                     {% include 'product_items', product: product %}
                   </div>
