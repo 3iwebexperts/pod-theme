@@ -2,7 +2,7 @@
 {%- assign render_block = true -%}
 {%- for id in block_id  -%}
   {%- unless forloop.last -%}
-    {%- if id contains 'faqs_group' -%}
+    {%- if id contains 'group' -%}
       {%- assign render_block = false -%}
     {%- endif -%}
   {%- endunless -%}
