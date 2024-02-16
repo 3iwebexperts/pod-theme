@@ -1,3 +1,4 @@
+{% comment %}
 {%- if section.blocks.size > 0 -%}
 <link href="{{ 'faq_box.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
 <div class="section section-boxed bg-custom collapsible-tab">
@@ -6,10 +7,12 @@
   </div>
 </div>
 {%- endif -%}
+{% endcomment %}
 
 {%- if section.blocks.size > 0 -%}
 <div class="section section-boxed bg-custom">
   <div class="section-stack section-stack--horizontal ">
+    {%- content_for 'blocks' -%}
     <div class="section-stack__intro">
       <div class="v-stack gap-10">
         <div class="prose ">
