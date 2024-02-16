@@ -5,12 +5,6 @@
   data-section-type="product-card-slider"
   data-section-id="{{ section.id }}"
 >
-  <style>
-    #link-card-slider-{{ section.id }} {
-      background-color: {{- section.settings.backgrond_color -}};
-    }
-    
-  </style>
   <div class="container-fluid">
     {% content_for 'blocks' %}
   </div>
