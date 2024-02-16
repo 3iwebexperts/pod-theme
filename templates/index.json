@@ -417,10 +417,7 @@
           "settings": {
             "button_text": "Button",
             "button_link": "#",
-            "link_button": false,
-            "background_color": "#ffffff",
-            "text_color": "#000000",
-            "border_radius": 90
+            "link_button": false
           }
         }
       },
@@ -494,10 +491,7 @@
           "settings": {
             "button_text": "Button",
             "button_link": "#",
-            "link_button": false,
-            "background_color": "#ffffff",
-            "text_color": "#000000",
-            "border_radius": 90
+            "link_button": false
           }
         }
       },
@@ -534,12 +528,9 @@
             "new_button_aNRtYF": {
               "type": "new-button",
               "settings": {
-                "button_text": "",
-                "button_link": "",
-                "link_button": false,
-                "background_color": "#fff",
-                "text_color": "#000",
-                "border_radius": 90
+                "button_text": "Button",
+                "button_link": "#",
+                "link_button": true
               }
             }
           },
