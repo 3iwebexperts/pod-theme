@@ -13350,7 +13350,7 @@ body.light-theme .header-container svg{
   fill:var(--black);
 }
 body.light-theme .footer{
-   background:var(--white);
+   /* background:var(--white); */
 }
 /* Dark theme  */
 body.dark-theme{
