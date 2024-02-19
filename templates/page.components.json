@@ -58,12 +58,20 @@
                 "que": "Lorem ipsum dolor sit amet",
                 "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
               }
+            },
+            "new_faq_content_RYd7UH": {
+              "type": "new-faq-content",
+              "settings": {
+                "que": "Lorem ipsum dolor sit amet",
+                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
+              }
             }
           },
           "block_order": [
             "new_faq_content_kBAkKx",
             "new_faq_content_XXhA9E",
-            "new_faq_content_hWCp4z"
+            "new_faq_content_hWCp4z",
+            "new_faq_content_RYd7UH"
           ]
         }
       },
