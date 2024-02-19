@@ -17,7 +17,7 @@
               "type": "new-heading",
               "settings": {
                 "heading": "Have a question ? We are here to help.",
-                "tag": "h3"
+                "tag": "h2"
               }
             },
             "new_content_xXhknK": {
@@ -72,6 +72,9 @@
         "new_faqs_group_RLnjhF"
       ],
       "settings": {
+        "section-type": "boxed",
+        "box-type": "rounded",
+        "section-color": "dark"
       }
     }
   },
