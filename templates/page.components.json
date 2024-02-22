@@ -84,10 +84,19 @@
         "box-type": "rounded",
         "section-color": "light"
       }
+    },
+    "new_container_Df6fxV": {
+      "type": "NEW-container",
+      "settings": {
+        "section-type": "boxed",
+        "box-type": "rounded",
+        "section-color": "dark"
+      }
     }
   },
   "order": [
     "cart",
-    "new_faq_NrM7py"
+    "new_faq_NrM7py",
+    "new_container_Df6fxV"
   ]
 }
