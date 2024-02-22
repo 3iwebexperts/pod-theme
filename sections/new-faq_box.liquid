@@ -12,25 +12,6 @@
             </div>
           {% endif %}
         </div>
-        {% if section.settings.image != blank %}
-        <div class="icon_text desk">
-          <div class="faq-availability">
-            <div class="v-stack gap-4">
-                <img
-                  src="{{ section.settings.image | img_url: "346x" }}"
-                  alt=""
-                  srcset="{{ section.settings.image | img_url: "346x" }}"
-                  width="346"
-                  height="96"
-                  loading="lazy"
-                  style="max-width: 160px"
-                  sizes="160px"
-                >
-              
-            </div>
-          </div>
-        </div>
-        {% endif %}
       </div>
     </div>
     {% if section.blocks.size > 0 %}
@@ -46,7 +27,6 @@
                 </span>
               </div>
             {% endif %}
-
             <div class="accordion__content" style="display:none;">
               {% if block.settings.ans != blank %}
                 <div class="prose">
@@ -61,25 +41,6 @@
       </div>
     </div>
     {% endif %}
-
-    {% if section.settings.mobileicon != blank %}
-    <div class="icon_text mob" style="display:none;">
-      <div class="faq-availability">
-        <div class="v-stack gap-4">
-          <img
-            src="{{ section.settings.mobileicon | img_url:"346x" }}"
-            alt=""
-            srcset="{{section.settings.mobileicon | img_url:"346x" }}"
-            width="346"
-            height="96"
-            loading="lazy"
-            style="max-width: 160px"
-            sizes="160px"
-          >
-        </div>
-      </div>
-    </div>
-    {% endif %} 
   </div>
 </div>
 
@@ -99,27 +60,6 @@
       "id": "content",
       "label": "Content",
       "default": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac</p>"
-    },
-    {
-       "type": "image_picker",
-      "id": "image",
-      "label": "Icon"
-    },
-    {
-      "type": "image_picker",
-      "id": "mobileicon",
-      "label": "Mobile Icon"
-    },
-    {
-
-       "type": "textarea",
-      "id": "mobile_text",
-      "label": "Mobile Bottom Text"
-    },
-     {
-      "type": "text",
-      "id": "mobile_time",
-      "label": "Mobile Time Text"
     }
   ],
   "presets": [
