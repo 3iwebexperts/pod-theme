@@ -45,7 +45,7 @@
       ],
       "settings": {
         "heading": "Lorem ipsum",
-        "content": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p>"
+        "content": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p><p>Proin vel semper lorem. In facilisis ac mi id laoreet. Etiam dignissim, tellus eget aliquam pretium, enim eros aliquam felis, eu consectetur magna quam vel nunc. Nam ut risus consequat, sodales neque ac, euismod elit. Fusce ut semper dolor, nec consequat turpis.<\/p>"
       }
     }
   },
