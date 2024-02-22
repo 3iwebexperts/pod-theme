@@ -1,6 +1,22 @@
- {% schema %}
-  {
-    "name": "Block name",
-    "settings": []
-  }
+<a href="{{ collection.url }}" class="image_card {% if block.settings.enable_highlight_tab1 != blank %}image_card--highlighted{% endif %}">
+  <div class="image-card__image-container frame frame--1x1">
+    {% if collection.image != blank %}
+      <img src="{{ collection.image | img_url: '250x' }}" alt="{{ collection.title }}" class="frame__inner" />
+    {% else %}
+      <img src="{{ 'placeholder.png' | asset_url }}" alt="{{ collection.title }}" class="frame__inner" />
+    {% endif %}
+  </div>
+  <div class="image-card__title">
+    {% if block.settings.highlight_text_tab1 != blank -%}
+      <b class="image-card__highlight-text">{{ block.settings.highlight_text_tab1 }}</b>
+    {%- endif %}
+    {{ collection.title }}
+  </div>
+</a>
+
+{% schema %}
+{
+  "name": "Block name",
+  "settings": []
+}
 {% endschema %}
