@@ -99,7 +99,9 @@
 
   <body class="template-{{ request.page_type | handle }} {{ template.name }} {{ settings.theme_type }}-theme" >
     <div class="layout-wrapper">
+      {% if template contains 'component' %}
       {% section 'header' %}
+      {% endif %}
 
       <main class="wrapper main-content" role="main" id="MainContent" tabindex="-1">
         <div class="layout-main-content">
