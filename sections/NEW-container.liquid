@@ -3,7 +3,56 @@
     "name": "New - Container",
     "tag": "section",
     "blocks": [{"type": "@theme"},{"type": "@app"}],
-    "settings": [],
+        "settings": [
+      {
+        "type": "select",
+        "id": "section-type",
+        "label": "Section type",
+        "options": [
+          {
+            "value": "boxed",
+            "label": "Boxed"
+          },
+          {
+            "value": "full-width",
+            "label": "Full width"
+          }
+        ],
+        "default": "boxed"
+      },
+      {
+        "type": "select",
+        "id": "box-type",
+        "label": "Box type",
+        "options": [
+          {
+            "value": "rounded",
+            "label": "Rounded"
+          },
+          {
+            "value": "sharp",
+            "label": "Sharp"
+          }
+        ],
+        "default": "rounded"
+      },
+      {
+        "type": "select",
+        "id": "section-color",
+        "label": "Section background",
+        "options": [
+          {
+            "value": "dark",
+            "label": "Dark"
+          },
+          {
+            "value": "light",
+            "label": "Light"
+          }
+        ],
+        "default": "dark"
+      }
+    ],
     "presets":[
       {
         "name": "New - Container"
