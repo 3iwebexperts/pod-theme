@@ -1,7 +1,7 @@
 <header class="header is-fixed show-on-scroll" role="banner" data-header="">
   <div class="header-container">
     <div class="header-nav">
-      <div class="header-nav__menu {% if section.settings.logo_position == "left" %}logo_left{% endif %}">
+      <div class="header-nav__menu">
         <div class="header-nav__menu-item">
           <a href="javascript:void(0)" id="hamburger_menu" class="hamburger" data-mobile-menu-toggle="">
             <span class="hamburger-box">
@@ -62,22 +62,6 @@
      "type": "image_picker",
       "id": "image",
       "label": "Logo"
-    },
-    {
-      "type": "select",
-      "id": "logo_position",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        }
-      ],
-      "default": "center",
-      "label": "Desktop logo position"
     }
   ],
   "enabled_on": {
