@@ -258,14 +258,14 @@
                 "type": "new-menu_card_cta",
                 "settings": {
                   "caption": "Shop All Men's Gear",
-                  "link": ""
+                  "link": "#"
                 }
               },
               "new_menu_card_cta_dfHhtB": {
                 "type": "new-menu_card_cta",
                 "settings": {
                   "caption": "Shop All Men's Gear",
-                  "link": ""
+                  "link": "#"
                 }
               }
             },
