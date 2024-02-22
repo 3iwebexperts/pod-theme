@@ -9,10 +9,9 @@
     {% endif %}
   </div>
   <div class="image-card__title">
-    {% if block.settings.highlight_text != blank -%}
+    {%- if block.settings.highlight_text != blank -%}
       <b class="image-card__highlight-text">{{ block.settings.highlight_text }}</b>
-    {%- endif %}
-    {{ collection.title }}
+    {%- endif -%}
   </div>
 </a>
 {% endif %}
