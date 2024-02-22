@@ -5,139 +5,52 @@
       "settings": {
       }
     },
-    "new_faq_NrM7py": {
-      "type": "NEW-faq",
+    "new_faq_box_WpWqmT": {
+      "type": "new-faq_box",
       "blocks": {
-        "new_content_group_cnNygW": {
-          "type": "new-content-group",
+        "text_Xqf7x7": {
+          "type": "text",
           "settings": {
-          },
-          "blocks": {
-            "new_heading_MXUYLw": {
-              "type": "new-heading",
-              "settings": {
-                "heading": "Have a question ? We are here to help.",
-                "tag": "h2"
-              }
-            },
-            "new_content_xXhknK": {
-              "type": "new-content",
-              "settings": {
-                "content": "<p>Check out the most common questions our customers asked. Still have questions ? Contact our customer support.<\/p><p>Our customer support is available monday to friday: 8am-8:30pm.<br\/>Average answer time: 24h<\/p>",
-                "tag": "p6"
-              }
-            }
-          },
-          "block_order": [
-            "new_heading_MXUYLw",
-            "new_content_xXhknK"
-          ]
-        },
-        "new_faqs_group_RLnjhF": {
-          "type": "new-faqs-group",
-          "settings": {
-          },
-          "blocks": {
-            "new_faq_content_kBAkKx": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
-              }
-            },
-            "new_faq_content_XXhA9E": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
-              }
-            },
-            "new_faq_content_hWCp4z": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
-              }
-            },
-            "new_faq_content_RYd7UH": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
-              }
-            }
-          },
-          "block_order": [
-            "new_faq_content_kBAkKx",
-            "new_faq_content_XXhA9E",
-            "new_faq_content_hWCp4z",
-            "new_faq_content_RYd7UH"
-          ]
-        }
-      },
-      "block_order": [
-        "new_content_group_cnNygW",
-        "new_faqs_group_RLnjhF"
-      ],
-      "settings": {
-        "section-type": "boxed",
-        "box-type": "rounded",
-        "section-color": "light"
-      }
-    },
-    "new_container_Df6fxV": {
-      "type": "NEW-container",
-      "blocks": {
-        "new_box_pdLhPG": {
-          "type": "new-box",
-          "settings": {
-            "box-type": "boxed",
-            "box-border": "rounded",
-            "box-color": "light"
-          },
-          "blocks": {
-            "new_heading_kgNTjL": {
-              "type": "new-heading",
-              "settings": {
-                "heading": "NEW DROPS",
-                "tag": "h1"
-              }
-            }
-          },
-          "block_order": [
-            "new_heading_kgNTjL"
-          ]
-        },
-        "new_heading_J69cdd": {
-          "type": "new-heading",
-          "settings": {
-            "heading": "NEW DROPS",
-            "tag": "h1"
+            "que": "Lorem ipsum dolor sit amet",
+            "ans": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p>"
           }
         },
-        "new_content_VgzQei": {
-          "type": "new-content",
+        "text_kg4cMN": {
+          "type": "text",
           "settings": {
-            "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
-            "tag": "p3"
+            "que": "Lorem ipsum dolor sit amet",
+            "ans": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p>"
+          }
+        },
+        "text_eE6mKH": {
+          "type": "text",
+          "settings": {
+            "que": "Lorem ipsum dolor sit amet",
+            "ans": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p>"
+          }
+        },
+        "text_hFAKit": {
+          "type": "text",
+          "settings": {
+            "que": "Lorem ipsum dolor sit amet",
+            "ans": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p>"
           }
         }
       },
       "block_order": [
-        "new_box_pdLhPG",
-        "new_heading_J69cdd",
-        "new_content_VgzQei"
+        "text_Xqf7x7",
+        "text_kg4cMN",
+        "text_eE6mKH",
+        "text_hFAKit"
       ],
       "settings": {
-        "section-type": "boxed",
-        "box-type": "sharp",
-        "section-color": "dark"
+        "heading": "Lorem ipsum dolor sit amet",
+        "content": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p>"
       }
     }
   },
   "order": [
     "cart",
-    "new_faq_NrM7py",
-    "new_container_Df6fxV"
+    "new_faq_box_WpWqmT"
   ]
 }
