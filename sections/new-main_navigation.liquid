@@ -1,6 +1,6 @@
 {% comment %} <div class="header__filler" data-header-filler="" style="height: 70px;"></div> {% endcomment %}
 <div id="main_navigation">
-  <div class="navigation" {% comment %}style="top: 70px; height: calc(100% - 70px);"{% endcomment %}>
+  <div class="navigation" style="top: 70px; height: calc(100% - 70px);">
     <div class="navigation-body">
       <div class="navigation-body__container">
         <div class="navigation-categories swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
@@ -12,33 +12,6 @@
               </a>
               {% endif %}
             {% endfor %}
-            {% comment %}
-            {% if section.settings.tab_title_1 != blank %}
-              <a href="#tab1" class="swiper-slide navigation-categories__button navigation-categories__button--active">
-                {{- section.settings.tab_title_1 -}}
-              </a>
-            {% endif %}
-            {% if section.settings.tab_title_2 != blank %}
-              <a href="#tab2" class="swiper-slide navigation-categories__button">
-                {{ section.settings.tab_title_2 -}}
-              </a>
-            {% endif %}
-            {% if section.settings.tab_title_3 != blank %}
-              <a href="#tab3" class="swiper-slide navigation-categories__button">
-                {{ section.settings.tab_title_3 -}}
-              </a>
-            {% endif %}
-            {% if section.settings.tab_title_4 != blank %}
-              <a href="#tab4" class="swiper-slide navigation-categories__button">
-                {{ section.settings.tab_title_4 -}}
-              </a>
-            {% endif %}
-            {% if section.settings.tab_title_5 != blank %}
-              <a href="#tab5" class="swiper-slide navigation-categories__button">
-                {{ section.settings.tab_title_5 -}}
-              </a>
-            {% endif %}
-            {% endcomment %}
           </div>
         </div>
         <div class="navigation-blocks">
