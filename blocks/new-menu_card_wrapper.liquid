@@ -1,6 +1,18 @@
- {% schema %}
+<div data-shopify-editor-block="" class="card-grid">
+  {% if section.settings.tab_grid_title_1 != blank %}
+    <div class="card-grid__title">{{ section.settings.tab_grid_title_1 }}</div>
+  {% endif %}
+  <div class="card-grid__grid">
+  </div>
+</div>
+{% schema %}
   {
-    "name": "Block name",
-    "settings": []
+    "name": "NEW - Menu card wrapper",
+    "settings": [],
+    "presets":[
+      {
+      "name": "NEW - Menu card wrapper"
+      }
+    ]
   }
 {% endschema %}
