@@ -1,6 +1,10 @@
- {% schema %}
+<div id="tab_{{ block.id }}" class="tab_inner active" style="display:block;" {{ block.shopify_attributes }}>
+  {% content_for 'blocks' %}
+</div>
+{% schema %}
   {
     "name": "Block name",
+    "tag" : null,
     "blocks": [{"type":"@theme"}],
     "settings": [],
     "presets":[
