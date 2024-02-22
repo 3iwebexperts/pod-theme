@@ -1,3 +1,8 @@
+{%- if block.blocks.size > 0 -%}
+<div class="section section-{{ block.settings.section-type }} section-{{ block.settings.box-type }} bg-{{ block.settings.section-color }}">
+  {%- content_for 'blocks' -%}
+</div>
+{%- endif -%}
  {% schema %}
   {
     "name": "NEW - Box",
