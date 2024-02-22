@@ -211,6 +211,41 @@
         "type": "test",
         "settings": {
         }
+      },
+      "new-header": {
+        "type": "new-header",
+        "settings": {
+        }
+      },
+      "new-main_navigation": {
+        "type": "new-main_navigation",
+        "blocks": {
+          "new_menu_tab_JTqNKi": {
+            "type": "new-menu_tab",
+            "settings": {
+              "title": "Men"
+            }
+          },
+          "new_menu_tab_wCNfM7": {
+            "type": "new-menu_tab",
+            "settings": {
+              "title": "Men"
+            }
+          },
+          "new_menu_tab_MPw7Ct": {
+            "type": "new-menu_tab",
+            "settings": {
+              "title": "Men"
+            }
+          }
+        },
+        "block_order": [
+          "new_menu_tab_JTqNKi",
+          "new_menu_tab_wCNfM7",
+          "new_menu_tab_MPw7Ct"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
