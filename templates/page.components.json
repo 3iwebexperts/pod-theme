@@ -87,6 +87,26 @@
     },
     "new_container_Df6fxV": {
       "type": "NEW-container",
+      "blocks": {
+        "new_heading_J69cdd": {
+          "type": "new-heading",
+          "settings": {
+            "heading": "NEW DROPS",
+            "tag": "h1"
+          }
+        },
+        "new_content_VgzQei": {
+          "type": "new-content",
+          "settings": {
+            "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
+            "tag": "p3"
+          }
+        }
+      },
+      "block_order": [
+        "new_heading_J69cdd",
+        "new_content_VgzQei"
+      ],
       "settings": {
         "section-type": "boxed",
         "box-type": "rounded",
