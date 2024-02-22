@@ -1,18 +1,77 @@
 <noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
-
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
+
+<header class="header is-fixed show-on-scroll" role="banner" data-header="">
+  <div class="header-container">
+    <div class="header-nav">
+      <div class="header-nav__menu {% if section.settings.logo_position == "left" %}logo_left{% endif %}">
+        <div class="header-nav__menu-item">
+          <a href="javascript:void(0)" id="hamburger_menu" class="hamburger" data-mobile-menu-toggle="">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+            <span class="hamburger-text hide-on-mobile">Menu</span>
+          </a>
+        </div>
+        <div class="header-nav header-nav--center header-nav--logo">
+          {% if section.settings.image != blank %}
+            <a href="/" itemprop="url" class="header-logo">
+              <img
+                src="{{ section.settings.image | img_url: "master" }}"
+                alt="{{ section.settings.image.alt }}"
+                class="header-logo__image"
+              >
+            </a>
+          {% else %}
+            <span class="h5 shop_name"><a href="/" style="color:{{ section.settings.text_color }};">{{ shop.name }}</a></span>
+          {% endif %}
+        </div>
+
+        <div>
+          <div class="header-nav__menu-item " data-search-open-button="">
+            <span class="search_icon">
+              {%- render 'icon' with 'search' -%}
+            </span>
+          </div>
+
+          <div class="header-nav__menu-item">
+            {% if settings.cart_type == 'drawer' %}
+              <div class="cart_icon" data-ajax-cart-trigger="">
+            {% else -%}
+              <a href="/cart">
+            {% endif %}
+            <div class="header-cart__badge" data-cart-badge="">
+              {%- render 'icon' with 'cart' -%}
+              <span
+                class="header-cart__badge-count {% if cart.item_count > 0 %}has-items{% endif %}"
+                data-cart-badge-count=""
+              >
+                {%- if cart.item_count > 0 -%}{{ cart.item_count }}{%- endif -%}
+              </span>
+            </div>
+            {% if settings.cart_type == 'drawer' %}</div>{% else %}</a>{% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup-search">
+    {% render 'header-search', input_id: 'Search-In-Modal' %}
+  </div>
+</header>
+
 {% schema %}
-  {
-    "name": "NEW - Header",
-    "tag": "section",
-    "settings": [],
-    "enabled_on": {
-      "templates": ["*"],
-      "groups": ["header"]
-    }
+{
+  "name": "NEW - Header",
+  "tag": "section",
+  "settings": [],
+  "enabled_on": {
+    "templates": ["*"],
+    "groups": ["header"]
   }
+}
 {% endschema %}
