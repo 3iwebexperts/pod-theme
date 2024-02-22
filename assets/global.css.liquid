@@ -58,6 +58,40 @@
 .rounded {
   border-radius: 12px;
 }
+.v-stack {
+  display: grid;
+}
+.text-subdued {
+  color: #6e6e6ecf;
+}
+.accordion-box {
+  padding: 25px 40px;
+}
+.accordion {
+  background-color: #f5f5f6;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 15px 20px;
+  transition: none;
+}
+.accordion:first-child{
+  margin-top: 10px;
+}
+.accordion__toggle {
+  align-items: flex-start;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.accordion__content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-inline-end: 1.5rem;
+}
 @media (max-width: 991px) {
   .card-slider {
     padding: 60px 30px;
@@ -71,16 +105,13 @@
   .section-stack__main {
     width: 100%;
   }
-  /* BLOCKS : FAQs group start */
   .accordion-box {
     padding: 25px 24px;
   }
-  /* BLOCKS : FAQs group end */
-  /* BLOCKS : FAQs content start */
   .accordion__toggle {
       font-size: 13px;
   }
-  /* BLOCKS : FAQs content end */
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .section-boxed{
