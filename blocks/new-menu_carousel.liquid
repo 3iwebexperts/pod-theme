@@ -3,43 +3,7 @@
 {% endif %}
 <div class="navigation-carousel__slider swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
   <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-    {% for block in section.blocks %}
-      {% if block.type == 'tab_one_slider' %}
-        <a
-          href="{{ block.settings.tab_1_link }}"
-          class="navigation-carousel__card swiper-slide"
-          style="width: 256.111px; margin-right: 15px;"
-        >
-          <div class="navigation-carousel__image-container frame frame--16x9">
-            {% if block.settings.tab_1_image != blank %}
-              <img
-                src="{{ block.settings.tab_1_image | img_url:'master' }}"
-                srcset="{{ block.settings.tab_1_image | img_url:'master' }}"
-                sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
-                loading="lazy"
-                alt="{{ block.settings.tab_1_image.alt }}"
-                class="frame__inner navigation-carousel__image"
-              >
-            {% else %}
-              <img
-                src="{{ 'placeholder.png' | asset_url }}"
-                srcset="{{ 'placeholder.png' | asset_url }}"
-                sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
-                loading="lazy"
-                alt="placeholder"
-                class="frame__inner navigation-carousel__image"
-              >
-            {% endif %}
-          </div>
-
-          {% if block.settings.tab_1_text != blank %}
-            <div class="navigation-carousel__card-title">
-              {{ block.settings.tab_1_text }}
-            </div>
-          {% endif %}
-        </a>
-      {% endif %}
-    {% endfor %}
+    {% content_for "blocks" %}
   </div>
   <div class="navigation-carousel__arrows-container">
     <div data-arrow-prev="true" class="navigation-carousel__arrow--prev swiper-button-disabled"></div>
