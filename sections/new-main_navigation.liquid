@@ -7,7 +7,7 @@
           <div class="swiper-wrapper tabs-list">
             {% for block in section.blocks %}
               <a href="#tab_{{ block.id }}" class="swiper-slide navigation-categories__button {% if forloop.first %}navigation-categories__button--active{% endif %}">
-              {{- block.id -}} {{ block.settings }}
+              {{- block.id -}} {{ block.settings.title }}
               </a>
             {% endfor %}
           </div>
