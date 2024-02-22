@@ -88,6 +88,14 @@
     "new_container_Df6fxV": {
       "type": "NEW-container",
       "blocks": {
+        "new_box_pdLhPG": {
+          "type": "new-box",
+          "settings": {
+            "box-type": "boxed",
+            "box-border": "sharp",
+            "box-color": "dark"
+          }
+        },
         "new_heading_J69cdd": {
           "type": "new-heading",
           "settings": {
@@ -104,11 +112,12 @@
         }
       },
       "block_order": [
+        "new_box_pdLhPG",
         "new_heading_J69cdd",
         "new_content_VgzQei"
       ],
       "settings": {
-        "section-type": "full-width",
+        "section-type": "boxed",
         "box-type": "sharp",
         "section-color": "dark"
       }
