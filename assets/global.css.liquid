@@ -43,7 +43,28 @@ svg.icon:not(.icon--full-color) path {
   fill: inherit;
   stroke: inherit;
 }
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+svg {
+  vertical-align: middle;
+  overflow: hidden;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+[type=search] {
+  -webkit-appearance: none;
+  outline-offset: -2px;
+}
 /* section class */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
 .card-slider {
   position: relative;
 }
