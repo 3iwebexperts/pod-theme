@@ -5,6 +5,8 @@
       <div class="navigation-body__container">
         <div class="navigation-categories swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
           <div class="swiper-wrapper tabs-list">
+            {% content_for "blocks" %}
+            {% comment %}
             {% if section.settings.tab_title_1 != blank %}
               <a href="#tab1" class="swiper-slide navigation-categories__button navigation-categories__button--active">
                 {{- section.settings.tab_title_1 -}}
@@ -30,6 +32,7 @@
                 {{ section.settings.tab_title_5 -}}
               </a>
             {% endif %}
+            {% endcomment %}
           </div>
         </div>
         <div class="navigation-blocks">
