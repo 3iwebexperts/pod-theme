@@ -1,5 +1,5 @@
-{% if section.settings.tab_grid_title_1 != blank %}
-  <div class="card-grid__title">{{ section.settings.tab_grid_title_1 }}</div>
+{% if block.settings.title != blank %}
+  <div class="card-grid__title">{{ block.settings.title }}</div>
 {% endif %}
 <div class="card-grid__grid">
   {%- content_for "blocks"  -%}
