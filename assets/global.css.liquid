@@ -28,7 +28,21 @@
 [role="main"] .shopify-section:empty {
   display: none;
 }
-
+.icon {
+  fill: currentColor;
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+  width: 30px;
+}
+svg.icon:not(.icon--full-color) g {
+  fill: inherit;
+  stroke: inherit;
+}
+svg.icon:not(.icon--full-color) path {
+  fill: inherit;
+  stroke: inherit;
+}
 /* section class */
 .card-slider {
   position: relative;
