@@ -20,11 +20,7 @@
         <div class="header-nav header-nav--center header-nav--logo">
           {% if section.settings.image != blank %}
             <a href="/" itemprop="url" class="header-logo">
-              <img
-                src="{{ section.settings.image | img_url: "master" }}"
-                alt="{{ section.settings.image.alt }}"
-                class="header-logo__image"
-              >
+              <img src="{{ section.settings.image | img_url: "master" }}" alt="{{ section.settings.image.alt }}" class="header-logo__image" />
             </a>
           {% else %}
             <span class="h5 shop_name"><a href="/" style="color:{{ section.settings.text_color }};">{{ shop.name }}</a></span>
