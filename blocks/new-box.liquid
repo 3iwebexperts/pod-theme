@@ -1,5 +1,5 @@
 {%- if block.blocks.size > 0 -%}
-<div class="section section-{{ block.settings.section-type }} section-{{ block.settings.box-type }} bg-{{ block.settings.section-color }}" {{ block.shopify_attributes }}>
+<div class="section section-{{ block.settings.box-type }} section-{{ block.settings.box-border }} bg-{{ block.settings.box-color }}" {{ block.shopify_attributes }}>
   {%- content_for 'blocks' -%}
 </div>
 {%- endif -%}

@@ -92,7 +92,7 @@
           "type": "new-box",
           "settings": {
             "box-type": "boxed",
-            "box-border": "sharp",
+            "box-border": "rounded",
             "box-color": "dark"
           },
           "blocks": {
