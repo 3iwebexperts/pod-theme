@@ -108,8 +108,8 @@
         "new_content_VgzQei"
       ],
       "settings": {
-        "section-type": "boxed",
-        "box-type": "rounded",
+        "section-type": "full-width",
+        "box-type": "sharp",
         "section-color": "dark"
       }
     }
