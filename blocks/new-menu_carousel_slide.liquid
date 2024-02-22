@@ -1,6 +1,35 @@
- {% schema %}
-  {
-    "name": "Block name",
-    "settings": []
-  }
+<a href="{{ block.settings.tab_1_link }}" class="navigation-carousel__card swiper-slide">
+  <div class="navigation-carousel__image-container frame frame--16x9">
+    {% if block.settings.tab_1_image != blank %}
+      <img
+        src="{{ block.settings.tab_1_image | img_url:'master' }}"
+        srcset="{{ block.settings.tab_1_image | img_url:'master' }}"
+        sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+        loading="lazy"
+        alt="{{ block.settings.tab_1_image.alt }}"
+        class="frame__inner navigation-carousel__image"
+      >
+    {% else %}
+      <img
+        src="{{ 'placeholder.png' | asset_url }}"
+        srcset="{{ 'placeholder.png' | asset_url }}"
+        sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+        loading="lazy"
+        alt="placeholder"
+        class="frame__inner navigation-carousel__image"
+      >
+    {% endif %}
+  </div>
+
+  {% if block.settings.tab_1_text != blank %}
+    <div class="navigation-carousel__card-title">
+      {{ block.settings.tab_1_text }}
+    </div>
+  {% endif %}
+</a>
+{% schema %}
+{
+  "name": "Block name",
+  "settings": []
+}
 {% endschema %}
