@@ -3,19 +3,19 @@
     <div class="section-stack__intro">
       <div class="v-stack gap-10">
         <div class="prose ">
-          {% if section.settings.que_heading != blank %}
-            <h2 class="h2">{{ section.settings.que_heading }}</h2>
+          {% if section.settings.heading != blank %}
+            <h2 class="h2">{{ section.settings.heading }}</h2>
           {% endif %}
-          {% if section.settings.subtext != blank %}
-            <p>
-              {{ section.settings.subtext }}
-            </p>
+          {% if section.settings.content != blank %}
+            <div>
+              {{ section.settings.content }}
+            </div>
           {% endif %}
         </div>
+        {% if section.settings.image != blank %}
         <div class="icon_text desk">
           <div class="faq-availability">
             <div class="v-stack gap-4">
-              {% if section.settings.image != blank %}
                 <img
                   src="{{ section.settings.image | img_url: "346x" }}"
                   alt=""
@@ -26,23 +26,14 @@
                   style="max-width: 160px"
                   sizes="160px"
                 >
-              {% endif %}
-              {% if section.settings.bottomtext != blank %}
-                <div class="v-stack">
-                  <p>
-                    {{ section.settings.bottomtext -}}
-                    <br>
-                      {% if section.settings.time != blank %}
-                     <span class="text-subdued">{{ section.settings.time }}</span>
-                        {% endif %}
-                  </p>
-                </div>
-              {% endif %}
+              
             </div>
           </div>
         </div>
+        {% endif %}
       </div>
     </div>
+    {% if section.blocks.size > 0 %}
     <div class="section-stack__main">
       <div class="accordion-box rounded bg-secondary">
         {% for block in section.blocks %}
@@ -69,12 +60,12 @@
         {% endfor %}
       </div>
     </div>
+    {% endif %}
 
-    
+    {% if section.settings.mobileicon != blank %}
     <div class="icon_text mob" style="display:none;">
       <div class="faq-availability">
         <div class="v-stack gap-4">
-        {% if section.settings.mobileicon != blank %}
           <img
             src="{{ section.settings.mobileicon | img_url:"346x" }}"
             alt=""
@@ -85,20 +76,10 @@
             style="max-width: 160px"
             sizes="160px"
           >
-          {% endif %} 
-          {% if section.settings.mobile_text != blank %}
-          <div class="v-stack">
-            <p>
-              {{ section.settings.mobile_text }}<br>
-              {% if section.settings.mobile_time != blank %}
-              <span class="text-subdued">{{ section.settings.mobile_time }}</span>
-                {% endif %}
-            </p>
-          </div>
-            {% endif %}
         </div>
       </div>
     </div>
+    {% endif %} 
   </div>
 </div>
 
@@ -109,13 +90,15 @@
   "settings": [
     {
       "type": "text",
-      "id": "que_heading",
-      "label": "Heading"
+      "id": "heading",
+      "label": "Heading",
+      "default": "Lorem ipsum dolor sit amet"
     },
     {
-      "type": "text",
-      "id": "subtext",
-      "label": "Subtext"
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac</p>"
     },
     {
        "type": "image_picker",
@@ -123,18 +106,7 @@
       "label": "Icon"
     },
     {
-       "type": "textarea",
-      "id": "bottomtext",
-      "label": "Bottom Text"
-    },
-    {
-      "type": "text",
-      "id": "time",
-      "label": "Time"
-    },
-    {
-
-       "type": "image_picker",
+      "type": "image_picker",
       "id": "mobileicon",
       "label": "Mobile Icon"
     },
