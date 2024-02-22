@@ -68,7 +68,29 @@
 {
   "name": "NEW - Header",
   "tag": "section",
-  "settings": [],
+  "settings": [
+    {
+     "type": "image_picker",
+      "id": "image",
+      "label": "Logo"
+    },
+    {
+      "type": "select",
+      "id": "logo_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center",
+      "label": "Desktop logo position"
+    }
+  ],
   "enabled_on": {
     "templates": ["*"],
     "groups": ["header"]
