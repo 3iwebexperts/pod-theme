@@ -93,7 +93,7 @@
           "settings": {
             "box-type": "boxed",
             "box-border": "rounded",
-            "box-color": "dark"
+            "box-color": "light"
           },
           "blocks": {
             "new_heading_kgNTjL": {
@@ -131,7 +131,7 @@
       "settings": {
         "section-type": "boxed",
         "box-type": "sharp",
-        "section-color": "light"
+        "section-color": "dark"
       }
     }
   },
