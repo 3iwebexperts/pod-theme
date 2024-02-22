@@ -94,7 +94,19 @@
             "box-type": "boxed",
             "box-border": "sharp",
             "box-color": "dark"
-          }
+          },
+          "blocks": {
+            "new_heading_kgNTjL": {
+              "type": "new-heading",
+              "settings": {
+                "heading": "NEW DROPS",
+                "tag": "h1"
+              }
+            }
+          },
+          "block_order": [
+            "new_heading_kgNTjL"
+          ]
         },
         "new_heading_J69cdd": {
           "type": "new-heading",
@@ -119,7 +131,7 @@
       "settings": {
         "section-type": "boxed",
         "box-type": "sharp",
-        "section-color": "dark"
+        "section-color": "light"
       }
     }
   },
