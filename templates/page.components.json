@@ -1,10 +1,5 @@
 {
   "sections": {
-    "cart": {
-      "type": "main-cart",
-      "settings": {
-      }
-    },
     "new_top_links_TagTyq": {
       "type": "new-top_links",
       "blocks": {
@@ -86,7 +81,6 @@
     }
   },
   "order": [
-    "cart",
     "new_top_links_TagTyq",
     "new_faq_box_WpWqmT"
   ]
