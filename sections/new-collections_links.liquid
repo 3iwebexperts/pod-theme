@@ -15,20 +15,12 @@
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         {% if block.settings.menu_text != blank and block.settings.link != blank %}
-          <a
-          
-            href="{{block.settings.link}}"
-            class="swiper-slide category-capsule  {% if block.settings.checkbox != blank %}  category-capsule--highlighted {% endif %} "
-            data-slide
-          >
-            
+          <a href="{{block.settings.link}}" class="swiper-slide category-capsule  {% if block.settings.checkbox != blank %}  category-capsule--highlighted {% endif %} " data-slide>
             {{- block.settings.menu_text -}}
           </a>
         {% endif %}
       {% endfor %}
-
     </div>
-
     <div class="featured-categories__navigation">
       <span
         class="featured-categories__navigation-area featured-categories__navigation-area--prev"
@@ -46,17 +38,17 @@
 {% endif %}
 {% schema %}
 {
-  "name": "NEW - Collection links",
+  "name": "NEW - Top links",
   "tag": "section",
   "settings": [],
   "presets": [
     {
-      "name": "NEW - Collection links"
+      "name": "NEW - Top links"
     }
   ],
   "blocks": [
      {
-       "name": "Collection",
+       "name": "Link",
        "type": "text",
        "settings": [
          {
