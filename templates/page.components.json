@@ -5,6 +5,42 @@
       "settings": {
       }
     },
+    "new_top_links_TagTyq": {
+      "type": "new-top_links",
+      "blocks": {
+        "text_q7iJHE": {
+          "type": "text",
+          "settings": {
+            "menu_text": "Button",
+            "link": "#",
+            "checkbox": false
+          }
+        },
+        "text_i46NP6": {
+          "type": "text",
+          "settings": {
+            "menu_text": "Button",
+            "link": "#",
+            "checkbox": true
+          }
+        },
+        "text_faC4pB": {
+          "type": "text",
+          "settings": {
+            "menu_text": "Button",
+            "link": "",
+            "checkbox": false
+          }
+        }
+      },
+      "block_order": [
+        "text_q7iJHE",
+        "text_i46NP6",
+        "text_faC4pB"
+      ],
+      "settings": {
+      }
+    },
     "new_faq_box_WpWqmT": {
       "type": "new-faq_box",
       "blocks": {
@@ -51,6 +87,7 @@
   },
   "order": [
     "cart",
+    "new_top_links_TagTyq",
     "new_faq_box_WpWqmT"
   ]
 }
