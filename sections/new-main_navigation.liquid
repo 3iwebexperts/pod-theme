@@ -5,7 +5,13 @@
       <div class="navigation-body__container">
         <div class="navigation-categories swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
           <div class="swiper-wrapper tabs-list">
-            {% content_for "blocks" %}
+            {% for block in section.blocks %}
+              {% if block.settings.title != blank %}
+              <a href="#tab_{{ block.id }}" class="swiper-slide navigation-categories__button {% if forloop.first %}navigation-categories__button--active{% endif %}">
+              {{- block.settings.title -}}
+              </a>
+              {% endif %}
+            {% endfor %}
             {% comment %}
             {% if section.settings.tab_title_1 != blank %}
               <a href="#tab1" class="swiper-slide navigation-categories__button navigation-categories__button--active">
