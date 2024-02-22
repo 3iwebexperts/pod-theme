@@ -1,23 +1,134 @@
 <div id="tab_{{ block.id }}" class="tab_inner" {{ block.shopify_attributes }}>
   {% content_for 'blocks' %}
 </div>
+
+{% comment %}
+<div id="tab1" class="tab_inner active" style="display:block;">
+  <div data-shopify-editor-block="" class="card-grid">
+    {% if section.settings.tab_grid_title_1 != blank %}
+      <div class="card-grid__title">{{ section.settings.tab_grid_title_1 }}</div>
+    {% endif %}
+    <div class="card-grid__grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'tab_one_grid' %}
+          {% assign collection = block.settings.tab_1_collection %}
+          {% if collection != blank %}
+            <a
+              href="{{ collection.url }}"
+              class="image_card {% if block.settings.enable_highlight_tab1 != blank %}image_card--highlighted{% endif %}"
+            >
+              <div class="image-card__image-container frame frame--1x1">
+                {% if collection.image != blank %}
+                  <img
+                    src="{{ collection.image | img_url: 'master' }}"
+                    srcset="{{ collection.image | img_url: 'master' }}"
+                    sizes="(max-width: 450px) 50w, (max-width: 992px) 176px, 148px"
+                    loading="lazy"
+                    alt="{{ collection.title }}"
+                    class="frame__inner"
+                  >
+                {% else %}
+                  <img
+                    src="{{ 'placeholder.png' | asset_url }}"
+                    srcset="{{ 'placeholder.png' | asset_url }}"
+                    sizes="(max-width: 450px) 50w, (max-width: 992px) 176px, 148px"
+                    loading="lazy"
+                    alt="{{ collection.title }}"
+                    class="frame__inner"
+                  >
+                {% endif %}
+              </div>
+              <div class="image-card__title">
+                {% if block.settings.highlight_text_tab1 != blank -%}
+                  <b class="image-card__highlight-text">{{ block.settings.highlight_text_tab1 }}</b>
+                {%- endif %}
+                {{ collection.title }}
+              </div>
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% if section.settings.tab_button_caption_1 != blank and section.settings.tab_button_link_1 != blank %}
+    <a
+      href="{{ section.settings.tab_button_link_1 }}"
+      target=""
+      data-shopify-editor-block=""
+      class="cta  cta--bottom-space"
+      ><span class="cta__label"> {{ section.settings.tab_button_caption_1 }} </span>
+      <div class="cta__icon"><span class="cta__arrow-icon"></span></div>
+    </a>
+  {% endif %}
+  <div class="navigation-carousel">
+    {% if section.settings.tab_slider_title_1 != blank %}
+      <div class="navigation-carousel__title">{{ section.settings.tab_slider_title_1 }}</div>
+    {% endif %}
+    <div class="navigation-carousel__slider swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+      <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+        {% for block in section.blocks %}
+          {% if block.type == 'tab_one_slider' %}
+            <a
+              href="{{ block.settings.tab_1_link }}"
+              class="navigation-carousel__card swiper-slide"
+              style="width: 256.111px; margin-right: 15px;"
+            >
+              <div class="navigation-carousel__image-container frame frame--16x9">
+                {% if block.settings.tab_1_image != blank %}
+                  <img
+                    src="{{ block.settings.tab_1_image | img_url:'master' }}"
+                    srcset="{{ block.settings.tab_1_image | img_url:'master' }}"
+                    sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                    loading="lazy"
+                    alt="{{ block.settings.tab_1_image.alt }}"
+                    class="frame__inner navigation-carousel__image"
+                  >
+                {% else %}
+                  <img
+                    src="{{ 'placeholder.png' | asset_url }}"
+                    srcset="{{ 'placeholder.png' | asset_url }}"
+                    sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
+                    loading="lazy"
+                    alt="placeholder"
+                    class="frame__inner navigation-carousel__image"
+                  >
+                {% endif %}
+              </div>
+
+              {% if block.settings.tab_1_text != blank %}
+                <div class="navigation-carousel__card-title">
+                  {{ block.settings.tab_1_text }}
+                </div>
+              {% endif %}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="navigation-carousel__arrows-container">
+        <div data-arrow-prev="true" class="navigation-carousel__arrow--prev swiper-button-disabled"></div>
+        <div data-arrow-next="true" class="navigation-carousel__arrow--next"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcomment %}
 {% schema %}
-  {
-    "name": "NEW - Menu tab",
-    "tag" : null,
-    "blocks": [{"type":"@theme"}],
-    "settings": [
-       {
-         "type": "text",
-         "id":"title",
-         "label": "Tab title",
-         "default": "Men"
-       }
-    ],
-    "presets":[
-      {
-        "name": "NEW - Menu tab"
-      }
-    ]
-  }
+{
+  "name": "NEW - Menu tab",
+  "tag" : null,
+  "blocks": [{"type":"@theme"}],
+  "settings": [
+     {
+       "type": "text",
+       "id":"title",
+       "label": "Tab title",
+       "default": "Men"
+     }
+  ],
+  "presets":[
+    {
+      "name": "NEW - Menu tab"
+    }
+  ]
+}
 {% endschema %}
