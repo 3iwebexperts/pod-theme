@@ -2,7 +2,57 @@
   {
     "name": "NEW - Box",
     "tag": null,
-    "settings": [],
+    "blocks": [{"type": "@theme"},{"type": "@app"}],
+    "settings": [
+      {
+        "type": "select",
+        "id": "box-type",
+        "label": "Box type",
+        "options": [
+          {
+            "value": "boxed",
+            "label": "Boxed"
+          },
+          {
+            "value": "full-width",
+            "label": "Full width"
+          }
+        ],
+        "default": "boxed"
+      },
+      {
+        "type": "select",
+        "id": "box-border",
+        "label": "Box border",
+        "options": [
+          {
+            "value": "rounded",
+            "label": "Rounded"
+          },
+          {
+            "value": "sharp",
+            "label": "Sharp"
+          }
+        ],
+        "default": "sharp"
+      },
+      {
+        "type": "select",
+        "id": "box-color",
+        "label": "Box background",
+        "options": [
+          {
+            "value": "dark",
+            "label": "Dark"
+          },
+          {
+            "value": "light",
+            "label": "Light"
+          }
+        ],
+        "default": "dark"
+      }
+    ],
     "presets": [
       {
         "name": "NEW - Box"
