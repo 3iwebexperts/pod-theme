@@ -226,26 +226,37 @@
               "title": "Men"
             },
             "blocks": {
-              "new_menu_card_N9pcEF": {
-                "type": "new-menu_card",
+              "new_menu_card_wrapper_hT9hn3": {
+                "type": "new-menu_card_wrapper",
                 "settings": {
-                  "collection": "frontpage",
-                  "enable_highlight": true,
-                  "highlight_text": "HELLO"
-                }
-              },
-              "new_menu_card_QcYfcV": {
-                "type": "new-menu_card",
-                "settings": {
-                  "collection": "automated-collection",
-                  "enable_highlight": false,
-                  "highlight_text": "Automated"
-                }
+                  "title": "Men"
+                },
+                "blocks": {
+                  "new_menu_card_cTktyL": {
+                    "type": "new-menu_card",
+                    "settings": {
+                      "collection": "automated-collection",
+                      "enable_highlight": false,
+                      "highlight_text": ""
+                    }
+                  },
+                  "new_menu_card_48Q9gR": {
+                    "type": "new-menu_card",
+                    "settings": {
+                      "collection": "frontpage",
+                      "enable_highlight": false,
+                      "highlight_text": ""
+                    }
+                  }
+                },
+                "block_order": [
+                  "new_menu_card_cTktyL",
+                  "new_menu_card_48Q9gR"
+                ]
               }
             },
             "block_order": [
-              "new_menu_card_N9pcEF",
-              "new_menu_card_QcYfcV"
+              "new_menu_card_wrapper_hT9hn3"
             ]
           },
           "new_menu_tab_wCNfM7": {
