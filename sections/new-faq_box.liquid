@@ -1,6 +1,74 @@
 {% schema %}
+{
+  "name": "FAQs Box",
+  "class":"faq_box card-slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "que_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Subtext"
+    },
+
+    {
+       "type": "image_picker",
+      "id": "image",
+      "label": "Icon"
+    },
+    {
+       "type": "textarea",
+      "id": "bottomtext",
+      "label": "Bottom Text"
+    },
+    {
+      "type": "text",
+      "id": "time",
+      "label": "Time"
+    },
+    {
+
+       "type": "image_picker",
+      "id": "mobileicon",
+      "label": "Mobile Icon"
+    },
+    {
+
+       "type": "textarea",
+      "id": "mobile_text",
+      "label": "Mobile Bottom Text"
+    },
+     {
+      "type": "text",
+      "id": "mobile_time",
+      "label": "Mobile Time Text"
+    }
+  ],
+  "presets": [
   {
-    "name": "Section name",
-    "settings": []
+    "name": "NEW - FAQs Box"
   }
+],
+  "blocks": [
+     {
+       "name": "Question and Answer",
+       "type": "text",
+       "settings": [
+         {
+           "type": "text",
+           "id": "que",
+           "label": "Question"
+         },
+         {
+           "type": "text",
+           "id": "ans",
+           "label": "Answer"
+         }
+       ]
+     }
+  ]
+}
 {% endschema %}
