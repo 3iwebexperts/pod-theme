@@ -1,14 +1,23 @@
-<div data-shopify-editor-block="" class="card-grid">
-  {% if section.settings.tab_grid_title_1 != blank %}
-    <div class="card-grid__title">{{ section.settings.tab_grid_title_1 }}</div>
-  {% endif %}
-  <div class="card-grid__grid">
-  </div>
+{% if section.settings.tab_grid_title_1 != blank %}
+  <div class="card-grid__title">{{ section.settings.tab_grid_title_1 }}</div>
+{% endif %}
+<div class="card-grid__grid">
+  {%- content_for "blocks"  -%}
 </div>
 {% schema %}
   {
     "name": "NEW - Menu card wrapper",
-    "settings": [],
+    "tag": "div",
+    "class": "card-grid",
+    "blocks": [{"type":"@theme"}],
+    "settings": [
+      {
+       "type": "text",
+       "id":"title",
+       "label": "Tab title",
+       "default": "Men"
+     }
+    ],
     "presets":[
       {
       "name": "NEW - Menu card wrapper"
