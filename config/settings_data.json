@@ -233,10 +233,19 @@
                   "enable_highlight": true,
                   "highlight_text": "HELLO"
                 }
+              },
+              "new_menu_card_QcYfcV": {
+                "type": "new-menu_card",
+                "settings": {
+                  "collection": "automated-collection",
+                  "enable_highlight": false,
+                  "highlight_text": "Automated"
+                }
               }
             },
             "block_order": [
-              "new_menu_card_N9pcEF"
+              "new_menu_card_N9pcEF",
+              "new_menu_card_QcYfcV"
             ]
           },
           "new_menu_tab_wCNfM7": {
