@@ -253,10 +253,18 @@
                   "new_menu_card_cTktyL",
                   "new_menu_card_48Q9gR"
                 ]
+              },
+              "new_menu_card_cta_EpCKNa": {
+                "type": "new-menu_card_cta",
+                "settings": {
+                  "caption": "Shop All Men's Gear",
+                  "link": ""
+                }
               }
             },
             "block_order": [
-              "new_menu_card_wrapper_hT9hn3"
+              "new_menu_card_wrapper_hT9hn3",
+              "new_menu_card_cta_EpCKNa"
             ]
           },
           "new_menu_tab_wCNfM7": {
