@@ -3,21 +3,15 @@
     {% if block.settings.image != blank %}
       <img
         src="{{ block.settings.image | img_url:'master' }}"
-        srcset="{{ block.settings.image | img_url:'master' }}"
-        sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
-        loading="lazy"
         alt="{{ block.settings.image.alt }}"
         class="frame__inner navigation-carousel__image"
-      >
+      />
     {% else %}
       <img
         src="{{ 'placeholder.png' | asset_url }}"
-        srcset="{{ 'placeholder.png' | asset_url }}"
-        sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
-        loading="lazy"
         alt="placeholder"
         class="frame__inner navigation-carousel__image"
-      >
+      />
     {% endif %}
   </div>
 
