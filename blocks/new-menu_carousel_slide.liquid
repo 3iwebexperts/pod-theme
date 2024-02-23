@@ -1,12 +1,12 @@
-<a href="{{ block.settings.tab_1_link }}" class="navigation-carousel__card swiper-slide">
+<a href="{{ block.settings.link }}" class="navigation-carousel__card swiper-slide">
   <div class="navigation-carousel__image-container frame frame--16x9">
-    {% if block.settings.tab_1_image != blank %}
+    {% if block.settings.image != blank %}
       <img
-        src="{{ block.settings.tab_1_image | img_url:'master' }}"
-        srcset="{{ block.settings.tab_1_image | img_url:'master' }}"
+        src="{{ block.settings.image | img_url:'master' }}"
+        srcset="{{ block.settings.image | img_url:'master' }}"
         sizes="(max-width: 450px) 80w, (max-width: 991px) 310px, 257px"
         loading="lazy"
-        alt="{{ block.settings.tab_1_image.alt }}"
+        alt="{{ block.settings.image.alt }}"
         class="frame__inner navigation-carousel__image"
       >
     {% else %}
@@ -28,8 +28,31 @@
   {% endif %}
 </a>
 {% schema %}
-{
-  "name": "Block name",
-  "settings": []
-}
+  {
+    "name": "NEW - Menu carousel slide",
+    "tag": null,
+    "settings": [
+       {
+         "type": "text",
+         "id":"text",
+         "label": "Text",
+         "default":"Bundle & Save"
+       },
+       {
+         "type": "url",
+         "id":"link",
+         "label": "Link"
+       },
+       {
+         "type": "image_picker",
+         "id":"image",
+         "label": "Image"
+       }
+    ],
+    "presets":[
+      {
+        "name": "NEW - Menu carousel slide"
+      }
+    ]
+  }
 {% endschema %}
