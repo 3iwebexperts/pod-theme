@@ -267,12 +267,32 @@
                   "caption": "Shop All Men's Gear",
                   "link": "#"
                 }
+              },
+              "new_menu_carousel_gRE6Fr": {
+                "type": "new-menu_carousel",
+                "settings": {
+                  "title": "Shop All Men's Gear"
+                },
+                "blocks": {
+                  "new_menu_card_RKj6QL": {
+                    "type": "new-menu_card",
+                    "settings": {
+                      "collection": "frontpage",
+                      "enable_highlight": false,
+                      "highlight_text": ""
+                    }
+                  }
+                },
+                "block_order": [
+                  "new_menu_card_RKj6QL"
+                ]
               }
             },
             "block_order": [
               "new_menu_card_wrapper_hT9hn3",
               "new_menu_card_cta_EpCKNa",
-              "new_menu_card_cta_dfHhtB"
+              "new_menu_card_cta_dfHhtB",
+              "new_menu_carousel_gRE6Fr"
             ]
           },
           "new_menu_tab_wCNfM7": {
