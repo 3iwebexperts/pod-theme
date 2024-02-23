@@ -295,13 +295,23 @@
                   "new_menu_carousel_slide_gXq7wD",
                   "new_menu_carousel_slide_QprFLM"
                 ]
+              },
+              "new_menu_card_block_mMdykY": {
+                "type": "new-menu_card_block",
+                "settings": {
+                  "text": "Bundle & Save",
+                  "content": "Bundle & Save",
+                  "link": "#",
+                  "image": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg"
+                }
               }
             },
             "block_order": [
               "new_menu_card_wrapper_hT9hn3",
               "new_menu_card_cta_EpCKNa",
               "new_menu_card_cta_dfHhtB",
-              "new_menu_carousel_gRE6Fr"
+              "new_menu_carousel_gRE6Fr",
+              "new_menu_card_block_mMdykY"
             ]
           },
           "new_menu_tab_wCNfM7": {
