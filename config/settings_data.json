@@ -318,7 +318,24 @@
             "type": "new-menu_tab",
             "settings": {
               "title": "Men"
-            }
+            },
+            "blocks": {
+              "new_menu_promotion_fz8keF": {
+                "type": "new-menu_promotion",
+                "settings": {
+                  "title": "CUSTOMER SERVICE",
+                  "title_2": "Got Questions?",
+                  "content": "<p>Hit up our Customer Experience team! They are <strong>real people<\/strong> ready to help out.<\/p>",
+                  "caption": "Email Us",
+                  "link": "#",
+                  "caption_2": "Read FAQ",
+                  "link_2": "#"
+                }
+              }
+            },
+            "block_order": [
+              "new_menu_promotion_fz8keF"
+            ]
           },
           "new_menu_tab_MPw7Ct": {
             "type": "new-menu_tab",
