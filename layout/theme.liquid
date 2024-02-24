@@ -101,10 +101,8 @@
   <body class="template-{{ request.page_type | handle }} {{ template.name }} {{ settings.theme_type }}-theme" >
     <div class="layout-wrapper">
       {% if template contains 'component' %}
-        <section class="header">
           {% section 'new-header' %}
           {% section 'new-main_navigation' %}
-        </section>
       {% else %}
       {% section 'header' %}
       {% endif %}
