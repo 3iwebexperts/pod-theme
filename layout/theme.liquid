@@ -101,10 +101,10 @@
   <body class="template-{{ request.page_type | handle }} {{ template.name }} {{ settings.theme_type }}-theme" >
     <div class="layout-wrapper">
       {% if template contains 'component' %}
-          {% section 'new-header' %}
-          {% section 'new-main_navigation' %}
+        {% section 'new-header' %}
+        {% section 'new-main_navigation' %}
       {% else %}
-      {% section 'header' %}
+        {% section 'header' %}
       {% endif %}
 
       <main class="wrapper main-content" role="main" id="MainContent" tabindex="-1">
@@ -114,7 +114,6 @@
       </main>
 
       {% section 'footer' %}
-      {% section 'test' %}
     </div>
     <script src="{{ 'vendor.js' | asset_url }}" type="text/javascript" defer></script>
     <script src="{{ 'custom.js' | asset_url }}" type="text/javascript" defer></script>
