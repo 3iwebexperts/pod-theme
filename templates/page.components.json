@@ -1,5 +1,20 @@
 {
   "sections": {
+    "new_hero_banner_kPbxMh": {
+      "type": "new-hero_banner",
+      "settings": {
+        "heading": "Lorem ipsum dolor sit amet",
+        "text_color": "",
+        "highlight_color": "",
+        "subtext": "Morbi dapibus mattis accumsan. Donec a rutrum sapien.",
+        "button": "button",
+        "button_link": "",
+        "vertical_aligment": "center",
+        "horizontal_aligment": "right",
+        "vertical_aligment_m": "bottom",
+        "horizontal_aligment_m": "left"
+      }
+    },
     "new_top_links_TagTyq": {
       "type": "new-top_links",
       "blocks": {
@@ -78,26 +93,11 @@
         "heading": "Lorem ipsum",
         "content": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p><p>Proin vel semper lorem. In facilisis ac mi id laoreet. Etiam dignissim, tellus eget aliquam pretium, enim eros aliquam felis, eu consectetur magna quam vel nunc. Nam ut risus consequat, sodales neque ac, euismod elit. Fusce ut semper dolor, nec consequat turpis.<\/p>"
       }
-    },
-    "new_hero_banner_kPbxMh": {
-      "type": "new-hero_banner",
-      "settings": {
-        "heading": "Lorem ipsum dolor sit amet",
-        "text_color": "",
-        "highlight_color": "",
-        "subtext": "Morbi dapibus mattis accumsan. Donec a rutrum sapien.",
-        "button": "button",
-        "button_link": "",
-        "vertical_aligment": "center",
-        "horizontal_aligment": "left",
-        "vertical_aligment_m": "bottom",
-        "horizontal_aligment_m": "left"
-      }
     }
   },
   "order": [
+    "new_hero_banner_kPbxMh",
     "new_top_links_TagTyq",
-    "new_faq_box_WpWqmT",
-    "new_hero_banner_kPbxMh"
+    "new_faq_box_WpWqmT"
   ]
 }
