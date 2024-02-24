@@ -341,7 +341,22 @@
             "type": "new-menu_tab",
             "settings": {
               "title": "Men"
-            }
+            },
+            "blocks": {
+              "new_menu_login_form_wWGXrr": {
+                "type": "new-menu_login_form",
+                "settings": {
+                  "heading": "Sign in",
+                  "subheading": "Quick checkout, order history and more.",
+                  "button": "Sign in",
+                  "forget_button": "Forgot Your Password?",
+                  "register_button": "Create Account"
+                }
+              }
+            },
+            "block_order": [
+              "new_menu_login_form_wWGXrr"
+            ]
           }
         },
         "block_order": [
