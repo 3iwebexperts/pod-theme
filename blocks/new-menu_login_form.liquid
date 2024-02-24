@@ -1,6 +1,82 @@
- {% schema %}
-  {
-    "name": "Block name",
-    "settings": []
-  }
+<div class="navigation-form">
+  <div class="navigation-form__log-in">
+    {% if block.settings.heading != blank or block.settings.subheading != blank %}
+    <div class="navigation-form__header">
+      {% if block.settings.heading != blank %}<h6 class="navigation-form__title">{{ block.settings.heading }}</h6>{% endif %}
+      {% if block.settings.heading != blank %}<p class="navigation-form__subtitle">{{ block.settings.subheading }}</p>{% endif %}
+    </div>
+    {% endif %}
+    {% form 'customer_login' %}
+      {{ form.errors | default_errors }}
+      <div class="navigation-form__fields">
+        <div class="form-group">
+          <input
+            type="email"
+            name="customer[email]"
+            placeholder="Email"
+            class="form-control navigation-form__field"
+            required
+          >
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            name="customer[password]"
+            placeholder="Password"
+            class="form-control navigation-form__field"
+            required
+          >
+        </div>
+      </div>
+      <div class="navigation-form__footer text-center">
+        <button type="submit" class="btn btn-white navigation-form__button">{% if block.settings.button != blank %}{{ block.settings.button }}{% endif %}</button>
+        <a href="/account/login#recover" class="btn-link btn--small">{% if block.settings.forget_button != blank %}{{ block.settings.forget_button }}{% endif %}</a>
+        <a href="/account/register" class="btn-link navigation-form__link-button">{% if block.settings.register_button != blank %}{{ block.settings.register_button }}{% endif %}</a>
+      </div>
+    {% endform %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "NEW - Menu login form",
+  "tag": "div",
+  "class": "navigation-form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Sign in"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Quick checkout, order history and more."
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Submit button caption",
+      "default":"Sign in"
+    },
+    {
+      "type": "text",
+      "id": "forget_button",
+      "label": "Forget button caption",
+      "default": "Forgot Your Password?"
+    },
+    {
+      "type": "text",
+      "id": "register_button",
+      "label": "Register button caption",
+      "default": "Create Account"
+    }
+  ],
+  "presets": [
+    {
+      "name": "NEW - Menu login form"
+    }
+  ]
+}
 {% endschema %}
