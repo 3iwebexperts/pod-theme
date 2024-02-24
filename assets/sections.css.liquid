@@ -631,8 +631,18 @@ header .inner_search {
   justify-content: center;
   text-align: center;
 }
-@media (max-width: 991.98px) {
-
+.hero__video-container {
+  overflow:hidden;
+}
+.hero__video-container,
+.hero__video-container video{
+  height:100%;
+  left:0;
+  position:absolute;
+  top:0;
+  width:100%;
+  -o-object-fit:cover;
+  object-fit:cover;
 }
 
 /* SECTIONS : Hero banner end */
