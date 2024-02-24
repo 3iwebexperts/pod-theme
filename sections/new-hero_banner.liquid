@@ -4,30 +4,11 @@
   data-section-id="{{ section.id }}"
   data-section-type="hero"
 >
-  <style>
-    #hero-{{ section.id }} .hero__title {
-      color: {{section.settings.text_color}};
-    }
-    #hero-{{ section.id }}.hero .hero__inner span  {
-      color: {{section.settings.highlight_color}};
-    }
-    
-    @media (max-width: 992px) {
-      #hero-{{ section.id }} .hero__title {
-        color: {{section.settings.text_color}};
-      }
-      #hero-{{ section.id }} .hero__highlight-text {
-        color: {{section.settings.highlight_color}};
-      }
-    }
-  </style>
   {% if section.settings.image != blank %}
     <img
       src="{{ section.settings.image | img_url:"1920x" }}"
       srcset="{{ section.settings.image | img_url:"1920x" }}"
       class="hero__bg hero__bg--desktop"
-      sizes="100vw"
-      loading="lazy"
       alt=""
     >
   {% else %}
@@ -35,8 +16,6 @@
       src="{{ 'banner_placeholder.png' | asset_url }}"
       srcset="{{ 'banner_placeholder.png' | asset_url }}"
       class="hero__bg hero__bg--desktop"
-      sizes="100vw"
-      loading="lazy"
       alt=""
     >
     {% comment %} {{ 'image' | placeholder_svg_tag }}{% endcomment %}
@@ -46,8 +25,6 @@
       src="{{ section.settings.image2 | img_url:"856x" }}"
       srcset="{{ section.settings.image2 | img_url:"856x" }}"
       class="hero__bg hero__bg--mobile"
-      sizes="100vw"
-      loading="lazy"
       alt=""
     >
   {% else %}
@@ -55,8 +32,6 @@
       src="{{ 'dummy_856x1200_ffffff_cccccc.png' | asset_url }}"
       srcset="{{ 'dummy_856x1200_ffffff_cccccc.png' |  asset_url }}"
       class="hero__bg hero__bg--mobile"
-      sizes="100vw"
-      loading="lazy"
       alt=""
     >
   {% endif %}
@@ -224,6 +199,21 @@
 {% endschema %}
 
 {% stylesheet %}
+    #hero-{{ section.id }} .hero__title {
+      color: {{section.settings.text_color}};
+    }
+    #hero-{{ section.id }}.hero .hero__inner span  {
+      color: {{section.settings.highlight_color}};
+    }
+    
+    @media (max-width: 992px) {
+      #hero-{{ section.id }} .hero__title {
+        color: {{section.settings.text_color}};
+      }
+      #hero-{{ section.id }} .hero__highlight-text {
+        color: {{section.settings.highlight_color}};
+      }
+    }
 {% endstylesheet %}
 
 {% javascript %}
