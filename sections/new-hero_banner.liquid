@@ -1,28 +1,25 @@
 <div
   id="hero-{{ section.id }}"
-  class="hero container-fluid hero--vertical-center hero--horizontal-left hero--horizontal-left-m hero--vertical-bottom-m"
+  class="hero container-fluid hero--vertical-center hero--vertical-top hero--vertical-bottom hero--horizontal-left hero--horizontal-center hero--horizontal-right hero--horizontal-left-m hero--horizontal-center-m hero--horizontal-right-m hero--vertical-bottom-m hero--vertical-top-m hero--vertical-center-m"
   data-section-id="{{ section.id }}"
   data-section-type="hero"
 >
   <style>
-      #hero-{{ section.id }} .hero__title {
+    #hero-{{ section.id }} .hero__title {
       color: {{section.settings.text_color}};
     }
-      #hero-{{ section.id }}.hero .hero__inner span  {
+    #hero-{{ section.id }}.hero .hero__inner span  {
+      color: {{section.settings.highlight_color}};
+    }
+    
+    @media (max-width: 992px) {
+      #hero-{{ section.id }} .hero__title {
+        color: {{section.settings.text_color}};
+      }
+      #hero-{{ section.id }} .hero__highlight-text {
         color: {{section.settings.highlight_color}};
       }
-
-      @media (max-width: 992px) {
-
-
-        #hero-{{ section.id }} .hero__title {
-          color:{{section.settings.text_color}} ;
-        }
-
-        #hero-{{ section.id }} .hero__highlight-text {
-          color:{{section.settings.highlight_color}} ;
-        }
-      }
+    }
   </style>
   {% if section.settings.image != blank %}
     <img
@@ -85,7 +82,6 @@
 {% schema %}
 {
   "name": "NEW - Hero banner",
-  "class": "hero container-fluid hero--vertical-center hero--horizontal-left hero--horizontal-left-m",
   "settings": [
     {
       "type": "image_picker",
