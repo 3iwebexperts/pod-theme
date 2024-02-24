@@ -246,21 +246,12 @@
 {% endschema %}
 
 {% stylesheet %}
-    #hero-{{ section.id }} .hero__title {
-      color: {{section.settings.text_color}};
-    }
-    #hero-{{ section.id }} .hero__title span  {
-      color: {{section.settings.highlight_color}};
-    }
-    
-    @media (max-width: 992px) {
-      #hero-{{ section.id }} .hero__title {
-        color: {{section.settings.text_color}};
-      }
-      #hero-{{ section.id }} .hero__title span {
-        color: {{section.settings.highlight_color}};
-      }
-    }
+  #hero-{{ section.id }} .hero__title {
+    color: {{section.settings.text_color}} !important;
+  }
+  #hero-{{ section.id }} .hero__title span  {
+    color: {{section.settings.highlight_color}} !important;
+  }
 {% endstylesheet %}
 
 {% javascript %}
