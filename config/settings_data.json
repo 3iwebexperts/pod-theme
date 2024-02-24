@@ -341,19 +341,11 @@
                   "forget_button": "Forgot Your Password?",
                   "register_button": "Create Account"
                 }
-              },
-              "new_menu_link_wtEYyf": {
-                "type": "new-menu_link",
-                "settings": {
-                  "caption": "Button",
-                  "link": "#"
-                }
               }
             },
             "block_order": [
               "new_menu_promotion_fz8keF",
-              "new_menu_login_form_8qRK44",
-              "new_menu_link_wtEYyf"
+              "new_menu_login_form_8qRK44"
             ]
           },
           "new_menu_tab_MPw7Ct": {
