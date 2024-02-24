@@ -574,7 +574,64 @@ header .inner_search {
   display: none;
 }
 
-  /* SECTIONS : Main navigation end */
+/* SECTIONS : Main navigation end */
+/* SECTIONS : Hero banner start */
+.hero {
+  aspect-ratio: 2.1818181818;
+  display: flex;
+  padding: 60px;
+  position: relative;
+  width: 100%;
+}
+.hero__bg {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero__bg--mobile {
+  display: none;
+}
+.hero__inner {
+  z-index: 1;
+}
+.hero__title {
+  margin-bottom: 21px;
+  margin-top: 0;
+}
+.hero__text {
+  color: #fff;
+}
+.hero__btn {
+  font-size: 17px;
+  padding: 15px 58px;
+}
+.hero--vertical-top {
+  align-items: flex-start;
+}
+.hero--vertical-center {
+  align-items: center;
+}
+.hero--vertical-bottom {
+  align-items: flex-end;
+}
+.hero--horizontal-left {
+  justify-content: flex-start;
+}
+.hero--horizontal-center {
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+
+}
+
+/* SECTIONS : Hero banner end */
 
 
 @media (max-width: 991px) {
@@ -653,6 +710,43 @@ header .inner_search {
     height: calc(100% - 50px) !important;
   }
 
+  /* SECTIONS : Hero banner start */
+  .hero {
+    aspect-ratio: unset;
+    min-height: 600px;
+    padding: 30px;
+  }
+  .hero__bg--desktop {
+    display: none;
+  }
+  .hero__bg--mobile {
+    display: block;
+  }
+  .hero__title {
+    margin-bottom: 15px;
+  }
+  .hero__btn {
+    font-size: 14px;
+    padding: 8px 48px;
+  }
+  .hero--vertical-top-m {
+    align-items: flex-start;
+  }
+  .hero--vertical-center-m {
+    align-items: center;
+  }
+  .hero--vertical-bottom-m {
+    align-items: flex-end;
+  }
+  .hero--horizontal-left-m {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .hero--horizontal-center-m {
+    justify-content: center;
+    text-align: center;
+  }
+  /* SECTIONS : Hero banner end */
 }
 @media (max-width: 1199px) {
   .faq_box .icon_text.desk {
@@ -680,6 +774,10 @@ header .inner_search {
   .header-nav.header-nav--center {
     justify-content: center;
   }
+  .hero__text {
+    font-size: 25px;
+    line-height: 1.44;
+  }
 }
 @media (min-width: 1200px) {
   .header {
@@ -691,5 +789,9 @@ header .inner_search {
   }
   .header-nav.header-nav--center {
     justify-content: center;
+  }
+  .hero__text {
+    font-size: 25px;
+    line-height: 1.44;
   }
 }
