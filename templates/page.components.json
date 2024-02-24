@@ -9,7 +9,7 @@
         "subtext": "Morbi dapibus mattis accumsan. Donec a rutrum sapien.",
         "button": "button",
         "button_link": "",
-        "vertical_aligment": "center",
+        "vertical_aligment": "top",
         "horizontal_aligment": "right",
         "vertical_aligment_m": "bottom",
         "horizontal_aligment_m": "left"
