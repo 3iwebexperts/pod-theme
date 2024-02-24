@@ -1,6 +1,32 @@
- {% schema %}
-  {
-    "name": "Block name",
-    "settings": []
-  }
+{% if block.settings.caption != blank and block.settings.link != blank %}
+  <a href="{{ block.settings.link }}" target="" class="cta">
+    <span class="cta__label"> {{ block.settings.caption }} </span>
+    <div class="cta__icon">
+      <span class="cta__arrow-icon"></span>
+    </div>
+  </a>
+{% endif %}
+
+{% schema %}
+{
+  "name": "NEW - Menu link",
+  "settings": [
+    {
+      "type": "text",
+      "id":"caption",
+      "label": "Button Caption",
+      "default":"Button"
+    },
+    {
+      "type": "url",
+      "id":"link",
+      "label": "Button Link"
+    }
+  ],
+  "presets":[
+    {
+      "name": "NEW - Menu link"
+    }
+  ]
+}
 {% endschema %}
