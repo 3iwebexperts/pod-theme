@@ -91,7 +91,7 @@
         "highlight_color": "",
         "subtext": "Morbi dapibus mattis accumsan. Donec a rutrum sapien.",
         "button": "button",
-        "button_link": "",
+        "button_link": "#",
         "vertical_aligment": "center",
         "horizontal_aligment": "left",
         "vertical_aligment_m": "bottom",
