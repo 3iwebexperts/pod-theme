@@ -23,7 +23,7 @@
         "name": "NEW - Menu card wrapper",
         "blocks": [
           {
-            "type": "text",
+            "type": "color",
             "settings": {
               "text": "This is a slide!"
             }
@@ -33,3 +33,28 @@
     ]
   }
 {% endschema %}
+{% comment %}
+  "blocks":[
+    {
+      "type": "card",
+      "settings":[
+        {
+          "type": "collection",
+          "id":"collection",
+          "label": "Collection"
+        },
+        {
+          "type": "checkbox",
+          "id":"enable_highlight",
+          "label": "Enable Highlight Collection",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id":"highlight_text",
+          "label": "Highlight Text"
+        }
+      ]
+    }
+  ]
+{% endcomment %}
