@@ -6,7 +6,7 @@
         "banner_type": "video",
         "video_sec": "",
         "heading": "Lorem ipsum dolor <span>sit amet<\/span>",
-        "text_color": "#ffffff",
+        "text_color": "#000000",
         "highlight_color": "#dd1d1d",
         "subtext": "Morbi dapibus mattis accumsan. Donec a rutrum sapien.",
         "button": "button",
