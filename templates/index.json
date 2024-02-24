@@ -83,6 +83,21 @@
         "button_link": "shopify:\/\/collections"
       }
     },
+    "new_hero_banner_aQXrq7": {
+      "type": "new-hero_banner",
+      "settings": {
+        "heading": "Lorem ipsum dolor sit amet",
+        "text_color": "",
+        "highlight_color": "",
+        "subtext": "Morbi dapibus mattis accumsan. Donec a rutrum sapien.",
+        "button": "button",
+        "button_link": "",
+        "vertical_aligment": "center",
+        "horizontal_aligment": "left",
+        "vertical_aligment_m": "bottom",
+        "horizontal_aligment_m": "left"
+      }
+    },
     "e3a122ce-a757-4467-943a-830f0eac79ba": {
       "type": "feature_collection",
       "settings": {
@@ -278,83 +293,6 @@
         "mobile_time": "Average answer time: 24h"
       }
     },
-    "new_faq_a4RheU": {
-      "type": "NEW-faq",
-      "blocks": {
-        "new_content_group_3xGqaE": {
-          "type": "new-content-group",
-          "settings": {
-          },
-          "blocks": {
-            "new_heading_Aq4zUc": {
-              "type": "new-heading",
-              "settings": {
-                "heading": "Have a question? We are here to help.",
-                "tag": "h2"
-              }
-            },
-            "new_content_XPfT93": {
-              "type": "new-content",
-              "settings": {
-                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
-                "tag": "p3"
-              }
-            }
-          },
-          "block_order": [
-            "new_heading_Aq4zUc",
-            "new_content_XPfT93"
-          ]
-        },
-        "new_faqs_group_tJkNfD": {
-          "type": "new-faqs-group",
-          "settings": {
-          },
-          "blocks": {
-            "new_faq_content_mUc4zB": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
-              }
-            },
-            "new_faq_content_dwqkCr": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
-              }
-            },
-            "new_faq_content_GkzMnN": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
-              }
-            },
-            "new_faq_content_Ewq6H7": {
-              "type": "new-faq-content",
-              "settings": {
-                "que": "Lorem ipsum dolor sit amet",
-                "ans": "<p>Aenean fringilla massa eu risus sollicitudin vestibulum. Mauris sed bibendum diam, a aliquet tortor.<\/p>"
-              }
-            }
-          },
-          "block_order": [
-            "new_faq_content_mUc4zB",
-            "new_faq_content_dwqkCr",
-            "new_faq_content_GkzMnN",
-            "new_faq_content_Ewq6H7"
-          ]
-        }
-      },
-      "block_order": [
-        "new_content_group_3xGqaE",
-        "new_faqs_group_tJkNfD"
-      ],
-      "settings": {
-      }
-    },
     "d1fa8b77-b021-4105-819b-364db70036ec": {
       "type": "icon_text",
       "blocks": {
@@ -431,161 +369,12 @@
         "button_text": "",
         "link": ""
       }
-    },
-    "new_featured_collection_m4qRzM": {
-      "type": "NEW-featured-collection",
-      "blocks": {
-        "new_content_group_FcJPhJ": {
-          "type": "new-content-group",
-          "settings": {
-          },
-          "blocks": {
-            "new_heading_tjFXNh": {
-              "type": "new-heading",
-              "settings": {
-                "heading": "NEW DROPS",
-                "tag": "h1"
-              }
-            },
-            "new_content_FyVMhG": {
-              "type": "new-content",
-              "settings": {
-                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
-                "tag": "p3"
-              }
-            }
-          },
-          "block_order": [
-            "new_heading_tjFXNh",
-            "new_content_FyVMhG"
-          ]
-        },
-        "new_collection_carousel_D8wmHA": {
-          "type": "new-collection-carousel",
-          "settings": {
-            "feature_collection": "frontpage",
-            "products_limit": 6
-          }
-        }
-      },
-      "block_order": [
-        "new_content_group_FcJPhJ",
-        "new_collection_carousel_D8wmHA"
-      ],
-      "settings": {
-        "backgrond_color": "#ffffff"
-      }
-    },
-    "new_hero_banner_3F7aJ8": {
-      "type": "NEW-hero-banner",
-      "blocks": {
-        "new_banner_image_gk38cM": {
-          "type": "new-banner-image",
-          "settings": {
-          }
-        },
-        "new_content_group_VTCPTg": {
-          "type": "new-content-group",
-          "settings": {
-          }
-        },
-        "new_button_CWnfaJ": {
-          "type": "new-button",
-          "settings": {
-            "button_text": "Button",
-            "button_link": "#",
-            "link_button": false,
-            "button_type": "block-button"
-          }
-        }
-      },
-      "block_order": [
-        "new_banner_image_gk38cM",
-        "new_content_group_VTCPTg",
-        "new_button_CWnfaJ"
-      ],
-      "settings": {
-      }
-    },
-    "new_collage_wLkxtQ": {
-      "type": "New-collage",
-      "blocks": {
-        "new_collage_afpJQG": {
-          "type": "New-collage",
-          "settings": {
-            "video_link": "",
-            "title_1": "Title 1",
-            "link_1": "",
-            "title_2": "Title 2",
-            "link_2": "shopify:\/\/collections",
-            "title_3": "Title 3",
-            "link_3": "",
-            "text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "new_collage_afpJQG"
-      ],
-      "settings": {
-      }
-    },
-    "new_hero_video_qGqfax": {
-      "type": "New-hero-video",
-      "blocks": {
-        "new_hero_video_gKpx8b": {
-          "type": "new-hero-video",
-          "settings": {
-            "video_sec": ""
-          }
-        },
-        "new_content_group_jQgBmL": {
-          "type": "new-content-group",
-          "settings": {
-          },
-          "blocks": {
-            "new_heading_DwHhjT": {
-              "type": "new-heading",
-              "settings": {
-                "heading": "NEW DROPS",
-                "tag": "h1"
-              }
-            },
-            "new_content_cQPDhb": {
-              "type": "new-content",
-              "settings": {
-                "content": "<p>The latest Sport Utility Gear to hit the site.<\/p>",
-                "tag": "p3"
-              }
-            }
-          },
-          "block_order": [
-            "new_heading_DwHhjT",
-            "new_content_cQPDhb"
-          ]
-        },
-        "new_button_chdwnr": {
-          "type": "new-button",
-          "settings": {
-            "button_text": "Button",
-            "button_link": "#",
-            "link_button": false,
-            "button_type": "ovel-button"
-          }
-        }
-      },
-      "block_order": [
-        "new_hero_video_gKpx8b",
-        "new_content_group_jQgBmL",
-        "new_button_chdwnr"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "05e09d4d-92ad-4058-a1d7-2d438520a652",
     "0e5b9ff2-faef-4ccc-a78c-04c8577f97e7",
+    "new_hero_banner_aQXrq7",
     "e3a122ce-a757-4467-943a-830f0eac79ba",
     "e623e5d7-4c52-4909-badc-b8e634abee1e",
     "25c87084-0b28-4d73-a6c6-6bea48b75abb",
@@ -593,13 +382,8 @@
     "7b5fab22-0054-4bd3-bc00-95b7a47aa786",
     "1d15a425-f7c8-4a8b-96a6-933b85893480",
     "06b56767-6a7e-41a1-a44b-eb8f447032fc",
-    "new_faq_a4RheU",
     "d1fa8b77-b021-4105-819b-364db70036ec",
     "f3113dc4-eadf-4fa4-adf7-f288d07c1076",
-    "hero_video_DLX3Wc",
-    "new_featured_collection_m4qRzM",
-    "new_hero_banner_3F7aJ8",
-    "new_collage_wLkxtQ",
-    "new_hero_video_qGqfax"
+    "hero_video_DLX3Wc"
   ]
 }
