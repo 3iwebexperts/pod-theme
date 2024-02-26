@@ -119,8 +119,11 @@
     <script src="{{ 'custom.js' | asset_url }}" type="text/javascript" defer></script>
     <script src="{{ 'jquery.min.js' | asset_url }}" type="text/javascript" defer></script>
 
-    {% section 'ajax-cart' %}
-
+    {% if template contains 'component' %}
+      {% section 'ajax-cart' %}
+    {% else %}
+      {% section 'new-ajax_cart' %}
+    {% endif %}
     <div class="custom-overlay"></div>
     <div class="custom-loader-overlay"><img src="{{ 'loader.gif' | asset_img_url }}" alt="loader" /></div>
     {%- if template contains 'collection' -%}
