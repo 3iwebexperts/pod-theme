@@ -5,26 +5,10 @@
       <input name="section_id" type="hidden" value="ajax-cart">
       <div class="ajax-cart__header">
         <span class="ajax-cart__title">Bag</span>
-        <a href="#" class="ajax-cart__close" data-ajax-cart-close="">
+        <a href="javascript:void(0)" class="ajax-cart__close" data-ajax-cart-close="">
            {%- render 'icon' with 'close-button' -%}
         </a>
       </div>
-      {% comment %}
-      <div
-        class="ajax-cart__shipping-bar-container"
-        data-threshold-container=""
-        data-threshold-value="8000"
-        data-in-progress-message="[value] away from FREE shipping in the U.S."
-        data-complete-message="You have free shipping on your order"
-      >
-        <div class="ajax-cart__shipping-bar-message" data-threshold-message="">
-          <span>$32.00</span> away from FREE shipping in the U.S.
-        </div>
-        <div class="ajax-cart__shipping-bar">
-          <div class="ajax-cart__shipping-bar-inner" data-threshold-bar="" style="width: calc(60%);"></div>
-        </div>
-      </div>
-      {% endcomment %}
       <div class="ajax-cart__body" data-ajax-cart-body="">
         <div class="ajax-cart-inner">
           <h3 class="ajax-cart__list-title">Items:</h3>
