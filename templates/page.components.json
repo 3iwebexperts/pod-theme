@@ -22,7 +22,7 @@
       "settings": {
         "heading": "NEW DROPS",
         "content": "The latest Sport Utility Gear to hit the site.",
-        "feature_collection": "",
+        "feature_collection": "frontpage",
         "products_limit": 6
       }
     },
