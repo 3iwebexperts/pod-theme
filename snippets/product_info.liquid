@@ -245,14 +245,12 @@
       {{ current_variant.inventory_quantity }}
       {{  current_variant.inventory_management }}
       {{ current_variant.available  }}
-      {% if current_variant.inventory_quantity > 0 and current_variant.available and current_variant.inventory_management != "shopify"   %}
+      
         Add to Bag
         <span class="product__atc-price" data-add-to-cart-price="" style="">
         {{- product.price | money | remove: '.00' -}}
         </span>
-      {% else %}
-        Soldout
-      {% endif %}
+     
     </button>
   {% endform %}
   {% render 'pro_size_drawer', product: product %}
