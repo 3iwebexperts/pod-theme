@@ -227,6 +227,8 @@
       </div>
     </div>
 
+    {{ current_variant.inventory_management }} == inventory
+    {{ current_variant.inventory_policy  }} == policy
     <button
       type="button"
       name="add"
@@ -235,6 +237,7 @@
       {% unless product.has_only_default_variant or has_color == true %}
         disabled=""
       {% endunless %}
+      
     >
       <span data-add-to-cart-text="">Add to Bag</span>
       <span class="product__atc-price" data-add-to-cart-price="" style="">
