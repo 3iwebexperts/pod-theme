@@ -17,15 +17,6 @@
         "horizontal_aligment_m": "left"
       }
     },
-    "feature_collection_wk8zTj": {
-      "type": "feature_collection",
-      "settings": {
-        "heading": "NEW DROPS",
-        "content": "The latest Sport Utility Gear to hit the site.",
-        "feature_collection": "frontpage",
-        "products_limit": 6
-      }
-    },
     "new_top_links_TagTyq": {
       "type": "new-top_links",
       "blocks": {
@@ -104,12 +95,34 @@
         "heading": "Lorem ipsum",
         "content": "<p>consectetur adipiscing elit. Aenean volutpat hendrerit nisi eu malesuada. Donec luctus elit odio, nec hendrerit lacus elementum ac<\/p><p>Proin vel semper lorem. In facilisis ac mi id laoreet. Etiam dignissim, tellus eget aliquam pretium, enim eros aliquam felis, eu consectetur magna quam vel nunc. Nam ut risus consequat, sodales neque ac, euismod elit. Fusce ut semper dolor, nec consequat turpis.<\/p>"
       }
+    },
+    "feature_collection_wk8zTj": {
+      "type": "feature_collection",
+      "settings": {
+        "heading": "NEW DROPS",
+        "content": "The latest Sport Utility Gear to hit the site.",
+        "feature_collection": "frontpage",
+        "products_limit": 6
+      }
+    },
+    "collage_ytCHdK": {
+      "type": "collage",
+      "settings": {
+        "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/vp\/64f5e0c914284bc99dab99bcb9919e3b\/64f5e0c914284bc99dab99bcb9919e3b.HD-720p-1.6Mbps-9182920.mp4",
+        "title_1": "MW08 Sport",
+        "link_1": "",
+        "title_2": "Accessories",
+        "link_2": "",
+        "title_3": "Wireless",
+        "link_3": ""
+      }
     }
   },
   "order": [
     "new_hero_banner_kPbxMh",
-    "feature_collection_wk8zTj",
     "new_top_links_TagTyq",
-    "new_faq_box_WpWqmT"
+    "new_faq_box_WpWqmT",
+    "feature_collection_wk8zTj",
+    "collage_ytCHdK"
   ]
 }
