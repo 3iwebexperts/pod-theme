@@ -130,7 +130,9 @@
         </ul>
       </div>
 
+      
       <div class="footer-aside">
+       {% for block in section.blocks %}
         {% if section.settings.menu_1 != blank %}
           <div class="footer-menu">
             <h2 class="footer-menu__title h6">{{ linklists[section.settings.menu_1].title }}</h2>
@@ -144,6 +146,7 @@
             </ul>
           </div>
         {% endif %}
+        {% endfor %}
         {% if section.settings.menu_3 != blank %}
           <div class="footer-menu">
             <h2 class="footer-menu__title h6">{{ linklists[section.settings.menu_3].title }}</h2>
