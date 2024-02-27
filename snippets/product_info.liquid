@@ -237,12 +237,14 @@
       {% unless product.has_only_default_variant or has_color == true %}
         disabled=""
       {% endunless %}
-      {% if current_variant.inventory_quantity <= 0 and current_variant.available == false and current_variant.inventory_policy == "shopify" %}
+      {% if current_variant.inventory_quantity <= 0 and current_variant.available == false and current_variant.inventory_management == "shopify" %}
           disabled=""
       {% endif %}
       
     >
-      {% if current_variant.inventory_quantity <= 0 and current_variant.available == false and current_variant.inventory_policy != "shopify"   %}
+      {{ current_variant.inventory_quantity }}
+      {{  }}
+      {% if current_variant.inventory_quantity <= 0 and current_variant.available == false and current_variant.inventory_management != "shopify"   %}
         Add to Bag
         <span class="product__atc-price" data-add-to-cart-price="" style="">
         {{- product.price | money | remove: '.00' -}}
