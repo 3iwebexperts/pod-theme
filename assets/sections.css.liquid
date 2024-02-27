@@ -1435,6 +1435,37 @@ button.pro_add_cart {
   font-family: SequelSans Body;
   padding-left: 5px;
 }
+.swiper-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.swiper-arrow--left {
+  left: 0;
+}
+.swiper-arrow--right {
+  right: 0;
+}
+.swiper-pagination-bullet {
+  background-color: #1212124d;
+  border-radius: 3px;
+  height: 3px;
+  margin: 0 2.5px;
+  transition: background-color 0.3s ease-in;
+  width: 19px;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination-bullet:focus,
+.swiper-pagination-bullet:hover {
+  background-color: #121212;
+  transition: background-color 0.3s ease-out;
+}
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 2.5px;
+}
 
 @media (max-width: 991.98px) {
   .product-card .product-option__swatch {
