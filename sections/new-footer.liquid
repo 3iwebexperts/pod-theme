@@ -142,7 +142,7 @@
             <h2 class="footer-menu__title h6">{{ linklists[block.settings.footer_menu].title }}</h2>
 
             <ul class="footer-menu__list">
-              {%- for link in linklists[section.settings.menu_1].links -%}
+              {%- for link in linklists[block.settings.footer_menu].links -%}
                 <li class="footer-menu__list-item">
                   <a href="{{ link.url }}">{{ link.title }}</a>
                 </li>
