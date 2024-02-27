@@ -140,7 +140,6 @@
         {% if block.type == "menu" %}
           <div class="footer-menu">
             <h2 class="footer-menu__title h6">{{ linklists[block.settings.footer_menu].title }}</h2>
-
             <ul class="footer-menu__list">
               {%- for link in linklists[block.settings.footer_menu].links -%}
                 <li class="footer-menu__list-item">
@@ -153,6 +152,7 @@
         {% endfor %}
       </div>
       <div class="footer-aside footer-aside--last">
+         {% for block in section.blocks %}
         {% if section.settings.menu_2 != blank %}
           <div class="footer-menu">
             <h2 class="footer-menu__title h6">{{ linklists[section.settings.menu_2].title }}</h2>
@@ -166,7 +166,7 @@
             </ul>
           </div>
         {% endif %}
-        
+        {% endfor %}
       </div>
     </div>
 
