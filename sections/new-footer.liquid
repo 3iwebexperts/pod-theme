@@ -151,19 +151,6 @@
           </div>
         {% endif %}
         {% endfor %}
-        {% if section.settings.menu_3 != blank %}
-          <div class="footer-menu">
-            <h2 class="footer-menu__title h6">{{ linklists[section.settings.menu_3].title }}</h2>
-
-            <ul class="footer-menu__list">
-              {%- for link in linklists[section.settings.menu_3].links -%}
-                <li class="footer-menu__list-item">
-                  <a href="{{ link.url }}">{{ link.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        {% endif %}
       </div>
       <div class="footer-aside footer-aside--last">
         {% if section.settings.menu_2 != blank %}
