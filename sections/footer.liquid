@@ -180,7 +180,6 @@
         {% if section.settings.menu_4 != blank %}
           <div class="footer-menu">
             <h2 class="footer-menu__title h6">{{ linklists[section.settings.menu_4].title }}</h2>
-
             <ul class="footer-menu__list">
               {%- for link in linklists[section.settings.menu_4].links -%}
                 <li class="footer-menu__list-item">
@@ -268,24 +267,24 @@
       "name": "Collection List Slider"
     }
   ],
-   "blocks": [
-     {
-       "name": "Footer Text",
-       "type": "text",
-       "settings": [
-         {
-           "type": "text",
-           "id":"footer_text",
-           "label": "Footer Text"
-         },
-         {
-            "type": "text",
-            "id":"highlight_text",
-            "label": "Highlight Text "
-         }
-       ]
-     }
-   ]
+  "blocks": [
+   {
+     "name": "Footer Text",
+     "type": "text",
+     "settings": [
+       {
+         "type": "text",
+         "id":"footer_text",
+         "label": "Footer Text"
+       },
+       {
+          "type": "text",
+          "id":"highlight_text",
+          "label": "Highlight Text "
+       }
+     ]
+   }
+  ]
 }
 {% endschema %}
 
