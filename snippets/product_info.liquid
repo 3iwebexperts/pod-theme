@@ -239,10 +239,14 @@
       {% endunless %}
       
     >
-      <span data-add-to-cart-text="">Add to Bag</span>
-      <span class="product__atc-price" data-add-to-cart-price="" style="">
+      {% if current_variant.inventory_quantity <= 0 and current_variant.available == false and current_variant.inventory_policy == "continue" and current_variant.inventory_policy != "shopify"   %}
+        Add to Bag
+        <span class="product__atc-price" data-add-to-cart-price="" style="">
         {{- product.price | money | remove: '.00' -}}
-      </span>
+        </span>
+      {% else %}
+        Soldout
+      {% endif %}
     </button>
   {% endform %}
   {% render 'pro_size_drawer', product: product %}
