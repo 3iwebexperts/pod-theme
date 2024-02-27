@@ -144,11 +144,16 @@
         >Add TO BAG
       </button>
       <div class="wishlist_icn">
-        <img
-          loading="lazy"
-          src="//3istore-v2.myshopify.com/cdn/shop/t/5/assets/heart.png?v=61229506706036491451694510232"
-        >
+         <button
+        data-with-epi="true"
+        class="swym-button swym-add-to-wishlist-view-product product_{{product.id}}"
+        data-swaction="addToWishlist"
+        data-product-id="{{product.id | json}}"
+        data-variant-id="{{current_variant.id}}"
+        data-product-url="{{ shop.url }}{{ product.url }}"
+      >
         <span>WISHLIST</span>
+      </button>
       </div>
     </div>
   </div>
