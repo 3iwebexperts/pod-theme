@@ -237,7 +237,7 @@
       {% unless product.has_only_default_variant or has_color == true %}
         disabled=""
       {% endunless %}
-      {% if current_variant.inventory_quantity <= 0 and current_variant.available == false and current_variant.inventory_policy != "continue" and  current_variant.inventory_policy == "shopify" %}
+      {% if current_variant.inventory_quantity <= 0 and current_variant.available == false and current_variant.inventory_policy == "shopify" %}
           disabled=""
       {% endif %}
       
