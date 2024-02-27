@@ -389,7 +389,7 @@ label.popover__choice-item:has(input:checked):after {
 
 .product-card__gallery-slide:has(.product-placeholder):before, 
 .product-option__ui:has(.product-placeholder):before{
-  padding-bottom:0;
+  padding-bottom:0 !important;
 }
 /* Pagination */
 .pagination-wrapper .pagination ul {
