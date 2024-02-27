@@ -133,6 +133,7 @@
                       data-v_image="{{ variant.image | img_url: "master" }}"
                     >
                     <div class="product-option__ui">
+                      {%- if variant.image != blank -%}
                       <img
                         src="{{ variant.image | img_url: '400x' }}"
                         srcset="{{ variant.image | img_url: '400x' }}"
@@ -142,6 +143,9 @@
                         thumbnail-alt="{{ variant.title }}"
                         alt="{{ variant.title }}"
                       >
+                        {%- else -%}
+                        {{ "product-4" | placeholder_svg_tag }}
+                      {%- endif -%}
                     </div>
                   </label>
                   {%- capture tempList -%}
