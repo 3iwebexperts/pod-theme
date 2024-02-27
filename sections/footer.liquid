@@ -133,7 +133,7 @@
       
       <div class="footer-aside">
        {% for block in section.blocks %}
-        {% if section.settings.menu_1 != blank %}
+        {% if block.type == "menu" %}
           <div class="footer-menu">
             <h2 class="footer-menu__title h6">{{ linklists[section.settings.menu_1].title }}</h2>
 
