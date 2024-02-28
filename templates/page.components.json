@@ -116,6 +116,46 @@
         "title_3": "Wireless",
         "link_3": ""
       }
+    },
+    "new_collage_axBxTH": {
+      "type": "new-collage",
+      "blocks": {
+        "video_jK4DwQ": {
+          "type": "video",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/vp\/64f5e0c914284bc99dab99bcb9919e3b\/64f5e0c914284bc99dab99bcb9919e3b.HD-720p-1.6Mbps-9182920.mp4"
+          }
+        },
+        "image_7BcHWA": {
+          "type": "image",
+          "settings": {
+            "title": "MW08 Sport",
+            "link": ""
+          }
+        },
+        "image_GWTYfr": {
+          "type": "image",
+          "settings": {
+            "title": "MW08 Sport",
+            "link": ""
+          }
+        },
+        "image_mazThk": {
+          "type": "image",
+          "settings": {
+            "title": "MW08 Sport",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_jK4DwQ",
+        "image_7BcHWA",
+        "image_GWTYfr",
+        "image_mazThk"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -123,6 +163,7 @@
     "new_top_links_TagTyq",
     "new_faq_box_WpWqmT",
     "feature_collection_wk8zTj",
-    "collage_ytCHdK"
+    "collage_ytCHdK",
+    "new_collage_axBxTH"
   ]
 }
