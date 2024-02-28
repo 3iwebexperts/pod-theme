@@ -72,9 +72,9 @@
         >
           {% if section.settings.image_1 != blank %}
             <img
-              src="{{ section.settings.image_1 | img_url:"699x" }}"
+              src="{{ section.settings.image | img_url:"699x" }}"
               alt=""
-              srcset="{{ section.settings.image_1 | img_url:"699x" }}"
+              srcset="{{ section.settings.image | img_url:"699x" }}"
               height="1500"
               loading="lazy"
               sizes="(max-width: 699px) 100vw, min(390px, 25vw)"
