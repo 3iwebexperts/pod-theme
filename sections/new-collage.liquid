@@ -2,66 +2,64 @@
 <section id="collage_custom" class="card-slider container-fluid shopify-section shopify-section--media-grid">
   <div class="section   section-blends section-full">
     <media-grid class="media-grid">
-      <div
-        class="media-grid__item shadow group media-span"
-        reveal-js=""
-        style="opacity: 1; transform: translateY(0px);"
-      >
-        {%- for block in section.blocks -%}
+       {%- for block in section.blocks -%}
           {%- if block.type == "video" -%}
+             <div
+              class="media-grid__item shadow group media-span"
+              reveal-js=""
+              style="opacity: 1; transform: translateY(0px);"
+            >
+             
+              <div
+                id="media-grid-{{ section.id }}"
+                class="content-over-media rounded bg-custom text-custom"
+                style="--background: 0 0 0; --text-color: 255 255 255;"
+              >
+                <div class="vid_container">
+                  <video
+                    id="player"
+                    class="bvideo"
+                    autoplay
+                    {% if section.settings.thumbnail != blank %}
+                      poster="{{ section.settings.thumbnail | img_url: "1200x" }}"
+                    {% endif %}
+                  >
+                    {% if section.settings.video_link != blank %}
+                      <source
+                        src="{{ section.settings.video_link }}"
+                        type="video/mp4"
+                      >
+                    {% else %}
+                      <source
+                        src="https://cdn.shopify.com/videos/c/o/v/dca3da5ba23f4dc4a4bbec7fb73f778d.mp4"
+                        type="video/mp4"
+                      >
+                    {% endif %}
+                  </video>
+      
+                  <div id="ply_icn" class="ply_icn">
+                    <img id="ply_btn" src="{{ "play.png" | asset_url }}" class="">
+                  </div>
+                  <div id="snd_icn" class="snd_icn hidden">
+                    <img
+                      id="mute"
+                      class="sound"
+                      src="//arteza.com/cdn/shop/t/116/assets/sound.svg?v=159467258540205554051679475295"
+                    >
+                    <img
+                      id="unmute"
+                      class="mute hidden"
+                      src="//arteza.com/cdn/shop/t/116/assets/mute.svg?v=67584850190874179621679475252"
+                    >
+                  </div>
+                </div>
+      
+               
+              </div>
+            </div>
           {%- endif -%}
           {%- if block.type == "image" -%}
-          {%- endif -%}
-        {%- endfor -%}
-        <div
-          id="media-grid-{{ section.id }}"
-          class="content-over-media rounded bg-custom text-custom"
-          style="--background: 0 0 0; --text-color: 255 255 255;"
-        >
-          <div class="vid_container">
-            <video
-              id="player"
-              class="bvideo"
-              autoplay
-              {% if section.settings.thumbnail != blank %}
-                poster="{{ section.settings.thumbnail | img_url: "1200x" }}"
-              {% endif %}
-            >
-              {% if section.settings.video_link != blank %}
-                <source
-                  src="{{ section.settings.video_link }}"
-                  type="video/mp4"
-                >
-              {% else %}
-                <source
-                  src="https://cdn.shopify.com/videos/c/o/v/dca3da5ba23f4dc4a4bbec7fb73f778d.mp4"
-                  type="video/mp4"
-                >
-              {% endif %}
-            </video>
-
-            <div id="ply_icn" class="ply_icn">
-              <img id="ply_btn" src="{{ "play.png" | asset_url }}" class="">
-            </div>
-            <div id="snd_icn" class="snd_icn hidden">
-              <img
-                id="mute"
-                class="sound"
-                src="//arteza.com/cdn/shop/t/116/assets/sound.svg?v=159467258540205554051679475295"
-              >
-              <img
-                id="unmute"
-                class="mute hidden"
-                src="//arteza.com/cdn/shop/t/116/assets/mute.svg?v=67584850190874179621679475252"
-              >
-            </div>
-          </div>
-
-         
-        </div>
-      </div>
-
-      <a
+            <a
         href="/products/mw08-sport-green-sapphire-glass-black-kevlar-r-case"
         class="media-grid__item shadow group media-span"
         reveal-js=""
@@ -97,6 +95,11 @@
           {% endif %}
         </div>
       </a>
+          {%- endif -%}
+        {%- endfor -%}
+     
+{% comment %}
+      
       <a
         href="/collections/accessories"
         class="media-grid__item shadow group media-span" 
@@ -169,8 +172,9 @@
             </div>
           {% endif %}
         </div>
-      </a></media-grid
-    >
+      </a>
+      {% endcomment %}
+      </media-grid>
   </div>
 </section>
 {% schema %}
