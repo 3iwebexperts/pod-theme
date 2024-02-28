@@ -60,7 +60,7 @@
           {%- endif -%}
           {%- if block.type == "image" -%}
             <a
-        href="/products/mw08-sport-green-sapphire-glass-black-kevlar-r-case"
+        href="{{ block.settings.link }}"
         class="media-grid__item shadow group media-span"
         reveal-js=""
         style=" opacity: 1; transform: translateY(0px);"
@@ -141,19 +141,19 @@
         },
         {
           "type": "image_picker",
-          "id":"image_1",
+          "id":"image",
           "label": "Image 1",
           "info":"1000 X 1000"
         },
         {
           "type": "text",
-          "id":"title_1",
+          "id":"title",
           "label": "Title 1",
           "default":"MW08 Sport"
         },
         {
           "type": "url",
-          "id":"link_1",
+          "id":"link",
           "label": "Link 1"
         }
      ]
