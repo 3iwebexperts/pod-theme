@@ -8,6 +8,10 @@
         style="opacity: 1; transform: translateY(0px);"
       >
         {%- for block in section.blocks -%}
+          {%- if block.type == "video" -%}
+          {%- endif -%}
+          {%- if block.type == "image" -%}
+          {%- endif -%}
         {%- endfor -%}
         <div
           id="media-grid-{{ section.id }}"
