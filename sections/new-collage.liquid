@@ -1,6 +1,272 @@
+<link href="{{ 'collage.css' | asset_url }}" rel="stylesheet" type="text/css">
+<section id="collage_custom" class="card-slider container-fluid shopify-section shopify-section--media-grid">
+  <div class="section   section-blends section-full">
+    <media-grid class="media-grid">
+      <div
+        class="media-grid__item shadow group"
+        reveal-js=""
+        style="--media-grid-column-span: 2; --media-grid-row-span: 2; opacity: 1; transform: translateY(0px);"
+      >
+        <div
+          id="media-grid-{{ section.id }}"
+          class="content-over-media rounded bg-custom text-custom"
+          style="--background: 0 0 0; --text-color: 255 255 255;"
+        >
+          <div class="vid_container">
+            <video
+              id="player"
+              class="bvideo"
+              autoplay
+              {% if section.settings.thumbnail != blank %}
+                poster="{{ section.settings.thumbnail | img_url: "1200x" }}"
+              {% endif %}
+            >
+              {% if section.settings.video_link != blank %}
+                <source
+                  src="{{ section.settings.video_link }}"
+                  type="video/mp4"
+                >
+              {% else %}
+                <source
+                  src="https://cdn.shopify.com/videos/c/o/v/dca3da5ba23f4dc4a4bbec7fb73f778d.mp4"
+                  type="video/mp4"
+                >
+              {% endif %}
+            </video>
+
+            <div id="ply_icn" class="ply_icn">
+              <img id="ply_btn" src="{{ "play.png" | asset_url }}" class="">
+            </div>
+            <div id="snd_icn" class="snd_icn hidden">
+              <img
+                id="mute"
+                class="sound"
+                src="//arteza.com/cdn/shop/t/116/assets/sound.svg?v=159467258540205554051679475295"
+              >
+              <img
+                id="unmute"
+                class="mute hidden"
+                src="//arteza.com/cdn/shop/t/116/assets/mute.svg?v=67584850190874179621679475252"
+              >
+            </div>
+          </div>
+
+          <!--
+            <div class="place-self-center text-center sm:place-self-end-start sm:text-start" style="opacity: 1;">
+              <div class="prose">
+                <p class="h3">MG20 Gaming Headphones</p>
+              </div>
+            </div>
+          -->
+        </div>
+      </div>
+
+      <a
+        href="/products/mw08-sport-green-sapphire-glass-black-kevlar-r-case"
+        class="media-grid__item shadow group"
+        reveal-js=""
+        style="--media-grid-column-span: 1; --media-grid-row-span: 1; opacity: 1; transform: translateY(0px);"
+      >
+        <div
+          id="media-grid-1656690285827df07c-1"
+          class="custom_img content-over-media rounded bg-custom text-custom"
+          style=" --text-color: 255 255 255;"
+        >
+          {% if section.settings.image_1 != blank %}
+            <img
+              src="{{ section.settings.image_1 | img_url:"699x" }}"
+              alt=""
+              srcset="{{ section.settings.image_1 | img_url:"699x" }}"
+              height="1500"
+              loading="lazy"
+              sizes="(max-width: 699px) 100vw, min(390px, 25vw)"
+              class="content-over-media__media zoom-image"
+            >
+            {% else %}
+               {{ 'image' | placeholder_svg_tag: 'my-custom-class' }}
+          {% endif %}
+          {% if section.settings.title_1 != blank %}
+            <div
+              class="custom_txt place-self-end-start text-start sm:place-self-end-start sm:text-start"
+              style="opacity: 1;"
+            >
+              <div class="prose">
+                <p class="h5">{{ section.settings.title_1 }}</p>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </a>
+      <a
+        href="/collections/accessories"
+        class="media-grid__item shadow group"
+        reveal-js=""
+        style="--media-grid-column-span: 1; --media-grid-row-span: 1; opacity: 1; transform: translateY(0px);"
+      >
+        <div
+          id="media-grid-1656690285827df07c-2"
+          class="custom_img content-over-media rounded bg-custom text-custom"
+          style="--text-color: 255 255 255;"
+        >
+          {% if section.settings.image_2 != blank %}
+            <img
+              src="{{  section.settings.image_2 | img_url:"699x" }}"
+              alt=""
+              srcset="{{ section.settings.image_2 | img_url:"699x" }}"
+              width="1500"
+              height="1500"
+              loading="lazy"
+              sizes="(max-width: 699px) 100vw, min(390px, 25vw)"
+              class="content-over-media__media zoom-image"
+            >
+            {% else %}
+                {{ 'image' | placeholder_svg_tag: 'my-custom-class' }}
+          {% endif %}
+          {% if section.settings.title_2 != blank %}
+            <div
+              class="custom_txt place-self-end-start text-start sm:place-self-end-start sm:text-start"
+              style="opacity: 1;"
+            >
+              <div class="prose">
+                <p class="h5">{{ section.settings.title_2 }}</p>
+              </div>
+            </div>
+          {% endif %}
+        </div></a
+      ><a
+        href="/products/mh40-wireless-silver-metal-brown-coated-canvas"
+        class="media-grid__item shadow group"
+        reveal-js=""
+        style="--media-grid-column-span: 2; --media-grid-row-span: 1; opacity: 1; transform: translateY(0px);"
+      >
+        <div
+          id="media-grid-71ce7a5d-9eff-4b1a-8897-31b748afbc2b"
+          class="custom_img content-over-media rounded bg-custom text-custom"
+          style=" --text-color: 255 255 255;"
+        >
+          {% if section.settings.image_3 != blank %}
+            <img
+              src="{{  section.settings.image_3 | img_url:"1000x"  }}"
+              alt=""
+              srcset="{{  section.settings.image_3 | img_url:"1000x"  }}"
+              width="1500"
+              height="1000"
+              loading="lazy"
+              sizes="(max-width: 699px) 100vw, min(780px, 50vw)"
+              class="content-over-media__media zoom-image"
+            >
+          {% else %}
+              {{ 'image' | placeholder_svg_tag: 'my-custom-class' }}
+          {% endif %}
+          {% if section.settings.title_3 != blank %}
+            <div
+              class="custom_txt place-self-end-start text-start sm:place-self-end-start sm:text-start"
+              style="opacity: 1;"
+            >
+              <div class="prose">
+                <p class="h3">{{ section.settings.title_3 }}</p>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </a></media-grid
+    >
+  </div>
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "New - Collage",
+  "class":"custom_collage",
+  "settings": [
+     {
+       "type": "header",
+       "content": "Video"
+     },
+     {
+       "type": "text",
+       "id":"video_link",
+       "label": "Video Link",
+       "info": "Upload Video in content > files and paste URL here",
+       "default": "https://cdn.shopify.com/videos/c/vp/64f5e0c914284bc99dab99bcb9919e3b/64f5e0c914284bc99dab99bcb9919e3b.HD-720p-1.6Mbps-9182920.mp4"
+     },
+     {
+       "type": "image_picker",
+       "id":"thumbnail",
+       "label": "Video Thumbnail"
+     },
+     {
+       "type": "header",
+       "content": "Top Images"
+     },
+     {
+       "type": "image_picker",
+       "id":"image_1",
+       "label": "Image 1",
+       "info":"1000 X 1000"
+     },
+          {
+           "type": "text",
+           "id":"title_1",
+           "label": "Title 1",
+           "default":"MW08 Sport"
+         },
+          {
+           "type": "url",
+           "id":"link_1",
+           "label": "Link 1"
+         },
+     {
+       "type": "image_picker",
+       "id":"image_2",
+       "label": "Image 2",
+       "info":"1000 X 1000"
+     },
+          {
+           "type": "text",
+           "id":"title_2",
+           "label": "Title 2",
+           "default":"Accessories"
+         },
+              {
+           "type": "url",
+           "id":"link_2",
+           "label": "Link 2"
+         },
+     {
+       "type": "header",
+       "content": "Bottom Image"
+     },
+     {
+       "type": "image_picker",
+       "id":"image_3",
+       "label": "Image 3",
+       "info":"1000 X 667"
+     },
+        {
+           "type": "text",
+           "id":"title_3",
+           "label": "Title 3",
+           "default":"Wireless"
+         },
+              {
+           "type": "url",
+           "id":"link_3",
+           "label": "Link 3"
+         }
+  ],
+  "blocks":[
+    
+  ],
+  "presets": [
+    {
+      "name": "New - Collage"
+    }
+  ]
+}
 {% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
