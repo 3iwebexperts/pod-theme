@@ -1,7 +1,7 @@
 <link href="{{ 'collage.css' | asset_url }}" rel="stylesheet" type="text/css">
 <section id="collage_custom" class="card-slider container-fluid shopify-section shopify-section--media-grid">
   <div class="section   section-blends section-full">
-    <media-grid class="media-grid">
+    <media-grid class="media-grid media-group-span">
        {%- for block in section.blocks -%}
           {%- if block.type == "video" -%}
              <div
