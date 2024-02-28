@@ -7,6 +7,8 @@
         reveal-js=""
         style="opacity: 1; transform: translateY(0px);"
       >
+        {%- for block in section.blocks -%}
+        {%- endfor -%}
         <div
           id="media-grid-{{ section.id }}"
           class="content-over-media rounded bg-custom text-custom"
