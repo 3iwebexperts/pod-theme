@@ -1641,16 +1641,16 @@ button.pro_add_cart {
 /* SECTION : Featured Collection End */
 
 /* SECTION : Collage Start */
-.custom_collage .media-group-span:first-child{
+media-grid{
+  --media-grid-column-span: 1; 
+  --media-grid-row-span: 1;
+}
+media-grid:first-child{
   --media-grid-column-span: 2; 
   --media-grid-row-span: 2;
 }
-.media-group-span:last-child{
+media-grid:last-child{
   --media-grid-column-span: 2; 
-  --media-grid-row-span: 1;
-}
-.media-group-span{
-  --media-grid-column-span: 1; 
   --media-grid-row-span: 1;
 }
 /* SECTION : Collage End */
