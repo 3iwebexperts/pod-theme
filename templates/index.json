@@ -1,7 +1,7 @@
 {
   "sections": {
     "05e09d4d-92ad-4058-a1d7-2d438520a652": {
-      "type": "collection_button_slider",
+      "type": "new-collection_button_slider",
       "blocks": {
         "e235dedb-3726-4c7d-a992-74c2ccd9f37b": {
           "type": "text",
