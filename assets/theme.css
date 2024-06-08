@@ -7016,7 +7016,7 @@ symbol.icon:not(.icon--full-color) rect {
   }
 }
 .marketing-morsel {
-  /* color: #fff; */
+  color: #fff;
   padding-left: 24px;
   position: relative;
 }
