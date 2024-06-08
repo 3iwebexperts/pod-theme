@@ -7055,6 +7055,7 @@ symbol.icon:not(.icon--full-color) rect {
   margin-top: 60px;
   text-transform: uppercase;
   font-family: Sequel Sans title, sans-serif;
+    color: #fff;
 }
 @media (max-width: 1199.98px) {
   .footer-signup__title {
